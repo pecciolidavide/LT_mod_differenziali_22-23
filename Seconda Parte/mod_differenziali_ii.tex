@@ -1,4 +1,4 @@
-    \chapter{Campi di vettori e forme differenziali su spazi affini}
+\chapter{Campi di vettori e forme differenziali su spazi affini}
 	\paragraph{Def} Si chiama \underline{spazio affine} la terna $(A,E,\delta)$
     \begin{itemize}
         \item $A$ è un insieme di elementi che chiamiamo punti
@@ -31,11 +31,11 @@
     \paragraph*{Trasformazioni affini} Se si considerano due riferimenti affini $(O,\mathbf{c}_\alpha)$ e $(O',\mathbf{c}_{\alpha'})$, 
     allora vi è un legame tra i due sistemi di coordinate indotti $(x^\alpha)$ e $(x^{\alpha'})$, ovvero:
         \begin{align*}
-            x^\alpha=a^\alpha_{\alpha '}x^{\alpha'}+b^\alpha && x^{\alpha'}=a^{\alpha'}_\alpha x^\alpha+b^{\alpha'}
+            x^\alpha=a^\alpha_{\alpha'}x^{\alpha'}+b^\alpha && x^{\alpha'}=a^{\alpha'}_\alpha x^\alpha+b^{\alpha'}
         \end{align*}
-    Dove $a^\alpha_{\alpha '}$ e $a^{\alpha'}_\alpha$ compongono le matrici dei cambiamenti di base:
+    Dove $a^\alpha_{\alpha'}$ e $a^{\alpha'}_\alpha$ compongono le matrici dei cambiamenti di base:
     \begin{align*}
-        \mathbf{c}_{\alpha'}=a^\alpha_{\alpha '}\mathbf{c}_\alpha && \mathbf{c}_\alpha=a^{\alpha'}_\alpha \mathbf{c}_{\alpha'}
+        \mathbf{c}_{\alpha'}=a^\alpha_{\alpha'}\mathbf{c}_\alpha && \mathbf{c}_\alpha=a^{\alpha'}_\alpha \mathbf{c}_{\alpha'}
     \end{align*}
     Mentre $(b^\alpha)$ $(b^{\alpha'})$ sono le componenti rispettivamente del vettore $OO'$ e $O'O$.
     \paragraph{Def} Sia $A$ uno spazio affine. Una funzione $f$ del tipo:
@@ -102,15 +102,21 @@
     \begin{align*}
         X^\alpha=a^\alpha_{\alpha'}X^{\alpha'}
     \end{align*}
-    D'altra parte, interpretando la $f$ come funzione delle $(x^\alpha)$ per il tramite delle $(x^{\alpha'})$ dalle relazioni precedneti a le basi si ha:
+    D'altra parte, interpretando la $f$ come funzione delle $(x^\alpha)$ per il tramite delle $(x^{\alpha'})$ dalle relazioni precedenti a le basi si ha:
     \begin{align*}
-        \frac{\partial f}{\partial x^\alpha}=\frac{\partial f}{\partial x^{\alpha'}}\frac{\partial x^{\alpha'} }{\partial x^\alpha}=\frac{\partial f}{\partial x^{\alpha '}}a^{\alpha'}_\alpha
+        \frac{\partial f}{\partial x^\alpha}=\frac{\partial f}{\partial x^{\alpha'}}\frac{\partial x^{\alpha'} }{\partial x^\alpha}=\frac{\partial f}{\partial x^{\alpha'}}a^{\alpha'}_\alpha
     \end{align*}
     Si ha quindi:
     \begin{align*}
         X^\alpha\frac{\partial f}{\partial x^\alpha}=X^\alpha\frac{\partial f}{\partial x^{\alpha'}}a^{\alpha'}_\alpha= X^{\alpha'}\frac{\partial f}{\partial x^{\alpha'}}
     \end{align*}
     Ciò mostra l'indipendenza della definizione dalla scelta delle coordinate cartesiane.
+    %%
+    %%
+    %%COMMUTATORE DI DUE CAMPI VETTORIALI
+    %%
+    %%
+    %%
     \paragraph{Def} Siano $\mathbf{X},\mathbf{Y}\in \mathcal{X}(A)$ .Definiamo il \underline{commutatore di $\mathbf{X}$ e $\mathbf{Y}$} come il campo vettoriale:
     \begin{align*}
     [\cdot,\cdot]\colon \mathcal{X}(A)\times \mathcal{X}(A)\to \mathcal{X}(A)\\
@@ -148,6 +154,13 @@
     \end{align*}
     la cui immagine $\varphi(U)$ è un aperto di $\mathbb{R}^n$.
 \end{itemize}
+%%
+%%
+%%
+%%CARTA E COORDINATE NON AFFINI
+%%
+%%
+%%
 \paragraph{Def} Possiamo definire le \underline{coordinate associate} alla carta $(U,\varphi)$ come le $n$ funzioni:
 \begin{align*}
     q^i\colon U\to \mathbb{R}&&
@@ -216,10 +229,50 @@ $(q^1,q^2,q^3)=(r,\varphi,\theta)$ sono definite sul dominio aperto $U$ in $\mat
         \theta\equiv \text{longitudine}
     \end{cases}
 \end{align*}
-In generale $x^\alpha=x^\alpha(q^i)$ si può anche scrivere come $\textbf{x}=\mathbf{x}(q^i)$ con $\mathbf{x}$ un vettore in $\mathbb{R}^3$ che rappresenta il vettore posizione $OP=x^\alpha \mathbf{e}_\alpha$.
+\paragraph{Not:}In generale $x^\alpha=x^\alpha(q^i)$ si può anche scrivere come $\textbf{x}=\mathbf{x}(q^i)$ con $\mathbf{x}$ un vettore in $\mathbb{R}^3$ che rappresenta il vettore posizione $OP=x^\alpha \mathbf{e}_\alpha$.
+\paragraph{Def} Si possono definire:
+\begin{align*}
+    \mathbf{E}_i=\frac{\partial \mathbf{x}}{\partial q^i}
+\end{align*}
+ovvero $n$ campi vettoriali su $\varphi(U)$. Questi ovviamente hanno componenti rispetto alla basse $(\mathbf{c}_\alpha)$:
+\begin{align*}
+    \mathbf{E}_i=E^\alpha_i\mathbf{c}_\alpha
+\end{align*}
+Le loro caratteristiche principali sono:
+\begin{enumerate}
+   \item In generale non sono costanti poichè $\mathbf{E}_i=\mathbf{E}_i(q^j)$
+   \item Sono tra loro indipendenti e costiutiscono così una base dei campi di vettori su $U$
+\end{enumerate}
+Si chiamano \underline{riferimento naturale associato alle coordinate non affini} $(q^i)$.
+\paragraph*{Trasformazione di $X$ da coordinate affini a coordinate non affini} Sia $\mathbf{X}\in X(A)$. Sappiamo sia che:
+\begin{align*}
+    \mathbf{X}=X^i(q^j)\mathbf{E}_i=\underbrace{X^i\mathbf{E}_i}=X^iE^\alpha_i\mathbf{c}_\alpha=\underbrace{X^\alpha\mathbf{c}_\alpha}
+\end{align*}
+Uguagliando cosi i due termini evidenziati abbiamo le relazioni tra i coefficienti delle due rappresentazioni del campo vettoriale $\mathbf{X}$:
+\begin{align*}
+    X^i=E^i_\alpha X^\alpha\\
+    X^\alpha=E^\alpha_iX^i
+\end{align*}
+\paragraph{Interpretazione di $\mathbf{E}_i$ come derivazioni} Consideriamo i campi vettoriale $\mathbf{E}_i$. Questi possiamo interpretarli come delle derivazioni del tipo:
+\begin{align*}
+    \mathbf{E}_i(f)=\frac{\partial f}{\partial q^i}
+\end{align*}
+Ovvero come la derivata della funzione rappresentativa $f$ rispetto alle coordinate non affini $(q^i)$. Per fare ciò quello che sta accadendo è:
+\begin{align*}
+    \varphi (U)\xrightarrow[]{\varphi^{-1}} U\xrightarrow[]{f} \mathbb{R}\\
+    (q^i)\mapsto\varphi^{-1}(q^i)\mapsto f(\varphi^{-1}(q^i))\equiv f(q^i)
+\end{align*}
+Quindi procedendo con questa interpretazione:
+\begin{align*}
+    \mathbf{E}_i(f)=\frac{\partial}{\partial q^i}(f)=\frac{\partial x^\alpha}{\partial q^i}\frac{\partial}{\partial x^\alpha}(f)=E^\alpha_i\frac{\partial}{\partial x^\alpha}(f)
+\end{align*}
+Concludendo dunque per un generico campo vettoriale $\mathbf{X}$:
+\begin{align*}
+    \mathbf{X}(f)=X^i\frac{\partial}{\partial q^i}(f)=X^\alpha \frac{\partial}{\partial x^\alpha}(f)
+\end{align*}
 %%
 %%
-%%
+%%SIMBOLI DI CHRISTOFFEL
 %%
 %%
 \paragraph{Simboli di Christoffel} Consideriamo i campi vettoriali $\mathbf{E_i}$. Visto che questi possono essere espressi in funzione delle coordinate $q^i$, ha senso considerarne le derivate parziali:
@@ -233,10 +286,23 @@ Queste derivate parziali sono a loro volta dei campi vettoriali e quindi possiam
 Le componenti $\Gamma^h_{ji}$ sono delle funzioni sopra il dominio $U$ della carta denominate \underline{simboli di Christoffel}.
 \paragraph{Proprietà} I simboli di Christoffel hanno le seguenti proprietà:
 \begin{itemize}
-    \item $\boxed{\Gamma^h_{ji}=\Gamma^h_{ji}}$: Questo vale per definizione stessa dei simboli di Christoffel. Essendo definiti tramite le derivate secondo di funzioni regolari, sono simmetrici rispetto agli indici in basso.
+    \item $\boxed{\Gamma^h_{ji}=\Gamma^h_{ij}}$: Questo vale per definizione stessa dei simboli di Christoffel. Essendo definiti tramite le derivate secondo di funzioni regolari, sono simmetrici rispetto agli indici in basso.
     \item $\boxed{\Gamma^h_{ji}=0\text{ se e solo se le coordinate sono cartesiane}}$: Dalla definizione si vede che sono identicamente nulli se e solo se i campi $\mathbf{E}_i$ sono costanti e ciò accade se e solo se le coordinate sono cartesiane.
 \end{itemize}
-
+\paragraph{Oss:} Le componenti del commutatore sono le stesse in ogni sistema di coordinate:
+\begin{align*}
+    [\mathbf{X},\mathbf{Y}]^i=X^j\frac{\partial Y^i}{\partial q^j}-Y^i\frac{\partial X^j}{\partial q^j}
+\end{align*}
+\paragraph{Def} La \underline{divergenza in coordinate non affini} è il campo scalare:
+\begin{align*}
+    div\mathbf{X}=\frac{\partial}{\partial q^i}X^i+\Gamma^k_{ji}X^i
+\end{align*}
+Si verifica facilmente che soddisfa le condizioni precendetemente enunciate per la divergenza.
+\paragraph{Oss:} Questa euristicamente può essere vista come:
+\begin{itemize}
+    \item la traccia di un'opportuna matrice
+    \item un prodotto \textit{assomiglia} al prodotto scalare
+\end{itemize}
 
 \section{Forme differenziali}
 \paragraph{Def} Sia $A$ uno spazio affine. Una \underline{forma lineare} o \underline{1-forma} su $A$ è un'applicazione:
@@ -313,23 +379,85 @@ Dalle formule precedenti segue che la valutazione di una forma lineare sopra un 
 \begin{align*}
     \boxed{\langle \mathbf{X},\mathbf{\varphi}\rangle = X^i\varphi_i}
 \end{align*}
-%
+%%
+%%
+%%
+%%
+%% FORME DIFFERENZIALI
+%%
+%%
+%%
 %%
 \paragraph{Def} Una \underline{forma differenziale} o \underline{p-forma} su uno spazio affine $A$ è un'applicazione \textit{p-lineare antisimmetrica} dello spazio $\mathcal{X}(A)^p$ nello spazio $\mathcal{F}(A)$:
 \begin{align*}
     \phi \colon \underbrace{\mathcal{X}(A)\times \mathcal{X}(A)\times \dots \times \mathcal{X}(A)}_{p \text{ volte}}\to \mathcal{F}(A)
 \end{align*}
+\paragraph{Not:}Indicheremo con:
+\begin{align*}
+    \Phi^p(A)=\text{ spazio delle $p$ forme sopra} A
+\end{align*}
+definendo:
+\begin{align*}
+    \Phi^0(A)\colon =\mathcal{F}(A)
+\end{align*}
+\paragraph{Prodotto esterno} Sulle $p$-forme differenziali è definita l'operazione fondamentale chiamata \underline{prodotto esterno}.
+Questa è una generalizzazione dell'operatore di differenziale applicabile sulle $0$-forme alle $p$-forme e per questo è indicato con $d$.
+\begin{align*}
+    d\colon \Phi^p(A)\colon \Phi ^{p+1}(A)
+\end{align*}
+La sua proprietà fondamentale è $d^2\equiv 0$.
+\paragraph{Oss:} Per l'antisimmetria se $p>n=dim(A)$, allora $\Phi^p(A)\equiv 0$.
+\paragraph{Invarianza rappresentazione differenziale 1-forma}
+Sia $\varphi$ una 1-forma su $A$ scritta in rappresentazione locale come:
+\begin{align*}
+    \varphi = \varphi_idq^i
+\end{align*}
+Il contenuto di questa paragrafo sarà quello di dimostrare la rappresentazione del suo differenziale in coordinate locali:
+\begin{align*}
+    d\varphi=d\varphi _i\wedge dq^i
+\end{align*}
+e il fatto che questa non dipenda dalle coordinate scelte. Ovvero presa:
+\begin{align*}
+    \varphi = \varphi_{i'}dq^{i'}\longrightarrow d\varphi = \varphi_{i'}dq^{i'}
+\end{align*}
+Mostriamo questo secondo fatto.\\
+Siano $(q^i)$ e $(q^{i'})$ due sistemi di coordinate generiche. Ricordando che la matrice Jacobiana della trasformazione di coordinate è:
+\begin{align*}
+    E^{i'}_i=\frac{\partial q^{i'}}{\partial q^i}
+\end{align*}
+Si noti come:
+\begin{align*}
+    dq^{i'}=\frac{\partial q^{i'}}{\partial q^i}dq^i
+\end{align*}
+E quindi:
+\begin{align*}
+    \varphi_{i'}=E^i_{i'}\varphi_i
+\end{align*}
+Iniziamo allora i calcoli. Tenendo a mente che:
+\begin{align*}
+    d\varphi_{i'}=d(E^i_{i'}\varphi_i)=dE^i_{i'}\varphi_i+E^i_{i'}d\varphi_i
+\end{align*}
+Studiamo il membro destro della tesi:
+\begin{align*}
+    d\varphi_{i'}\wedge dq^{i'}=\varphi_i\frac{\partial E^{i}_{i'}}{\partial q^k}dq^k\wedge dq^{i'}+E^i_{i'}d\varphi_i\wedge dq^{i'}=\\
+    =\underbrace{\varphi_i\underbrace{\frac{\partial q^i}{\partial q^{i'} \partial q^{k'}}}_{\text{simmetrico in $i',k'$}}\overbrace{dq^{k'}\wedge dq^{i'}}^{\text{antisimmetrico in $i',k'$}}}_{\equiv 0}+d\varphi_i\wedge E^i_{i'}dq^{i'}=\\
+    =d\varphi_i\wedge dq^i
+\end{align*}
 %%
 %%
 %%
-%%
-%%
-%%
-%%
+%%CHAPTER 2 CURVE, SUPERFICI ETC
 %%
 %%
 %%
 \chapter{Curve negli spazi affini, rappresentazione in coordinate non affini, e sistemi dinamici}
+%%
+%%
+%%
+%%
+%%CURVA PARAMETRIZZATA
+%%
+%%
 \paragraph{Def} Chiamiamo \underline{curva parametrizzata} in uno spazio affine $A$ un'applicazione $\gamma \colon I \to A$ da un intervallo aperto $I\subseteq \mathbb{R}$ nello spazio affine.\\
 Considerata un'origine $O\in A$, per la curva $\gamma$ vi è una \underline{rappresentazione vettoriale}:
 \begin{align*}
@@ -348,19 +476,27 @@ Nel caso in cui la curva rapresenti il moto di un punto enllo sapzio affine trid
     \dot{\gamma}(t)=\lim_{h\to 0}\frac{1}{h}(\gamma(t+h)-\gamma(t))
 \end{align*}
 Questo nel contesto cinematico prende il nome di \underline{velocità istantanea} e lo si denota con $\mathbf{v}(t)$.
-\paragraph{Campo tangente come curva} Conviente interpretare il vettore tangente $\dot{\gamma}(t)=\mathbf{v}(t)$ come vettore applicato nel punto $\gamma(t)$. Ovvero come un'applicazione:
+\paragraph{Campo tangente come curva} Conviene interpretare il vettore tangente $\dot{\gamma}(t)=\mathbf{v}(t)$ come vettore applicato nel punto $\gamma(t)$. Ovvero come un'applicazione:
 \begin{align*}
     \hat{\gamma}(t)\colon I \to A\times E\\
     t\mapsto (\gamma(t),\dot{\gamma}(t))
 \end{align*}
 $\hat{\gamma}(t)$ viene detta \underline{curva tangente} della curva $\gamma\colon I \to A$.
+\paragraph{Def} Siano $\gamma \colon I \to \mathbb{R}$ una curva e $F\colon A \to \mathbb{R}$ un campo scalare, entrambi almeno di classe $C^1$.
+Definiamo la \underline{derivata del campo scalare $F$ lungo la curva $\gamma$} come:
+\begin{align*}
+    \frac{d}{dt}(F\circ \gamma)(t)=\langle \mathbf{v}(t),dF\rangle && \forall t \in I
+\end{align*}
+Questa è la definizione naturale, infatti:
+\begin{align*}
+    \frac{d}{dt}(F\circ \gamma)(t)=\frac{\partial F}{\partial x^\alpha}\frac{d\gamma^\alpha}{dt}(t)=\frac{\partial F}{\partial x^\alpha}v^\alpha(t)=\langle\mathbf{v}(t),dF\rangle
+\end{align*}
 %%
 %%
+%%CURVA INTEGRALE
 %%
 %%
-%%
-%%
-\paragraph{Def} La \underline{curva integrale} di un campo vettoriale $\mathbf{X}$ è la curva:
+\paragraph{Def} La \underline{curva integrale di un campo vettoriale $\mathbf{X}$} è la curva:
 \begin{align*}
     \gamma \colon I \to A
 \end{align*}
@@ -369,10 +505,264 @@ tale che:
     \item $I\subseteq \mathbb{R}$ contiene lo $0$
     \item In ogni suo punto $\gamma(t)$ il vettore tangente $\dot{\gamma}(t)$ coincide con il valore del campo $\mathbf{X}$ in quel punto ovvero:
     \begin{align*}
-        \dot{\gamma}=\mathbf{X}\circ \gamma=\mathbf{X}(\gamma(t))
+        \dot{\gamma}=\mathbf{X}\circ \gamma=\mathbf{X}(\gamma(t))\\
+        I\xlongrightarrow{\gamma}A\xlongrightarrow[]{\mathbf{X}}A\times E\\
+        \xlongrightarrow{\dot{\gamma}}
     \end{align*}
 \end{itemize}
-dove $\gamma\colon I \to A$ e $\mathbf{X}\colon A \to A\times E$.\\
-Diciamo inoltre che la curva integrale è \underline{basata nel punto} $P_0$ se $\gamma(0)=P_0$
+Diciamo inoltre che la curva integrale è \underline{basata nel punto} $P_0$ se $\gamma(0)=P_0$.
+\paragraph*{Not}In rappresentazione vettoriale sarebbe:
+\begin{align*}
+    \mathbf{x}=\gamma(t) \text{ curva integrale} \iff \frac{d\mathbf{x}}{dt}=\mathbf{X}(\mathbf{x})
+\end{align*}\\
 Le curve integrali rappresentano i moti delle particelle del fluido secondo l'interpretazione del campo $\mathbf{X}$ come campo di velocità.\\
 \paragraph{Def} Un campo vettoriale interpretato come campo di velocità viene detto \underline{sistema dinamico}.
+\paragraph{Not} Un sistema dinamico si può rappresentare dunque come un'equazione differenziale:
+\begin{itemize}
+        \item vettoriale:
+        \begin{align*}
+            \frac{d\mathbf{x}}{dt}=\mathbf{X}(\mathbf{x})
+        \end{align*}
+        \item in coordinate affini:
+        \begin{align*}
+            \frac{dx^\alpha}{dt}=X^\alpha (x^\beta)
+        \end{align*}
+        \item in coordinate generiche:
+        \begin{align*}
+            \frac{dq^i}{dt}=X^i (x^i)
+        \end{align*}
+\end{itemize}
+In particolare sono $n$ equazioni differenziali ordinarie in forma normale autonome.
+\section{Risoluzione sistemi dinamici} Integrare significa trovare tutte le soluzioni del sistema dinamico e queste costituiscono lo spazio delle soluzioni/spazio dei moti.
+\paragraph*{Def}Dato un sistema dinamico e un punto $P_0\in A$, parliamo di \underline{curva integrale massimale} $\gamma_{P_0}\colon: I_{P_0}\to A$, quando presa un'altra curva integrale $\gamma\colon I\to A$, allora:
+\begin{align*}
+    I \subseteq I_{P_0}&& \gamma_{P_0|_I}=\gamma
+\end{align*}
+Una volta fissate le condizioni iniziali/dati iniziali riusciamo individuare un'unica soluzione del sistema dinamico grazie al
+\paragraph*{Teorema di Cauchy} Sia $\mathbf{X}$ un campo vettoriale di classe $C^k$($k\ge1$) su un dominio $M$.
+Fissato un punto $P_0\in M$ esiste una e una sola curva integrale massimale basata in $P_0$:
+\begin{align*}
+    \gamma_{P_0}\colon I_{P_0}\to M
+\end{align*}
+Se $I_{P_0}=\mathbb{R}$, $\mathbf{X}$ si dice \underline{completo}.
+\paragraph*{Def} Il \underline{flusso del campo di vettori $\mathbf{X}$} descrive lo spazio delle soluzioni( o insieme di tutte le curve integrali del campo $\mathbf{X}$).
+Si definisce come la funzione:
+\begin{align*}
+    \varphi\colon D\subseteq \mathbb{R}\times M \to M\\
+    (t,P_0)\mapsto \gamma_{P_0}(t)
+\end{align*}
+\paragraph*{Teo}Sia $\mathbf{X}$ campo vettoriale di classe $C^k$($k\ge1$) su un dominio $M$, allora:
+\begin{enumerate}
+    \item il dominio $D$ del flusso $\varphi$ è un aperto di $\mathbb{R}\times M$ e $\varphi$ è $C^k$ su $D$
+    \item Sia $V\subseteq M$ aperto, $\delta >0$ numero reale e si consideri $(-\delta,\delta)\times V\subseteq D$. Allora $\forall \, t \in (-\delta,\delta)$:
+    \begin{align*}
+       \varphi_t\colon V\to V_t\\
+       P\mapsto \varphi(t,P) 
+    \end{align*}
+    è un omemomorfismo $C^k$ di $V$ su $V_t\subseteq M$ con $\varphi_t\colon P\mapsto\varphi(-t,P)$ omeomorfismo inverso
+    \item Vale:
+    \begin{align*}
+      \varphi(t,\varphi(s,P))=\varphi(t+s,P)  
+    \end{align*}
+    $\forall\, t,s,P$ per cui i due membri hanno significato.
+\end{enumerate}
+\paragraph*{Oss}Se $\mathbf{X}$ è completo allora:
+\begin{itemize}
+    \item $D=\mathbb{R}\times M$
+    \item $\varphi_t\colon M\to M,P\mapsto\varphi_t(P)=\gamma_P(t)$ è una trasformazione $C^k$ di M.
+\end{itemize}
+\paragraph*{Def} Al variare del parametro $t\in \mathbb{R}$ i diversi flussi $\varphi_t$ costiutiscono un \underline{gruppo ad un parametro}, ovvero un'insieme $\{\varphi_t|t\in \mathbb{R}\}$ tale che valgono:
+\begin{itemize}
+    \item $\varphi_t\circ \varphi_s=\varphi_{t+s}$
+    \item $\varphi_t\circ\varphi_s=\varphi_s\circ \varphi_t$
+    \item $\varphi_0=id_M$
+    \item $(\varphi_t)^{-1}=\varphi_{-t}$
+\end{itemize}
+\paragraph*{Oss} Ad ogni gruppo ad un parametro si può associare il campo vettoriale $\mathbf{X}$ corrispondente e viceversa. Ovvero questo sono condizioni necessarie e sufficienti affinche un insieme di curve $\varphi(t,P)$ sia lo spazio delle soluzioni di un certo campo vettoriale.
+%
+\paragraph*{Def} Sia $\mathbf{X}\in \mathcal{X}(A)$. Definiamo l'\underline{integrale primo di $\mathbf{X}$} come il campo scalare $F\colon A\to \mathbb{R}$ tale che $\forall \gamma \colon I \to A$ curva integrale, vale:\\
+\begin{minipage}{4cm}
+    \begin{align*}
+   F\circ \gamma (t_1)=F\circ \gamma (t_2),\\
+   \forall\, t_1,t_2\in I
+    \end{align*}
+    \end{minipage}$\iff$
+    \begin{minipage}{4cm}
+   \begin{align*}
+    \frac{d}{dt}(F\circ\gamma)(t)=0, \forall \, t\in I
+   \end{align*}
+    \end{minipage}$\iff$
+    \begin{minipage}{3cm}
+        \begin{align*}
+         \langle \mathbf{X},dF\rangle =0
+        \end{align*}
+         \end{minipage}
+%%
+%%
+%%
+%%
+%%
+%%%VELOCITA' E ACCELERAZIONE
+%%
+%
+%
+%%
+\section{Velocità e accelerazione in coordinate non affini}
+\paragraph*{Velocità in coordinate non affini} Consideriamo una curva $\gamma$ e delle coordinate non affini $(q^i)$. La curva è rappresentata da:
+\begin{align*}
+    q^i(t)=\gamma^i(t)
+\end{align*}
+Ricordando che $\mathbf{x}=x^i\mathbf{E}_i$, abbiamo che:
+\begin{align*}
+    \mathbf{v}=\frac{d\mathbf{x}(t)}{dt}=\underbrace{\frac{\partial \mathbf{x}}{\partial q^i}}_{\mathbf{E}_i}\cdot \frac{dq^i}{dt}=v^i\mathbf{E}_i
+\end{align*}
+Quindi la velocità in componenti rispetto alle cordinate $(q^i)$ è data da 
+\begin{align*}
+    v^i(t)=\frac{dq^i(t)}{dt}
+\end{align*}
+\paragraph*{Oss} Come già visto l'espressione del campo di vettori $\mathbf{v}$ non cambia nei due sistemi $(\mathbf{c}_\alpha)$ e $(\mathbf{E}_i)$, ovvero:
+\begin{align*}
+    \mathbf{v}=v^\alpha \mathbf{c}_\alpha = v^i\mathbf{E}_i
+\end{align*}
+\paragraph*{Accelerazione in coordinate non affini} Nel riferimento affine $(\mathbf{c}_\alpha)$, l'accelerazione è definita come:
+\begin{align*}
+    \mathbf{a}=\frac{d\mathbf{v}}{dt}=\frac{dv^\alpha}{dt}(t)\mathbf{c}_\alpha=a^\alpha(t)\mathbf{c}_\alpha
+\end{align*}
+Ora allora analizziamo $\frac{d\mathbf{v}}{dt}$ passano per le coordinate non affini:
+\begin{align*}
+    \frac{d\mathbf{v}}{dt}=\frac{dv^i}{dt}\mathbf{E}_i+v^i\frac{d}{dt}\mathbf{E}_i=\frac{dv^i}{dt}\mathbf{E}_i+v^i\frac{\partial}{\partial q^j}(\mathbf{E}_i)\cdot\overbrace{\frac{dq^j}{dt}}^{v^j}=\\
+    =\frac{dv^i}{dt}\mathbf{E}_i+v^iv^j\Gamma^k_{ji}\mathbf{E}_k
+\end{align*}
+Ora scambiano $i\leftrightarrow k$ e raccogliendo otteniamo:
+\begin{align*}
+    (\frac{dv^i}{dt}+v^kv^j\Gamma_{jk}^i)\mathbf{E}_i=a^i\mathbf{E}_i
+\end{align*}
+Quindi si noti che \underline{a meno che} $\Gamma_{jk}^i=0$, abbiamo:
+\begin{align*}
+    a^i\ne \frac{dv^i}{dt}
+\end{align*}
+\paragraph*{Esempio in coordinate polari} Consideriamo le coordinate polari. Abbiamo:
+\begin{align*}
+    \mathbf{v}=\dot{r}\mathbf{E}_r+\dot{\theta}\mathbf{E}_\theta=v^r\mathbf{E}_r+v^\theta\mathbf{E}_\theta
+\end{align*}
+Ora analizziamo l'accelerazione sfruttando l'espressione ottenuta precedentemente:
+\begin{align*}
+    \mathbf{a}=(\frac{dv^r}{dt}+v^rv^\theta\Gamma^r_{r\theta}+v^\theta v^\theta\Gamma^r_{\theta \theta}+v^\theta v^r\Gamma^r_{\theta r}+v^rv^r\Gamma^r_{rr})\mathbf{E}_r+(\frac{dv^\theta}{dt}+v^rv^\theta\Gamma^\theta_{r\theta}+v^r v^r\Gamma^\theta_{rr}+v^\theta v^r\Gamma^\theta_{\theta r}+v^\theta v^\theta \Gamma^\theta_{\theta \theta})\mathbf{E}_\theta
+\end{align*}
+Ricordando inoltre che $\Gamma^r_{\theta \theta}=-r$ e $\Gamma^\theta_{r \theta}=\Gamma^\theta_{\theta r}=\frac{1}{2}$:
+\begin{align*}
+    \left(\frac{dv^r}{dt}-rv^\theta v^\theta\right)\mathbf{E}_r+\left(\frac{dv\theta}{dt}+\frac{2}{r}v^\theta v^r\right)\mathbf{E}_\theta=\\
+    =(\ddot{r}-r\ddot{\theta}^2)\mathbf{E}_r+(\ddot{\theta}+\frac{2}{r}\dot{r}\dot{\theta})\mathbf{E}_\theta=\\
+    =aìr\mathbf{E}_r+a^\theta\mathbf{E}_\theta
+\end{align*}
+Si osservi che ponendo $\mathbf{E}_r=\mathbf{u}$ e $\mathbf{E}_\theta=r\mathbf{v}$ con $\mathbf{u}$ e $\mathbf{v}$ versori nella rappresentazione radiale del moto si ottiene la classica scomposizione:
+\begin{align*}
+    \mathbf{a}=\mathbf{a}_{\text{radiale}}+\mathbf{a}_{\text{trasversale}}
+\end{align*} 
+\paragraph*{Dalla traiettoria agli enti fondamentali della cinematica} Sia $\mathbf{r}=r(\theta)$ . Da esso si possono scrivere tutti gli enti fonamentali della cinematica.\\
+Sia $\mathbf{r}=\mathbf{r}(\theta(t))\mathbf{u}$ la nostra traiettoria del moto. Studiamo la velocità:
+\begin{align*}
+    \mathbf{v}=\frac{d\mathbf{r}}{dt}=\frac{dr}{d\theta}\cdot \dot{\theta}\mathbf{u}+r\frac{d\mathbf{u}}{d\theta}\cdot\dot{\theta}=\dot{\theta}\left(\frac{dr}{d\theta}\mathbf{u}+r\frac{d\mathbf{u}}{d\theta}\right)
+\end{align*}
+Ora utilizzando la costante delle aree $c=r^2\dot{\theta}$ otteniamo:
+\begin{align*}
+    \frac{c}{r^2}\left(\frac{dr}{d\theta}\mathbf{u}+r\frac{d\mathbf{u}}{d\theta}\right)=c\left(\frac{1}{r^2}\frac{dr}{d\theta}\mathbf{u}+\frac{1}{r}\frac{d\mathbf{u}}{d\theta}\right)
+\end{align*}
+e riconoscendo in $\cfrac{d\mathbf{u}}{d\theta}=\theta$, abbiamo che:
+\begin{align*}
+    \mathbf{v}=c\left(-\frac{d}{d\theta}\left(\frac{1}{r}\right)\mathbf{u}+\frac{1}{r}\tau\right)
+\end{align*}
+Prendiamo adesso in esame l'accelerazione, sfruttando l'espressione appena ottenuta per la velocità:
+\begin{align*}
+    \frac{d\mathbf{v}}{dt}=c\left(\frac{d}{d\theta}\left(\frac{d}{d\theta}\left\frac{1}{r}\right)\right)\mathbf{u}
+\end{align*}
+%%SPAZI AFFINI EUCLIDEI
+%%
+%
+%%
+%
+%
+\paragraph*{Def} Uno spazio affine euclideo è una quaterna $(A,E,\delta,\mathbf{g})$, dove $(A,E,\delta)$ è uno spazio affine e $\mathbf{g}$ è un tensore metrico su $E$ (considerato come spazio vettoriale euclideo). Ovvero $\mathbf{g}$ è una forma bilineare simmetrica:
+\begin{align*}
+    \mathbf{g}\colon \mathcal{X}(A)\times \mathcal{X}(A)\to \mathcal{F}(A)\\
+    (\mathbf{X},\mathbf{Y})\mapsto \mathbf{X}\cdot\mathbf{Y}=\mathbf{g}(\mathbf{X},\mathbf{Y})
+\end{align*}
+dove, considerata $g$ come il prodotto scalare su $E$, $\forall\, P \in A$ l'immagine è definita come:
+\begin{align*}
+    (\mathbf{X}\cdot\mathbf{Y})(P)=g(\mathbf{X}(P),Y(P))
+\end{align*}
+\paragraph*{Def} Definiamo l'\underline{ascissa euclidea} (o \underline{ascissa curvilinea}) una funzione monotona crescente $g$ tale che presa:
+\begin{align*}
+    g\colon I \to \mathbb{R}\\
+    t\mapsto s(t)
+\end{align*}
+allora 
+\begin{align*}
+    \frac{ds}{dt}=|\mathbf{v}|=\sqrt{gij\frac{dq^i}{dt}\cdot \frac{dq^j}{dt}}
+\end{align*}
+%%
+%%
+%%
+%%
+%%
+\section{Moti geodetici su una superficie}
+Sia $Q$ una superficie regolare nello spazio tridimensionale con rappresentazione $OP=\mathbf{r}(q^i,q^2)$. Sia assegnata sulla superficie una curva $\gamma$ di equazioni parametriche $q^i(t)=\gamma^i(t)$.\\
+Il vettore $\mathbf{v}(t)$ tangente alla curva è banalmente tangente anche alla superficie. Se consideriamo invece il suo vettore derivata:
+\begin{align*}
+    \frac{d\mathbf{v}}{dt}
+\end{align*}
+questo in generale non è tangente alla superficie. Infatti:
+\begin{align*}
+   \frac{d\mathbf{v}}{dt} =\frac{dv^i}{dt}\mathbf{E}_i+v^i\frac{d\mathbf{E}_i}{dt}=\frac{dv^i}{dt}\mathbf{E}_i+v^i\frac{\partial \mathbf{E}_i}{\partial q^j}\frac{dq^j}{dt}=\frac{dv^i}{dt}\mathbf{E}_i+v^i\frac{dq^j}{dt}(\Gamma_{ji}^k\mathbf{E}_k+B_{ji}\mathbf{N})
+\end{align*}
+con $\mathbf{N}$ il vettore normale alla superficie. Quindi:
+\begin{align*}
+    \frac{d\mathbf{v}}{dt}=\underbrace{\left(\frac{dv^i}{dt}+v^k\frac{dq^i}{dt}\Gamma^i_{jk}\right)\mathbf{E}_i}_{\text{tangente a }Q}+v^i\frac{dq^j}{dt}B_{ji}\mathbf{N}
+\end{align*}
+La componente tangente della derivata della velocità è chiamata \underline{derivata intrinseca della velocità/accelerazione intrinseca}. Se volessimo scriverla però rispetto alle coordinate non affini $(q^i)$, essendo $v^i=\frac{dq^i}{dt}$:
+\begin{align*}
+    \mathbf{a}^k_{\text{intrinseca}}=\frac{d^2q^k}{dt^2}+\Gamma^k_{ij}\frac{dq^i}{dt}\cdot \frac{dq^j}{dt}
+\end{align*}
+Abbiamo cosi scomposto l'accelerazione come:
+\begin{align*}
+    \mathbf{a}=\mathbf{a}^k_{\text{intrinseca}}+\mathbf{a}_{\mathbf{N}}
+\end{align*}
+Una volta scissa l'accelerazione possiamo finalmente definire cos'è 
+\paragraph*{Def} Il \underline{moto geodetico} o \underline{moto inerziale} su una superficie è il moto in cui:
+\begin{align*}
+    \mathbf{a}_{\text{intrinseca}}=0, \forall \, t && [\mathbf{a} = \mathbf{a}_{\mathbf{N}}]
+\end{align*}
+Questa condizione può essere anche rappresentata sotto forma di sistema di equazioni differenziali infatti:\\
+\begin{minipage}{4cm}
+    \begin{align*}
+        \frac{d^2q^k}{dt^2}+\Gamma^k_{ij}\frac{dq^i}{dt}\cdot \frac{dq^j}{dt}=0
+    \end{align*}
+\end{minipage}$\longleftrightarrow$
+\begin{minipage}{4cm}
+    \begin{align*}
+        \begin{cases}
+            \cfrac{dq^i}{dt}=v^i\\
+            \cfrac{dv^k}{dt}=-\Gamma^k_{ij}v^iv^j
+        \end{cases}
+    \end{align*}
+\end{minipage}
+%da aggiustare freccia ahha
+\\
+Cosi facendo i moti geodetici diventano le curve integrali di questo sistema dinamico associato al campo vettoriale $\mathbf{X}$ definito sui vettori dello spazio tangente alla superficie $Q$. Questo scritto come derivazione sarebbe:
+\begin{align*}
+    \mathbf{X}=v^i\frac{\partial}{\partial q^i}-\Gamma^k_{ij}v^iv^j\frac{\partial}{\partial v^k}
+\end{align*}
+$\mathbf{X}$ con un abuso di notazione prende il nome di \underline{flusso geodetico}.
+Cosi facendo assegnato un $P_0\in Q$ e $\mathbf{v}_0$ tangente a $Q$ in $P_0$, $\exists!$ una curva geodetica massimale basata in $P_0$ e avente come veettore tangente in $t=0$ il vettore $\mathbf{v}_0$.
+\paragraph*{Energia cinetica come integrale primo delle geodetiche}
+\begin{align*}
+    \mathbf{F}=\mathbf{F}(\mathbf{r},\mathbf{v}) && \mathbf{r}=\mathbf{r}(t)=\gamma(t)
+\end{align*}
+\begin{align*}
+    \frac{d}{dt}\mathbf{F}(\mathbf{r}(t),\mathbf{v}(t))=0
+\end{align*}
+\begin{align*}
+    \frac{d}{dv}(\mathbf{v}\cdot \mathbf{v})=2\mathbf{v}\cdot\mathbf{a}=0
+\end{align*}
+Poichè $\mathbf{a}=\mathbf{a}_{\mathbf{N}}\perp \mathbf{v}$\\
+Quindi l'energia cinetica è un integrale primo delle geodetiche. In particolare il moto è uniforme, ovvero il modulo della velocità è costante lungo le geodetiche.
