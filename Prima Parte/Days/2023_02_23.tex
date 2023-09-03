@@ -58,11 +58,11 @@
 \dimostrazione{ldksnaflkjnadflkjadnsflajknkljndasf}{
     La dimostrazione si articola nei seguenti passaggi: \begin{itemize}
         \item si considera l'\emph{equazione di Volterra} \[
-            \bm{u}(t)= \bm{u}_0 + \int_{t_0}^{t} \bm{f}\left(s,\bm{u}(s)\right)\,ds
+            \bm{u}(t)= \bm{x}_0 + \int_{t_0}^{t} \bm{f}\left(s,\bm{u}(s)\right)\,ds
         \]e si mostra che quest’ultima ammette unica soluzione continua in un intorno di $ t_0 $;
         \item esistenza e unicità dell’equazione di Volterra si dimostrano applicando il Teorema delle contrazioni di Banach-Cacioppoli;
         \item la seguente successione \[
-            \bm{u}_0(t) \equiv \bm{u}_0,\qquad \bm{u}_n(t) = \bm{u}_0 + \int_{t_0}^{t} \bm{f}\left(s,\bm{u}_{n-1}(s)\right)\,ds,\qquad \forall\, n \in \N
+            \bm{u}_0(t) \equiv \bm{x}_0,\qquad \bm{u}_n(t) = \bm{x}_0 + \int_{t_0}^{t} \bm{f}\left(s,\bm{u}_{n-1}(s)\right)\,ds,\qquad \forall\, n \in \N
         \]risulta convergere uniformemente alla soluzione dell’equazione di Volterra e dunque all’unica soluzione del Problema di Cauchy.
     \end{itemize}
 }
@@ -80,7 +80,7 @@
 
     Sia inoltre $ S=(a,b)\times \R^{n} $ una striscia tale che $ \overline{S} \subseteq \Omega $. Se esiste una coppia di costanti positive $ k_1,k_2 $ tali per cui \[
         \norma{\bm{f}(t,\bm{x})} \le k_1+k_2\,\norma{\bm{x}},\quad \forall\, (t,\bm{x}) \in \overline{S}
-    \]allora, per ogni $ (t_0,\bm{u}_0) \in S $, l'intervallo massimale della soluzione $ \bm{u}(t;t_0,u_0) $ contiene l'intervallo $ [a,b] $.
+    \]allora, per ogni $ (t_0,\bm{x}_0) \in S $, l'intervallo massimale della soluzione $ \bm{u}_{(t_0,\bm{x}_0)}(t) $ contiene l'intervallo $ [a,b] $.
 }
 \paragrafo{}{%
     Questo teorema è ciò che garantisce l'esistenza globale per i sistemi lineari del tipo \[
@@ -90,17 +90,17 @@
 %% END
 %% BEGIN Generalizzazione esplosione tempo finito
 \teorema{fasdkjnfalskjnfalkjdnflaj}{
-    Sia $ \bm{f} $ tale che le ipotesi del teorema di Cauchy-Lipschitz siano soddisfatte. Sia $ K \subset \subset \Omega $\footnote{Ovvero $ K $ contenuto in $ \Omega $ e $ K $ compatto.} $ (t_0,\bm{u}_0) \in K $ e $ (T_{\min}, T_{\max}  ) $ l'intervallo massimale di definizione di $ \bm{u}(t;t_0,\bm{u}(0)) $.
+    Sia $ \bm{f} $ tale che le ipotesi del teorema di Cauchy-Lipschitz siano soddisfatte. Sia $ K \subset \subset \Omega $\footnote{Ovvero $ K $ contenuto in $ \Omega $ e $ K $ compatto.}, $ (t_0,\bm{x}_0) \in K $ e $ (T_{\min}, T_{\max}  ) $ l'intervallo massimale di definizione di $ \bm{u}_{(t_0,\bm{x}_0)}(t) $.
 
     Allora il grafico di $ \bm{u} $ esce definitivamente da $ K $ quando $ t \to T_{\min}^{+}  $ o $ t \to T_{\max}^{-}  $
 }
 %% END
 %% BEGIN Esplosione in tempo finito
 \paragrafo{Corollario - Esplosione in tempo finito}{%
-    Sia $ \bm{f} $ tale che soddisfi le condizioni del teorema di Cauchy-Lipschitz, e sia $ (T_{\min},T_{\max})$ l'intervallo massimale di $ \bm{u}(t;t_0,u_0) $.
+    Sia $ \bm{f} $ tale che soddisfi le condizioni del teorema di Cauchy-Lipschitz, e sia $ (T_{\min},T_{\max})$ l'intervallo massimale di $ \bm{u}_{(t_0,\bm{x}_0)}(t) $.
 
     Se $ T_{\max} < + \infty   $ allora \[
-        \lim_{t\to T_{\max}^{-} } \norma{\bm{u}(t;t_0,u_0)} = + \infty
+        \lim_{t\to T_{\max}^{-} } \norma{\bm{u}_{(t_0,\bm{x}_0)}(t)} = + \infty
     \]se tale limite esiste. Analogamente se $ T_{\min}> - \infty  $.
 }{}{}
 %% END
@@ -109,10 +109,10 @@
 }{}{}
 %% BEGIN Limitatezza a priori
 \paragrafo{Corollario - Limitatezza a priori}{%
-    Sia $ \bm{f} $ tale che le ipotesi del teorema di Cauchy-Lipschitz siano soddisfatte. Sia $ (T_{\min},T_{\max}) $ l'intervallo massimale di $ \bm{u}(t;t_0, \bm{u}_0).$
+    Sia $ \bm{f} $ tale che le ipotesi del teorema di Cauchy-Lipschitz siano soddisfatte. Sia $ (T_{\min},T_{\max}) $ l'intervallo massimale di $ \bm{u}_{(t_0,\bm{x}_0)}(t)$.
 
     Se esiste $ C>0 $ tale per cui \[
-        \norma{\bm{u}(t;t_0,\bm{u}_0)}\le C,\qquad \forall\, t \in [t_0,T_{\max})
-    \]allora $ T_{\max} = + \infty  $
+        \norma{\bm{u}_{(t_0,\bm{x}_0)}(t)}\le C,\qquad \forall\, t \in [t_0,T_{\max})
+    \]allora $ T_{\max} = + \infty  $.
 }{dakfjhbaksjdhfbaksjdhfbakjhbkjhb}{}
 %% END
