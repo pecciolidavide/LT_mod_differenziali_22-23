@@ -3,7 +3,7 @@
 
 \section{Risultati e definizioni sui sistemi autonomi}
 
-\definizione{Si dice \emph{sistema autonomo} una equazione differenziale nella forma \[
+\definizione{Si dice \emph{sistema autonomo} un'equazione differenziale della forma \[
     \bm{x}'=\bm{f}(\bm{x}),\qquad \bm{f}:\Omega \subseteq \R^{n}\to \R^{n}
 \]}
 \paragrafo{Ipotesi}{%
@@ -13,7 +13,7 @@
             \bm{x}(t_0)=\bm{x}_0 \in \Omega
         \end{cases}
     \]
-    $ \bm{f}:\Omega \subseteq \R^{n}\to \R^{n} $, $ n\ge 1 $ localemente lipschitziana ($\impliedby C^{1}$), vale il teorema di esistenza e unicità locale della soluzione, $ \forall\, t_0 \in\R  $.
+    $ \bm{f}:\Omega \subseteq \R^{n}\to \R^{n} $, $ n\ge 1 $ localmente lipschitziana\footnote{Si ricordi che: $C^{1}\Rightarrow$ localmente lipschitziana}, vale il teorema di esistenza e unicità locale della soluzione, $ \forall\, t_0 \in\R  $.
 }{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}{}
 \definizione{
     $ \Omega $ si dice \emph{spazio delle fasi} o \emph{degli stati}.
@@ -48,20 +48,21 @@
     \end{aligned}
 \]Chi sono gli equilibri? Cerco $ (x_0,y_0): \bm{f}(x_0,y_0)=\bm{0} $ \[
     (-y^{2},x^{2})=\bm{0}\,\iff\, (x,y)=\bm{0}
-\]Dunque l'unico punto di equilibrio è l'origine, come mostrato in figura \ref{fig:puntoequilibrioA}.
+\]
 \begin{figure}
     \label{fig:puntoequilibrioA}
-    \begin{center}
-        \begin{tikzpicture}
-            \draw [-Stealth] (-2,0) -- (2,0);
-            \draw [-Stealth] (0,-1.4) -- (0,2);
-            \node at (2,-0.3) {$x$};
-            \node at (.3,1.9) {$y$};
-            \fill (0,0) circle (0.1);
-        \end{tikzpicture}
-    \end{center}    
-    \caption{Punti di equilibrio per l'esempio \framref{daflkjansdflkjnasdflkjadsnchiduaskjbfcgukjbh}}
+        \begin{center}
+            \begin{tikzpicture}
+                \draw [-Stealth] (-2,0) -- (2,0);
+                \draw [-Stealth] (0,-1.4) -- (0,2);
+                \node at (2,-0.3) {$x$};
+                \node at (.3,1.9) {$y$};
+                \fill (0,0) circle (0.1);
+            \end{tikzpicture}
+        \end{center}    
+        \caption{Punti di equilibrio per l'esempio \framref{daflkjansdflkjnasdflkjadsnchiduaskjbfcgukjbh}}
 \end{figure}
+Dunque l'unico punto di equilibrio è l'origine, come mostrato in figura \ref{fig:puntoequilibrioA}.
 }{daflkjansdflkjnasdflkjadsnchiduaskjbfcgukjbh}{}
 \paragrafo{Esempio}{%
 \[
@@ -70,9 +71,9 @@
         y'=x^{2}
     \end{cases}\qquad
         \bm{f}(x,y) = (-y^{2}\,x,x^{2})
-\]Gli equilibri sono tutti punti nella forma $ (0,y_0) $, come mostrato in figura \ref{fig:puntoequilibrioB}.
+\]Gli equilibri sono tutti punti nella forma $ (0,y_0) $, come mostrato in figura \ref{puntoequilibrioB}.
 \begin{figure}
-\label{fig:puntoequilibrioB}
+\label{puntoequilibrioB}
     \begin{center}
         \begin{tikzpicture}
             \draw [-Stealth] (-2,0) -- (2,0);
@@ -106,18 +107,18 @@
         Sappiamo che $ \bm{p} \in \gamma  $. Supponiamo che esista un'altra orbita $ \tilde{\gamma } $ tale che $ \bm{p} \in \tilde{\gamma } $. Allora $ \tilde{\gamma} $ è orbita di $ \tilde{\bm{u}} $, soluzione di \[
             \begin{cases}
                 \bm{x}'=\bm{f}(\bm{x})\\ 
-                \bm{x}(\tilde{t_0})= \bm{p}
+                \bm{x}(\tilde{t}_0)= \bm{p}
             \end{cases}
         \]Siano $ I $ e $ \tilde{I} $ gli intervalli massimali, rispettivamente, di $ \bm{u} $ e $ \tilde{\bm{u}} $. Siano\begin{align*}
-            T&\coloneqq \tilde{t_0}-{t_0}\\
-            \bm{v}(t) &\coloneqq \tilde{\bm{u}}(t+\tilde{t_0}-t_0)=\tilde{\bm{u}}(t+T).
+            T&\coloneqq \tilde{t}_0-{t_0}\\
+            \bm{v}(t) &\coloneqq \tilde{\bm{u}}(t+\tilde{t}_0-t_0)=\tilde{\bm{u}}(t+T).
         \end{align*}Si ha che \begin{itemize}
             \item l'orbita di $ \bm{v} $ è $ \tilde{\gamma} $;
             \item $ \bm{v} $ è massimale, in quanto lo è $ \tilde{\bm{u}} $;
             \item $ \bm{v} $ soddisfa \[
                 \begin{cases}
                     \bm{v}'(t)= \tilde{\bm{u}}'(t+T)= \bm{f}\left(\tilde{\bm{u}}(t+T)\right)=\bm{f}(\bm{v}(t))\\ 
-                   \bm{v}(t_0)=\tilde{\bm{u}}(t_0+T)=\tilde{\bm{u}}(\tilde{t_0})=\bm{p}
+                   \bm{v}(t_0)=\tilde{\bm{u}}(t_0+T)=\tilde{\bm{u}}(\tilde{t}_0)=\bm{p}
                 \end{cases}
             \]e quindi $ \bm{v} $ è soluzione massimale di \[
                 \begin{cases}
@@ -153,7 +154,7 @@
 }
 \dimostrazione{lkjndalkjndfalkjndasklfjnasdkljfnasdkljfnasdjkndaslkjnfaldskjnaslfkjnsaldkjn}{%
     \begin{itemize}
-        \item[($\impliedby$)] Se $ \bm{f}(\bm{p})=\bm{0} $, allora $ \bm{u}(t)=\bm{p} $ $ \forall\, t \in \R $ è soluzione, e \[
+        \item[($\impliedby$)] Se $ \bm{f}(\bm{p})=\bm{0} $, allora $ \bm{u}(t)\equiv\bm{p} $ $ \forall\, t \in \R $ è soluzione, e \[
             \gamma^{\star} = \left\{\bm{u}(t): t \in \R\right\}=\{\bm{p}\}.
         \]
         \item[($\implies$)] Se $ \gamma^{\star} =\{\bm{p}\} $ allora esiste una soluzione $ \bm{u} $ di $ \bm{x}'=\bm{f}(\bm{x}) $ tale che $ \bm{u}(t)=\bm{p} $ per ogni $ t \in (T_{\min},T_{\max}  ) $. Allora $ \bm{u}(t) $ è costante, e dunque \[
@@ -172,7 +173,7 @@
     L'orbita corrispondente ad una soluzione periodica si chiama \emph{orbita periodica} e i suoi punti si chiamano \emph{punti periodici}.
 }
 \teorema{daflkjnadfkljansdfklasjdnfcaskdjncdas}{
-    Sotto le ipotesi di \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, se $ \bm{u} $ è una soluzione \emph{non} costante di $ \bm{x}'=\bm{f}(\bm{x}) $ con intervallo massimale $ J $, e se \[
+    Sotto le ipotesi di \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, se $ \bm{u} $ è una soluzione \emph{non} costante di $ \bm{x}'=\bm{f}(\bm{x}) $ con intervallo massimale $ J $ e  \[
         \exists\, t_1,t_2 \in J:\quad t_1\neq t_2,\quad \bm{u}(t_1)=\bm{u}(t_2)
     \]allora $ \bm{u} $ è una soluzione \emph{periodica}.
 }
@@ -215,9 +216,12 @@
         \bm{u}(t)=\bm{u}(t+T),\quad \forall t \in\R, T=t_2-t_1\qedd
     \]
 }
+\definizione{
+    Un’orbita si dice \emph{singolare} se si riduce ad un punto solo. Altrimenti si dice \emph{regolare}.
+}
 %% BEGIN Orbita di una equazione differenziale come curva tangente al campo
 \teorema{dakfjnasldkfjnlasdkjfnadslkfjnaslkj}{
-    Sia $ \gamma $ un'orbita non singolare\footnote{Ovvero $ \gamma \neq \{\bm{p}\} $.} di $ \bm{x}'=\bm{f}(\bm{x}) $, $ \bm{x} \in \Omega \subseteq \R^{n} $ aperto, $ \bm{f}:\Omega \to \R^{n} $ localmente lipschitziana. 
+    Sia $ \gamma $ un'orbita non singolare di $ \bm{x}'=\bm{f}(\bm{x}) $, $ \bm{x} \in \Omega \subseteq \R^{n} $ aperto, $ \bm{f}:\Omega \to \R^{n} $ localmente lipschitziana. 
 
     Allora $ \gamma $ è una curva orientata in $ \Omega $ tangente in ogni punto al campo $ \bm{f} $.
 }
@@ -227,7 +231,7 @@ Sia $ \bm{u} $ soluzione di $ \bm{x}'=\bm{f}(\bm{x}) $ tale che $ \gamma= \gamma
 $ \gamma $ non è singolare, quindi $ \bm{f}(\bm{p}_0) \neq \bm{0}$ (altrimenti $ \gamma=\{\bm{p}_0\} $ per il teorema precedente.)
 
 La funzione $ t\mapsto \bm{u}(t) $ parametrizza $ \gamma $. Quindi il vettore: \[
-    \bm{v}\coloneqq \lim_{h\to 0} \frac{\bm{u}(t_0+h)-u(t_0)}{h} =
+    \bm{v}\coloneqq \lim_{h\to 0} \frac{\bm{u}(t_0+h)-u(t_0)}{h}
 \]è il vettore tangente a $\gamma$ nel punto $ \bm{p}_0 $, ammesso che esista. 
 
 La funzione $ \bm{u} $ è di classe $ C^{1} $, quindi il limite esiste ed è $ \bm{u}'(t_0) $. Essendo \[
@@ -236,17 +240,12 @@ La funzione $ \bm{u} $ è di classe $ C^{1} $, quindi il limite esiste ed è $ \
     \bm{v}=\bm{u}'(t_0)=\bm{f}\left(\bm{u}(t_0)\right)= \bm{f}(\bm{p}_0)\qedd
 \]}
 %% END
-%% BEGIN Orbita singolare e regolare
-\definizione{
-    Un’orbita si dice \emph{singolare} se si riduce ad un punto solo. Altrimenti si dice \emph{regolare}.
-}
-%% END
 \section{Stabilità dei punti di equilibrio}
 \paragrafo{Obiettivo}{%
     Vogliamo classificare i punti di equilibrio in base a come le altre soluzioni si comportano in loro prossimità.
 }{}{}
 \definizione{
-    Sotto le ipotesi di \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} $ tale che $ \bm{f}(\bm{p})=\bm{0} $. $ \bm{p} $ si dice \emph{stabile} se $ \forall\,\varepsilon>0 $, $ \exists\, \delta>0 $: $\hat{\bm{x}} \in \Omega $, $ \norma{\hat{\bm{x}}-\bm{p}}<\delta $ 
+    Sotto le ipotesi \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} $ tale che $ \bm{f}(\bm{p})=\bm{0} $. $ \bm{p} $ si dice \emph{stabile} se $ \forall\,\varepsilon>0 $, $ \exists\, \delta>0 $: $\hat{\bm{x}} \in \Omega $, $ \norma{\hat{\bm{x}}-\bm{p}}<\delta $ 
     
     $\implies$ la soluzione di \[
         \begin{cases}
@@ -254,29 +253,29 @@ La funzione $ \bm{u} $ è di classe $ C^{1} $, quindi il limite esiste ed è $ \
             \bm{x}(t_0)=\hat{\bm{x}}
         \end{cases}
     \]è definita su $ (t_0,+ \infty) $ e dista da $ \bm{p} $ al più $ \varepsilon $.
-}
-\paragrafo{}{%
-    La soluzione quindi rimane vicina all'equilibrio (quanto vogliamo) pur di partire sufficientemente vicino.
-}{}{}
+}\\
+
+
 \definizione{
-    Sotto le ipotesi di \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} $ tale che $ \bm{f}(\bm{p})=\bm{0} $. $ \bm{p} $ si dice \emph{instabile} se non è stabile. 
+    Sotto le ipotesi \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} $ tale che $ \bm{f}(\bm{p})=\bm{0} $. $ \bm{p} $ si dice \emph{instabile} se non è stabile. 
 }
-\paragrafo{}{%
-    Essere instabile significa che $ \exists\, \varepsilon $ e una successione $ \{\bm{x}_{n} \}_{n \in \N} \subseteq \Omega $, $ \bm{x}_{n} \to \bm{p} $ tale che \[
-        \forall\, n,\quad \exists\, t_{n}: \quad \bm{u}_{\bm{x}_n}(t_{n} )> \varepsilon 
-    \]dove $ \bm{u}_{\bm{x}_n} $ è soluzione di \[
+
+Intuitivamente, se $p$ è un equilibrio, pur di partire sufficientemente vicino, riusciamo a far rimanere quanto vogliamo la soluzione \textit{vicina} a $p$.\\
+Al contrario, invece, essere instabile significa che $ \exists\, \varepsilon $ e una successione $ \{\bm{x}_{n} \}_{n \in \N} \subseteq \Omega $, $ \bm{x}_{n} \to \bm{p} $ tale che $\forall\, n$ \[
+        \exists\, t_{n}: \quad \bm{u}_{(t_0,\bm{x}_n)}(t_{n} )> \varepsilon 
+    \]dove $ \bm{u}_{(t_0,\bm{x}_n)} $ è soluzione di \[
         \begin{cases}
             \bm{x}'=\bm{f}(\bm{x})\\ 
             \bm{x}(t_0)=\bm{x}_n
         \end{cases}
     \]
-}{}{}
+
 \definizione{
-    Sotto le ipotesi di \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} $ tale che $ \bm{f}(\bm{p})=\bm{0} $. $ \bm{p} $ si dice \emph{asintoticamente stabile} se:
+    Sotto le ipotesi \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} $ tale che $ \bm{f}(\bm{p})=\bm{0} $.\\ $ \bm{p} $ si dice \emph{asintoticamente stabile} se:
     \begin{itemize}
-        \item $ \bm{p} $ è stabile;
+        \item è stabile;
         \item $ \exists\,\delta>0 $ tale che $ \forall\, \overline{\bm{x}} \in B_{\delta}(\bm{p}) $, $ \overline{\bm{x}} \in \Omega $ si ha che \[
-            \lim_{t\to \infty} \bm{u}_{\overline{\bm{x}}} (t) = \bm{p}
+            \lim_{t\to \infty} \bm{u}_{(t_0,\overline{\bm{x}})} (t) = \bm{p}
         \]
     \end{itemize}
 }

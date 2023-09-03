@@ -14,14 +14,14 @@
             y^{2}(1-x)=0\\ 
             x\,y^{3} = 0
         \end{cases}
-    \]la prima equazione è soddisfatta per $ x = 1 $, oppure per $ y = 0 $, mentre la seconda è soddisfatta da $ x = 0 $ oppure $ y = 0 $. 
-
-    Entrambe le equazioni sono soddisfatte se e solo se $ y=0 $ 
+    \]la prima equazione è soddisfatta per $ x = 1 \vee y = 0 $, mentre la seconda è soddisfatta per $ x = 0 \vee  y = 0 $. Quindi:
+        \begin{align*}
+            f(x,y)=\bm{0} \iff y=0
+        \end{align*}
+    $\Rightarrow$ $ \displaystyle \left\{(x,0): x \in \R\right\} $ è composto da equilibri. 
+    \item \emph{Punti con tangente verticale} [$ x'=0 $]:
     
-    $\implies$ $ \displaystyle \left\{(x,0): x \in \R\right\} $ è composto da equilibri. 
-    \item \emph{Punti con tangente verticale}: $ x'=0 $;
-    
-    Oltre ai punti di equilibrio, sono tutti i punti sulla retta verticale $ x=1 $. Questa quindi è una retta invariante, composta da orbite.
+     Oltre ai punti di equilibrio, sono tutti i punti sulla retta verticale $ x=1 $. Questa quindi è una retta invariante, composta da orbite.
 
     Se $ x = 1 $ abbiamo \[
         \begin{cases}
@@ -29,17 +29,17 @@
             y'=-y^{3}
         \end{cases}
     \]
-    \item \emph{Punti con tangente orizzontale}: $ y'=0 $. 
+    \item \emph{Punti con tangente orizzontale} [$ y'=0 $]: 
     
     Oltre ai punti di equilibrio, sono tutti i punti sulla retta verticale $ x=0 $.
 
     Se $ x=0 $ abbiamo \[
         \begin{cases}
-            x'=y^{2}>0 & y>0\\ 
+            x'=y^{2}>0\\ 
             y'=0
         \end{cases}
     \]
-    \begin{figure}
+    \begin{figure}[H]
         \begin{center}
             \begin{tikzpicture}
                 \draw [-Latex] (-3,0) -- (3,0);
@@ -58,19 +58,19 @@
         \end{center}
         \caption{Punti con tangenti verticali e orizzontali per l'esempio \framref{dafasdflkjnsadfkjnasdfkjnadskfjnasdkfjnldskjn}}
     \end{figure}
-    \item \emph{Equazioni delle orbite}: per $ y\neq 0 $ e $ x\neq 1 $ ho: \begin{equation}
+    \item \emph{Equazioni delle orbite}: per $ y\neq 0 $ e $ x\neq 1 $ abbiamo: \begin{equation}
         \frac{d\,y}{dx} =\frac{-xy^{3}}{y^{2}(1-x)}\quad\leadsto\quad \begin{cases}
             y'(x)=\displaystyle\frac{-x}{1-x}\,y(x) \label{eq:diff:orb}\\ 
             y(x_0)=y_0
         \end{cases}
     \end{equation}e integrando si ottiene \[
         \ln\frac{|y|}{|y_0|} = x-x_0 + \ln\frac{|x-1|}{|x_0-1|}
-    \]Noto che poiché le orbite non intersecano l'asse $ x $ (poiché sono altre orbite), $ y(x) $ e $ y_0 $ hanno lo stesso segno, dunque posso ``eliminare'' i valori assoluti. Con lo stesso ragionamento ``elimino'' il secondo valore assoluto. Diventa: \[
+    \]Notiamo che, poiché le orbite non intersecano l'asse $ x $ (poiché sono altre orbite), $ y(x) $ e $ y_0 $ hanno lo stesso segno, dunque posso ``eliminare'' i valori assoluti. Con lo stesso ragionamento è lecito ``eliminare'' anche il secondo valore assoluto. Cosi facendo abbiamo: \[
         \ln\frac{y}{y_0} = x-x_0 + \ln\frac{x-1}{x_0-1}
     \]Facendo l'esponenziale da ambo le parti otteniamo \[
         y(x)= y_0\,\frac{x-1}{x_0-1}\,e^{x-x_0}
     \]Alcune osservazioni: \begin{enumerate}
-        \item le orbite con dato iniziale $ (x_0,y_0) $ e $ (x_0,-y_0) $ sono simmetriche rispetto all'asse orizzontale 
+        \item Le orbite con dato iniziale $ (x_0,y_0) $ e $ (x_0,-y_0) $ sono simmetriche rispetto all'asse orizzontale 
         
         $\implies$ consideriamo solo $ y_0 >0$. 
 
@@ -81,15 +81,14 @@
                 y'(x)=\frac{x}{x-1}\,y(x) >0
             \]e quindi $ y $ come funzione di $ x $ è monotona crescente.
             
-            Noto inoltre che per $ x_0>1 $, $ x'=y^{2}(1-x)<0 $, dunque le frecce delle orbite sono rivolte verso $ x=1 $. 
+            Notiamo inoltre che per $ x_0>1 $, $ x'=y^{2}(1-x)<0 $, dunque le frecce delle orbite sono rivolte verso $ x=1 $. 
             \item $ x_0<1 $ $ \,\implies\, $ $ \displaystyle \frac{y_0}{x_0-1}>0 $, $ x-1<0 $: \[
                 \lim_{x\to 1^{-}} y(x) = 0^{+},\qquad \lim_{x\to - \infty} y(x) = 0^{+}
             \]e inoltre la funzione è sempre positiva. 
 
-            Si inoltre che $ x'>0 $, dunque le frecce sono rivolte verso $ x=1 $.
+            Poichè $ x'>0 \leadsto$ le frecce sono rivolte verso $ x=1$ (vedi \ref{fig:orbitedivattelaapesce}).
         \end{itemize}
-        Le orbite sono illustrate nella figura \ref{fig:orbitedivattelaapesce}
-        \begin{figure}
+        \begin{figure}[H]
             \begin{center}
                 \input{matlab_graph/grafico2.tex}
             \end{center}
@@ -102,14 +101,17 @@
 \paragrafo{Pendolo Piano Senza Attrito}{% 
     Consideriamo un pendolo piano senza attrito, e sia $ \theta $ l'angolo rispetto alla verticale. La legge che regola il moto è \[
         \theta''(t)= -\frac{g}{l}\,\sin \theta(t)
-    \]Se $ \alpha= \sqrt{g/l} $, definendo $ x(t)= \theta(\alpha\,t) $, l'equazione del moto diventa: \[
+    \]Se $ \alpha= \sqrt{\cfrac{g}{l}} $, definendo $ x(t)= \theta(\alpha\,t) $, l'equazione del moto diventa: \[
         x ''(t)= -\sin x(t)
-    \]equazione non lineare del secondo ordine. La trasformo, tramite la trasformazione $ x'(t)=y(t) $, in un sistema di equazioni del primo ordine: \[
+    \]equazione non lineare del secondo ordine.\\
+     La possiamo tramutare, tramite la trasformazione $ x'(t)=y(t) $, in un sistema di equazioni del primo ordine: \[
         \begin{cases}
             x'(t)=y(t)\\ 
             y'(t) = -\sin x(t)
         \end{cases}
-    \]\begin{enumerate}
+    \]
+    Così facendo possiamo applicargli il nostro solito studio:
+    \begin{enumerate}
         \item \emph{Equilibri:} sono i punti che soddisfano il sistema \[
             \begin{cases}
                 y=0\\ 
@@ -122,7 +124,7 @@
         \item \emph{Punti con tangente verticale:} $ y'=0 $ $ \leadsto $ $ \sin x = 0 $ 
         
         $\implies$ $ x = k\, \pi $, $ k \in \Z $. 
-        \begin{figure}
+        \begin{figure}[H]
             \begin{center}
                 \begin{tikzpicture}[scale=1.2]
                     \draw [-Latex] (-3.5,0) -- (3.5,0);
@@ -147,20 +149,23 @@
             \end{center}
             \caption{Punti di equilibrio e a tangente orizzontale/verticale per il pendolo senza attrito}
         \end{figure}
-        \item \emph{Equazione delle orbite:} quando $ y\neq 0 $, si ha che \begin{align*}
-            y'(x) &= \frac{-\sin x}{y(x)}\\ 
-            y(x)\,y'(x) &= -\sin x\\ 
+        \item \emph{Equazione delle orbite:} quando $ y\neq 0 $, si ha che 
+        \begin{align*}
+            y'(x) &= \frac{-\sin x}{y(x)}\leadsto y(x)\,y'(x) = -\sin x
+        \end{align*}
+        E integrando, otteniamo:
+        \begin{align*}
             y_{c}(x) &= \pm \sqrt{2\left(\cos x + c\right)} 
-        \end{align*}Le orbite variano al variare di $ c $: \begin{itemize}
+        \end{align*}Le orbite cambiano al variare di $ c $: \begin{itemize}
             \item $ c<-1 $: non ci sono soluzioni;
             \item $ c=-1 $: ottengo i valori per cui $ \cos x = 1 $, ovvero i punti di equilibrio $ (2n\,\pi, 0) $, $ n \in \Z $;
             \item $ c \in (-1,1) $: ottengo soluzioni definite sull'intervallo $ [-x_{c}, x_{c}  ] $ modulo $ 2\pi $, dove \[
-                x_{c}=\arccos{-c};
+                x_{c}=\arccos{(-c)};
             \]
             \item $ c\ge1 $: si creano infinite eterocline. 
         \end{itemize}
         In definitiva, le orbite sono quelle illustrate nella figura \ref{fig:sodaufnaisdufjaiuhfaoisfjdaosi}
-        \begin{figure}
+        \begin{figure}[H]
             \begin{center}
                 \input{matlab_graph/grafico3.tex}
             \end{center}
@@ -173,11 +178,19 @@
 \osservazione{
     L'equazione caratterizzante del pendolo piano \[
         \ddot{x}=-\sin x
-    \]può essere considerato come sistema conservativo in dimensione 1. Moltiplicando da entrambe le parti per $ \dot{x} $, otteniamo \begin{align*}
-        \dot{x}\,\ddot{x} &= -(\sin x)\,\dot{x}\\
-        \frac{d}{dt}\left(\frac{1}{2}\,\dot{x}^{2}\right) &= \frac{d}{dt} \left(\cos x\right)\\ 
-        \frac{d}{dt}\left(\frac{1}{2}\,\dot{x}^{2}-\cos x\right) &=0\\ 
+    \]può essere considerata come un sistema conservativo in dimensione 1.\\
+     Moltiplicando da entrambe le parti per $ \dot{x} $, infatti,  otteniamo:
+      \begin{align*}
+        \dot{x}\,\ddot{x} &= -(\sin x)\,\dot{x}
+      \end{align*}
+    Riconoscendone delle derivate e manipolando l'equazione:
+      \begin{align*}
+        \frac{d}{dt}\left(\frac{1}{2}\,\dot{x}^{2}\right) &= \frac{d}{dt} \left(\cos x\right)\leadsto \frac{d}{dt}\left(\frac{1}{2}\,\dot{x}^{2}-\cos x\right) =0
+      \end{align*}
+    E infine integrando:
+      \begin{align*}
         \frac{1}{2}\,\dot{x}^{2}-\cos x &= c
-    \end{align*}Abbiamo trovato una costante del moto, pari alla somma tra \emph{energia cinetica} ed \emph{energia potenziale}: l'\emph{energia totale} è conservata.
+    \end{align*}
+    Abbiamo trovato una costante del moto, pari alla somma tra \emph{energia cinetica} ed \emph{energia potenziale}: l'\emph{energia totale} è conservata.
 }
 %% END

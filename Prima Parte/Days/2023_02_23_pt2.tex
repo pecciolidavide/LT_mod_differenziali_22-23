@@ -5,25 +5,25 @@
 \paragrafo{Studio delle soluzioni}{%
     Sia $ p'(t)= \left(k-h\,p(t)\right) \cdot p(t)$, dove $ p(t) $ è il numero di individui in un popolazione al tempo $ t $, con $ k,h>0 $ e $ p(t)\ge 0 $. 
 
-    Supponiamo che $ p(0)=p_0\ge 0 $, ci chiediamo l'evoluzione di $ p(t) $ per $ t>0 $. \begin{itemize}
-        \item Cerco le soluzioni costanti, ovvero $ f(p)=0 $: $ p=0 $ e $ p=(k/h) $. Queste due sono soluzioni costanti per ogni tempo $ t $.
-        \item Studio la monotonia delle soluzioni: $ p'(t)\ge 0 $ \[
-            \left(k-h\,p(t)\right) \cdot \parentesi{\ge 0}{p(t)}\ge 0.
-        \]Dunque $ p'(t)\ge 0 $ $ \iff $ $ p(t)\le k/h $ 
-        
-        $\implies$ se $ p(t) \in (0, k/h) $ la soluzione cresce, mentre se $ p(t)> k/h $ la soluzione decresce.
-    \end{itemize}
-
-    Se il dato iniziale $ p_0 \in (0,k/h) $ allora la soluzione è crescente, e si troverà sempre nella striscia $ [0,+ \infty)\times (0,k/h) $ (per esistenza e unicità locale) 
+    Supponiamo che $ p(0)=p_0\ge 0 $. Ci chiediamo l'evoluzione di $ p(t) $ per $ t>0 $. 
+    \begin{enumerate}
+        \item Prima di tutto cerchiamo le soluzioni costanti, ovvero quelle tali che $ f(p)=0$. Queste sono due soluzioni costanti per ogni tempo $t$: $p(t)\equiv 0 $ e $ p(t)\equiv (k/h) $.
+        \item Studiamo adesso, invece, la monotonia delle soluzioni: \[
+            p'(t)\ge 0 \iff \left(k-h\,p(t)\right) \cdot \parentesi{\ge 0}{p(t)}\ge 0.
+        \]Dunque $ p'(t)\ge 0 $ $ \iff $ $ p(t)\le k/h $.\\
+        Concludiamo cosi che: se $ p(t) \in (0, k/h) $ la soluzione cresce, mentre se $ p(t)\in  (k/h,+\infty) $ la soluzione decresce.
+    \end{enumerate}
+    Per stabilire il comportamente finale della soluzione dobbiamo analizzare i possibili dati iniziali $p_0$ del sistema:
+    \begin{itemize}
+    \item $p_0 \in (0,k/h)$: la soluzione è crescente, e si troverà sempre nella striscia $ [0,+ \infty)\times (0,k/h) $ (per $\exists$ e ! locale) 
         
         $\implies$ la soluzione si mantiene limitata, e in particolare \[
             \norma{p}\le k/h.
         \]È soddisfatto il corollario \framref{dakfjhbaksjdhfbaksjdhfbakjhbkjhb}, e quindi $ T_{\max}= + \infty  $
 
-    Se il dato iniziale $ p_0>k/h $, la soluzione è sempre monotona decrescente, e si troverà sempre nel semispazio $ p>k/h $. Anche in questo caso si applica il corollario \framref{dakfjhbaksjdhfbaksjdhfbakjhbkjhb} 
-    
+    \item $ p_0>k/h $: la soluzione è sempre monotona decrescente, e si troverà sempre nel semispazio $ p>k/h $. Anche in questo caso si applica il corollario \framref{dakfjhbaksjdhfbaksjdhfbakjhbkjhb} 
     $\implies$ $ T_{\max}= + \infty  $. 
-
+    \end{itemize}
     Osservo infine che il teorema dell'asintoto ci garantisce che tutte le soluzioni non costanti abbiano come limite a $ + \infty $ la soluzione constante $ k/h $.
 }{}{}
 \paragrafo{Diagramma di fase}{%
@@ -69,7 +69,7 @@
         \caption{Equazione Logistica (\textbf{da finire})}\label{fig:equazionelogistica}
     \end{figure}
 
-    Osservando la figura \ref{fig:equazionelogistica}, il grafico a destra prende il nome di \emph{diagramma di fase}.
+    Osservando la figura \ref{fig:equazionelogistica}, il grafico $(b)$ prende il nome di \emph{diagramma di fase}.
 }{}{}
 %% END
 \osservazione{
@@ -85,18 +85,18 @@
 }{}{}
 \definizione{L'insieme delle orbite con il loro verso di percorrenza costituisce il \emph{ritratto di fase} di $ y'=f(y) $.}
 \esempio{
-    L'equazione logistica ha 5 orbite: due semirette, due punti e un segmento.
+    L'equazione logistica, presa come equazione differenziale in sè, ha 5 orbite: due semirette, due punti e un segmento.
 }
 \paragrafo{}{%
-    Dimostreremo in $ \R^{n} $ che per ogni punto dello spazio delle fasi passa una ed una sola orbita. Nel caso 1-dimensionale, si può notare che se $ u_{x_0}  $ è soluzione di \[
+    Dimostreremo in $ \R^{n} $ che per ogni punto dello spazio delle fasi passa una ed una sola orbita. Nel caso 1-dimensionale, si può notare che se $ u_{(0,x_0)}(t)  $ è soluzione di \[
         \begin{cases}
             x'=f(x)\\ 
-        x(0)=x_0
+            x(0)=x_0
         \end{cases}
-    \]allora la funzione $ w(t)\coloneqq u_{x_0}(t+\tau)  $ risolve \[
+    \]allora la funzione $ w(t)\coloneqq u_{(0,x_0)}(t+\tau)  $ risolve \[
         \begin{cases}
             x'=f(x)\\ 
-        x(0)=u_{x_0}(\tau) 
+            x(0)=u_{(0,x_0)}(\tau) 
         \end{cases}
     \] 
     
@@ -105,7 +105,7 @@
             x'=f(x)\\ 
         x(\tau)=x_0
         \end{cases}
-    \]è $ u_{x_0}(t-\tau)  $
+    \]è $ u_{(0,x_0)}(t-\tau)  $
 }{}{}
 %% END
 \sesercizio{Fare il diagramma di fase dell'equazione differenziale \[

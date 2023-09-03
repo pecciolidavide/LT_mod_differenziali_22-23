@@ -90,7 +90,7 @@
         \item \emph{Lyapunov}\footnote{Suggerimento: utilizzare $ \displaystyle V(x,y)=-\frac{x^{2}}{2}+\frac{y^{2}}{2} $}: osservo che la funzione $ V(x,y) $ suggerita ha una sella in $ (0,0) $, dunque se il metodo di Lyapunov funziona dimostrerà l'instabilità. 
         
         Il segno di $ V $ su $ \R^{2} $ è mostrato in figura \ref{fig:graficodiVSegno}
-        \begin{figure}
+        \begin{figure}[H]
             \begin{center}
                 \begin{tikzpicture}
                     \draw [black, -Latex] (-3,0) -- (3,0);
@@ -194,7 +194,7 @@ Stabilire se $ V_1,V_2 $ e $ V_3 $ sono funzioni di Lyapunov per il sistema.}{
         \item $ L(t) $ il numero di predatori al tempo $ t $ (dove $ l $ sta per lupo).
     \end{itemize}
 
-    Supponiamo che entrambe queste popolazioni crescono proporizionalmente a sé stessi: \[
+    Supponiamo che entrambe queste popolazioni crescano proporzionalmente a sé stesse: \[
         \begin{aligned}
             C'(t)&=c\,C(t)\\ 
             L'(t) &= l\,L(t)
@@ -222,9 +222,9 @@ Stabilire se $ V_1,V_2 $ e $ V_3 $ sono funzioni di Lyapunov per il sistema.}{
         \item \emph{Rette invarianti}: sono presenti due rette invarianti: \begin{itemize}
             \item $ L=0 $, orbita uscente dall'origine; 
             \item $ C=0 $, orbita entrante nell'origine. 
-            \item \emph{Equazioni delle orbite}: le soluzioni si trovano sugli insiemi di livello della funzione \[
+        \end{itemize}
+        \item \emph{Equazioni delle orbite}: le soluzioni si trovano sugli insiemi di livello della funzione \[
                 g(C,L)= (C-\log C) +(L-\log L)
             \]
-        \end{itemize}
     \end{itemize}
 }{}{}

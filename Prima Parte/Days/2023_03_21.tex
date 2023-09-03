@@ -21,11 +21,11 @@
 \paragrafo{Buona definizione}{%
     Dunque, affinché $ e^{A} $ sia ben definita, vogliamo che \[
         \sum_{k=0}^{\infty} \norm{\frac{A^{k}}{k!}}
-    \]sia convergenti, e in effetti si ha: \[
+    \]sia convergente, e in effetti si ha: \[
         \norm{\frac{A^{k}}{k!}} = \frac{1}{k!}\,\norm{A^{k}}\le \frac{1}{k!}\,\norm{A}^{k}
     \]e la serie \emph{di numeri reali} converge: \[
-        \sum_{k=0}^{\infty}\frac{\norm{A}^{k}}{k!}
-    \]dunque la matrice esponenziale è sempre ben definità.
+        \sum_{k=0}^{\infty}\frac{\norm{A}^{k}}{k!}=e^{\norm{A}}\in \R
+    \]dunque la matrice esponenziale è sempre ben definita.
 }{}{}
 \paragrafo{Proprietà}{%
     $ e^{A} $ soddisfa queste proprietà: \begin{romanen}
@@ -46,7 +46,7 @@
     \]è $ \bm{x}(t)=e^{tA}\,\bm{x}_0 $.
 }
 \osservazione{
-    Nella risoluzione dei sistemi lineari per matrici diagonali e diagonalizzabile, è stata calcolata esplicitamente la matrice risolvente. Per l'unicità della soluzione, segue che: \begin{enumerate}
+    Nella risoluzione dei sistemi lineari per matrici diagonali e diagonalizzabili, è stata calcolata esplicitamente la matrice risolvente. Per l'unicità della soluzione, segue che: \begin{enumerate}
         \item per $ A $ diagonale, \[
             e^{tA}= \begin{pmatrix}
                 e^{\lambda_1\,t}\\ 
@@ -82,9 +82,8 @@
     \]ovvero che \[
         \lim_{h\to 0} \left(\frac{e^{hA}-\I_{n} }{h} - A\right) = 0
     \]Svolgendo i passaggi: \begin{align*}
-        \lim_{h\to 0} \left(\frac{e^{hA}-\I_{n} }{h} - A\right) &= \lim_{h\to 0} \frac{e^{hA}-\I_{n}-hA }{h}\\ 
-        &= \lim_{h\to 0} \frac{\displaystyle \sum_{k=2}^{\infty} \frac{(hA)^{k}}{k!}}{h} = 0
-    \end{align*}Mostro l'ultima uguaglianza mostrando che la norma di quel termine tende a $ 0 $. \begin{align*}
+        \lim_{h\to 0} \left(\frac{e^{hA}-\I_{n} }{h} - A\right) &= \lim_{h\to 0} \frac{e^{hA}-\I_{n}-hA }{h}= \lim_{h\to 0} \displaystyle \sum_{\underline{k=2}}^{\infty} \frac{(hA)^{k}}{k!}\cdot\frac{1}{h} = 0
+    \end{align*}Mostriamo l'ultima uguaglianza evidenziando che la norma di quel termine tende a $ 0 $. \begin{align*}
         \norm{\frac{1}{h}\sum_{k=2}^{\infty} \frac{(hA)^{k}}{k!}} &\le \frac{1}{|h|} \sum_{k=2}^{ \infty} \frac{|h|^{k}\,\norm{A}^{k}}{k!}\\ 
         &= \frac{1}{|h|}\left(e^{|h|\,\norm{A}}-1-|h|\,\norm{A}\right)\\ 
         &= \frac{e^{|h|\,\norm{A}}-1}{|h|} - \norm{A}\\ 
@@ -94,22 +93,21 @@
 }
 \section{Matrice  con autovalori in $ \C $}
 \paragrafo{Caso $2\times 2$ base}{%
-    Consideriamo $ A \in \R^{2,2} $ in forma canonica, \[
+    Consideriamo $ A \in \R^{2,2} $ in forma canonica \[
         A=\begin{pmatrix}
             a & -b\\ 
             b & a
         \end{pmatrix}\qquad a,b \in \R, b \neq 0
     \]I due autovalori sono \begin{align*}
-        \mu &= a+i\,b\\ 
-        \overline{\mu} &= a-i\,b
+        \mu &= a+i\,b & \overline{\mu} &= a-i\,b
     \end{align*}Il sistema $ \bm{x}'=A\,\bm{x} $ diventa: \[
         \begin{cases}
             x_1'=a\,x_1-b\,x_2\\ 
             x_2'=b\,x_1+a\,x_1
         \end{cases}
-    \]Definisco la funzione complessa \[
+    \]Definiamo la funzione complessa \[
         z(t)\coloneqq x_1(t)+i\,x_2(t)
-    \]e la derivo: \begin{align*}
+    \]e deriviamola: \begin{align*}
         z'(t)&= x_1'(t)+i\,x_2'(t)\\ 
         &= a\,x_1(t)-b\,x_2(t) + i\,b\,x_1(t)+i\,a\,x_2(t)\\ 
         &= \mu\,x_1(t)+i\,\mu\,x_2(t) = \mu\,z(t)
@@ -119,12 +117,12 @@
         z(t)&= (c_1+i\,c_2) e^{(a+i\,b)t} = (c_1+i\,c_2)e^{a\,t}\,e^{i\,b\,t}\\ 
         &= (c_1+i\,c_2)e^{a\,t}\,\left(\cos(bt)+i\,\sin(bt)\right)\\ 
         &= e^{a\,t}\left[c_1\,\cos(bt)-c_2\,\sin(bt)\right]+i\,e^{a\,t}\left[c_1\,\sin(bt)+c_2\,\cos(bt)\right]
-    \end{align*}Da qui posso scrivere, ricordando la definizione di $ z(t) $ \[
+    \end{align*}Da qui, ricordando la definizione di $ z(t): $ \[
         \begin{cases}
             x_1 = e^{a\,t}\left[c_1\,\cos(bt)-c_2\,\sin(bt)\right]\\
             x_2=e^{a\,t}\left[c_1\,\sin(bt)+c_2\,\cos(bt)\right]
         \end{cases}
-    \]Posso ora quindi scrivere la soluzione dell'equazione differenziale iniziale: \[
+    \]Siamo ora in grado di scrivere la soluzione dell'equazione differenziale iniziale: \[
         \bm{x}(t) = \begin{pmatrix}
             x_1(t)\\ x_2(t)
         \end{pmatrix}= e^{at}\,\parentesi{R_{bt} }{%
@@ -135,15 +133,15 @@
         }\,\parentesi{\bm{x}(0)}{\begin{pmatrix}
             c_1\\c_2
         \end{pmatrix}}
-    \]Dunque le orbite sono contraddistinte da: \begin{itemize}
+    \]Dunque le orbite sono contraddistinte da: 
+    \begin{itemize}
         \item una dilatazione se $ a>0 $ (e in questo caso l'origine si chiama \emph{sorgente});
         \item una contrazione se $ a<0 $ (e in questo caso l'origine si chiama \straniero{sink}, o \emph{pozzo});
     \end{itemize}mentre per quanto riguarda la rotazione, questa sarà: \begin{itemize}
         \item antioraria se $ b>0 $;
         \item oraria se $ b<0 $.
     \end{itemize}
-    \begin{figure}
-
+    \begin{figure}[H]
         \caption{Diagramma di fase per \framref{oijdoijcidididicoijcididiciciciciciciciici}}
     \end{figure}
 }{oijdoijcidididicoijcididiciciciciciciciici}{}

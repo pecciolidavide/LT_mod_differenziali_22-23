@@ -1,11 +1,13 @@
 \days{9 marzo 2023}
 \newcommand{\settingH}{%
-    Sia dato il problema di Cauchy \[
+    Sia dato il problema di Cauchy
+    \begin{align*}
         \begin{cases}
             \bm{u}'(t)=\bm{f}\left(t,\bm{u}(t)\right)\\ 
             \bm{u}(t_0)= \bm{x}_0
-        \end{cases}
-    \]con $ \bm{f}: \Omega \subseteq \R\times \R^{n}\to \R^{n}$, $ (t_0,\bm{x}_0) \in \Omega $ continua e localmente lipschitziana nella seconda variabile e uniformemente nella prima.}
+        \end{cases} && (t_0,\bm{x}_0) \in \Omega
+    \end{align*}
+    con $ \bm{f}: \Omega \subseteq \R\times \R^{n}\to \R^{n}$, continua e localmente lipschitziana nella seconda variabile e uniformemente nella prima.}
 
 \chapter{Teorema di dipendenza continua dai dati iniziali}
 \stepcounter{capitoloeccolo}
@@ -19,19 +21,20 @@
     Preso il problema di Cauchy \[
         \begin{cases}
             \bm{u}'=\bm{u}\\ 
-            \bm{u}(0)=\bm{x}
+            \bm{u}(0)=\bm{x}_0
         \end{cases}
-    \]si ha che la soluzione è $ \bm{u}(t,\bm{x})=\bm{x}\,e^{t} $, $ t \in \R $. \begin{itemize}
-        \item Se $ \bm{x}=\bm{0} $ $ \leadsto $ $ \bm{u}(t,\bm{0})\equiv 0 $;
-        \item se $ \bm{x}\neq \bm{0} $ è una esponenziale
+    \]si ha che la soluzione $\bm{u}_{(0,\bm{x}_0)}$ è, al variare del dato iniziale $\bm{x}_0$:
+     \begin{itemize}
+        \item $\bm{u}_{(0,\bm{x}_0)}(t)\equiv 0$, se $ \bm{x}_0=\bm{0} $ 
+        \item $\bm{u}_{(0,\bm{x}_0)}(t)=\bm{x}_0\,e^{t} $, $ t \in \R $, se $ \bm{x}_0\neq \bm{0} $
     \end{itemize} 
     
-    $\implies$ non è ragionevole pensare che se $ \bm{x}\to \bm{x}_0 $ la soluzione $ \bm{u}(t,\bm{x}) $ si mantenga sempre vicina a $ \bm{u}(t,\bm{x}_0)$.
+    $\implies$ non è dunque ragionevole pensare che se $ \bm{x}\to \bm{x}_0 $ la soluzione $ \bm{u}_{(t,\bm{x})} $ si mantenga sempre vicina a $ \bm{u}_{(t,\bm{x}_0)}$.
 }
 \teorema[Teorema di dipendenza continua dai dati iniziali]{fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure}{
     \settingH 
 
-    Sia $ I_{\max}  $ l'intervallo massimale di $ \bm{u}(t,\bm{x}_0) $. Fissiamo $ [a,b] \subset I_{\max}  $. Allora: \begin{enumerate}
+    Sia $ I_{\max}  $ l'intervallo massimale di $ \bm{u}_{(t,\bm{x}_0)} $ e $ [a,b] \subset I_{\max}  $. Allora: \begin{enumerate}
         \item esiste un intorno di $ \bm{x}_0 $, $ N $, tale che per ogni $ \bm{x} \in N $ la soluzione di \[
             \begin{cases}
                 \bm{u}'=\bm{f}\left(t,\bm{u}(t)\right)\\ 
@@ -46,17 +49,18 @@
         \]converge uniformemente su $ [a,b] $ alla soluzione di \[
             \begin{cases}
                 \bm{u}'(t)=\bm{f}\left(t,\bm{u}(t)\right)\\ 
-                \bm{u}(t_0)= \bm{x}_0.
+                \bm{u}(t_0)= \overline{\bm{x}}_0.
             \end{cases}
         \]
     \end{enumerate}
 }
 \osservazione{
     La richiesta $ \bm{x}_k \to \overline{\bm{x}}_0$ implica\[
-        \bm{x}_k = \bm{u}(t_0, \bm{x}_k) \longrightarrow \bm{u}(t_0, \overline{\bm{x}}_0) = \overline{\bm{x}}_0
-    \]ovvero la convergenza \emph{puntuale} della successione $ \left\{\bm{u}(t,\bm{x}_k)\right\}_{k} $ in un punto;
+        \lim_{k\to \infty}\bm{u}_{(t_0, \bm{x}_k)}(t_0)=\bm{u}_{(t_0, \overline{\bm{x}}_0)}(t_0) = \overline{\bm{x}}_0\\
+        %\bm{x}_k = \bm{u}_{(t_0, \bm{x}_k)}(t_0) \longrightarrow \bm{u}_{(t_0, \overline{\bm{x}}_0)}(t_0) = \overline{\bm{x}}_0
+    \]ovvero la convergenza \emph{puntuale} della successione $ \left\{\bm{u}_{(t,\bm{x}_k)}\right\}_{k} $ in un punto;
     
-    $\implies$ la successione $ \left\{\bm{u}(t,\bm{x}_k)\right\}_{k} $ converge uniformemente su $ [a,b] $.
+    $\implies$ la successione $ \left\{\bm{u}_{(t,\bm{x}_k)}\right\}_{k} $ converge uniformemente su $ [a,b] $.
 }
 \teorema[Teorema di Kamke]{dafasdfdasfadsfsadf}{
     \settingH 
@@ -113,7 +117,7 @@
 }
 \dimostrazione{fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure}{
     \begin{enumerate}
-        \item Dimostriamo per assurdo. Suppongo che per ogni $ \varepsilon>0 $, $ \exists\,\bm{x}_{\epsilon} \in B_{ \varepsilon}(\bm{x}_0)  $, la soluzione massimale $ \bm{u}_{ \varepsilon}\coloneqq \bm{u}( \cdot , \bm{x}_{ \varepsilon}) $ di \[
+        \item Dimostriamo per assurdo. Supponiamo che $\forall\: \varepsilon>0 $, $ \exists\,\bm{x}_{\epsilon} \in B_{ \varepsilon}(\bm{x}_0)  $ tale per cui la soluzione massimale $ \bm{u}_{ \varepsilon}(t)\coloneqq \bm{u}_{(t_0,\bm{x}_{ \varepsilon})}(t) $ di \[
             \begin{cases}
                 \bm{u}'=\bm{f}\left(t,\bm{u}(t)\right)\\ 
                 \bm{u}(t_0)=\bm{x}_{ \varepsilon}
@@ -147,21 +151,23 @@
             } + L\,\int_{0}^{t}\norma{\bm{u}_{ \varepsilon}(s) - \bm{u}_0(s)}\,ds .
         \end{align*}\footnotetext{dove $ L $ è la costante di lipschitzianità di $ f $ su $ k_{\delta}  $} 
 
-        Dunque, per il lemma di Gronwall, $ \displaystyle \phi(t)\le A_{ \varepsilon}\, e^{L(t-a)}  $. Inoltre, $ \phi(t_{ \varepsilon} ) = \delta $, e si ha che \[
+        Dunque, per il lemma di Gronwall, $ \displaystyle \phi(t)\le A_{ \varepsilon}\, e^{L(t-a)}  $. Inoltre, avendo $ \phi(t_{ \varepsilon} ) = \delta $, si ha che \[
             0< \delta \le A_{ \varepsilon} \, e^{L(t_{ \varepsilon} -a)} \longrightarrow 0 
         \]che è assurdo.
-        \item Sia $ \overline{\bm{x}}_0 \in N $, e sia $ \overline{\bm{u}}(t)\coloneqq \bm{u}(t,\overline{\bm{x}}_0) $; 
-        
-        sia $ \{\bm{x}_{k} \}_{k \in \N} \subseteq N$ tale che $ \bm{x}_k\longrightarrow \overline{\bm{x}}_0 $, e sia $ \bm{u}_k (t)\coloneqq \bm{u}(t,\bm{x}_k)$.\begin{itemize}
+        \item Consideriamo $ \overline{\bm{x}}_0 \in N $ e $ \{\bm{x}_{k} \}_{k \in \N} \subseteq N$ tale che $ \bm{x}_k\longrightarrow \overline{\bm{x}}_0 $. Definiamo inoltre $ \overline{\bm{u}}(t)\coloneqq \bm{u}_{(t_0,\overline{\bm{x}}_0)}(t) $ e 
+         $ \bm{u}_k (t)\coloneqq \bm{u}_{(t_0,\bm{x}_k)}(t)$.
+         \begin{itemize}
             \item Sia $ \overline{K}_{\delta} $ il $ \delta $-intorno compatto di $ \overline{\bm{u}} $;
             \item per $ k $ sufficientemente grandi, il grafico di $ \bm{u}_k $ rimane in $ \overline{K}_{\delta} $ (ragionando come il punto precedente);
             \item uso il lemma di Gronwall sulla \[
                 \phi(t)\coloneqq\norma{\bm{u}_k(t)-\overline{\bm{u}}(t)}
-            \]e ottengo, sempre utilizzando l'equazione di volterra \[
+            \]e ottengo, sempre utilizzando l'equazione di Volterra \[
                 \norma{\bm{u}_k(t)-\overline{\bm{u}}(t)} \le \parentesi{\to 0}{\norma{\bm{x}_k-\overline{\bm{x}}_0}}\,e^{L(b-a)}
-            \]dove $ L $ è la costante di lipschitzianità di $ \bm{f} $ su $ \overline{K}_{\delta} $ 
-            
-            $\implies$ $\displaystyle \norma{\bm{u}_k-\overline{\bm{u}}}_{\infty} = \max_{t \in [a,b]} \norma{\bm{u}_k(t)-\overline{\bm{u}}(t)}\le \norma{\bm{x}_k-\overline{\bm{x}}_0}\,e^{L(b-a)}\to 0  $\qed
+            \]dove $ L $ è la costante di Lipschitz di $ \bm{f} $ su $ \overline{K}_{\delta}$. Così facendo: 
+            \begin{align*}
+                \displaystyle \norma{\bm{u}_k-\overline{\bm{u}}}_{\infty} = \max_{t \in [a,b]} \norma{\bm{u}_k(t)-\overline{\bm{u}}(t)}\le \norma{\bm{x}_k-\overline{\bm{x}}_0}\,e^{L(b-a)}\to 0  \\
+                &&\qed
+            \end{align*}
         \end{itemize}
     \end{enumerate}
 }

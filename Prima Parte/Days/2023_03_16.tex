@@ -22,11 +22,11 @@
     Se $ b_1,\dots,b_{n}  $ sono tutte nulle, il sistema si dice \emph{omogeneo}.
 }{}{}
 \paragrafo{Caso monodimensionale}{%
-    Ponendo $ f(t,x)=A(t)\,x + b(t) $, $ f \in C^{1}(I\times \R) $: per ogni condizione iniziale $ (t_0,x_0) \in I\times \R $ il problema di Cauchy associato al sistema ammette un'unica soluzione locale. 
+    Sia $ f(t,x)=A(t)\,x + b(t) $, $ f \in C^{1}(I\times \R) $. Per ogni condizione iniziale $ (t_0,x_0) \in I\times \R $, il problema di Cauchy associato al sistema ammette un'unica soluzione locale. 
 
     Essendo \[
         \pd{f}{x}(t,x)=A(t)
-    \]continua su $ I $, abbiamo che su ogni striscia $ [a,b]\times \R \subseteq I\times \R$ tale funzione è limitata, e deduciamo che ogni problema di Cauchy associato al sistema ammette un'unica soluzione definita sull'intero intervallo $ I $.
+    \]continua su $ I $, abbiamo che su ogni striscia $ [a,b]\times \R \subseteq I\times \R$ tale funzione è limitata. Questo ci garantisce che ogni problema di Cauchy associato al sistema ammette un'unica soluzione definita sull'intero intervallo $ I $.
 }{}{}
 \paragrafo{Alcuni Risultati}{%
     Posto \[
@@ -39,13 +39,13 @@
         \item \emph{Soluzioni di un sistema non omogeneo}. Se $ \bm{x}_P $ risolve $ \bm{x}'=A(t)\,\bm{x}+\bm{b}(t) $, allora \[
             S_{\bm{b}}=\{\bm{x}_0+\bm{x}_P: \bm{x}_0 \in S_{\bm{0}} \} 
         \]
-        \item \emph{Lemma}. Siano $ \bm{y}_1,\dots,\bm{y}_n $ delle $ n $ soluzioni del problema omogenero $ \bm{x}'=A(t)\,\bm{x} $. Allora $ \bm{y}_1,\dots,\bm{y}_n $ sono funzioni linearmente indipendente se e solo se esiste $ t_0 \in I$ tale che i vettori \[
+        \item \emph{Lemma}. Siano $ \bm{y}_1,\dots,\bm{y}_n $ delle $ n $ soluzioni del problema omogeneo $ \bm{x}'=A(t)\,\bm{x} $. Allora $ \bm{y}_1,\dots,\bm{y}_n $ sono funzioni linearmente indipendenti se e solo se $\exists\, t_0 \in I$ tale che i vettori \[
             \bm{y}_1(t_0),\dots,\bm{y}_n(t_0)
-        \]sono linearmente indipendenti in $ \R^{n} $.
+        \]siano linearmente indipendenti in $ \R^{n} $.
     \end{itemize}
 }{}{}
 \paragrafo{Matrice Wronskiana}{%
-    Se $ \bm{\varphi}_1,\dots,\bm{\varphi}_n $ sono $ n $ soluzioni linearmente indipendenti del sistema omogenero $ \bm{x}'=A(t) \, \bm{x}$, allora $ \{\bm{\varphi}_1,\dots,\bm{\varphi}_n\} $ si dice \emph{insieme fondamentale}. 
+    Se $ \bm{\varphi}_1,\dots,\bm{\varphi}_n $ sono $ n $ soluzioni linearmente indipendenti del sistema omogeneo $ \bm{x}'=A(t) \, \bm{x}$, allora $ \{\bm{\varphi}_1,\dots,\bm{\varphi}_n\} $ si dice \emph{insieme fondamentale}. 
 
     La matrice \[
         W(t)=\begin{bmatrix}
@@ -53,12 +53,12 @@
         \end{bmatrix}
     \]si dice \emph{matrice wronskiana}.
 
-    Si ha che $ \displaystyle S_{\bm{0}} = \{W(t)\,\bm{c}: \bm{c} \in \R^{n}\} $. Per selezionare in $ S_{\bm{0}}  $ la soluzione di \[
+    Avendo che che $ \displaystyle S_{\bm{0}} = \{W(t)\,\bm{c}: \bm{c} \in \R^{n}\} $, cerchiamo come selezionare in $ S_{\bm{0}}  $ la soluzione di \[
         \begin{cases}
             \bm{x}'=A(t)\,\bm{x}\\ 
             \bm{x}(t_0)=\bm{x}_0
         \end{cases}
-    \]imponiamo $ W(t_0)\,\bm{c} = \bm{x}_0 $. Essendo le colonne di $ W(t_0) $ linearmente indipendenti, $ W(t_0) $ è invertibile e $ \bm{c}=\left[W(t_0)\right]^{-1}\,\bm{x}_0 $. La soluzione dunque è \[
+    \]Imponiamo $ W(t_0)\,\bm{c} = \bm{x}_0 $. Essendo le colonne di $ W(t_0) $ linearmente indipendenti, $ W(t_0) $ è invertibile e $ \bm{c}=\left[W(t_0)\right]^{-1}\,\bm{x}_0 $.\\ La soluzione dunque è \[
         \bm{x}(t)=W(t)\,\left[W(t_0)\right]^{-1}\,\bm{x}_0
     \]
 }{}{}
@@ -77,17 +77,16 @@
 \paragrafo{Equazioni differenziali lineari di grado $ n $}{%
     Consideriamo l'equazione differenziale lineare \[
         y^{(n)}(t)=a_{n-1}(t)\,y^{(n-1)}(t)+ a_{n-2}(t)\,y^{(n-2)}(t) + \dots+ a_0(t)\,y(t) + b(t).
-    \]Supponiamo che tutte le $ a_{i}  $ e $ b $ siano continue su $ I \subseteq \R $ intervallo. 
-
-    Definendo \[
+    \]Supponendo che tutte le $ a_{i}  $ e $ b $ siano continue su $ I \subseteq \R $ intervallo. Definiamo \[
         x_1(t)=y(t), \quad x_2(t)=y'(t), \quad\dots,\quad x_{n}(t)=y^{(n-1)}(t) 
-    \]otteniamo il sistema lineare del primo ordine $ \bm{x}'=A(t)\,\bm{x}+\bm{B}(t) $ con \[
+    \]
+    Otteniamo così il sistema lineare del primo ordine $ \bm{x}'=A(t)\,\bm{x}+\bm{B}(t) $ con \[
         A(t)=\begin{bmatrix}
             0 & 1 & 0 & \dots & 0\\ 
             0 & 0 & 1 & \dots & 0\\ 
             \vdots\\ 
             0 & & & & 1\\ 
-            a_0(t) & a_1(t) & \dots & a_{n-1}(t) 
+            a_0(t) & a_1(t) & \dots & a_{n-1}(t) &0
         \end{bmatrix},\quad \bm{B}(t)=\begin{bmatrix}
             0\\ 
             0\\ 
@@ -102,7 +101,7 @@
         \bm{x}'=A\,\bm{x},\qquad A \in \R^{n,n}, \bm{x} \in \R^{n}
     \]L'esistenza delle soluzioni è garantita su tutto $ \R $. 
 
-    Per gradi:\begin{enumerate}
+    Analizzeremo e affronteremo diverse casistiche:\begin{enumerate}
         \item $ A $ diagonale;
         \item $ A $ diagonalizzabile;
         \item $ A $ con autovalori in $ \C $, tutti autovalori regolari\footnote{Un autovalore è regolare se la molteplicità algebrica e geometrica coincidono};
@@ -111,23 +110,24 @@
 }{}{}
 
 \osservazione{
-    Per una equazione nella forma $ \bm{x}'=A\,\bm{x}$, $A \in \R^{n,n} $, $ \bm{x}=\bm{0} $ è sempre soluzione (e quindi è equilibrio).
+    Per un'equazione della forma $ \bm{x}'=A\,\bm{x}$, $A \in \R^{n,n} $, $ \bm{x}=\bm{0} $ è sempre soluzione (e quindi è equilibrio).
 
-    Ogni punto di $ \ker A $ è un punto di equilibrio.
+    E' facile osservare che ogni punto di $ \ker A $ è un punto di equilibrio.
 }
 
 \section{Matrice diagonale}
 
 \paragrafo{Risoluzione generica}{%
-    Il sistema $ \bm{x}'=A\,\bm{x} $, $ A \in \R^{n,n} $, \[
+Il caso in cui $A$ è una matrice diagonale è abbastanza semplice. Infatti, sia il sistema $ \bm{x}'=A\,\bm{x} $, con \[
         A=\begin{pmatrix}
             \lambda_1\\ 
             & \lambda_2\\ 
             & & \lambda 3\\ 
             & & & \ddots\\ 
             & & & & \lambda_{n} 
-        \end{pmatrix}
-    \]diventa: \[
+        \end{pmatrix}\in \R^{n,n}
+    \]
+Questo è equivalente a: \[
         \begin{cases}
             x_1'(t)=\lambda_1\,x_1(t) \\
             x_2'(t)=\lambda_2\,x_2(t) \\
@@ -135,7 +135,8 @@
         \end{cases}
     \] 
     
-    $\implies$ $ \displaystyle x_{i}(t) = c_{i}\,e^{\lambda_{i}\,t }   $ per ogni $ i=1,\dots,m $, dove $ c_{i}  $ è una costante arbitraria. 
+    Integrando otteniamo che $ \displaystyle x_{i}(t) = c_{i}\,e^{\lambda_{i}\,t }   $ per ogni $ i=1,\dots,m $, dove $ c_{i}  $ è una costante arbitraria. 
+    Abbiamo così costruito la nostra soluzione:
     
     $\implies$ $ \displaystyle \bm{x}(t) = \parentesi{W(t)}{\begin{pmatrix}
         e^{t\,\lambda_1}\\ 
@@ -144,12 +145,12 @@
             & & & \ddots\\ 
             & & & & e^{t\,\lambda_{n} }
     \end{pmatrix}}\begin{pmatrix}
-        c_1\\ \vdots\\ c_{n} 
+        c_1\\ \vdots\\ \vdots\\ c_{n} 
     \end{pmatrix} $
 
     In questo caso $ W(t) $ è anche di monodromia.
 }{}{}
-\paragrafo{Ritratto di fase per $ n=2 $}{%
+\paragrafo{Ritratto di fase per $\mathbf{ n=2} $}{%
     Siamo nel caso \[
         A=\begin{pmatrix}
             \lambda_1 & 0\\ 

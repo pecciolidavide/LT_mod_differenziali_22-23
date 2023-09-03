@@ -10,9 +10,9 @@
 
 \paragrafo{Ipotesi}{%
     \begin{itemize}
-        \item Sia $ \bm{x}'=\bm{f}(\bm{x}) $, $ \bm{f} \in  C^{1}(\Omega) $. $ \Omega \subseteq \R^{n} $ aperto. 
-        \item $ \bm{p} \in \Omega $ tale che $ \bm{f}(\bm{p})=\bm{0} $ (equilibrio).
-        \item $ V:B_{r}(\bm{p})\longrightarrow \R  $, con $ r>0 $ e $ B_{r}(\bm{p}) \subseteq \Omega  $, $ V $ di classe $ C^{1} $.
+        \item Sia $ \bm{x}'=\bm{f}(\bm{x}) $, $ \bm{f} \in  C^{1}(\Omega) $, $ \Omega \subseteq \R^{n} $ aperto. 
+        \item $ \bm{p} \in \Omega \colon \bm{f}(\bm{p})=\bm{0} $ (equilibrio).
+        \item $ V\colon B_{r}(\bm{p})\longrightarrow \R  $, con $ r>0 $ e $ B_{r}(\bm{p}) \subseteq \Omega  $, $ V \in C^{1}( B_{r}(\bm{p})) $.
     \end{itemize}
 }{dkjnckjnskjndkjnckjnskjnckjndkjnckjndkjncjndkjncjdjckjnskjncjdjskjncjdjskjn}{}
 \newcommand{\ipotesi}{\framref{dkjnckjnskjndkjnckjnskjnckjndkjnckjndkjncjndkjncjdjckjnskjncjdjskjncjdjskjn}}
@@ -27,20 +27,19 @@
     Sotto le ipotesi \ipotesi, supponiamo che $ \bm{x}=\bm{x}(t) $ è una soluzione dell'equazione differenziale. 
     \begin{itemize}
         \item Valutiamo $ V $ lungo $ \bm{x}(t) $, ovvero $ V\left(\bm{x}(t)\right) $.
-        \item Ne calcoliamo la monotonia in $ t $: \[
-            \od{}{t}V\left(\bm{x}(t)\right) =: \dot{V}\left(\bm{x}(t)\right)
+        \item Ne calcoliamo la monotonia in $ t $, definendo: \[
+            \dot{V}\left(\bm{x}(t)\right)\coloneqq\od{}{t}V\left(\bm{x}(t)\right) 
         \]Dunque: \begin{align*}
-            \dot{V}\left(\bm{x}(t)\right) &= \scalare{\nabla V\left(\bm{x}(t)\right)}{\bm{x}'(t)}\\ 
-            &= \scalare{\nabla V\left(\bm{x}(t)\right)}{\bm{f}\left(\bm{x}(t)\right)}
+            \dot{V}\left(\bm{x}(t)\right) &= \scalare{\nabla V\left(\bm{x}(t)\right)}{\bm{x}'(t)}= \scalare{\nabla V\left(\bm{x}(t)\right)}{\bm{f}\left(\bm{x}(t)\right)}
         \end{align*}e quindi \begin{align*}
         \dot{V}:B_{r} (\bm{p}) &\longrightarrow \R \\
         \xi &\longmapsto \scalare{\nabla V (\xi)}{\bm{f}(\xi)}
         \end{align*}
     \end{itemize}
     
-    Poiché sia $ V $ che $ \bm{f} $ sono di classe $ C^{1} $, allora anche $ \nabla V $ è continua, e quindi $ \dot{V} $ è continua. 
+    Poiché sia $ V $ che $ \bm{f} $ sono di classe $ C^{1} \leadsto \nabla V $ è continua $\leadsto \dot{V} $ è continua. 
 
-    Questa è la \emph{derivata totale di $ V $ rispetto al campo $ \bm{f} $.}
+    $\dot{V}$ è detta la \emph{derivata totale di $ V $ rispetto al campo $ \bm{f} $.}
 }{}{}
 \teorema[Teorema di Lyapunov]{dididicoijcoijdoijcoijcoijsoij}{
     Supponiamo le ipotesi \ipotesi.
@@ -80,7 +79,7 @@
             \end{cases*}
         \]soddisfi: \begin{itemize}
             \item $ T_{\max}= + \infty  $;
-            \item $ \exists\, T\ge 0 $ tale che $ \forall\, t > T $, \[
+            \item $ \exists\, T\ge 0 $ tale che $ \forall\, t > T $ \[
                 \bm{\psi}_{\bm{q}}(t) \in B_{ \varepsilon}(\bm{p}) 
             \]
         \end{itemize}
@@ -89,27 +88,26 @@
             m_{ \varepsilon} = \min_{x \in \partial B_{ \varepsilon}(\bm{p}) } V(x)>0  
         \]poiché $ V $ è definita positiva. 
 
-        $ V(\bm{p})=0 $, e inoltre $ V $ è continua 
-        
-        $\implies$ $ \exists\, \delta \in (0, \varepsilon) $ tale che $ V(x)< \frac{1}{2} m_{ \varepsilon}  $, $ \forall\, \bm{x} \in B_{ \delta}(\bm{p})  $. 
+        Avendo $ V(\bm{p})=0 $ e $ V $ continua $\implies$ $ \exists\, \delta \in (0, \varepsilon) \colon V(x)< \frac{1}{2} m_{ \varepsilon}  $, $ \forall\, \bm{x} \in B_{ \delta}(\bm{p})  $
 
         Dimostro che questo $ \delta $ soddisfa la condizione di stabilità.
 
-        Per assurdo, supponiamo che $ \exists\, \bm{q} \in B_{\delta}(\bm{p}) $ tale la soluzione $ \bm{\psi}_{\bm{q}}(t)$ di \[
+        Per assurdo, supponiamo che $ \exists\, \bm{q} \in B_{\delta}(\bm{p}) $ tale che la soluzione $ \bm{\psi}_{\bm{q}}(t)$ di \[
             \begin{cases}
                 \bm{x}'=\bm{f}(\bm{x})\\ 
                 \bm{x}(0)=\bm{q}
             \end{cases}
-        \]per qualche $\tau$ sia \[
-            \norma{\bm{\psi}_{\bm{q}}(\tau)- \bm{p}} = \varepsilon
-        \]e che $ \norma{\bm{\psi}_{\bm{q}}(\tau)- \bm{p}} < \varepsilon $, $ \forall\, t \in [0,\tau) $. 
-
+        \]per qualche $\tau$ sia 
+        \begin{align*}
+            \norma{\bm{\psi}_{\bm{q}}(\tau)- \bm{p}} = \varepsilon && \norma{\bm{\psi}_{\bm{q}}(\tau)- \bm{p}} < \varepsilon ,  \forall\, t \in [0,\tau)
+        \end{align*}
         Per ipotesi $ \dot{V}(\bm{x}) $ è semidefinita negativa, cioè $ V $ decresce lungo le soluzioni: \[
-            m_{ \varepsilon} \le V\left(\bm{\psi}_{\bm{q}}(\tau)\right) \le V(\bm{q}) = V\left(\bm{\psi}_{\bm{q}}(\tau)\right) < \frac{m_{ \varepsilon} }{2}.
-        \]Assurdo.\qed 
+            m_{ \varepsilon} \le V\left(\bm{\psi}_{\bm{q}}(\tau)\right) \le V(\bm{q}) = V\left(\bm{\psi}_{\bm{q}}(\tau)\right) < \frac{m_{ \varepsilon} }{2}
+        \]Assurdo!$ \qed$ 
 }
-\paragrafo{Corollario - Applicazione ai sistemi $ \ddot{\bm{x}}=-\nabla U (\bm{x})$}{%
-    Sia\\ $U: \Omega \subseteq \R^{n}\longrightarrow \R $, $ \Omega $ aperto e $ \bm{p} \in  \Omega$- \begin{itemize}
+\paragrafo{Corollario - Applicazione ai sistemi $ \ddot{\bm{x}}=-\nabla U (\bm{x})$}{
+    Sia\\ $U: \Omega \subseteq \R^{n}\longrightarrow \R $, $ \Omega $ aperto e $ \bm{p} \in  \Omega$ 
+    \begin{itemize}
         \item $ U \in C^{1} (\Omega)$;
         \item $ \bm{p} $ sia un minimo stretto di $ U $. 
     \end{itemize} 
