@@ -3,7 +3,7 @@
     \begin{itemize}
         \item $A$ è un insieme di elementi che chiamiamo punti
         \item $E$ è uno spazio vettoriale
-        \item $\delta \colon A \times A \to E$ applicazione tale che:
+        \item $\delta \colon A \times A \to E$ è un'applicazione tale che:
         \begin{enumerate}
             \item $\forall\, (P,Q) \in A\times E, \exists! \, Q \in A \colon \delta(P,Q)=\mathbf{v}$
             \item $\forall\, P,Q,R \in A, \delta(P,Q)+\delta(Q,R)=\delta(P,R)$
@@ -77,7 +77,7 @@
     Con queste due operazioni l'insieme dei campi vettoriali su $A$, che denoteremo con $\mathcal{X}(A)$, ha una struttura di modulo.}
     \definizione{ Sia $f\in \mathcal{F}(A)$ e $X\in \mathcal{X}(A)$. La \underline{derivata di un campo scalare $f$} \underline{rispetto ad un campo vettoriale $\textbf{X}$} è il campo scalare:
     \begin{align*}
-        \hat{\textbf{X}} (f)=\textbf{X}^\alpha\cfrac{\partial f}{\partial x^\alpha}
+        \hat{\textbf{X}} (f)=X^\alpha\cfrac{\partial f}{\partial x^\alpha}
     \end{align*}
     Dove con: 
     \begin{align*}
@@ -91,7 +91,7 @@
     \end{align*}}
     \proprieta{ Siano $f,g\in \mathcal{F}(A)$. Si verifica facilmente che $\hat{\textbf{X}}$ soddisfa:
     \begin{itemize}
-        \item \textit{$\mathbb{R}$-lineare}: $\hat{\textbf{X}}(af+bg)=a\hat{\textbf{X}}(f)+b\hat{\textbf{X}}(g)$, $a,b\in \mathbb{R}$
+        \item \textit{$\mathbb{R}$-lineare}: $\hat{\textbf{X}}(af+bg)=a\hat{\textbf{X}}(f)+b\hat{\textbf{X}}(g)$$\quad a,b\in \mathbb{R}$
         \item \textit{Regola di Leibnitz}: $\hat{\textbf{X}}(f\cdot g)=\hat{\textbf{X}}(f)\cdot g+f\cdot \hat{\textbf{X}}(g)$
     \end{itemize} Una funzione che soddisfa queste due proprietà è per l'appunto chiamata \underline{derivazione}.}
     \paragrafo{Invarianza per cambiamenti di coordinate affini} {Un'altro fatto interessante in merito alla derivazione di un campo scalare $f$ rispetto ad un campo vettoriale $\mathbf{X}$ è la sua indipendenza dalle coordinate affini stabilite.\\
@@ -121,7 +121,7 @@
     \definizione{ Siano $\mathbf{X},\mathbf{Y}\in \mathcal{X}(A)$ .Definiamo il \underline{commutatore di $\mathbf{X}$ e $\mathbf{Y}$} come il campo vettoriale:
     \begin{align*}
     [\cdot,\cdot]\colon \mathcal{X}(A)\times \mathcal{X}(A)\to \mathcal{X}(A)\\
-        (\mathbf{X},\mathbf{Y})\mapsto[\mathbf{X},\mathbf{Y}]_f=\hat{\mathbf{X}}(\hat{\mathbf{Y}}(f))-\hat{\mathbf{Y}}(\hat{\mathbf{X}}(f)) && f\in \mathcal{F}(A)
+        (\mathbf{X},\mathbf{Y})\mapsto[\mathbf{X},\mathbf{Y}]_f=\mathbf{X}(\hat{\mathbf{Y}}(f))-\mathbf{Y}(\hat{\mathbf{X}}(f)) && f\in \mathcal{F}(A)
     \end{align*}}
     \proprieta{ Siano $\mathbf{X},\mathbf{Y},\mathbf{Z}\in \mathcal{X}(A)$. Il commutatore è un'operazione binaria interna $[\cdot,\cdot]$:
     \begin{itemize}
@@ -177,7 +177,7 @@ pr_i\colon\mathbb{R}^n\to \mathbb{R}\\
 \begin{minipage}{7cm}
 è la proiezione della i-esima coordinata.
 \end{minipage}}
-\osservazione[]{ Sia $A$ uno spazio affine, siano $(x^\alpha)$ delle coordinate affini su $A$ e sia $(U,\varphi)$ una carta di dimensione $n$.\\
+\osservazione[]{ Siano $A$ uno spazio affine, $(x^\alpha)$ delle coordinate affini su $A$ e $(U,\varphi)$ una carta di dimensione $n$.\\
 Le coordinate $q^i$ si possono rappresentare come funzioni delle $n$ $(x^\alpha)$:
 \begin{align*}
     q^i=q^i(x^\alpha)
@@ -251,7 +251,7 @@ Le loro caratteristiche principali sono:
 \end{enumerate}
 \paragrafo{Trasformazione di $\bm{X}$:coordinate affini$\leadsto$ coordinate non affini}{ Sia $\mathbf{X}\in \mathcal{X}(A)$. Sappiamo sia che:
 \begin{align*}
-    \mathbf{X}=X^i(q^j)\mathbf{E}_i=\underbrace{X^i\mathbf{E}_i}=X^iE^\alpha_i\mathbf{c}_\alpha=\underbrace{X^\alpha\mathbf{c}_\alpha}
+    \mathbf{X}=X^i(q^j)\mathbf{E}_i=\boxed{X^i\mathbf{E}_i}=X^iE^\alpha_i\mathbf{c}_\alpha=\boxed{X^\alpha\mathbf{c}_\alpha}
 \end{align*}
 Uguagliando cosi i due termini evidenziati abbiamo le relazioni tra i coefficienti delle due rappresentazioni del campo vettoriale $\mathbf{X}$:
 \begin{align*}
@@ -340,7 +340,7 @@ Il collegamento tra questa e la definizione precedente è dato dalla formula:
     \langle \mathbf{X},\varphi(P)\rangle =\langle \mathbf{X}(P),\varphi(P)\rangle 
 \end{align*} 
 Assume cosi senso valutare una 1-forma $\varphi$ su di un vettore applicato $(P,\mathbf{v})$. Il risultato $\langle \mathbf{v},\varphi(P)\rangle $ è un numero reale.}
-\paragrafo{Il differenziale}{Un esempio fondamentale di 1-forma è il \underline{differenziale $df$} \underline{di un campo scalare $f$}.\\
+\paragrafo{Il differenziale}{Un esempio fondamentale di 1-forma è il \ul{differenziale $df$ di un campo scalare $f$}.\\
 Questo è definito dall'uguaglianza:
 \begin{align*}
     \langle \mathbf{X},df\rangle = \hat{\mathbf{X}}(f)
@@ -476,7 +476,7 @@ Siano $(x^\alpha)$ delle coordinate cartesiane aventi origine in $O$. Si possono
 \begin{align*}
     x^\alpha= \gamma^\alpha(t) && \alpha=1,\dots, n
 \end{align*}
-\paragrafo{Interpretazione cinematica}{Una curva può essere interpretata ocme moto di un punto $P$ nello spazio affine, se il parametro $t$ viene inteso come tempo.\\
+\paragrafo{Interpretazione cinematica}{Una curva può essere interpretata come moto di un punto $P$ nello spazio affine, se il parametro $t$ viene inteso come tempo.\\
 Nel caso in cui la curva rapresenti il moto di un punto nello spazio affine tridimensionale euclideo, il generico vettore $OP=\mathbf{x}$ è chiamato \underline{vettore posizione}.}{}{}
 \definizione{L'immagine della curva, cioè l'insieme 
 \begin{align*}
@@ -552,7 +552,7 @@ In particolare sono $n$ equazioni differenziali ordinarie in forma normale auton
 \begin{align*}
     I \subseteq I_{P_0}&& \gamma_{P_0|_I}=\gamma
 \end{align*}}
-Una volta fissate le condizioni iniziali/dati iniziali riusciamo individuare un'unica soluzione del sistema dinamico grazie al
+Una volta fissate le condizioni iniziali/dati iniziali riusciamo ad individuare un'unica soluzione del sistema dinamico grazie al
 \teorema[Teorema di Cauchy]{fgdslkjlsdaljkfsd}{ Sia $\mathbf{X}$ un campo vettoriale di classe $C^k$($k\ge1$) su un dominio $M$.
 Fissato un punto $P_0\in M$ esiste una e una sola curva integrale massimale basata in $P_0$
 \begin{align*}
@@ -592,24 +592,21 @@ Si definisce come la funzione:
     \item $\varphi_0=id_M$
     \item $(\varphi_t)^{-1}=\varphi_{-t}$
 \end{itemize}}
-\osservazione[]{ Ad ogni gruppo ad un parametro si può associare il campo vettoriale $\mathbf{X}$ corrispondente e viceversa. Ovvero questo sono condizioni necessarie e sufficienti affinche un insieme di curve $\varphi(t,P)$ sia lo spazio delle soluzioni di un certo campo vettoriale.}
-\definizione{ Sia $\mathbf{X}\in \mathcal{X}(A)$. Definiamo l'\underline{integrale primo di $\mathbf{X}$} come il campo scalare $F\colon A\to \mathbb{R}$ tale che $\forall\, \gamma \colon I \to A$ curva integrale, vale:\\
-\begin{minipage}{4cm}
-    \begin{align*}
-   F\circ \gamma (t_1)=F\circ \gamma (t_2),\\
-   \forall\, t_1,t_2\in I
-    \end{align*}
-    \end{minipage}$\iff$
-    \begin{minipage}{4cm}
-   \begin{align*}
-    \frac{d}{dt}(F\circ\gamma)(t)=0, \forall \, t\in I
-   \end{align*}
-    \end{minipage}$\iff$
-    \begin{minipage}{3cm}
-        \begin{align*}
-         \langle \mathbf{X},dF\rangle =0
-        \end{align*}
-         \end{minipage}}
+\osservazione[]{ Ad ogni gruppo ad un parametro si può associare il campo vettoriale $\mathbf{X}$ corrispondente e viceversa. Ovvero questo sono condizioni necessarie e sufficienti affinché un insieme di curve $\varphi(t,P)$ sia lo spazio delle soluzioni di un certo campo vettoriale.}
+\definizione{ Sia $\mathbf{X}\in \mathcal{X}(A)$. Definiamo l'\underline{integrale primo di $\mathbf{X}$} come il campo scalare $F\colon A\to \mathbb{R}$ tale che $\forall\, \gamma \colon I \to A$ curva integrale, vale:
+
+
+\parbox{10em}{\centering
+   $F\circ \gamma (t_1)=F\circ \gamma (t_2)$
+   $\forall\, t_1,t_2\in I$
+    }$\iff$
+\parbox{10em}{
+    $\cfrac{d}{dt}(F\circ\gamma)(t)=0, \forall \, t\in I$
+  }
+    $\iff$
+\parbox{10em}{
+         $\langle \mathbf{X},dF\rangle =0$}
+}
 %%
 %%
 %%
@@ -643,11 +640,11 @@ Quindi la velocità in componenti rispetto alle cordinate $(q^i)$ è data da
 \end{align*}
 Ora allora analizziamo $\cfrac{d\mathbf{v}}{dt}$ passando per le coordinate non affini:
 \begin{align*}
-    \frac{d\mathbf{v}}{dt}=\frac{dv^i}{dt}\mathbf{E}_i+v^i\frac{d}{dt}\mathbf{E}_i=\frac{dv^i}{dt}\mathbf{E}_i+v^i\frac{\partial}{\partial q^j}(\mathbf{E}_i)\cdot\overbrace{\frac{dq^j}{dt}}^{v^j}=\frac{dv^i}{dt}\mathbf{E}_i+v^iv^j\Gamma^k_{ji}\mathbf{E}_k
+    \frac{d\mathbf{v}}{dt}=\frac{dv^i}{dt}\mathbf{E}_i+v^i\frac{d}{dt}\mathbf{E}_i=\frac{dv^i}{dt}\mathbf{E}_i+v^i\frac{\partial}{\partial q^j}(\mathbf{E}_i)\cdot\overbrace{\frac{dq^j}{dt}}^{v^j}=\frac{dv^i}{dt}\mathbf{E}_i+\boxed{v^iv^j\Gamma^k_{ji}\mathbf{E}_k}
 \end{align*}
-Ora scambiano $i\leftrightarrow k$ e raccogliendo otteniamo:
+Ora, scambiando $i\leftrightarrow k$ in $\square$ e raccogliendo, otteniamo:
 \begin{align*}
-    (\frac{dv^i}{dt}+v^kv^j\Gamma_{jk}^i)\mathbf{E}_i=a^i\mathbf{E}_i
+    \left(\frac{dv^i}{dt}+v^kv^j\Gamma_{jk}^i\right)\mathbf{E}_i=a^i\mathbf{E}_i
 \end{align*}
 Quindi si noti che \underline{a meno che} $\Gamma_{jk}^i=0$, abbiamo:
 \begin{align*}
@@ -718,7 +715,7 @@ allora
 %%
 %%
 \section{Moti geodetici su una superficie}
-Sia $Q$ una superficie regolare nello spazio tridimensionale con rappresentazione $OP=\mathbf{r}(q^i,q^2)$. Sia assegnata sulla superficie una curva $\gamma$ di equazioni parametriche $q^i(t)=\gamma^i(t)$.\\
+Sia $Q$ una superficie regolare nello spazio tridimensionale con rappresentazione $OP=\mathbf{r}(q^1,q^2)$. Sia assegnata sulla superficie una curva $\gamma$ di equazioni parametriche $q^i(t)=\gamma^i(t)$.\\
 Il vettore $\mathbf{v}(t)$ tangente alla curva è banalmente tangente anche alla superficie. Se consideriamo invece il suo vettore derivata:
 \begin{align*}
     \frac{d\mathbf{v}}{dt}
@@ -765,7 +762,7 @@ Cosi facendo i moti geodetici diventano le curve integrali di questo sistema din
     \mathbf{X}=v^i\frac{\partial}{\partial q^i}-\Gamma^k_{ij}v^iv^j\frac{\partial}{\partial v^k}
 \end{align*}
 $\mathbf{X}$ con un abuso di notazione prende il nome di \underline{flusso geodetico}.
-Cosi facendo assegnato un $P_0\in Q$ e $\mathbf{v}_0$ tangente a $Q$ in $P_0$, $\exists!$ una curva geodetica massimale basata in $P_0$ e avente come veettore tangente in $t=0$ il vettore $\mathbf{v}_0$.
+Cosi facendo assegnato un $P_0\in Q$ e $\mathbf{v}_0$ tangente a $Q$ in $P_0$, $\exists!$ una curva geodetica massimale basata in $P_0$ e avente come vettore tangente in $t=0$ il vettore $\mathbf{v}_0$.
 \paragraph*{Energia cinetica come integrale primo delle geodetiche}
 \begin{align*}
     \mathbf{F}=\mathbf{F}(\mathbf{r},\mathbf{v}) && \mathbf{r}=\mathbf{r}(t)=\gamma(t)
