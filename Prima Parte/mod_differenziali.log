@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.22)  3 SEP 2023 09:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.22)  5 SEP 2023 09:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/nicolobrunacci/Downloads/mod_differenziali_22-23-main-4/Prima Parte/mod_differenziali.tex"
-(/Users/nicolobrunacci/Downloads/mod_differenziali_22-23-main-4/Prima Parte/mod_differenziali.tex
+**"/Users/nicolobrunacci/Downloads/mod_differenziali_22-23-main-5/Prima Parte/mod_differenziali.tex"
+(/Users/nicolobrunacci/Downloads/mod_differenziali_22-23-main-5/Prima Parte/mod_differenziali.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
@@ -1714,13 +1714,13 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 \c@thmldksnaflkjnadflkjadnsflajknkljndasf=\count616
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 57.
+(Font)              <9> on input line 61.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 57.
+(Font)              <5> on input line 61.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/dsrom/m/n/9'
-(microtype)             (new value: 9.0pt) on input line 57.
+(microtype)             (new value: 9.0pt) on input line 61.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/dsrom/m/n/5'
-(microtype)             (new value: 5.0pt) on input line 57.
+(microtype)             (new value: 5.0pt) on input line 61.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1732,12 +1732,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
 \c@thmsasdfkjnasdflkjnasdlkfjnfasd=\count617
 
-Overfull \hbox (3.78421pt too wide) in paragraph at lines 75--84
-[]\T1/lmr/m/n/10.95 (-20) In ge-ne-ra-le, quin-di, esi-ste un in-ter-val-lo $\OT1/lmr/m/n/10.95 (-20) (\OML/lmm/m/it/10.95 T[]; T[]\OT1/lmr/m/n/10.95 (-20) )$ \T1/lmr/m/n/10.95 (-20) per la so-lu-zio-ne $\OML/lmm/b/it/10.95 u\OT1/lmr/m/n/10.95 (-20) (\OML/lmm/m/it/10.95 t\OT1/lmr/m/n/10.95 (-20) ; \OML/lmm/m/it/10.95 t[]; \OML/lmm/b/it/10.95 u[]\OT1/lmr/m/n/10.95 (-20) )$\T1/lmr/m/n/10.95 (-20) ,
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5359) has occurred while \output is active []
 
 
 
@@ -1782,12 +1777,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8]
 \c@thmdafasdfdasfadsfsadf=\count622
+
+
+LaTeX Warning: Hyper reference `fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure' on page 9 undefined on input line 90.
+
 \c@frammentoAdafkjasdlkfjnadslkfjnalskfdjnjdjsidiujhfsiosdi=\count623
 \c@frammentoBdafkjasdlkfjnadslkfjnalskfdjnjdjsidiujhfsiosdi=\count624
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1892,15 +1887,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ===== Image 'figures/mod_differenziali-figure2' is up-to-date. ======
 
-Package caption Warning: \label without proper reference on input line 66.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:puntoequilibrioA' on page 20 undefined on input line 66.
-
-\c@frammentoAjjdjjduudjjdekkjnsdikjnskjnsdikjsnbfik=\count632
-\c@frammentoBjjdjjduudjjdekkjnsdikjnskjnsdikjsnbfik=\count633
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
@@ -1908,12 +1894,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [20]
-
-Package caption Warning: \label without proper reference on input line 90.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `puntoequilibrioB' on page 21 undefined on input line 90.
+\c@frammentoAjjdjjduudjjdekkjnsdikjnskjnsdikjsnbfik=\count632
+\c@frammentoBjjdjjduudjjdekkjnsdikjnskjnsdikjsnbfik=\count633
 
 ===== Image 'figures/mod_differenziali-figure3' is up-to-date. ======
 \c@thmdaflkjndasflkjndaslkjnfdalkjnaslkjfnlkjn=\count634
@@ -1934,6 +1916,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [22]
 \c@thmlkjndalkjndfalkjndasklfjnasdkljfnasdkljfnasdjkndaslkjnfaldskjnaslfkjnsaldkjn=\count635
+\c@thmdaflkjnadfkljansdfklasjdnfcaskdjncdas=\count636
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1943,7 +1926,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [23]
-\c@thmdaflkjnadfkljansdfklasjdnfcaskdjncdas=\count636
 \c@frammentoAadkjnaldfkjnadslfkjnadsflkjnadslkjn=\count637
 \c@frammentoBadkjnaldfkjnadslfkjnadsflkjnadslkjn=\count638
 
@@ -1965,7 +1947,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+Underfull \hbox (badness 10000) in paragraph at lines 257--260
 
  []
 
@@ -2192,13 +2174,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [46]
+Underfull \vbox (badness 1708) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[47]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 94.
+(hyperref)                removing `math shift' on input line 95.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 94.
+(hyperref)                removing `math shift' on input line 95.
 
 \c@frammentoAoijdoijcidididicoijcididiciciciciciciciici=\count650
 \c@frammentoBoijdoijcidididicoijcididiciciciciciciciici=\count651
@@ -2209,32 +2202,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[47]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
 [48]
 \c@thmdojnskjndjdjdicidjisijcoijsdlkjnckjndkjncskjndkjncjdjdjcjdj=\count652
 
+Underfull \vbox (badness 2057) has occurred while \output is active []
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 165.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 165.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 165.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 165.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2244,6 +2216,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [49]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 166.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[50]
 \c@thmddoodoodododokcpokspokdpokcspokdpokpok=\count653
 
 
@@ -2253,15 +2249,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[50]) (./Days/2023_03_23.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[51]
+[51]) (./Days/2023_03_23.tex
 \c@thmdididififoisdisodpokspteoreminonoinoindkjnfjscdoij=\count654
 
 
@@ -2282,6 +2270,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [53]
+Underfull \vbox (badness 4391) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2290,11 +2281,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [54]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[55]
 \c@thmduuudiuhciuhduchdiuhcuducud=\count656
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2302,7 +2298,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[55]) (./Days/2023_03_28.tex
+[56]) (./Days/2023_03_28.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2310,13 +2306,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[56]
+[57] [58
+
+]
 Capitolo 5.
 \c@frammentoAdkjnckjnskjndkjnckjnskjnckjndkjnckjndkjncjndkjncjdjckjnskjncjdjskjncjdjskjn=\count657
 \c@frammentoBdkjnckjnskjndkjnckjnskjnckjndkjnckjndkjncjndkjncjdjckjnskjncjdjskjncjdjskjn=\count658
-[57
-
-]
+[59]
 \c@thmdididicoijcoijdoijcoijcoijsoij=\count659
 
 Underfull \hbox (badness 1490) in paragraph at lines 62--62
@@ -2330,7 +2326,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[58]
+[60]
 \c@frammentoAdkjnckjnskjnckjndjdjjjdjjdjdjcjdjcjsoijcoij=\count660
 \c@frammentoBdkjnckjnskjnckjndjdjjjdjjdjdjcjdjcjsoijcoij=\count661
 
@@ -2341,28 +2337,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-13.2232pt}.
 
-[59]) (./Days/2023_03_30.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[60]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 25.2232pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.2232pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-13.2232pt}.
-
-[61]
-Overfull \hbox (4.83676pt too wide) detected at line 130
-[]   \OT1/lmr/m/n/10.95 =[]\OMS/lmsy/m/n/10.95 )   []
- []
-
-===== Image 'figures/mod_differenziali-figure10' is up-to-date. ======
+[61]) (./Days/2023_03_30.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2378,12 +2353,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-13.2232pt}.
 
-[63 <./figures/mod_differenziali-figure10.pdf>]
-\c@thmdididicoijsidiiccdididiterorfelkddislassalledoijsdoicj=\count662
+[63]
+Overfull \hbox (4.83676pt too wide) detected at line 130
+[]   \OT1/lmr/m/n/10.95 =[]\OMS/lmsy/m/n/10.95 )   []
+ []
 
-Underfull \vbox (badness 2781) has occurred while \output is active []
-
-
+===== Image 'figures/mod_differenziali-figure10' is up-to-date. ======
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2399,7 +2374,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-13.2232pt}.
 
-[65]) (./Days/2023_04_04.tex
+[65 <./figures/mod_differenziali-figure10.pdf>]
+\c@thmdididicoijsidiiccdididiterorfelkddislassalledoijsdoicj=\count662
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2408,6 +2385,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [66]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.2232pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.2232pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-13.2232pt}.
+
+[67]) (./Days/2023_04_04.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[68]
 \c@thmdoijcoijoijoijoijoijcoijsoijoijoij=\count663
 
 Overfull \hbox (96.4145pt too wide) in paragraph at lines 34--34
@@ -2422,7 +2415,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-13.2232pt}.
 
-[67])
+[69])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2430,9 +2423,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[68] (../Seconda Parte/mod_differenziali_ii.tex
+[70] (../Seconda Parte/mod_differenziali_ii.tex
 Capitolo 6.
-[69
+[71
 
 
 ]
@@ -2447,29 +2440,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[70]
+[72]
 Overfull \hbox (43.71297pt too wide) in paragraph at lines 86--86
  []\T1/lmr/bx/n/10.95 (-20) Definizione. (6.13)[] \T1/lmr/m/it/10.95 (-20) Sia $\OML/lmm/m/it/10.95 f \OMS/lmsy/m/n/10.95 2 F\OT1/lmr/m/n/10.95 (-20) (\OML/lmm/m/it/10.95 A\OT1/lmr/m/n/10.95 (-20) )$ \T1/lmr/m/it/10.95 (-20) e $\OML/lmm/m/it/10.95 X \OMS/lmsy/m/n/10.95 2 X\OT1/lmr/m/n/10.95 (-20) (\OML/lmm/m/it/10.95 A\OT1/lmr/m/n/10.95 (-20) )$\T1/lmr/m/it/10.95 (-20) . La $[]$
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[71]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[72]
-Overfull \hbox (19.29485pt too wide) in paragraph at lines 125--125
- []\T1/lmr/bx/n/10.95 (-20) Definizione. (6.17)[] \T1/lmr/m/it/10.95 (-20) Sia-no $\OT1/lmr/bx/n/10.95 (-20) X\OML/lmm/m/it/10.95 ; \OT1/lmr/bx/n/10.95 (-20) Y \OMS/lmsy/m/n/10.95 2 X\OT1/lmr/m/n/10.95 (-20) (\OML/lmm/m/it/10.95 A\OT1/lmr/m/n/10.95 (-20) )$ \T1/lmr/m/it/10.95 (-20) .De-fi-nia-mo il $[]$
  []
 
 
@@ -2488,6 +2461,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [74]
+Overfull \hbox (19.29485pt too wide) in paragraph at lines 125--125
+ []\T1/lmr/bx/n/10.95 (-20) Definizione. (6.17)[] \T1/lmr/m/it/10.95 (-20) Sia-no $\OT1/lmr/bx/n/10.95 (-20) X\OML/lmm/m/it/10.95 ; \OT1/lmr/bx/n/10.95 (-20) Y \OMS/lmsy/m/n/10.95 2 X\OT1/lmr/m/n/10.95 (-20) (\OML/lmm/m/it/10.95 A\OT1/lmr/m/n/10.95 (-20) )$ \T1/lmr/m/it/10.95 (-20) .De-fi-nia-mo il $[]$
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[75]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[76]
 Overfull \hbox (34.64267pt too wide) in paragraph at lines 234--234
 \T1/lmr/m/n/10.95 (-20) La car-ta è a va-lo-ri nel-l'a-per-to $\OML/lmm/m/it/10.95 '\OT1/lmr/m/n/10.95 (-20) (\OML/lmm/m/it/10.95 V\OT1/lmr/m/n/10.95 (-20) ) = []$\T1/lmr/m/n/10.95 (-20) ,
  []
@@ -2499,7 +2492,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[75]
+[77]
 Overfull \hbox (0.33447pt too wide) in paragraph at lines 244--245
 \T1/lmr/m/it/10.95 (-20) E ven-go-no chia-ma-ti $[]$
  []
@@ -2516,29 +2509,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[76]
+[78]
 Underfull \hbox (badness 10000) in paragraph at lines 291--296
 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[77]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[78]
-Overfull \hbox (24.07953pt too wide) in paragraph at lines 356--356
- []\T1/lmr/bx/n/10.95 (-20) Il dif-fe-ren-zia-le. (6.41)[] \T1/lmr/m/n/10.95 (-20) Un esem-pio fon-da-men-ta-le di 1-forma è il $[]$
  []
 
 
@@ -2573,13 +2546,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [82]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[83]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[84]
 Capitolo 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 480--485
 
  []
 
-[83
+[85
 
 ]
 
@@ -2589,7 +2578,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[84]
+[86]
 Overfull \hbox (5.50742pt too wide) in paragraph at lines 525--529
  []\T1/lmr/bx/n/10.95 (-20) Definizione. (7.9)[] \T1/lmr/m/it/10.95 (-20) Di-cia-mo inol-tre che la cur-va in-te-gra-le è $[]$
  []
@@ -2606,7 +2595,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-13.2232pt}.
 
-[85]
+[87]
 \c@thmfgdslkjlsdaljkfsd=\count665
 \c@thmsdljfkdslkgjldgdd=\count666
 
@@ -2617,36 +2606,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[86]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 25.2232pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.2232pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-13.2232pt}.
-
-[87]
-Overfull \hbox (11.16559pt too wide) in paragraph at lines 612--623
-[]$$ \OMS/lmsy/m/n/10.95 ([]) $ $[]$$ ([]) $ $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 612--623
-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
 [88]
-Overfull \hbox (151.46863pt too wide) detected at line 673
-[]
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 25.2232pt, for example:
@@ -2655,6 +2615,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.2232pt}.
 
 [89]
+Overfull \hbox (36.50784pt too wide) in paragraph at lines 609--620
+[]$[]$$ \OMS/lmsy/m/n/10.95 ([]) $ $[]$ $ ([]) $ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--620
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2663,7 +2632,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [90]
-Overfull \hbox (3.28764pt too wide) detected at line 730
+Overfull \hbox (151.46863pt too wide) detected at line 670
 []
  []
 
@@ -2683,8 +2652,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [92]
+Overfull \hbox (3.28764pt too wide) detected at line 727
+[]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.2232pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.2232pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-13.2232pt}.
+
+[93]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[94]
 Capitolo 8.
-[93
+[95
 
 ])
 
@@ -2694,7 +2683,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[94] [95
+[96] [97
 
 
 
@@ -2709,18 +2698,18 @@ Package logreq Info: Writing requests to 'mod_differenziali.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68265 strings out of 476025
- 1617709 string characters out of 5790017
- 3422001 words of memory out of 5000000
- 86718 multiletter control sequences out of 15000+600000
- 675663 words of font info for 360 fonts, out of 8000000 for 9000
+ 68262 strings out of 476025
+ 1617741 string characters out of 5790017
+ 3422985 words of memory out of 5000000
+ 86719 multiletter control sequences out of 15000+600000
+ 675358 words of font info for 357 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,24n,111p,1722b,1697s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on mod_differenziali.pdf (99 pages, 802685 bytes).
+Output written on mod_differenziali.pdf (101 pages, 805239 bytes).
 PDF statistics:
- 1362 PDF objects out of 1440 (max. 8388607)
- 1133 compressed objects within 12 object streams
- 425 named destinations out of 1000 (max. 500000)
+ 1368 PDF objects out of 1440 (max. 8388607)
+ 1137 compressed objects within 12 object streams
+ 427 named destinations out of 1000 (max. 500000)
  86492 words of extra memory for PDF output out of 89155 (max. 10000000)
 
