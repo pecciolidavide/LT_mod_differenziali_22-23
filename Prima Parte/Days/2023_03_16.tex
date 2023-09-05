@@ -53,7 +53,7 @@
         \end{bmatrix}
     \]si dice \emph{matrice wronskiana}.
 
-    Avendo che che $ \displaystyle S_{\bm{0}} = \{W(t)\,\bm{c}: \bm{c} \in \R^{n}\} $, cerchiamo come selezionare in $ S_{\bm{0}}  $ la soluzione di \[
+    Avendo che $ \displaystyle S_{\bm{0}} = \{W(t)\,\bm{c}: \bm{c} \in \R^{n}\} $, cerchiamo come selezionare in $ S_{\bm{0}}  $ la soluzione di \[
         \begin{cases}
             \bm{x}'=A(t)\,\bm{x}\\ 
             \bm{x}(t_0)=\bm{x}_0
@@ -101,7 +101,7 @@
         \bm{x}'=A\,\bm{x},\qquad A \in \R^{n,n}, \bm{x} \in \R^{n}
     \]L'esistenza delle soluzioni è garantita su tutto $ \R $. 
 
-    Analizzeremo e affronteremo diverse casistiche:\begin{enumerate}
+    Analizzeremo diverse casistiche:\begin{enumerate}
         \item $ A $ diagonale;
         \item $ A $ diagonalizzabile;
         \item $ A $ con autovalori in $ \C $, tutti autovalori regolari\footnote{Un autovalore è regolare se la molteplicità algebrica e geometrica coincidono};
@@ -112,13 +112,13 @@
 \osservazione{
     Per un'equazione della forma $ \bm{x}'=A\,\bm{x}$, $A \in \R^{n,n} $, $ \bm{x}=\bm{0} $ è sempre soluzione (e quindi è equilibrio).
 
-    E' facile osservare che ogni punto di $ \ker A $ è un punto di equilibrio.
+    E' facile osservare, in realtà, che gli equilibri del sistema sono proprio gli elementi del $ \ker A $.
 }
 
 \section{Matrice diagonale}
 
 \paragrafo{Risoluzione generica}{%
-Il caso in cui $A$ è una matrice diagonale è abbastanza semplice. Infatti, sia il sistema $ \bm{x}'=A\,\bm{x} $, con \[
+Il caso in cui $A$ è una matrice diagonale è abbastanza semplice. Consideriamo il sistema $ \bm{x}'=A\,\bm{x} $, con \[
         A=\begin{pmatrix}
             \lambda_1\\ 
             & \lambda_2\\ 

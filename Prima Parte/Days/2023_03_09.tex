@@ -58,19 +58,19 @@
     La richiesta $ \bm{x}_k \to \overline{\bm{x}}_0$ implica\[
         \lim_{k\to \infty}\bm{u}_{(t_0, \bm{x}_k)}(t_0)=\bm{u}_{(t_0, \overline{\bm{x}}_0)}(t_0) = \overline{\bm{x}}_0\\
         %\bm{x}_k = \bm{u}_{(t_0, \bm{x}_k)}(t_0) \longrightarrow \bm{u}_{(t_0, \overline{\bm{x}}_0)}(t_0) = \overline{\bm{x}}_0
-    \]ovvero la convergenza \emph{puntuale} della successione $ \left\{\bm{u}_{(t,\bm{x}_k)}\right\}_{k} $ in un punto;
+    \]ovvero la convergenza \emph{puntuale} della successione $ \left\{\bm{u}_{(t,\bm{x}_k)}\right\}_{k} $ in un punto.
     
-    $\implies$ la successione $ \left\{\bm{u}_{(t,\bm{x}_k)}\right\}_{k} $ converge uniformemente su $ [a,b] $.
+   Il teorema afferma di più: la successione $ \left\{\bm{u}_{(t,\bm{x}_k)}\right\}_{k} $ converge non solo puntualmente, ma bensì uniformemente su $ [a,b] $.
 }
 \teorema[Teorema di Kamke]{dafasdfdasfadsfsadf}{
     \settingH 
 
-    Sia $ I_{\max}  $ l'intervallo massimale di $ \bm{u}(t,\bm{x}_0) $. Fissiamo $ [a,b] \subset I_{\max}  $.
+    Sia $ I_{\max}  $ l'intervallo massimale di $ \bm{u}_{(t_0,\bm{x}_0)}(t) $. Fissiamo $ [a,b] \subset I_{\max}  $.
 
     Prendiamo \begin{itemize}
         \item $ \{t_{k} \}_{k \in \N} \subseteq \R $, $ t_{k}\to t_0  $;
         \item $ \{\bm{x}_{k} \}_{k \in \N} $, $ \bm{x}_k \to \bm{x}_0$;
-        \item $ \{\bm{f}_{k} \}_{k \in \N} $ successioni di dominio $ \Omega $ che soddisfano il teorema di esistenza e unicità locale, \[
+        \item $ \{\bm{f}_{k} \}_{k \in \N} $ funzioni di dominio $ \Omega $ che soddisfano il teorema di esistenza e unicità locale, \[
             \bm{f}_k \to \bm{f}\quad\text{uniformemente sui compatti di }\Omega.
         \]
     \end{itemize}
@@ -80,13 +80,14 @@
             \bm{u}'(t) = \bm{f}_k\left(t,\bm{u}(t)\right)\\ 
             \bm{u}'(t_{k} ) = \bm{x}_k
         \end{cases}
-    \]ammette un'unica soluzione definita su $ [a,b] $ e convergente uniformemente su $ [a,b] $ alla soluzione di \[
+    \]ammette un'unica soluzione definita su $ [a,b] $ e convergente uniformemente, su $ [a,b] $ stesso, alla soluzione di \[
         \begin{cases}
             \bm{u}'(t)=\bm{f}\left(t,\bm{u}(t)\right)\\ 
             \bm{u}(t_0) = \bm{x}_0.
         \end{cases}
     \]
 }
+Per la dimostrazione del \hyperref[fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure]{Teorema V} ci serviremo del
 \paragrafo{Lemma di Gronwall}{%
     Sia $ \phi:[a,b]\to \R $ continua, e supponiamo che $ \exists\,A \in \R $, $ \exists\, B\ge 0 $ tali che \[
         \phi(t) \le A + B\,\int_{a}^{t}\phi(s)\,ds,\quad \forall\, t \in [a,b] 
@@ -97,23 +98,22 @@
 \dimframmento{dafkjasdlkfjnadslkfjnalskfdjnjdjsidiujhfsiosdi}{
     Sia $ \displaystyle w(t)\coloneqq A + B\,\int_{a}^{t}\phi(s)\,ds $. Per ipotesi \begin{itemize}
         \item $ \phi(t)\le w(t) $ su $ [a,b] $;
-        \item $ w $ è derivabile (perché $ \phi $ è continua) e \[
-            w'(t) = B\,\phi(t)
-        \]
+        \item $ w $ è derivabile (perché $ \phi $ è continua) e $w'(t) = B\,\phi(t)$
+        
     \end{itemize}
 
     Prendiamo \begin{align*}
         \frac{d}{dt}\left[w(t)\,e^{-B\,(t-a)}\right] &= \left[w'(t)-B\,w(t)\right]\,e^{-B\,(t-a)}\\ 
-        &= B\,\left(\phi(t)-w(t)\right)\,e^{-B\,(t-a)}\ge 0
+        &= \underbrace{B}_{\ge 0}\,\underbrace{\left(\phi(t)-w(t)\right)}_{\leq 0}\,\underbrace{e^{-B\,(t-a)}}_{\ge 0}\leq  0
     \end{align*} 
     
     $\implies$ la funzione $ \displaystyle w(t)\,e^{-B\,(t-a)} $ è decrescente su $ [a,b] $ 
     
     $\implies$ è massima in $ t=a $, ovvero \[
-       A = w(a)\,e^{0}\ge w(t)\,e^{-B\,(t-a)}\ge \phi(t)\,e^{-B\,(t-a)}
+       A \coloneq w(a)\,e^{0}\ge w(t)\,e^{-B\,(t-a)}\ge \phi(t)\,e^{-B\,(t-a)}
     \] 
     
-    $\implies$ $ \displaystyle \varphi(t)\le A\,e^{B\,(t-a)} $\qed
+    $\implies$ $ \displaystyle \phi(t)\le A\,e^{B\,(t-a)} $\qed
 }
 \dimostrazione{fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure}{
     \begin{enumerate}
@@ -122,7 +122,7 @@
                 \bm{u}'=\bm{f}\left(t,\bm{u}(t)\right)\\ 
                 \bm{u}(t_0)=\bm{x}_{ \varepsilon}
             \end{cases}
-        \]non è definita su tutto $ [a,b] $. 
+        \]non sia definita su tutto $ [a,b] $. 
 
         Per semplicità prendo $ t_0=a $ e ``lavoro a destra''. 
 
@@ -130,7 +130,7 @@
             k_{\delta} = \left\{(t,\bm{x}) \in \Omega: t \in [a,b], \norma{\bm{u}_{ \varepsilon}(t)-\bm{x}}<\delta\right\} 
         \]
 
-        Sia $ [a,b_{ \varepsilon})  $ con $ b_{ \varepsilon}< b  $ l'intervallo massimale detro di $ \bm{u}_{ \varepsilon} $. 
+        Sia $ [a,b_{ \varepsilon})  $ con $ b_{ \varepsilon}< b  $ l'intervallo massimale destro di $ \bm{u}_{ \varepsilon} $. 
 
         Necessariamente $ \bm{u}_{ \varepsilon} $ deve uscire dal compatto $ k_{\delta} $ prima di $ b_{ \varepsilon} $: \[
             \forall\, \varepsilon>0\quad \exists\, t_{ \varepsilon} \in (a,b_{ \varepsilon} ): \begin{aligned}
@@ -142,14 +142,14 @@
         Sfruttiamo il fatto che $ \bm{u}_0 $ e $ \bm{u}_{ \varepsilon} $ siano le soluzioni di problemi di Cauchy e usiamo le loro equazioni di Volterra. \[
             \bm{u}_{ \varepsilon} (t) =\bm{u}_{ \varepsilon} (a) + \int_{a}^{t} \bm{f}\left(s, \bm{u}_{ \varepsilon}(s)\right) \,ds
         \]Definiamo ora, per ogni $ t \in [a,t_{ \varepsilon} ] $, la funzione \begin{align*}
-            \phi(t) &= \norma{\bm{u}_{ \varepsilon}(t)-\bm{u}_{ 0}(t)}\\ &= \norma{%
-            \bm{u}_{ \varepsilon}(a) + \int_{a}^{t} \bm{f}\left(s,\bm{u}_{ \varepsilon}(s)\right) \,ds - \bm{u}_0 - \int_{a}^{t} \bm{f}\left(s, \bm{u}_0(s)\right)\,ds 
+            \phi(t) &\coloneq \norma{\bm{u}_{ \varepsilon}(t)-\bm{u}_{ 0}(t)}\\ &= \norma{%
+            \bm{u}_{ \varepsilon}(a) + \int_{a}^{t} \bm{f}\left(s,\bm{u}_{ \varepsilon}(s)\right) \,ds - \bm{u}_0(a) - \int_{a}^{t} \bm{f}\left(s, \bm{u}_0(s)\right)\,ds 
             }\\ 
             &\le \norma{\bm{u}_{ \varepsilon}(a)-\bm{u}_0(a)} + \int_{a}^{t}\norma{\bm{f}\left(s, \bm{u}_{ \varepsilon}(s)\right) - \bm{f}\left(s, \bm{u}_0(s)\right)}\,ds \\ 
             &\underset{\footnotemark}{\le} \parentesi{A_{ \varepsilon} }{%
                 \norma{\bm{x}_{ \varepsilon} -\bm{x}_0} 
             } + L\,\int_{0}^{t}\norma{\bm{u}_{ \varepsilon}(s) - \bm{u}_0(s)}\,ds .
-        \end{align*}\footnotetext{dove $ L $ è la costante di lipschitzianità di $ f $ su $ k_{\delta}  $} 
+        \end{align*}\footnotetext{dove $ L $ è la costante di Lipschitz di $ \bm{f} $ su $ k_{\delta}  $} 
 
         Dunque, per il lemma di Gronwall, $ \displaystyle \phi(t)\le A_{ \varepsilon}\, e^{L(t-a)}  $. Inoltre, avendo $ \phi(t_{ \varepsilon} ) = \delta $, si ha che \[
             0< \delta \le A_{ \varepsilon} \, e^{L(t_{ \varepsilon} -a)} \longrightarrow 0 

@@ -13,7 +13,7 @@
             \bm{x}(t_0)=\bm{x}_0 \in \Omega
         \end{cases}
     \]
-    $ \bm{f}:\Omega \subseteq \R^{n}\to \R^{n} $, $ n\ge 1 $ localmente lipschitziana\footnote{Si ricordi che: $C^{1}\Rightarrow$ localmente lipschitziana}, vale il teorema di esistenza e unicità locale della soluzione, $ \forall\, t_0 \in\R  $.
+    $ \bm{f}:\Omega \subseteq \R^{n}\to \R^{n} $,$n\ge 1$, localmente lipschitziana\footnote{Si ricordi che: $C^{1}\Rightarrow$ localmente lipschitziana}, vale il teorema di esistenza e unicità locale della soluzione, $ \forall\, t_0 \in\R  $.
 }{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}{}
 \definizione{
     $ \Omega $ si dice \emph{spazio delle fasi} o \emph{degli stati}.
@@ -49,7 +49,7 @@
 \]Chi sono gli equilibri? Cerco $ (x_0,y_0): \bm{f}(x_0,y_0)=\bm{0} $ \[
     (-y^{2},x^{2})=\bm{0}\,\iff\, (x,y)=\bm{0}
 \]
-\begin{figure}
+\begin{figure}[H]
     \label{fig:puntoequilibrioA}
         \begin{center}
             \begin{tikzpicture}
@@ -62,7 +62,7 @@
         \end{center}    
         \caption{Punti di equilibrio per l'esempio \framref{daflkjansdflkjnasdflkjadsnchiduaskjbfcgukjbh}}
 \end{figure}
-Dunque l'unico punto di equilibrio è l'origine, come mostrato in figura \ref{fig:puntoequilibrioA}.
+Dunque l'unico punto di equilibrio è l'origine.
 }{daflkjansdflkjnasdflkjadsnchiduaskjbfcgukjbh}{}
 \paragrafo{Esempio}{%
 \[
@@ -71,8 +71,8 @@ Dunque l'unico punto di equilibrio è l'origine, come mostrato in figura \ref{fi
         y'=x^{2}
     \end{cases}\qquad
         \bm{f}(x,y) = (-y^{2}\,x,x^{2})
-\]Gli equilibri sono tutti punti nella forma $ (0,y_0) $, come mostrato in figura \ref{puntoequilibrioB}.
-\begin{figure}
+\]Gli equilibri sono tutti punti nella forma $ (0,y_0) $.
+\begin{figure}[H]
 \label{puntoequilibrioB}
     \begin{center}
         \begin{tikzpicture}
@@ -157,7 +157,7 @@ Dunque l'unico punto di equilibrio è l'origine, come mostrato in figura \ref{fi
         \item[($\impliedby$)] Se $ \bm{f}(\bm{p})=\bm{0} $, allora $ \bm{u}(t)\equiv\bm{p} $ $ \forall\, t \in \R $ è soluzione, e \[
             \gamma^{\star} = \left\{\bm{u}(t): t \in \R\right\}=\{\bm{p}\}.
         \]
-        \item[($\implies$)] Se $ \gamma^{\star} =\{\bm{p}\} $ allora esiste una soluzione $ \bm{u} $ di $ \bm{x}'=\bm{f}(\bm{x}) $ tale che $ \bm{u}(t)=\bm{p} $ per ogni $ t \in (T_{\min},T_{\max}  ) $. Allora $ \bm{u}(t) $ è costante, e dunque \[
+        \item[($\implies$)] Se $ \gamma^{\star} =\{\bm{p}\} $, allora esiste una soluzione $ \bm{u} $ di $ \bm{x}'=\bm{f}(\bm{x}) $ tale che $ \bm{u}(t)=\bm{p} $ per ogni $ t \in (T_{\min},T_{\max}  ) \leadsto \bm{u}(t) $ è costante, e dunque \[
             \bm{0}=\bm{u}'(t)=\bm{f}\left(\bm{u}(t)\right)=\bm{f}(\bm{p}).\qedd
         \]
     \end{itemize}
@@ -226,9 +226,9 @@ Dunque l'unico punto di equilibrio è l'origine, come mostrato in figura \ref{fi
     Allora $ \gamma $ è una curva orientata in $ \Omega $ tangente in ogni punto al campo $ \bm{f} $.
 }
 \dimostrazione{dakfjnasldkfjnlasdkjfnadslkfjnaslkj}{
-Sia $ \bm{u} $ soluzione di $ \bm{x}'=\bm{f}(\bm{x}) $ tale che $ \gamma= \gamma_{\bm{u}}  $. Sia $ \bm{p}_0  \in \gamma$ e $ t_0 $ tale che $ \bm{u}(t_0)=\bm{p}_0 $. 
+Sia $ \bm{u} $ soluzione di $ \bm{x}'=\bm{f}(\bm{x}) $ tale che $ \gamma= \gamma_{\bm{u}}  $. Sia $ \bm{p}_0  \in \gamma$ e $ t_0 \colon \bm{u}(t_0)=\bm{p}_0 $. 
 
-$ \gamma $ non è singolare, quindi $ \bm{f}(\bm{p}_0) \neq \bm{0}$ (altrimenti $ \gamma=\{\bm{p}_0\} $ per il teorema precedente.)
+Poichè $ \gamma $ non è singolare $\leadsto \bm{f}(\bm{p}_0) \neq \bm{0}$ (altrimenti $ \gamma=\{\bm{p}_0\} $ per il teorema precedente.)
 
 La funzione $ t\mapsto \bm{u}(t) $ parametrizza $ \gamma $. Quindi il vettore: \[
     \bm{v}\coloneqq \lim_{h\to 0} \frac{\bm{u}(t_0+h)-u(t_0)}{h}
@@ -240,12 +240,13 @@ La funzione $ \bm{u} $ è di classe $ C^{1} $, quindi il limite esiste ed è $ \
     \bm{v}=\bm{u}'(t_0)=\bm{f}\left(\bm{u}(t_0)\right)= \bm{f}(\bm{p}_0)\qedd
 \]}
 %% END
+\newpage
 \section{Stabilità dei punti di equilibrio}
 \paragrafo{Obiettivo}{%
     Vogliamo classificare i punti di equilibrio in base a come le altre soluzioni si comportano in loro prossimità.
 }{}{}
 \definizione{
-    Sotto le ipotesi \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} $ tale che $ \bm{f}(\bm{p})=\bm{0} $. $ \bm{p} $ si dice \emph{stabile} se $ \forall\,\varepsilon>0 $, $ \exists\, \delta>0 $: $\hat{\bm{x}} \in \Omega $, $ \norma{\hat{\bm{x}}-\bm{p}}<\delta $ 
+    Sotto le ipotesi \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} \colon \bm{f}(\bm{p})=\bm{0} $. $ \bm{p} $ si dice \emph{stabile} se $ \forall\,\varepsilon>0 $, $ \exists\, \delta>0 \colon \hat{\bm{x}} \in \Omega $, $ \norma{\hat{\bm{x}}-\bm{p}}<\delta $ 
     
     $\implies$ la soluzione di \[
         \begin{cases}
@@ -254,15 +255,13 @@ La funzione $ \bm{u} $ è di classe $ C^{1} $, quindi il limite esiste ed è $ \
         \end{cases}
     \]è definita su $ (t_0,+ \infty) $ e dista da $ \bm{p} $ al più $ \varepsilon $.
 }\\
-
-
 \definizione{
-    Sotto le ipotesi \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} $ tale che $ \bm{f}(\bm{p})=\bm{0} $. $ \bm{p} $ si dice \emph{instabile} se non è stabile. 
+    Sotto le ipotesi \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} \colon \bm{f}(\bm{p})=\bm{0} $. $ \bm{p} $ si dice \emph{instabile} se non è stabile. 
 }
 
 Intuitivamente, se $p$ è un equilibrio, pur di partire sufficientemente vicino, riusciamo a far rimanere quanto vogliamo la soluzione \textit{vicina} a $p$.\\
-Al contrario, invece, essere instabile significa che $ \exists\, \varepsilon $ e una successione $ \{\bm{x}_{n} \}_{n \in \N} \subseteq \Omega $, $ \bm{x}_{n} \to \bm{p} $ tale che $\forall\, n$ \[
-        \exists\, t_{n}: \quad \bm{u}_{(t_0,\bm{x}_n)}(t_{n} )> \varepsilon 
+Al contrario, invece, essere instabile significa che $ \exists\, \varepsilon $ e una successione $ \{\bm{x}_{n} \}_{n \in \N} \subseteq \Omega $, $ \bm{x}_{n} \to \bm{p} $ tale che \[
+        \exists\, t_{n}\colon \bm{u}_{(t_0,\bm{x}_n)}(t_{n} )> \varepsilon \quad \quad \forall\, n
     \]dove $ \bm{u}_{(t_0,\bm{x}_n)} $ è soluzione di \[
         \begin{cases}
             \bm{x}'=\bm{f}(\bm{x})\\ 
@@ -271,7 +270,7 @@ Al contrario, invece, essere instabile significa che $ \exists\, \varepsilon $ e
     \]
 
 \definizione{
-    Sotto le ipotesi \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} $ tale che $ \bm{f}(\bm{p})=\bm{0} $.\\ $ \bm{p} $ si dice \emph{asintoticamente stabile} se:
+    Sotto le ipotesi \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} \colon \bm{f}(\bm{p})=\bm{0} $.\\ $ \bm{p} $ si dice \emph{asintoticamente stabile} se:
     \begin{itemize}
         \item è stabile;
         \item $ \exists\,\delta>0 $ tale che $ \forall\, \overline{\bm{x}} \in B_{\delta}(\bm{p}) $, $ \overline{\bm{x}} \in \Omega $ si ha che \[

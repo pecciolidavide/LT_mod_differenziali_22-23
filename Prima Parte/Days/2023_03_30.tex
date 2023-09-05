@@ -120,9 +120,9 @@
         \end{align*}
 
         Verifico ora il segno di $ \dot{V} $: \begin{align*}
-            \dot{V}(x,y) &= \pd{V}{x}\,x' + \pd{V}{y}\,y'\\ 
+            \dot{V}(x,y) &= \cfrac{\partial V}{\partial x}\,x' + \cfrac{\partial V}{\partial y}\,y'\\ 
             &=-x(-x+y) + y(-x+y)\\&\qquad +x(x+y)(x^{2}+y^{2})+y(x+y)(x^{2}+y^{2})\\ 
-            &= x^{2}-xy-xy+y^{2}+ (x+y)^{2}(x^{2}+y^{2})\ge 0
+            &= \underbrace{x^{2}-xy-xy+y^{2}}_{(x-y)^2}+ (x+y)^{2}(x^{2}+y^{2})\ge 0
         \end{align*}e si annulla \emph{solo} nell'origine. 
         
         $\implies$ sono soddisfatte le ipotesi ($ H_3 $) del teorema di Lyapunov.
@@ -143,7 +143,7 @@ Stabilire se $ V_1,V_2 $ e $ V_3 $ sono funzioni di Lyapunov per il sistema.}{
     \begin{itemize}
         \item $ (0,0) $ è l'unico equilibrio. 
         \item $ V_1(x,y) = x^{2}+y^{2}$ è definita positiva in $ (0,0) $. \begin{align*}
-            \dot{V}_1(x,y) &= \pd{V_1}{x}\,x'+\pd{V_2}{y}\,y'\\ 
+            \dot{V}_1(x,y) &= \cfrac{\partial V_1}{\partial x}\,x'+\cfrac{\partial V_2}{\partial y}\,y'\\ 
             &= 
         \end{align*}
         \todo{Manca la fine dell'esercizio}%TODO finire l'esercizio
@@ -194,7 +194,7 @@ Stabilire se $ V_1,V_2 $ e $ V_3 $ sono funzioni di Lyapunov per il sistema.}{
         \item $ L(t) $ il numero di predatori al tempo $ t $ (dove $ l $ sta per lupo).
     \end{itemize}
 
-    Supponiamo che entrambe queste popolazioni crescano proporzionalmente a sé stesse: \[
+    Supponiamo che entrambe queste popolazioni crescano proporzionalmente a se stesse: \[
         \begin{aligned}
             C'(t)&=c\,C(t)\\ 
             L'(t) &= l\,L(t)
@@ -210,7 +210,7 @@ Stabilire se $ V_1,V_2 $ e $ V_3 $ sono funzioni di Lyapunov per il sistema.}{
             C'(t) = \left(\gamma- \delta\,L(t)\right)\,C(t)\\ 
             L'(t)=\left(-\alpha+\beta\,C(t)\right)\,L(t)
         \end{cases}\qquad \alpha,\beta,\delta, \gamma>0.
-    \]Riscaliamo le variabili, o equivalentemente supponiamo $ \alpha=\beta=\delta= \gamma=1 $: \[
+    \]Riscaliamo le variabili o, equivalentemente, supponiamo $ \alpha=\beta=\delta= \gamma=1 $: \[
         \begin{cases}
             C'=(1-L)\,C\\ 
             L'=(C-1)\,L

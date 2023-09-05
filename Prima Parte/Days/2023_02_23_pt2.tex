@@ -3,11 +3,11 @@
 \subsection{Equazione logistica}
 %% BEGIN Equazione logistica
 \paragrafo{Studio delle soluzioni}{%
-    Sia $ p'(t)= \left(k-h\,p(t)\right) \cdot p(t)$, dove $ p(t) $ è il numero di individui in un popolazione al tempo $ t $, con $ k,h>0 $ e $ p(t)\ge 0 $. 
+    Sia $ p'(t)= \left(k-h\,p(t)\right) \cdot p(t)$, dove $ p(t) $ è il numero di individui in una popolazione al tempo $ t $, con $ k,h>0 $ e $ p(t)\ge 0 $. 
 
     Supponiamo che $ p(0)=p_0\ge 0 $. Ci chiediamo l'evoluzione di $ p(t) $ per $ t>0 $. 
     \begin{enumerate}
-        \item Prima di tutto cerchiamo le soluzioni costanti, ovvero quelle tali che $ f(p)=0$. Queste sono due soluzioni costanti per ogni tempo $t$: $p(t)\equiv 0 $ e $ p(t)\equiv (k/h) $.
+        \item Prima di tutto cerchiamo le soluzioni costanti, ovvero quelle tali che $ f(p)=0$. Queste sono: $p(t)\equiv 0 $ e $ p(t)\equiv (k/h) $.
         \item Studiamo adesso, invece, la monotonia delle soluzioni: \[
             p'(t)\ge 0 \iff \left(k-h\,p(t)\right) \cdot \parentesi{\ge 0}{p(t)}\ge 0.
         \]Dunque $ p'(t)\ge 0 $ $ \iff $ $ p(t)\le k/h $.\\
@@ -21,10 +21,11 @@
             \norma{p}\le k/h.
         \]È soddisfatto il corollario \framref{dakfjhbaksjdhfbaksjdhfbakjhbkjhb}, e quindi $ T_{\max}= + \infty  $
 
-    \item $ p_0>k/h $: la soluzione è sempre monotona decrescente, e si troverà sempre nel semispazio $ p>k/h $. Anche in questo caso si applica il corollario \framref{dakfjhbaksjdhfbaksjdhfbakjhbkjhb} 
+    \item $ p_0>k/h $: la soluzione è sempre monotona decrescente, e si troverà sempre nel semispazio $ p>k/h $.
+    Anche in questo caso si applica il corollario \framref{dakfjhbaksjdhfbaksjdhfbakjhbkjhb} 
     $\implies$ $ T_{\max}= + \infty  $. 
     \end{itemize}
-    Osservo infine che il teorema dell'asintoto ci garantisce che tutte le soluzioni non costanti abbiano come limite a $ + \infty $ la soluzione constante $ k/h $.
+    Si noti, infine, che il teorema dell'asintoto ci garantisce che tutte le soluzioni non costanti abbiano come limite a $ + \infty $ la soluzione constante $ k/h $.
 }{}{}
 \paragrafo{Diagramma di fase}{%
     Poiché $ p(t) \in \R $, si dice che $ \R $ è lo \emph{spazio delle fasi} o degli stati.

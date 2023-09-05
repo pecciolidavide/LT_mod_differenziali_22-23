@@ -8,16 +8,19 @@
 }
 \section{Equazione alle variazioni}
 \paragrafo{Domanda}{%
-    Ci chiediamo ora se la funzione $ \bm{u}_{(t_0,\bm{x})}(t) $ ha regolarità maggiore rispetto a $ \bm{x} $? Se sì, come si comporta la funzione $ \partial_x\bm{u}_{(t,\bm{x})}(t) $?
+    Ci chiediamo ora se la funzione $ \bm{u}_{(t_0,\bm{x})}(t) $ ha regolarità maggiore rispetto a $ \bm{x} $? Se sì, come si comporta $ \partial_x\bm{u}_{(t_0,\bm{x})}(t) $?
 }{}{}
 %% BEGIN Equazione alle variazioni
 \paragrafo{Equazione alle variazioni}{%
+Sia
 \[
     \begin{cases}
         {u}'(t)=t\,{u}^{2}\\ 
         {u}(0)={x}
     \end{cases}\qquad u_{(0,x)}(t) = \frac{2x}{2-t^{2}x}, \quad t \in \left(-\sqrt{\frac{2}{x}},\sqrt{\frac{2}{x}}\right)
-\]$u_{(0,x)}(t)$ la interpretiamo come funzione di due variabili $ t $ e $ x $. \begin{align*}
+\]
+Ora, interpretando $u_{(0,x)}(t)$ come funzione di due variabili $ t $ e $ x $, analizziamone le derivate parziali:
+ \begin{align*}
     \partial_t u_{(0,x)}(t)&=\frac{\partial}{\partial t} u_{(0,x)}(t) = \cdots = t\,u^{2}_{(0,x)}(t)\\[3ex]
     \partial_x u_{(0,x)}(t)&=\frac{\partial}{\partial x} u_{(0,x)}(t) = \frac{\partial}{\partial x}\left(\frac{2x}{2-t^{2}x}\right)\\[2ex] 
     &= \frac{4-\cancel{2t^{2}x}-\cancel{2x(-t^{2})}}{(2-t^{2}x)^{2}}= \frac{4}{(2-t^{2}x)^{2}}
@@ -89,7 +92,7 @@ Notando che la soluzione è $ C^{2} $ possiamo permetterci di calcolare le deriv
     \]
 
     Considero ora l'insieme \[
-        E=\{(t,\bm{x}) \in\Omega \colon t \in I(\bm{x}), \bm{x} \in \Omega_{0}\}. 
+        E=\{(t,\bm{x}) \in\Omega \colon t \in I(\bm{x}), \bm{x} \in \Omega_{0}\}= I(\bm{x})\times \Omega_0
     \]
 
     La funzione $ \bm{\Psi} $ definita sotto si chiama \emph{flusso}, e indica dove si trova al tempo $ t $ la soluzione con dato iniziale $ \bm{u}(t_0)=\bm{x} $. \[
@@ -132,8 +135,8 @@ Notando che la soluzione è $ C^{2} $ possiamo permetterci di calcolare le deriv
             u(0)=x
         \end{cases}
     \]Si ha che\begin{itemize}
-        \item se $ x>1 $: $ I(x) = (\alpha_{x}, + \infty ) $ con $ \alpha_{x}>-\infty  $;
-        \item se $ x \in [0,1:] $ $ I(x) = \R $;
-        \item se $ x<0 $: $ I(x)=(- \infty, \omega_{x} ) $ con $ \omega_{x}<+ \infty  $
+        \item se $ x>1 \colon$ $ I(x) = (\alpha_{x}, + \infty ) $ con $ \alpha_{x}>-\infty  $
+        \item se $ x \in [0,1]\colon $ $ I(x) = \R $
+        \item se $ x<0 \colon$ $ I(x)=(- \infty, \omega_{x} ) $ con $ \omega_{x}<+ \infty  $
     \end{itemize}
 }

@@ -10,7 +10,7 @@
             \bm{u}'(t)= \bm{f}\left(t, \bm{u}(t)\right)\\ 
             \bm{u}(t_0) = \bm{x}_0
         \end{cases}
-    \]ammette \emph{almeno} una soluzione o ammette \emph{esattamente} una soluzione, al variare della condizione iniziale $ (t_0, \bm{x}_0) \in \Omega $.
+    \]ammetta \emph{almeno} una soluzione o ammetta \emph{esattamente} una soluzione, al variare della condizione iniziale $ (t_0, \bm{x}_0) \in \Omega $.
 }{}{}
 %% END
 %% BEGIN Teorema di Peano
@@ -25,7 +25,10 @@
 %% END
 %% BEGIN Pennello di Peano
 \paragrafo{Pennello di Peano}{%
-    Se si dimostra che il problema di Cauchy ammette due soluzioni distinte, allora in realtà ne ha infinite.
+    La sola ipotesi di continuità non basta ad affermare anche l'unicità della soluzione del PdC. 
+    
+    Si scopre infatti che se si dimostra che il problema di Cauchy ammette due soluzioni distinte, allora in realtà ne ha infinite.
+    Questo fenomeno, denominato \ul{pennello di Peano}, è reso evidente dal seguente
 }{}{}
 \esempio{
     Consideriamo il problema di Cauchy \[
@@ -42,10 +45,11 @@
 }
 %% END
 %% BEGIN Teorema di Cauchy-Lipschitz
+Per garantire l'unicità della soluzione, risulta cosi necessario il cosiddetto 
 \teorema[Teorema di Cauchy-Lipschitz]{ldksnaflkjnadflkjadnsflajknkljndasf}{
-    Se $ \bm{f} $ \begin{itemize}
-        \item è continua,
-        \item è localmente lipschitziana rispetto alla seconda variabile e uniformemente nella prima\footnote{Ovvero \[
+    Se $ \bm{f} $ è \begin{itemize}
+        \item continua,
+        \item localmente lipschitziana rispetto alla seconda variabile e uniformemente nella prima\footnote{Ovvero \[
             \forall\, K \subset \Omega,\quad \exists\,L>0:\quad \norma{\bm{f}(t,\bm{x})-f(t,\bm{y})}\le L\,\norma{\bm{x}-\bm{y}}\qquad \forall\,(t,\bm{x}), (t,\bm{y}) \in K.
         \]}
     \end{itemize}allora per ogni punto $ (t_0,\bm{x}_0) \in \Omega $ esiste un intorno di $ t_0 $, $ [t_0-\delta,t_0+\delta] $ nel quale è definita un'unica soluzione del problema di Cauchy \[
@@ -71,7 +75,7 @@
         \left(t_0\pm\delta, \bm{u}(t_0 \pm \delta)\right) \in \Omega
     \]ed iterare questo procedimento. 
 
-    In generale, quindi, esiste un intervallo $ (T_{\min}, T_{\max}  ) $ per la soluzione $ \bm{u}(t;t_0,\bm{u}_0) $, che per costruzione non può che essere aperto e connesso.
+    In generale, quindi, esiste un intervallo $ (T_{\min}, T_{\max}  ) $ per la soluzione $ \bm{u}_{(t_0,\bm{x}_0)}(t) $, che per costruzione non può che essere aperto e connesso.
 }
 %% END
 %% BEGIN Teorema di Esistenza Globale
