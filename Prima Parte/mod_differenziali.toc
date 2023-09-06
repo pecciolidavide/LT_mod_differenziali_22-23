@@ -26,54 +26,54 @@
 \contentsline {section}{\numberline {2.3}Flusso associato ad una equazione differenziale}{15}{section.2.3}%
 \contentsline {paragraph}{Definizione del flusso. ({2.9})}{15}{section*.26}%
 \contentsline {paragraph}{Sistemi autonomi. ({2.10})}{15}{section*.27}%
-\contentsline {paragraph}{Esempio. ({2.11})}{16}{section*.28}%
+\contentsline {paragraph}{Definizione. ({2.11})}{15}{section*.28}%
+\contentsline {paragraph}{Esempio. ({2.12})}{16}{section*.29}%
 \contentsline {chapter}{\numberline {3}Equazioni autonome}{17}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Equazioni autonome in una dimensione}{17}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Equazione logistica}{17}{subsection.3.1.1}%
-\contentsline {paragraph}{Studio delle soluzioni. ({3.1})}{17}{section*.29}%
-\contentsline {paragraph}{Diagramma di fase. ({3.2})}{18}{section*.30}%
-\contentsline {paragraph}{Osservazione. ({3.3})}{18}{section*.32}%
+\contentsline {paragraph}{Studio delle soluzioni. ({3.1})}{17}{section*.30}%
+\contentsline {paragraph}{Diagramma di fase. ({3.2})}{18}{section*.31}%
+\contentsline {paragraph}{Osservazione. ({3.3})}{18}{section*.33}%
 \contentsline {subsection}{\numberline {3.1.2}Diagramma di fase}{18}{subsection.3.1.2}%
-\contentsline {paragraph}{Definizione. ({3.4})}{18}{section*.33}%
-\contentsline {paragraph}{Nota. ({3.5})}{19}{section*.34}%
-\contentsline {paragraph}{Definizione. ({3.6})}{19}{section*.35}%
-\contentsline {paragraph}{Esempio. ({3.7})}{19}{section*.36}%
-\contentsline {paragraph}{({3.8})}{19}{section*.37}%
-\contentsline {paragraph}{Esercizio. ({3.9})}{19}{section*.38}%
+\contentsline {paragraph}{Definizione. ({3.4})}{18}{section*.34}%
+\contentsline {paragraph}{Nota. ({3.5})}{19}{section*.35}%
+\contentsline {paragraph}{Definizione. ({3.6})}{19}{section*.36}%
+\contentsline {paragraph}{Esempio. ({3.7})}{19}{section*.37}%
+\contentsline {paragraph}{({3.8})}{19}{section*.38}%
+\contentsline {paragraph}{Esercizio. ({3.9})}{19}{section*.39}%
 \contentsline {section}{\numberline {3.2}Risultati e definizioni sui sistemi autonomi}{19}{section.3.2}%
-\contentsline {paragraph}{Definizione. ({3.10})}{19}{section*.39}%
-\contentsline {paragraph}{Ipotesi. ({3.11})}{20}{section*.40}%
-\contentsline {paragraph}{Definizione. ({3.12})}{20}{section*.41}%
-\contentsline {paragraph}{Definizione. ({3.13})}{20}{section*.42}%
-\contentsline {paragraph}{Osservazione. ({3.14})}{20}{section*.43}%
-\contentsline {paragraph}{Definizione. ({3.15})}{20}{section*.44}%
-\contentsline {paragraph}{Definizione. ({3.16})}{20}{section*.45}%
-\contentsline {paragraph}{Esempio. ({3.17})}{20}{section*.46}%
-\contentsline {paragraph}{Esempio. ({3.18})}{21}{section*.48}%
+\contentsline {paragraph}{Ipotesi. ({3.10})}{19}{section*.40}%
+\contentsline {paragraph}{Definizione. ({3.11})}{20}{section*.41}%
+\contentsline {paragraph}{Definizione. ({3.12})}{20}{section*.42}%
+\contentsline {paragraph}{Osservazione. ({3.13})}{20}{section*.43}%
+\contentsline {paragraph}{Definizione. ({3.14})}{20}{section*.44}%
+\contentsline {paragraph}{Definizione. ({3.15})}{20}{section*.45}%
+\contentsline {paragraph}{Esempio. ({3.16})}{20}{section*.46}%
+\contentsline {paragraph}{Esempio. ({3.17})}{21}{section*.48}%
 \contentsline {paragraph}{\textit {\hyperref [thm:daflkjndasflkjndaslkjnfdalkjnaslkjfnlkjn]{Dimostrazione di VIII.}}}{21}{section*.50}%
-\contentsline {paragraph}{Osservazione. ({3.19})}{23}{section*.52}%
+\contentsline {paragraph}{Osservazione. ({3.18})}{23}{section*.52}%
 \contentsline {paragraph}{\textit {\hyperref [thm:lkjndalkjndfalkjndasklfjnasdkljfnasdkljfnasdjkndaslkjnfaldskjnaslfkjnsaldkjn]{Dimostrazione di IX.}}}{23}{section*.53}%
-\contentsline {paragraph}{Definizione. ({3.20})}{23}{section*.55}%
-\contentsline {paragraph}{Definizione. ({3.21})}{24}{section*.56}%
-\contentsline {paragraph}{Osservazione. ({3.22})}{24}{section*.57}%
-\contentsline {paragraph}{Corollario. ({3.23})}{24}{section*.58}%
-\contentsline {paragraph}{Caso particolare. ({3.24})}{24}{section*.59}%
+\contentsline {paragraph}{Definizione. ({3.19})}{23}{section*.55}%
+\contentsline {paragraph}{Definizione. ({3.20})}{24}{section*.56}%
+\contentsline {paragraph}{Osservazione. ({3.21})}{24}{section*.57}%
+\contentsline {paragraph}{Corollario. ({3.22})}{24}{section*.58}%
+\contentsline {paragraph}{Caso particolare. ({3.23})}{24}{section*.59}%
 \contentsline {paragraph}{\textit {\hyperref [thm:daflkjnadfkljansdfklasjdnfcaskdjncdas]{Dimostrazione di X.}}}{24}{section*.60}%
-\contentsline {paragraph}{Definizione. ({3.25})}{25}{section*.62}%
+\contentsline {paragraph}{Definizione. ({3.24})}{25}{section*.62}%
 \contentsline {paragraph}{\textit {\hyperref [thm:dakfjnasldkfjnlasdkjfnadslkfjnaslkj]{Dimostrazione di XI.}}}{25}{section*.63}%
 \contentsline {section}{\numberline {3.3}Stabilità dei punti di equilibrio}{26}{section.3.3}%
-\contentsline {paragraph}{Obiettivo. ({3.26})}{26}{section*.65}%
-\contentsline {paragraph}{Definizione. ({3.27})}{26}{section*.66}%
-\contentsline {paragraph}{Definizione. ({3.28})}{26}{section*.67}%
-\contentsline {paragraph}{Definizione. ({3.29})}{26}{section*.68}%
+\contentsline {paragraph}{Obiettivo. ({3.25})}{26}{section*.65}%
+\contentsline {paragraph}{Definizione. ({3.26})}{26}{section*.66}%
+\contentsline {paragraph}{Definizione. ({3.27})}{26}{section*.67}%
+\contentsline {paragraph}{Definizione. ({3.28})}{26}{section*.68}%
 \contentsline {section}{\numberline {3.4}Equazioni autonome in due dimensioni}{27}{section.3.4}%
-\contentsline {paragraph}{Orbite non singolari. ({3.30})}{27}{section*.69}%
+\contentsline {paragraph}{Orbite non singolari. ({3.29})}{27}{section*.69}%
 \contentsline {paragraph}{\textit {\hyperref [thm:dlkjanbflkasjdbfnlakjnflkasjdnlkasdjnflaksdfjnlkjnlkjn]{Dimostrazione di XII.}}}{28}{section*.72}%
-\contentsline {paragraph}{Esempio. ({3.31})}{29}{section*.73}%
-\contentsline {paragraph}{Esempio. ({3.32})}{31}{section*.76}%
-\contentsline {paragraph}{Esempio. ({3.33})}{32}{section*.78}%
-\contentsline {paragraph}{Pendolo Piano Senza Attrito. ({3.34})}{35}{section*.81}%
-\contentsline {paragraph}{Osservazione. ({3.35})}{37}{section*.84}%
+\contentsline {paragraph}{Esempio. ({3.30})}{29}{section*.73}%
+\contentsline {paragraph}{Esempio. ({3.31})}{31}{section*.76}%
+\contentsline {paragraph}{Esempio. ({3.32})}{32}{section*.78}%
+\contentsline {paragraph}{Pendolo Piano Senza Attrito. ({3.33})}{35}{section*.81}%
+\contentsline {paragraph}{Osservazione. ({3.34})}{37}{section*.84}%
 \contentsline {chapter}{\numberline {4}Sistemi di E.D.O. lineari}{39}{chapter.4}%
 \contentsline {paragraph}{Perché è utile studiarli. ({4.1})}{39}{section*.85}%
 \contentsline {paragraph}{Ripasso. ({4.2})}{39}{section*.86}%
