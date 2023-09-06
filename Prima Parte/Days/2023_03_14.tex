@@ -107,24 +107,28 @@ Notando che la soluzione è $ C^{2} $ possiamo permetterci di calcolare le deriv
 }
 %% END
 \paragrafo{Sistemi autonomi}{%
-    Cosa succede nei sistemi autonomi? Considero \[
+Analizziamo ora il caso dei sistemi autonomi. Prima di tutto
+\definizione{Si dice \emph{sistema autonomo} un'equazione differenziale della forma \[
+    \bm{x}'=\bm{f}(\bm{x}),\qquad \bm{f}:\Omega \subseteq \R^{n}\to \R^{n}
+\]}
+
+    Cosa succede nei sistemi autonomi? Sia\[
         \begin{cases}
             \bm{u}'=\bm{f}(\bm{u})\\ 
             \bm{u}(0)= \bm{x} \in \Omega'
         \end{cases}
-    \]con $ \displaystyle f: \Omega = \R\times \Omega' \subseteq \R\times \R^{n}\longrightarrow \R^{n} $: \begin{itemize}
+    \]con $ \displaystyle f: \Omega = \R\times \Omega' \subseteq \R\times \R^{n}\longrightarrow \R^{n} $, dove: \begin{itemize}
         \item $ \Omega $ è una ``striscia'' di $ \R^{n+1} $, 
-        \item mentre $ \Omega' $ è il dominio di $ \bm{f} $.
+        \item $ \Omega' $ è il dominio di $ \bm{f} $.
     \end{itemize} 
     
-    $\implies$ $ \Omega_0 $ non dipende da $ t_0 $ 
-    
-    $\implies$ fissiamo $ t_0=0 $.
+    Poichè $ \Omega_0 $ non dipende da $ t_0 \leadsto$ fissiamo $ t_0=0 $.
 
-    Se $ I(\bm{x}) $ è l'intervallo massimale per la soluzione con $ \bm{u}_{(0,\bm{x})} $ ed $ E $ è l'insieme: \[
-        E=\{(t,\bm{x}): t \in I(\bm{x}), \bm{x} \in \Omega'\}
-    \]allora definisco la funzione \begin{align*}
-    \bm{\Psi}: E &\longrightarrow \R^{n} \\
+    Preso $ I(\bm{x}) $ intervallo massimale per la soluzione con $ \bm{u}_{(0,\bm{x})} $ e definito l'insieme $ E $ come: \[
+        E\coloneq \{(t,\bm{x}): t \in I(\bm{x}), \bm{x} \in \Omega'\}=I(x)\times \Omega'
+    \]possiamo scrivere il flusso:
+    \begin{align*}
+    \bm{\Psi}\colon E &\longrightarrow \R^{n} \\
     (t,\bm{x}) &\longmapsto \bm{u}_{(0,\bm{x})}(t)
     \end{align*}e $\bm{\Psi}_{\bm{x}}(t)\coloneqq \bm{\Psi}(t,\bm{x}) $ è soluzione con $ \bm{u}(0)=\bm{x} $.
 }{}{}
