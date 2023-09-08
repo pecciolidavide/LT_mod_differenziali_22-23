@@ -122,7 +122,7 @@ Il caso in cui $A$ è una matrice diagonale è abbastanza semplice. Consideriamo
         A=\begin{pmatrix}
             \lambda_1\\ 
             & \lambda_2\\ 
-            & & \lambda 3\\ 
+            & & \lambda_3\\ 
             & & & \ddots\\ 
             & & & & \lambda_{n} 
         \end{pmatrix}\in \R^{n,n}
@@ -135,18 +135,18 @@ Questo è equivalente a: \[
         \end{cases}
     \] 
     
-    Integrando otteniamo che $ \displaystyle x_{i}(t) = c_{i}\,e^{\lambda_{i}\,t }   $ per ogni $ i=1,\dots,m $, dove $ c_{i}  $ è una costante arbitraria. 
+    Integrando otteniamo che $ \displaystyle x_{i}(t) = c_{i}\,e^{\lambda_{i}\,t }   $ per ogni $ i=1,\dots, n $, dove $ c_{i}  $ è una costante arbitraria. 
     Abbiamo così costruito la nostra soluzione:
     
-    $\implies$ $ \displaystyle \bm{x}(t) = \parentesi{W(t)}{\begin{pmatrix}
+    $\implies$ $ \displaystyle \bm{x}(t) = \parentesi{W(t)}{\begin{pNiceMatrix}
         e^{t\,\lambda_1}\\ 
             & e^{t\,\lambda_2}\\ 
             & & e^{t\,\lambda 3}\\ 
-            & & & \ddots\\ 
+            & & & \Ddots\\ 
             & & & & e^{t\,\lambda_{n} }
-    \end{pmatrix}}\begin{pmatrix}
-        c_1\\ \vdots\\ \vdots\\ c_{n} 
-    \end{pmatrix} $
+    \end{pNiceMatrix}}\begin{pNiceMatrix}
+        c_1\\ \Vdots \\ c_{n} 
+    \end{pNiceMatrix} $
 
     In questo caso $ W(t) $ è anche di monodromia.
 }{}{}
@@ -209,5 +209,51 @@ Questo è equivalente a: \[
 }{}{}
 
 \section{Matrice diagonalizzabile}
+Adesso supponiamo che $A$ sia diagonalizzabile.
 
-\todo{Manca un pezzo}%TODO finire gli appunti
+Sia $A\in \R^{n,n}$. Siano $\left\{\lambda_1,\dots,\lambda_n\right\}$ i suoi autovalori e $\left\{\bm{u}_1,\dots,\bm{u}_n\right\}$ i corrispondenti autovettori. Andiamo a dimostrare diversi fatti a riguardo:
+\begin{itemize}
+    \item $ce^{\lambda_i t}\bm{u}_i$ è una soluzione per ogni $c\in \R$ e $i=1,\dots,n$:
+    \begin{align*}
+        \frac{d}{dt}(ce^{\lambda_i t}\bm{u}_i)=c\lambda_ie^{\lambda_i t}\bm{u}_i\\
+        A(ce^{\lambda_i t}\bm{u}_i)=ce^{\lambda_i t}A \bm{u}_i=ce^{\lambda_i t}\bm{u}_i \quad \qed
+    \end{align*}
+    \item $\varphi_i(t)=e^{\lambda_i t}\bm{u}_i, i=1,\dots, n$ sono una base di $S_0$: Questo perchè $\varphi_i(0)=\bm{u}_i$ sono linearmente indipendenti e per il lemma allora le funzioni proprio sono linearmente indipendenti
+    \item La matrice wronskiana è:
+    \begin{align*}
+        W(t)=\begin{pNiceMatrix}
+            \varphi_1(t) &\dots &\varphi_n (t)
+        \end{pNiceMatrix}=\begin{pNiceMatrix}
+            e^{\lambda_1 t}\bm{u}_1&\dots& e^{\lambda_n t}\bm{u}_n
+        \end{pNiceMatrix}=\begin{pNiceMatrix}
+            \bm{u}_1&\dots &\bm{u}_n
+        \end{pNiceMatrix}=\\
+        =\begin{pNiceMatrix}
+    \bm{u}_1 & \dots &\bm{u}_n
+        \end{pNiceMatrix}\begin{pNiceMatrix}
+            e^{t\,\lambda_1}\\ 
+                & e^{t\,\lambda_2}\\ 
+                & & e^{t\,\lambda 3}\\ 
+                & & & \Ddots\\ 
+                & & & & e^{t\,\lambda_{n} }
+        \end{pNiceMatrix}
+    \end{align*}
+    \item Poichè $W(0)=Q$, se poniamo:
+    \begin{align*}
+      \Phi(t)\coloneq W(t)Q^{-1} \leadsto \Phi(0)=Id
+    \end{align*}
+    e quindi $\Phi$ è di monodromia.
+\end{itemize}
+\paragrafo{Conclusione}{%
+Quindi se $A$ è diagonalizzabile con $\left\{\lambda_1, \dots ,\lambda_n\right\}$ autovalori e $Q=(\bm{u}_1,\dots , \bm{u}_n)$ matrice con gli autovettori corrispondenti sulle colonne. Allora:
+\begin{align*}
+   S_0 = \left\{Q\begin{pmatrix}
+        e^{t\,\lambda_1}\\ 
+            & e^{t\,\lambda_2}\\ 
+            & & e^{t\,\lambda_3}\\ 
+            & & & \ddots\\ 
+            & & & & e^{t\,\lambda_{n} }
+    \end{pmatrix}Q^{-1}\bm{x}_0 \colon \bm{x}_0\in {\R}^n\right\}
+\end{align*}
+Ora ci chiediamo: come troviamo il ritratto di fase se A è diagonalizzabile?
+}{}{}
