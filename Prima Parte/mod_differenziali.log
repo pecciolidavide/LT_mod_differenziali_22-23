@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.22)  6 SEP 2023 11:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.22)  8 SEP 2023 17:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1039,6 +1039,78 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \rotFPbot=\skip100
 \rot@float@box=\box133
 \rot@mess@toks=\toks53
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/nicematrix/nicematrix.sty
+Package: nicematrix 2023/03/06 v6.16 Enhanced arrays with the help of PGF/TikZ
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen317
+\ar@mcellbox=\box134
+\extrarowheight=\dimen318
+\NC@list=\toks54
+\extratabsurround=\skip101
+\backup@length=\skip102
+\ar@cellbox=\box135
+)
+\g__nicematrix_env_int=\count520
+\g__nicematrix_NiceMatrixBlock_int=\count521
+\l__nicematrix_note_in_caption_int=\count522
+\l__nicematrix_columns_width_dim=\dimen319
+\l__nicematrix_col_width_dim=\dimen320
+\g__nicematrix_row_total_int=\count523
+\g__nicematrix_col_total_int=\count524
+\g__nicematrix_last_row_node_int=\count525
+\l__nicematrix_key_nb_rows_int=\count526
+\g__nicematrix_blocks_wd_dim=\dimen321
+\g__nicematrix_blocks_ht_dim=\dimen322
+\g__nicematrix_blocks_dp_dim=\dimen323
+\l__nicematrix_width_dim=\dimen324
+\l__nicematrix_tabular_width_dim=\dimen325
+\l__nicematrix_rule_width_dim=\dimen326
+\l__nicematrix_old_iRow_int=\count527
+\l__nicematrix_old_jCol_int=\count528
+\g__nicematrix_total_X_weight_int=\count529
+\l__nicematrix_X_columns_dim=\dimen327
+\l__nicematrix_x_initial_dim=\dimen328
+\l__nicematrix_y_initial_dim=\dimen329
+\l__nicematrix_x_final_dim=\dimen330
+\l__nicematrix_y_final_dim=\dimen331
+\l__nicematrix_tmpc_dim=\dimen332
+\l__nicematrix_tmpd_dim=\dimen333
+\g__nicematrix_width_last_col_dim=\dimen334
+\g__nicematrix_width_first_col_dim=\dimen335
+\l__nicematrix_row_min_int=\count530
+\l__nicematrix_row_max_int=\count531
+\l__nicematrix_col_min_int=\count532
+\l__nicematrix_col_max_int=\count533
+\g__nicematrix_static_num_of_col_int=\count534
+\l__nicematrix_rounded_corners_dim=\dimen336
+\l__nicematrix_line_width_dim=\dimen337
+\g__nicematrix_block_box_int=\count535
+\l__nicematrix_submatrix_extra_height_dim=\dimen338
+\l__nicematrix_submatrix_left_xshift_dim=\dimen339
+\l__nicematrix_submatrix_right_xshift_dim=\dimen340
+\l__nicematrix_first_row_int=\count536
+\l__nicematrix_first_col_int=\count537
+\l__nicematrix_last_row_int=\count538
+\l__nicematrix_last_col_int=\count539
+\c@tabularnote=\count540
+\c@nicematrix_draft=\count541
+\l__nicematrix_cell_space_top_limit_dim=\dimen341
+\l__nicematrix_cell_space_bottom_limit_dim=\dimen342
+\l__nicematrix_xdots_inter_dim=\dimen343
+\l__nicematrix_xdots_shorten_start_dim=\dimen344
+\l__nicematrix_xdots_shorten_end_dim=\dimen345
+\l__nicematrix_xdots_radius_dim=\dimen346
+\l__nicematrix_notes_above_space_dim=\dimen347
+\l__nicematrix_left_margin_dim=\dimen348
+\l__nicematrix_right_margin_dim=\dimen349
+\l__nicematrix_extra_left_margin_dim=\dimen350
+\l__nicematrix_extra_right_margin_dim=\dimen351
+\c__nicematrix_max_l_dim=\dimen352
+\l__nicematrix_position_int=\count542
+\l__nicematrix_start_int=\count543
+\l__nicematrix_multiplicity_int=\count544
+\l__nicematrix_brace_yshift_dim=\dimen353
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -1050,15 +1122,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (/usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks54
-\thm@bodyfont=\toks55
-\thm@headfont=\toks56
-\thm@notefont=\toks57
-\thm@headpunct=\toks58
-\thm@preskip=\skip101
-\thm@postskip=\skip102
-\thm@headsep=\skip103
-\dth@everypar=\toks59
+\thm@style=\toks55
+\thm@bodyfont=\toks56
+\thm@headfont=\toks57
+\thm@notefont=\toks58
+\thm@headpunct=\toks59
+\thm@preskip=\skip103
+\thm@postskip=\skip104
+\thm@headsep=\skip105
+\dth@everypar=\toks60
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/yhmath/yhmath.sty
 Package: yhmath 2020/03/17 v1.6
 \symyhlargesymbols=\mathgroup6
@@ -1101,7 +1173,7 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/polynom/polynom.sty
 Package: polynom 2017/07/17 0.19 (CH,HA)
-\pld@currstage=\count520
+\pld@currstage=\count545
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/forest/forest.sty
 Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
  (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
@@ -1126,108 +1198,108 @@ File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodepartlowerbox=\box134
-\pgfnodeparttwobox=\box135
-\pgfnodepartthreebox=\box136
-\pgfnodepartfourbox=\box137
-\pgfnodeparttwentybox=\box138
-\pgfnodepartnineteenbox=\box139
-\pgfnodeparteighteenbox=\box140
-\pgfnodepartseventeenbox=\box141
-\pgfnodepartsixteenbox=\box142
-\pgfnodepartfifteenbox=\box143
-\pgfnodepartfourteenbox=\box144
-\pgfnodepartthirteenbox=\box145
-\pgfnodeparttwelvebox=\box146
-\pgfnodepartelevenbox=\box147
-\pgfnodeparttenbox=\box148
-\pgfnodepartninebox=\box149
-\pgfnodeparteightbox=\box150
-\pgfnodepartsevenbox=\box151
-\pgfnodepartsixbox=\box152
-\pgfnodepartfivebox=\box153
+\pgfnodepartlowerbox=\box136
+\pgfnodeparttwobox=\box137
+\pgfnodepartthreebox=\box138
+\pgfnodepartfourbox=\box139
+\pgfnodeparttwentybox=\box140
+\pgfnodepartnineteenbox=\box141
+\pgfnodeparteighteenbox=\box142
+\pgfnodepartseventeenbox=\box143
+\pgfnodepartsixteenbox=\box144
+\pgfnodepartfifteenbox=\box145
+\pgfnodepartfourteenbox=\box146
+\pgfnodepartthirteenbox=\box147
+\pgfnodeparttwelvebox=\box148
+\pgfnodepartelevenbox=\box149
+\pgfnodeparttenbox=\box150
+\pgfnodepartninebox=\box151
+\pgfnodeparteightbox=\box152
+\pgfnodepartsevenbox=\box153
+\pgfnodepartsixbox=\box154
+\pgfnodepartfivebox=\box155
 ))) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfit.code.tex
 File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
-\pgf@intersect@solutions=\count521
+\pgf@intersect@solutions=\count546
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks60
-\pgfopts@list@add@b@toks=\toks61
+\pgfopts@list@add@a@toks=\toks61
+\pgfopts@list@add@b@toks=\toks62
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/elocalloc/elocalloc.sty
 Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/inlinedef/inlinedef.sty
 Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
-\ID@toks=\toks62
-\ID@count=\count522
+\ID@toks=\toks63
+\ID@count=\count547
 )
-\ID@usercommands=\toks63
-\safeloop@depth=\count523
-\safeRKloop@depth=\count524
-\forest@temp@dimen=\dimen317
-\forest@temp@count=\count525
-\forest@n=\count526
-\forest@temp@global@count=\count527
-\forest@temp@toks=\toks64
-\forest@temparray@M=\count528
-\forest@temparray@N=\count529
-\forest@global@temparray@M=\count530
-\forest@global@temparray@N=\count531
-\forest@isnum@count=\count532
-\forest@isdim@nonintpart=\count533
-\forest@isdim@dimen=\dimen318
-\forest@sort@m=\count534
-\forest@sort@k=\count535
-\forest@sort@p=\count536
-\bracket@content=\toks65
-\bracket@afterthought=\toks66
-\forest@node@maxid=\count537
-\forest@process@left@M=\count538
-\forest@process@left@N=\count539
-\forest@process@right@M=\count540
-\forest@process@right@N=\count541
-\forest@process@saved@M=\count542
-\forest@process@saved@N=\count543
-\forest@process@result@M=\count544
-\forest@process@result@N=\count545
-\forest@process@n=\count546
-\forest@nodewalk@branch@toks=\toks67
-\forest@nodewalk@shortsteps@resolution=\toks68
-\forest@do@dynamics=\toks69
-\forest@box=\box154
-\forest@xg=\dimen319
-\forest@yg=\dimen320
-\forest@xs=\dimen321
-\forest@ys=\dimen322
-\forest@pi@toks=\toks70
-\forest@segment@toks=\toks71
-\forest@PIi@toks=\toks72
-\forest@PIii@toks=\toks73
+\ID@usercommands=\toks64
+\safeloop@depth=\count548
+\safeRKloop@depth=\count549
+\forest@temp@dimen=\dimen354
+\forest@temp@count=\count550
+\forest@n=\count551
+\forest@temp@global@count=\count552
+\forest@temp@toks=\toks65
+\forest@temparray@M=\count553
+\forest@temparray@N=\count554
+\forest@global@temparray@M=\count555
+\forest@global@temparray@N=\count556
+\forest@isnum@count=\count557
+\forest@isdim@nonintpart=\count558
+\forest@isdim@dimen=\dimen355
+\forest@sort@m=\count559
+\forest@sort@k=\count560
+\forest@sort@p=\count561
+\bracket@content=\toks66
+\bracket@afterthought=\toks67
+\forest@node@maxid=\count562
+\forest@process@left@M=\count563
+\forest@process@left@N=\count564
+\forest@process@right@M=\count565
+\forest@process@right@N=\count566
+\forest@process@saved@M=\count567
+\forest@process@saved@N=\count568
+\forest@process@result@M=\count569
+\forest@process@result@N=\count570
+\forest@process@n=\count571
+\forest@nodewalk@branch@toks=\toks68
+\forest@nodewalk@shortsteps@resolution=\toks69
+\forest@do@dynamics=\toks70
+\forest@box=\box156
+\forest@xg=\dimen356
+\forest@yg=\dimen357
+\forest@xs=\dimen358
+\forest@ys=\dimen359
+\forest@pi@toks=\toks71
+\forest@segment@toks=\toks72
+\forest@PIi@toks=\toks73
+\forest@PIii@toks=\toks74
 \forest@copy@in=\read6
 \forest@copy@out=\write5
-\forest@externalize@max@outer@n=\count547
-\forest@externalize@inner@n=\count548
+\forest@externalize@max@outer@n=\count572
+\forest@externalize@inner@n=\count573
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen323
-\lightrulewidth=\dimen324
-\cmidrulewidth=\dimen325
-\belowrulesep=\dimen326
-\belowbottomsep=\dimen327
-\aboverulesep=\dimen328
-\abovetopsep=\dimen329
-\cmidrulesep=\dimen330
-\cmidrulekern=\dimen331
-\defaultaddspace=\dimen332
-\@cmidla=\count549
-\@cmidlb=\count550
-\@aboverulesep=\dimen333
-\@belowrulesep=\dimen334
-\@thisruleclass=\count551
-\@lastruleclass=\count552
-\@thisrulewidth=\dimen335
+\heavyrulewidth=\dimen360
+\lightrulewidth=\dimen361
+\cmidrulewidth=\dimen362
+\belowrulesep=\dimen363
+\belowbottomsep=\dimen364
+\aboverulesep=\dimen365
+\abovetopsep=\dimen366
+\cmidrulesep=\dimen367
+\cmidrulekern=\dimen368
+\defaultaddspace=\dimen369
+\@cmidla=\count574
+\@cmidlb=\count575
+\@aboverulesep=\dimen370
+\@belowrulesep=\dimen371
+\@thisruleclass=\count576
+\@lastruleclass=\count577
+\@thisrulewidth=\dimen372
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/commath/commath.sty) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup8
@@ -1241,30 +1313,30 @@ Package bm Info: No bold for \U/rsfs/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/marginnote/marginnote.sty
 Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
-\c@mn@abspage=\count553
+\c@mn@abspage=\count578
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/arrayjobx/arrayjobx.sty
 Package: arrayjobx 2010/05/03 v1.04 Array management
-\dataheight=\count554
-\array@width=\count555
-\index@count=\count556
-\index@total=\count557
-\temp@toks=\toks74
-\temp@count=\count558
-\temp@@count=\count559
-\temp@@@count=\count560
+\dataheight=\count579
+\array@width=\count580
+\index@count=\count581
+\index@total=\count582
+\temp@toks=\toks75
+\temp@count=\count583
+\temp@@count=\count584
+\temp@@@count=\count585
 )
-\c@numerodidimostrazioni=\count561
+\c@numerodidimostrazioni=\count586
  (/usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip104
-\enit@outerparindent=\dimen336
-\enit@toks=\toks75
-\enit@inbox=\box155
-\enit@count@id=\count562
-\enitdp@description=\count563
+\labelindent=\skip106
+\enit@outerparindent=\dimen373
+\enit@toks=\toks76
+\enit@inbox=\box157
+\enit@count@id=\count587
+\enitdp@description=\count588
 )
-\c@Riferimentinum=\count564
-\c@variabile=\count565
+\c@Riferimentinum=\count589
+\c@variabile=\count590
  (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
@@ -1272,24 +1344,24 @@ File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
 File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen337
-\pgfdecoratedremainingdistance=\dimen338
-\pgfdecoratedinputsegmentcompleteddistance=\dimen339
-\pgfdecoratedinputsegmentremainingdistance=\dimen340
-\pgf@decorate@distancetomove=\dimen341
-\pgf@decorate@repeatstate=\count566
-\pgfdecorationsegmentamplitude=\dimen342
-\pgfdecorationsegmentlength=\dimen343
+\pgfdecoratedcompleteddistance=\dimen374
+\pgfdecoratedremainingdistance=\dimen375
+\pgfdecoratedinputsegmentcompleteddistance=\dimen376
+\pgfdecoratedinputsegmentremainingdistance=\dimen377
+\pgf@decorate@distancetomove=\dimen378
+\pgf@decorate@repeatstate=\count591
+\pgfdecorationsegmentamplitude=\dimen379
+\pgfdecorationsegmentlength=\dimen380
 )
-\tikz@lib@dec@box=\box156
+\tikz@lib@dec@box=\box158
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/local/texlive/2023/texmf-dist/tex/latex/hobby/tikzlibraryhobby.code.tex (/usr/local/texlive/2023/texmf-dist/tex/latex/hobby/pgflibraryhobby.code.tex (/usr/local/texlive/2023/texmf-dist/tex/latex/hobby/hobby.code.tex (/usr/local/texlive/2023/texmf-dist/tex/latex/hobby/pml3array.sty
-\l_array_base_int=\count567
-\l_array_top_int=\count568
-\l_array_tmp_int=\count569
-\g_array_base_int=\count570
+\l_array_base_int=\count592
+\l_array_top_int=\count593
+\l_array_tmp_int=\count594
+\g_array_base_int=\count595
 )
-\l_hobby_npoints_int=\count571
-\l_hobby_draw_int=\count572
+\l_hobby_npoints_int=\count596
+\l_hobby_draw_int=\count597
 ))) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybabel.code.tex
 File: tikzlibrarybabel.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/tikz-3dplot/tikz-3dplot.sty (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary3d.code.tex
@@ -1298,60 +1370,60 @@ File: tikzlibrary3d.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen344
+\arrowsize=\dimen381
 ))) (/usr/local/texlive/2023/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
 Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
  (/usr/local/texlive/2023/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
 File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen345
-\pgfarrowlength=\dimen346
-\pgfarrowwidth=\dimen347
-\pgfarrowlinewidth=\dimen348
+\pgfarrowinset=\dimen382
+\pgfarrowlength=\dimen383
+\pgfarrowwidth=\dimen384
+\pgfarrowlinewidth=\dimen385
 ))) (/usr/local/texlive/2023/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks76
-\t@pgfplots@tokb=\toks77
-\t@pgfplots@tokc=\toks78
-\pgfplots@tmpa=\dimen349
-\c@pgfplots@coordindex=\count573
-\c@pgfplots@scanlineindex=\count574
+\t@pgfplots@toka=\toks77
+\t@pgfplots@tokb=\toks78
+\t@pgfplots@tokc=\toks79
+\pgfplots@tmpa=\dimen386
+\c@pgfplots@coordindex=\count598
+\c@pgfplots@scanlineindex=\count599
  (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks79
-\t@pgf@tokb=\toks80
-\t@pgf@tokc=\toks81
+\t@pgf@toka=\toks80
+\t@pgf@tokb=\toks81
+\t@pgf@tokc=\toks82
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count575
+\c@pgfplotsarray@tmp=\count600
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count576
-\t@pgfplotstable@a=\toks82
+\c@pgfplotstable@counta=\count601
+\t@pgfplotstable@a=\toks83
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count577
+\c@pgfplotslibrarysurf@no=\count602
  (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count578
-\pgfplots@xmin@reg=\dimen350
-\pgfplots@xmax@reg=\dimen351
-\pgfplots@ymin@reg=\dimen352
-\pgfplots@ymax@reg=\dimen353
-\pgfplots@zmin@reg=\dimen354
-\pgfplots@zmax@reg=\dimen355
+\pgfplots@numplots=\count603
+\pgfplots@xmin@reg=\dimen387
+\pgfplots@xmax@reg=\dimen388
+\pgfplots@ymin@reg=\dimen389
+\pgfplots@ymax@reg=\dimen390
+\pgfplots@zmin@reg=\dimen391
+\pgfplots@zmax@reg=\dimen392
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.fillbetween.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibraryfillbetween.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibrarydecorations.softclip.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfcontrib/pgflibraryfillbetween.code.tex))) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.decorations.softclip.code.tex)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.polar.code.tex) (/usr/local/texlive/2023/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2022/03/08 v6.0d a miscellany of footnote facilities
-\FN@temptoken=\toks83
-\footnotemargin=\dimen356
-\@outputbox@depth=\dimen357
+\FN@temptoken=\toks84
+\footnotemargin=\dimen393
+\@outputbox@depth=\dimen394
  (/usr/local/texlive/2023/texmf-dist/tex/latex/bigfoot/perpage.sty
 Package: perpage 2014/10/25 2.0 Reset/sort counters per page
-\c@abspage=\count579
+\c@abspage=\count604
 )
-\c@pp@a@footnote=\count580
+\c@pp@a@footnote=\count605
 Package footmisc Info: Declaring symbol style bringhurst on input line 695.
 Package footmisc Info: Declaring symbol style chicago on input line 703.
 Package footmisc Info: Declaring symbol style wiley on input line 712.
@@ -1359,24 +1431,24 @@ Package footmisc Info: Declaring symbol style lamport-robust on input line 723.
 Package footmisc Info: Declaring symbol style lamport* on input line 743.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 764.
 )
-Package footmisc Info: Declaring symbol style myfnsymbols on input line 239.
+Package footmisc Info: Declaring symbol style myfnsymbols on input line 240.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2023/01/19 line numbers on paragraphs v5.1
-\linenopenalty=\count581
-\output=\toks84
-\linenoprevgraf=\count582
-\linenumbersep=\dimen358
-\linenumberwidth=\dimen359
-\c@linenumber=\count583
-\c@pagewiselinenumber=\count584
-\c@LN@truepage=\count585
-\c@internallinenumber=\count586
-\c@internallinenumbers=\count587
-\quotelinenumbersep=\dimen360
-\bframerule=\dimen361
-\bframesep=\dimen362
-\bframebox=\box157
-\linenoamsmath@ams@eqpen=\count588
+\linenopenalty=\count606
+\output=\toks85
+\linenoprevgraf=\count607
+\linenumbersep=\dimen395
+\linenumberwidth=\dimen396
+\c@linenumber=\count608
+\c@pagewiselinenumber=\count609
+\c@LN@truepage=\count610
+\c@internallinenumber=\count611
+\c@internallinenumbers=\count612
+\quotelinenumbersep=\dimen397
+\bframerule=\dimen398
+\bframesep=\dimen399
+\bframebox=\box159
+\linenoamsmath@ams@eqpen=\count613
 
 
 LaTeX Warning: Command \@parboxrestore  has changed.
@@ -1400,11 +1472,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count589
+\c@section@level=\count614
 )
-\@linkdim=\dimen363
-\Hy@linkcounter=\count590
-\Hy@pagecounter=\count591
+\@linkdim=\dimen400
+\Hy@linkcounter=\count615
+\Hy@pagecounter=\count616
  (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -1412,7 +1484,7 @@ Now handling font encoding PD1 ...
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count592
+\Hy@SavedSpaceFactor=\count617
  (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -1425,17 +1497,17 @@ Package hyperref Info: Plain pages OFF on input line 4192.
 Package hyperref Info: Backreferencing OFF on input line 4197.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4425.
-\c@Hy@tempcnt=\count593
+\c@Hy@tempcnt=\count618
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen364
+\XeTeXLinkMargin=\dimen401
  (/usr/local/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count594
-\Field@Width=\dimen365
-\Fld@charsize=\dimen366
+\Fld@menulength=\count619
+\Field@Width=\dimen402
+\Fld@charsize=\dimen403
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -1447,9 +1519,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count595
-\c@Item=\count596
-\c@Hfootnote=\count597
+\Hy@abspage=\count620
+\c@Item=\count621
+\c@Hfootnote=\count622
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -1458,8 +1530,8 @@ File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count598
-\c@bookmark@seq@number=\count599
+\Fld@listcount=\count623
+\c@bookmark@seq@number=\count624
  (/usr/local/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -1467,32 +1539,32 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip105
+\Hy@SectionHShift=\skip107
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 298.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 298.
-\c@totale=\count600
-\c@capitoloeccolo=\count601
-\c@numeroappendice=\count602
-\c@appendixever=\count603
-\c@teorema=\count604
+Package hyperref Info: Option `colorlinks' set `true' on input line 299.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 299.
+\c@totale=\count625
+\c@capitoloeccolo=\count626
+\c@numeroappendice=\count627
+\c@appendixever=\count628
+\c@teorema=\count629
  (/usr/local/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count605
-\Gm@cntv=\count606
-\c@Gm@tempcnt=\count607
-\Gm@bindingoffset=\dimen367
-\Gm@wd@mp=\dimen368
-\Gm@odd@mp=\dimen369
-\Gm@even@mp=\dimen370
-\Gm@layoutwidth=\dimen371
-\Gm@layoutheight=\dimen372
-\Gm@layouthoffset=\dimen373
-\Gm@layoutvoffset=\dimen374
-\Gm@dimlist=\toks85
+\Gm@cnth=\count630
+\Gm@cntv=\count631
+\c@Gm@tempcnt=\count632
+\Gm@bindingoffset=\dimen404
+\Gm@wd@mp=\dimen405
+\Gm@odd@mp=\dimen406
+\Gm@even@mp=\dimen407
+\Gm@layoutwidth=\dimen408
+\Gm@layoutheight=\dimen409
+\Gm@layouthoffset=\dimen410
+\Gm@layoutvoffset=\dimen411
+\Gm@dimlist=\toks86
 )) (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibraryexternal.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzexternalshared.code.tex))
 \openout4 = `mod_differenziali.auxlock'.
 
@@ -1559,17 +1631,17 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 ) (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count608
-\scratchdimen=\dimen375
-\scratchbox=\box158
-\nofMPsegments=\count609
-\nofMParguments=\count610
-\everyMPshowfont=\toks86
-\MPscratchCnt=\count611
-\MPscratchDim=\dimen376
-\MPnumerator=\count612
-\makeMPintoPDFobject=\count613
-\everyMPtoPDFconversion=\toks87
+\scratchcounter=\count633
+\scratchdimen=\dimen412
+\scratchbox=\box160
+\nofMPsegments=\count634
+\nofMParguments=\count635
+\everyMPshowfont=\toks87
+\MPscratchCnt=\count636
+\MPscratchDim=\dimen413
+\MPnumerator=\count637
+\makeMPintoPDFobject=\count638
+\everyMPtoPDFconversion=\toks88
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1583,7 +1655,54 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count614
+\c@lstlisting=\count639
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 16.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 16.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 16.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 16.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 16.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 16.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 16.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/yhmath/OMXyhex.fd
+File: OMXyhex.fd 
+File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 16.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+\c@tabularnotesi=\count640
+\enitdp@tabularnotes=\count641
+\c@tabularnotes*i=\count642
+\enitdp@tabularnotes*=\count643
 
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.15).
 
@@ -1632,59 +1751,16 @@ Package hyperref Info: Link coloring ON on input line 16.
 
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}] [2] (./mod_differenziali.toc
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 14.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 14.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 14.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 14.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 14.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 14.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 14.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 14.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/yhmath/OMXyhex.fd
-File: OMXyhex.fd 
-File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 98.
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 99.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/dsrom/m/n/10.95'
-(microtype)             (new value: 10.95pt) on input line 98.
+(microtype)             (new value: 10.95pt) on input line 99.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/dsrom/m/n/8'
-(microtype)             (new value: 8.0pt) on input line 98.
+(microtype)             (new value: 8.0pt) on input line 99.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/dsrom/m/n/6'
-(microtype)             (new value: 6.0pt) on input line 98.
+(microtype)             (new value: 6.0pt) on input line 99.
  [3
 
 
@@ -1706,13 +1782,13 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 14
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-\c@thmljkndasflkjnasdlfkjndsalkfjndafs=\count615
+\c@thmljkndasflkjnasdlfkjndsalkfjndafs=\count644
  [1
 
 
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-\c@thmldksnaflkjnadflkjadnsflajknkljndasf=\count616
+\c@thmldksnaflkjnadflkjadnsflajknkljndasf=\count645
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 61.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1730,7 +1806,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
-\c@thmsasdfkjnasdflkjnasdlkfjnfasd=\count617
+\c@thmsasdfkjnasdflkjnasdlkfjnfasd=\count646
 
 Underfull \vbox (badness 5359) has occurred while \output is active []
 
@@ -1743,9 +1819,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [3]
-\c@thmfasdkjnfalskjnfalkjdnflaj=\count618
-\c@frammentoAdakfjhbaksjdhfbaksjdhfbakjhbkjhb=\count619
-\c@frammentoBdakfjhbaksjdhfbaksjdhfbakjhbkjhb=\count620
+\c@thmfasdkjnfalskjnfalkjdnflaj=\count647
+\c@frammentoAdakfjhbaksjdhfbaksjdhfbakjhbkjhb=\count648
+\c@frammentoBdakfjhbaksjdhfbaksjdhfbakjhbkjhb=\count649
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1766,8 +1842,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Capitolo 2.
-\c@thmfsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure=\count621
+\c@thmfsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure=\count650
 [7]
+\c@thmdafasdfdasfadsfsadf=\count651
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1776,13 +1854,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [8]
-\c@thmdafasdfdasfadsfsadf=\count622
+
+LaTeX Warning: Hyper reference `fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure' on page 9 undefined on input line 89.
+
+\c@frammentoAdafkjasdlkfjnadslkfjnalskfdjnjdjsidiujhfsiosdi=\count652
+\c@frammentoBdafkjasdlkfjnadslkfjnalskfdjnjdjsidiujhfsiosdi=\count653
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-LaTeX Warning: Hyper reference `fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure' on page 9 undefined on input line 90.
-
-\c@frammentoAdafkjasdlkfjnadslkfjnalskfdjnjdjsidiujhfsiosdi=\count623
-\c@frammentoBdafkjasdlkfjnadslkfjnalskfdjnjdjsidiujhfsiosdi=\count624
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1807,13 +1887,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [11]
-Overfull \hbox (6.39888pt too wide) detected at line 173
+Overfull \hbox (6.39888pt too wide) detected at line 172
 []
  []
 
 ) (./Days/2023_03_14.tex
-\c@frammentoAdaoijfdaoijcdiiididiidiidii=\count625
-\c@frammentoBdaoijfdaoijcdiiididiidiidii=\count626
+\c@frammentoAdaoijfdaoijcdiiididiidiidii=\count654
+\c@frammentoBdaoijfdaoijcdiiididiidiidii=\count655
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1839,7 +1919,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [14]
-\c@thm=\count627
+\c@thm=\count656
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1871,8 +1951,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [18 <./figures/mod_differenziali-figure0.pdf> <./figures/mod_differenziali-figure1.pdf>]) (./Days/2023_02_28.tex
-\c@frammentoAdaflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj=\count628
-\c@frammentoBdaflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj=\count629
+\c@frammentoAdaflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj=\count657
+\c@frammentoBdaflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj=\count658
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1882,8 +1962,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [19]
-\c@frammentoAdaflkjansdflkjnasdflkjadsnchiduaskjbfcgukjbh=\count630
-\c@frammentoBdaflkjansdflkjnasdflkjadsnchiduaskjbfcgukjbh=\count631
+\c@frammentoAdaflkjansdflkjnasdflkjadsnchiduaskjbfcgukjbh=\count659
+\c@frammentoBdaflkjansdflkjnasdflkjadsnchiduaskjbfcgukjbh=\count660
 
 ===== Image 'figures/mod_differenziali-figure2' is up-to-date. ======
 
@@ -1894,11 +1974,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [20]
-\c@frammentoAjjdjjduudjjdekkjnsdikjnskjnsdikjsnbfik=\count632
-\c@frammentoBjjdjjduudjjdekkjnsdikjnskjnsdikjsnbfik=\count633
+\c@frammentoAjjdjjduudjjdekkjnsdikjnskjnsdikjsnbfik=\count661
+\c@frammentoBjjdjjduudjjdekkjnsdikjnskjnsdikjsnbfik=\count662
 
 ===== Image 'figures/mod_differenziali-figure3' is up-to-date. ======
-\c@thmdaflkjndasflkjndaslkjnfdalkjnaslkjfnlkjn=\count634
+\c@thmdaflkjndasflkjndaslkjnfdalkjnaslkjfnlkjn=\count663
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1915,8 +1995,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [22]
-\c@thmlkjndalkjndfalkjndasklfjnasdkljfnasdkljfnasdjkndaslkjnfaldskjnaslfkjnsaldkjn=\count635
-\c@thmdaflkjnadfkljansdfklasjdnfcaskdjncdas=\count636
+\c@thmlkjndalkjndfalkjndasklfjnasdkljfnasdkljfnasdjkndaslkjnfaldskjnaslfkjnsaldkjn=\count664
+\c@thmdaflkjnadfkljansdfklasjdnfcaskdjncdas=\count665
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1926,8 +2006,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [23]
-\c@frammentoAadkjnaldfkjnadslfkjnadsflkjnadslkjn=\count637
-\c@frammentoBadkjnaldfkjnadslfkjnadsflkjnadslkjn=\count638
+\c@frammentoAadkjnaldfkjnadslfkjnadsflkjnadslkjn=\count666
+\c@frammentoBadkjnaldfkjnadslfkjnadsflkjnadslkjn=\count667
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1937,7 +2017,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [24]
-\c@thmdakfjnasldkfjnlasdkjfnadslkfjnaslkj=\count639
+\c@thmdakfjnasldkfjnlasdkjfnadslkfjnaslkj=\count668
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1952,8 +2032,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--257
  []
 
 ) (./Days/2023_03_02.tex
-\c@frammentoAdafkjbnadlfjknasdlkjncdajklscnadlskjn=\count640
-\c@frammentoBdafkjbnadlfjknasdlkjncdajklscnadlskjn=\count641
+\c@frammentoAdafkjbnadlfjknasdlkjncdajklscnadlskjn=\count669
+\c@frammentoBdafkjbnadlfjknasdlkjncdajklscnadlskjn=\count670
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1963,14 +2043,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [26]
-\c@thmdlkjanbflkasjdbfnlakjnflkasjdnlkasdjnflaksdfjnlkjnlkjn=\count642
+\c@thmdlkjanbflkasjdbfnlakjnflkasjdnlkasdjnflaksdfjnlkjnlkjn=\count671
 
 Underfull \hbox (badness 5563) in paragraph at lines 67--67
 []$\OML/lmm/m/it/10.95 ' [] I[] [][]\OMS/lmsy/m/n/10.95 ! \OML/lmm/m/it/10.95 I[]$
  []
 
 
-Overfull \hbox (57.23218pt too wide) detected at line 67
+Overfull \hbox (57.2322pt too wide) detected at line 67
 \OML/lmm/m/it/10.95 '[] []
  []
 
@@ -2011,8 +2091,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [30]
-\c@frammentoAjjdjdjdkjnsjdkjncskjndsckjn=\count643
-\c@frammentoBjjdjdjdkjnsjdkjncskjndsckjn=\count644
+\c@frammentoAjjdjdjdkjnsjdkjncskjndsckjn=\count672
+\c@frammentoBjjdjdjdkjnsjdkjncskjndsckjn=\count673
 
 ===== Image 'figures/mod_differenziali-figure5' is up-to-date. ======
 
@@ -2023,8 +2103,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [31 <./figures/mod_differenziali-figure4.pdf>]) (./Days/2023_03_07.tex
-\c@frammentoAdafasdflkjnsadfkjnasdfkjnadskfjnasdkfjnldskjn=\count645
-\c@frammentoBdafasdflkjnsadfkjnasdfkjnadskfjnasdkfjnldskjn=\count646
+\c@frammentoAdafasdflkjnsadfkjnasdfkjnadskfjnasdkfjnldskjn=\count674
+\c@frammentoBdafasdflkjnsadfkjnasdfkjnadskfjnasdkfjnldskjn=\count675
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2053,8 +2133,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [34]
-\c@frammentoAdsfsdfsdfsdfsdfsdfsdfds=\count647
-\c@frammentoBdsfsdfsdfsdfsdfsdfsdfds=\count648
+\c@frammentoAdsfsdfsdfsdfsdfsdfsdfds=\count676
+\c@frammentoBdsfsdfsdfsdfsdfsdfsdfds=\count677
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2119,6 +2199,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [42]
+\g__nicematrix_max_cell_width_dim=\dimen414
+\c@iRow=\count678
+\c@jCol=\count679
+\l__nicematrix_cell_box=\box161
+\l__nicematrix_the_array_box=\box162
+\l__nicematrix_left_delim_dim=\dimen415
+\l__nicematrix_right_delim_dim=\dimen416
+\g__nicematrix_dp_row_zero_dim=\dimen417
+\g__nicematrix_ht_row_zero_dim=\dimen418
+\g__nicematrix_ht_row_one_dim=\dimen419
+\g__nicematrix_dp_ante_last_row_dim=\dimen420
+\g__nicematrix_ht_last_row_dim=\dimen421
+\g__nicematrix_dp_last_row_dim=\dimen422
+\g__nicematrix_ddots_int=\count680
+\g__nicematrix_iddots_int=\count681
+\g__nicematrix_delta_x_one_dim=\dimen423
+\g__nicematrix_delta_y_one_dim=\dimen424
+\g__nicematrix_delta_x_two_dim=\dimen425
+\g__nicematrix_delta_y_two_dim=\dimen426
+\l__nicematrix_initial_i_int=\count682
+\l__nicematrix_initial_j_int=\count683
+\l__nicematrix_final_i_int=\count684
+\l__nicematrix_final_j_int=\count685
+\l__nicematrix_l_dim=\dimen427
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2126,7 +2231,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[43]) (./Days/2023_03_21.tex
+[43]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2135,6 +2240,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [44]
+Overfull \hbox (16.92451pt too wide) detected at line 240
+[]
+ []
+
+) (./Days/2023_03_21.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -2164,8 +2274,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [45]
-\c@thmdkdkdkkkdkkkkdkkdkkteroremamiatricedimonodromia=\count649
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2174,8 +2282,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [46]
-Underfull \vbox (badness 1708) has occurred while \output is active []
-
+\c@thmdkdkdkkkdkkkkdkkdkkteroremamiatricedimonodromia=\count686
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2193,8 +2300,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 95.
 
-\c@frammentoAoijdoijcidididicoijcididiciciciciciciciici=\count650
-\c@frammentoBoijdoijcidididicoijcididiciciciciciciciici=\count651
+\c@frammentoAoijdoijcidididicoijcididiciciciciciciciici=\count687
+\c@frammentoBoijdoijcidididicoijcididiciciciciciciciici=\count688
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2203,11 +2310,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [48]
-\c@thmdojnskjndjdjdicidjisijcoijsdlkjnckjndkjncskjndkjncjdjdjcjdj=\count652
-
-Underfull \vbox (badness 2057) has occurred while \output is active []
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2216,6 +2318,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [49]
+\c@thmdojnskjndjdjdicidjisijcoijsdlkjnckjndkjncskjndkjncjdjdjcjdj=\count689
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 166.
@@ -2240,7 +2344,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [50]
-\c@thmddoodoodododokcpokspokdpokcspokdpokpok=\count653
+\c@thmddoodoodododokcpokspokdpokcspokdpokpok=\count690
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2250,8 +2354,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [51]) (./Days/2023_03_23.tex
-\c@thmdididififoisdisodpokspteoreminonoinoindkjnfjscdoij=\count654
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2260,7 +2362,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [52]
-\c@thmdidididiocoijscjkdkjncjdjdkjncjd=\count655
+\c@thmdididififoisdisodpokspteoreminonoinoindkjnfjscdoij=\count691
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2270,8 +2372,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [53]
-Underfull \vbox (badness 4391) has occurred while \output is active []
-
+\c@thmdidididiocoijscjkdkjncjdjdkjncjd=\count692
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2289,7 +2390,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [55]
-\c@thmduuudiuhciuhduchdiuhcuducud=\count656
+\c@thmduuudiuhciuhduchdiuhcuducud=\count693
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2310,10 +2414,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Capitolo 5.
-\c@frammentoAdkjnckjnskjndkjnckjnskjnckjndkjnckjndkjncjndkjncjdjckjnskjncjdjskjncjdjskjn=\count657
-\c@frammentoBdkjnckjnskjndkjnckjnskjnckjndkjnckjndkjncjndkjncjdjckjnskjncjdjskjncjdjskjn=\count658
+\c@frammentoAdkjnckjnskjndkjnckjnskjnckjndkjnckjndkjncjndkjncjdjckjnskjncjdjskjncjdjskjn=\count694
+\c@frammentoBdkjnckjnskjndkjnckjnskjnckjndkjnckjndkjncjndkjncjdjckjnskjncjdjskjncjdjskjn=\count695
 [59]
-\c@thmdididicoijcoijdoijcoijcoijsoij=\count659
+\c@thmdididicoijcoijdoijcoijcoijsoij=\count696
 
 Underfull \hbox (badness 1490) in paragraph at lines 62--62
 []$\OML/lmm/b/it/10.95 p$ \T1/lmr/m/n/10.95 (+20) è asin-to-ti-ca-
@@ -2327,8 +2431,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [60]
-\c@frammentoAdkjnckjnskjnckjndjdjjjdjjdjdjcjdjcjsoijcoij=\count660
-\c@frammentoBdkjnckjnskjnckjndjdjjjdjjdjdjcjdjcjsoijcoij=\count661
+\c@frammentoAdkjnckjnskjnckjndjdjjjdjjdjdjcjdjcjsoijcoij=\count697
+\c@frammentoBdkjnckjnskjnckjndjdjjjdjjdjdjcjdjcjsoijcoij=\count698
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2354,7 +2458,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.2232pt}.
 
 [63]
-Overfull \hbox (4.83676pt too wide) detected at line 130
+Overfull \hbox (4.83679pt too wide) detected at line 130
 []   \OT1/lmr/m/n/10.95 =[]\OMS/lmsy/m/n/10.95 )   []
  []
 
@@ -2375,7 +2479,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.2232pt}.
 
 [65 <./figures/mod_differenziali-figure10.pdf>]
-\c@thmdididicoijsidiiccdididiterorfelkddislassalledoijsdoicj=\count662
+\c@thmdididicoijsidiiccdididiterorfelkddislassalledoijsdoicj=\count699
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2401,13 +2505,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [68]
-\c@thmdoijcoijoijoijoijoijcoijsoijoijoij=\count663
+\c@thmdoijcoijoijoijoijoijcoijsoijoijoij=\count700
 
 Overfull \hbox (96.4145pt too wide) in paragraph at lines 34--34
  []\T1/lmr/bx/n/10.95 (-20) Esempio. (5.17)[] [] 
  []
 
-\c@thmdpokscpokdpokpcokpoktppokincarre=\count664
+\c@thmdpokscpokdpokpcokpoktppokincarre=\count701
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 25.2232pt, for example:
@@ -2563,11 +2667,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [84]
 Capitolo 7.
-
-Underfull \hbox (badness 10000) in paragraph at lines 480--485
-
- []
-
 [85
 
 ]
@@ -2579,12 +2678,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [86]
-Overfull \hbox (5.50742pt too wide) in paragraph at lines 525--529
+Overfull \hbox (5.50742pt too wide) in paragraph at lines 528--532
  []\T1/lmr/bx/n/10.95 (-20) Definizione. (7.9)[] \T1/lmr/m/it/10.95 (-20) Di-cia-mo inol-tre che la cur-va in-te-gra-le è $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 532--533
+Underfull \hbox (badness 10000) in paragraph at lines 535--536
 
  []
 
@@ -2596,8 +2695,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.2232pt}.
 
 [87]
-\c@thmfgdslkjlsdaljkfsd=\count665
-\c@thmsdljfkdslkgjldgdd=\count666
+\c@thmfgdslkjlsdaljkfsd=\count702
+\c@thmsdljfkdslkgjldgdd=\count703
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2615,12 +2714,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.2232pt}.
 
 [89]
-Overfull \hbox (36.50784pt too wide) in paragraph at lines 609--620
+Overfull \hbox (36.50784pt too wide) in paragraph at lines 612--623
 []$[]$$ \OMS/lmsy/m/n/10.95 ([]) $ $[]$ $ ([]) $ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 609--620
+Underfull \hbox (badness 10000) in paragraph at lines 612--623
 
  []
 
@@ -2632,7 +2731,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [90]
-Overfull \hbox (151.46863pt too wide) detected at line 670
+Overfull \hbox (151.46863pt too wide) detected at line 673
 []
  []
 
@@ -2652,7 +2751,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [92]
-Overfull \hbox (3.28764pt too wide) detected at line 727
+Overfull \hbox (3.28764pt too wide) detected at line 730
 []
  []
 
@@ -2675,7 +2774,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Capitolo 8.
 [95
 
-])
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2683,8 +2782,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[96] [97
+[96])
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[97] [98
+
+] [99
 
 
 ] (./mod_differenziali.aux)
@@ -2698,18 +2806,18 @@ Package logreq Info: Writing requests to 'mod_differenziali.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68260 strings out of 476025
- 1617721 string characters out of 5790017
- 3422009 words of memory out of 5000000
- 86719 multiletter control sequences out of 15000+600000
- 675275 words of font info for 356 fonts, out of 8000000 for 9000
+ 72855 strings out of 476025
+ 1741899 string characters out of 5790017
+ 3508957 words of memory out of 5000000
+ 91302 multiletter control sequences out of 15000+600000
+ 675358 words of font info for 357 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,24n,111p,1722b,1697s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,27n,111p,1722b,1697s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on mod_differenziali.pdf (101 pages, 805507 bytes).
+Output written on mod_differenziali.pdf (103 pages, 815125 bytes).
 PDF statistics:
- 1368 PDF objects out of 1440 (max. 8388607)
- 1137 compressed objects within 12 object streams
- 427 named destinations out of 1000 (max. 500000)
+ 1379 PDF objects out of 1440 (max. 8388607)
+ 1146 compressed objects within 12 object streams
+ 431 named destinations out of 1000 (max. 500000)
  86492 words of extra memory for PDF output out of 89155 (max. 10000000)
 
