@@ -134,6 +134,27 @@
     \end{align*}
     \end{itemize}
     Ovvero $(\mathcal{X}(A),[\cdot,\cdot])$ è un'\underline{algebra di Lie}.}
+\paragrafo{L'espressione del commutatore}{
+Andiamo ad analizzare l'espressione del commutatore con l'obiettivo di renderla più semplice e compatta:
+\begin{align*}
+    [\bm{X},\bm{Y}]_f=X^\alpha\frac{\partial}{\partial x^\alpha}\left(Y^\beta \frac{\partial}{\partial x^\beta}(f)\right)-Y^\alpha \frac{\partial}{\partial x^\alpha}\left(X^\beta \frac{\partial}{\partial x^\beta}(f)\right)=\\
+    =\left(X^\alpha \frac{\partial}{\partial x^\alpha}Y^\beta\right)\frac{\partial}{\partial x^\beta}(f)+X^\alpha Y^\beta \frac{\partial}{\partial x^\alpha}\left(\frac{\partial }{\partial x^\beta}(f)\right)+\\
+    +\left(Y^\alpha \frac{\partial}{\partial x^\alpha}X^\beta\right)\frac{\partial}{\partial x^\beta}(f)+Y^\alpha X^\beta \frac{\partial}{\partial x^\alpha}\left(\frac{\partial }{\partial x^\beta}(f)\right)
+\end{align*}
+Scambiando $\alpha\leftrightarrow\beta$ e semplificando i termini opposti si ottiene:
+\begin{align*}
+    \left(X^\alpha \frac{\partial}{\partial x^\alpha}Y^\beta-Y^\alpha \frac{\partial}{\partial x^\alpha}X^\beta\right)\frac{\partial}{\partial x^\beta}(f)=[\bm{X},\bm{Y}]^\beta \frac{\partial}{\partial x^\beta}(f) \quad \forall\, f \in \mathcal{F}(A)
+\end{align*}
+Ottenendo cosi:
+\begin{align*}
+    [\bm{X},\bm{Y}]=[\bm{X},\bm{Y}]^\beta\bm{c}_\beta
+\end{align*}
+dove:
+\begin{align*}
+    [\bm{X},\bm{Y}]^\beta=X^\alpha \frac{\partial}{\partial x^\alpha}Y^\beta-Y^\alpha\frac{\partial}{\partial x^\alpha}X^\beta
+\end{align*}
+è la componente rispetto alla base $\bm{c}_\beta$.
+}{ldflds}{}
 \definizione{ Sia $\mathbf{X}\in \mathcal{X}(A)$. La \underline{divergenza} di $\mathbf{X}$ è una funzione:
 \begin{align*}div\colon\mathcal{X}(A)\to \mathcal{F}(A)\\
      X\mapsto div(X)
@@ -511,7 +532,7 @@ Questa è la definizione naturale, infatti:
 %%CURVA INTEGRALE
 %%
 %%
-\definizione{La \underline{curva integrale di un campo vettoriale $\mathbf{X}$} è la curva:
+\definizione{Una \underline{curva integrale di un campo vettoriale $\mathbf{X}$} è una curva:
 \begin{align*}
     \gamma \colon I \to A
 \end{align*}
@@ -546,12 +567,12 @@ Le curve integrali rappresentano i moti delle particelle del fluido secondo l'in
         \end{align*}
         \item in coordinate generiche:
         \begin{align*}
-            \frac{dq^i}{dt}=X^i (x^i)
+            \frac{dq^i}{dt}=X^i (x^j)
         \end{align*}
 \end{itemize}
 In particolare sono $n$ equazioni differenziali ordinarie in forma normale autonome.}
 \section{Risoluzione sistemi dinamici} Integrare significa trovare tutte le soluzioni del sistema dinamico e queste costituiscono lo spazio delle soluzioni/spazio dei moti.
-\definizione{Dato un sistema dinamico e un punto $P_0\in A$, parliamo di \ul{curva integrale massimale} $\gamma_{P_0}\colon I_{P_0}\to A$, quando presa un'altra curva integrale $\gamma\colon I\to A$, allora:
+\definizione{Dato un sistema dinamico e un punto $P_0\in A$, parliamo di \ul{curva integrale massimale} $\gamma_{P_0}\colon I_{P_0}\to A$, quando presa un'altra curva integrale $\gamma\colon I\to A$ basata in $P_0$, allora:
 \begin{align*}
     I \subseteq I_{P_0}&& \gamma_{P_0|_I}=\gamma
 \end{align*}}
@@ -588,7 +609,7 @@ Si definisce come la funzione:
     \item $D=\mathbb{R}\times M$
     \item $\varphi_t\colon M\to M,P\mapsto\varphi_t(P)=\gamma_P(t)$ è una trasformazione $C^k$ di M.
 \end{itemize}}
-\definizione{ Al variare del parametro $t\in \mathbb{R}$ i diversi flussi $\varphi_t$ costiutiscono un \underline{gruppo ad un parametro}, ovvero un'insieme $\{\varphi_t|t\in \mathbb{R}\}$ tale che valgono:
+\definizione{ Al variare del parametro $t\in \mathbb{R}$ i diversi flussi $\varphi_t$ costituiscono un \underline{gruppo ad un parametro}, ovvero un'insieme $\{\varphi_t|t\in \mathbb{R}\}$ tale che valgono:
 \begin{itemize}
     \item $\varphi_t\circ \varphi_s=\varphi_{t+s}$
     \item $\varphi_t\circ\varphi_s=\varphi_s\circ \varphi_t$
@@ -659,18 +680,32 @@ Quindi si noti che \underline{a meno che} $\Gamma_{jk}^i=0$, abbiamo:
 \end{align*}
 Ora analizziamo l'accelerazione sfruttando l'espressione ottenuta precedentemente:
 \begin{align*}
-    \mathbf{a}=(\frac{dv^r}{dt}+v^rv^\theta\Gamma^r_{r\theta}+v^\theta v^\theta\Gamma^r_{\theta \theta}+v^\theta v^r\Gamma^r_{\theta r}+v^rv^r\Gamma^r_{rr})\mathbf{E}_r+(\frac{dv^\theta}{dt}+v^rv^\theta\Gamma^\theta_{r\theta}+v^r v^r\Gamma^\theta_{rr}+v^\theta v^r\Gamma^\theta_{\theta r}+v^\theta v^\theta \Gamma^\theta_{\theta \theta})\mathbf{E}_\theta
+    \mathbf{a}=\left(\frac{dv^r}{dt}+\cancel{v^rv^\theta\Gamma^r_{r\theta}}+v^\theta v^\theta\Gamma^r_{\theta \theta}+\cancel{v^\theta v^r\Gamma^r_{\theta r}}+\cancel{v^rv^r\Gamma^r_{rr}}\right)\mathbf{E}_r+\\
+    +\left(\frac{dv^\theta}{dt}+v^rv^\theta\Gamma^\theta_{r\theta}+\cancel{v^r v^r\Gamma^\theta_{rr}}+v^\theta v^r\Gamma^\theta_{\theta r}+\cancel{v^\theta v^\theta \Gamma^\theta_{\theta \theta}}\right)\mathbf{E}_\theta
 \end{align*}
-Ricordando inoltre che $\Gamma^r_{\theta \theta}=-r$ e $\Gamma^\theta_{r \theta}=\Gamma^\theta_{\theta r}=\cfrac{1}{2}$:
+Ricordando inoltre che $\Gamma^r_{\theta \theta}=-r$ e $\Gamma^\theta_{r \theta}=\Gamma^\theta_{\theta r}=\cfrac{1}{r}$:
 \begin{align*}
-    \left(\frac{dv^r}{dt}-rv^\theta v^\theta\right)\mathbf{E}_r+\left(\frac{dv\theta}{dt}+\frac{2}{r}v^\theta v^r\right)\mathbf{E}_\theta=\\
-    =(\ddot{r}-r\ddot{\theta}^2)\mathbf{E}_r+(\ddot{\theta}+\frac{2}{r}\dot{r}\dot{\theta})\mathbf{E}_\theta=\\
+    \left(\frac{dv^r}{dt}-rv^\theta v^\theta\right)\mathbf{E}_r+\left(\frac{dv^\theta}{dt}+\frac{2}{r}v^\theta v^r\right)\mathbf{E}_\theta=\\
+    =(\ddot{r}-r\dot{\theta}^2)\mathbf{E}_r+(\ddot{\theta}+\frac{2}{r}\dot{r}\dot{\theta})\mathbf{E}_\theta=\\
     =a^r\mathbf{E}_r+a^\theta\mathbf{E}_\theta
 \end{align*}
-Si osservi che ponendo $\mathbf{E}_r=\mathbf{u}$ e $\mathbf{E}_\theta=r\mathbf{v}$ con $\mathbf{u}$ e $\mathbf{v}$ versori nella rappresentazione radiale del moto si ottiene la classica scomposizione:
+Si osservi che ponendo $\mathbf{E}_r=\mathbf{u}$ e $\mathbf{E}_\theta=r\mathbf{\tau}$ con $\mathbf{u}$ e $\mathbf{\tau}$ versori nella rappresentazione radiale del moto si ottiene la classica scomposizione:
 \begin{align*}
     \mathbf{a}=\mathbf{a}_{\text{radiale}}+\mathbf{a}_{\text{trasversale}}
 \end{align*}}{}{}
+\definizione{Definiamo la \ul{velocità areolare} come:
+\begin{align*}
+    \bm{v}_{ar}=\frac{1}{2}\bm{r}\wedge \bm{v}=\frac{1}{2}r^2\dot{\theta}\bm{k}
+\end{align*}}
+\definizione{Definiamo \ul{moto centrale} un moto tale per cui:
+\begin{align*}
+    \exists \,O\in A \text{ origine }\colon \forall\, t\in I \quad \bm{a}(t)\wedge \bm{r}(t)=0
+\end{align*}}
+Studiando adesso che la derivata della velocità areolare è:
+\begin{align*}
+    \frac{d}{dt}(\bm{v}_{ar})=\frac{1}{2}\frac{d}{dt}(\bm{r} \wedge \bm{v})=\frac{1}{2}(\overbrace{\bm{v}\wedge \bm{v}}^{0}+\bm{r}\wedge \bm{a})=\frac{1}{2}\bm{r}\wedge \bm{a}
+\end{align*}
+e che quindi è uguale a $0$, ovvero la velocità areolare è costante$\iff$ il moto è centrale.
 \paragrafo{Dalla traiettoria agli enti fondamentali della cinematica}{ Sia $\mathbf{r}=r(\theta)$ . Da esso si possono scrivere tutti gli enti fonamentali della cinematica.\\
 Sia $\mathbf{r}=\mathbf{r}(\theta(t))\mathbf{u}$ la nostra traiettoria del moto. Studiamo la velocità:
 \begin{align*}
@@ -680,7 +715,7 @@ Ora utilizzando la costante delle aree $c=r^2\dot{\theta}$ otteniamo:
 \begin{align*}
     \frac{c}{r^2}\left(\frac{dr}{d\theta}\mathbf{u}+r\frac{d\mathbf{u}}{d\theta}\right)=c\left(\frac{1}{r^2}\frac{dr}{d\theta}\mathbf{u}+\frac{1}{r}\frac{d\mathbf{u}}{d\theta}\right)
 \end{align*}
-e riconoscendo in $\cfrac{d\mathbf{u}}{d\theta}=\theta$, abbiamo che:
+e riconoscendo in $\cfrac{d\mathbf{u}}{d\theta}=\tau$, abbiamo che:
 \begin{align*}
     \mathbf{v}=c\left(-\frac{d}{d\theta}\left(\frac{1}{r}\right)\mathbf{u}+\frac{1}{r}\tau\right)
 \end{align*}
@@ -710,7 +745,7 @@ dove, considerata $g$ come il prodotto scalare su $E$, $\forall\, P \in A$ l'imm
 \end{align*}
 allora 
 \begin{align*}
-    \frac{ds}{dt}=|\mathbf{v}|=\sqrt{gij\frac{dq^i}{dt}\cdot \frac{dq^j}{dt}}
+    \frac{ds}{dt}=|\mathbf{v}|=\sqrt{g_{ij}\frac{dq^i}{dt}\cdot \frac{dq^j}{dt}}
 \end{align*}}
 %%
 %%
