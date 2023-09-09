@@ -11,8 +11,8 @@
 Consideriamo $ \bm{x}'=\bm{f}(\bm{x}) $ e $ \bm{p} \in \Omega $ punto di equilibrio, $ \bm{f} \in C^{1}(\Omega) $, $ \Omega \subseteq \R^{n} $ aperto. 
 
 $ \bm{p} $ si dice \emph{attrattore globale} se \[
-        \lim_{t\to + \infty} \bm{\phi}_{t}(\bm{q})  =\bm{p},\qquad \forall\, \bm{q} \in \Omega
-    \]dove $ \bm{\phi}_t(\bm{q}) $ è soluzione di \[
+        \lim_{t\to + \infty} \bm{\phi}_{(0,\bm{q})}(t)  =\bm{p},\qquad \forall\, \bm{q} \in \Omega
+    \]dove $ \bm{\phi}_{(0,\bm{q})}(t) $ è soluzione di \[
         \begin{cases}
             \bm{x}'=\bm{f}(\bm{x})\\ 
             \bm{x}(0)=\bm{q}. 
@@ -37,7 +37,7 @@ $ \bm{p} $ si dice \emph{attrattore globale} se \[
 }
 \definizione{
     Se $ \gamma $ è un ciclo limite che ammette un intorno $ I_{\gamma}  $ tale che \[
-        \forall\,\bm{q} \in I_{\gamma},\qquad \lim_{t\to + \infty} d\left(\bm{\varphi}_t (\bm{q}), \gamma\right) = 0
+        \forall\,\bm{q} \in I_{\gamma},\qquad \lim_{t\to + \infty} d\left(\bm{\phi}_{(0,\bm{q})}(t), \gamma\right) = 0
     \]allora $\gamma$ si dice \emph{stabile}. Altrimenti $\gamma$ è \emph{instabile}.
 }
 \teorema[Teorema di Poincaré-Bendixon]{dpokscpokdpokpcokpoktppokincarre}{
