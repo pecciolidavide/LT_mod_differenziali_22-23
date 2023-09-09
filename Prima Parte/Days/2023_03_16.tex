@@ -211,12 +211,12 @@ Questo è equivalente a: \[
 \section{Matrice diagonalizzabile}
 Adesso supponiamo che $A$ sia diagonalizzabile.
 
-Sia $A\in \R^{n,n}$. Siano $\left\{\lambda_1,\dots,\lambda_n\right\}$ i suoi autovalori e $\left\{\bm{u}_1,\dots,\bm{u}_n\right\}$ i corrispondenti autovettori. Andiamo a dimostrare diversi fatti a riguardo:
+Sia $A\in \R^{n,n}$. Siano $\left\{\lambda_1,\dots,\lambda_n\right\}$ i suoi autovalori e $\left\{\bm{u}_1,\dots,\bm{u}_n\right\}$ i corrispondenti autovettori. Valgono i seguenti risultati:
 \begin{itemize}
     \item $ce^{\lambda_i t}\bm{u}_i$ è una soluzione per ogni $c\in \R$ e $i=1,\dots,n$:
     \begin{align*}
         \frac{d}{dt}(ce^{\lambda_i t}\bm{u}_i)=c\lambda_ie^{\lambda_i t}\bm{u}_i\\
-        A(ce^{\lambda_i t}\bm{u}_i)=ce^{\lambda_i t}A \bm{u}_i=ce^{\lambda_i t}\bm{u}_i \quad \qed
+        A(ce^{\lambda_i t}\bm{u}_i)=ce^{\lambda_i t}A \bm{u}_i=c\lambda_i e^{\lambda_i t}\bm{u}_i \quad \qed
     \end{align*}
     \item $\varphi_i(t)=e^{\lambda_i t}\bm{u}_i, i=1,\dots, n$ sono una base di $S_0$: Questo perchè $\varphi_i(0)=\bm{u}_i$ sono linearmente indipendenti e per il lemma allora le funzioni proprio sono linearmente indipendenti
     \item La matrice wronskiana è:
