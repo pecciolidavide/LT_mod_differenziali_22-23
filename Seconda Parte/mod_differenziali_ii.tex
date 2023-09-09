@@ -427,7 +427,7 @@ Il contenuto di questa paragrafo sarà quello di dimostrare la rappresentazione 
 \end{align*}
 e il fatto che questa non dipenda dalle coordinate scelte. Ovvero presa:
 \begin{align*}
-    \varphi = \varphi_{i'}dq^{i'}\longrightarrow d\varphi = \varphi_{i'}dq^{i'}
+    \varphi = \varphi_{i'}dq^{i'}\longrightarrow d\varphi = \varphi_{i'}\wedge dq^{i'}
 \end{align*}
 Mostriamo questo secondo fatto.\\
 Siano $(q^i)$ e $(q^{i'})$ due sistemi di coordinate generiche. Ricordando che la matrice Jacobiana della trasformazione di coordinate è:
@@ -824,11 +824,12 @@ Sia $\bm{X}$ un campo vettoriale e $\Gamma$ una curva integrale di $\bm{X}$, dov
     \bm{X}\colon A' \to TA'\\
     (x,y,p)\mapsto (\xi, \eta, \pi)
 \end{align*}
-Consideriamone adesso il vettore tangente che, per definizione di sistema dinamico, è:
+dove con $TA'$ indichiamo il fibrato tangente di $A'$.
+Defiamo inoltre:
 \begin{align*}
     \dot{\Gamma}=(\bm{X}\circ \Gamma)=\dot{x}\partial_x+\dot{y}\partial_y+\dot{p}\partial_p
 \end{align*}
-Supponendo per semplicità che:
+Supponiamo che:
 \begin{align*}
     \begin{cases*}
         \dot{x}=1\\
@@ -839,21 +840,21 @@ lungo $\Gamma$, si ha dunque che:
 \begin{align*}
     \dot{\Gamma}=\partial_x+p\partial_y+\dot{p}\partial_p=\partial_x+\dot{y}\partial_y+\ddot{y}\partial_y
 \end{align*}
-Ora, considerata la forma $w=pdx+dy$, si noti che lungo $\Gamma$ $w(\bm{x})=0$ e in generale il $\ker w$ definisce una struttura di contatto su $A'$:
+Ora, considerata la forma $w=-pdx+dy$, si noti che lungo $\Gamma$ $w(\bm{x})=0$ e in generale il $\ker w$ definisce una struttura di contatto su $A'$:
 \begin{align*}
     \bm{x}\in \ker w \iff \eta-p\xi=0
 \end{align*}
-dove il membro a destra è un piano di contatto.
+dove il membro a destra definisce un piano di contatto.
 
 Un tale campo vettoriale può essere scritto nel seguente modo:
 \begin{align*}
-    \xi (\partial_x+p\partial_y)+\pi\partial_p=0=\xi\partial_x+\overbrace{\xi p}^{\eta}\partial_y+\pi\partial_p
+    \xi (\partial_x +p\partial_y)+\pi\partial_p = 0 = \xi\partial_x+\overbrace{\xi p}^{\eta}\partial_y+\pi\partial_p
 \end{align*}
 Ora definiamo i vettori:
 \begin{align*}
     \bm{t}_1=\partial_x+p\partial_y \quad \bm{t}_2=\partial_p \quad \bm{t}_1\perp\bm{t}_2
 \end{align*}
-Creando cosi una coppia $\left\{\bm{t}_1,\bm{t}_2\right\}$ di vettori ortonormali.
+Creando cosi una coppia $\left\{\bm{t}_1,\bm{t}_2\right\}$ di vettori ortonormali (ortogonali sicuramente, ci basta normalizzarli successivamente).
 
 Lungo $\Gamma$ $\dot{y}=p\dot{x}$, ma $\dot{x}=1\leadsto x=s+c$.
 
@@ -864,5 +865,91 @@ Possiamo così riparametrizzare $\Gamma$ per il parametro $x$ e vedere $\Gamma$ 
      (x,y,p)\longleftrightarrow (x,y,\dot{x},\dot{y})
 \end{align*}
 
-Esistono solo curve integrali di dimensione 1 dal teorema di Frobenius
-%% non si capisce nulla, lo so
+Esistono solo curve integrali di dimensione 1 dal teorema di Frobenius che dice che $dw \wedge w=0\Rightarrow$ $\nexists$ superfici integrali della distribuzione di contatto.
+
+Le proprietà di $w$ permettono di definire una metrica sulla struttura di contatto detta \ul{metrica di Carnot-Caratheodory} denotata con $g_\mathcal{C}$.
+
+Le curve geodetiche rispetto a $g_\mathcal{C}$ sono curve $\Gamma$ tangenti a $\mathcal{C}$ (struttura di contatto), ovvero curve integrali del campo di partenza e tali che:
+\begin{align*}
+    \begin{cases*}
+        \dot{x}=1\\
+        \dot{y}=p
+    \end{cases*}\text{sollevamento di Legendre (non lui eh, qualcosa qui vicino)}
+\end{align*}
+Definiamo con$A'=$corteccia visiva primaria ($V_1$).
+
+Stiamo studiando il modello di Petitot. Riprendendo il discorso fatto, definiamo la metrica di Carnot-Caratheodory come:
+\begin{align*}
+    g_{\mathcal{C}}(\bm{t}_1,\bm{t}_j)=\delta_{ij}\quad i,j\in \left\{1,2\right\}
+\end{align*}
+$A'$ è un gruppo di Lie con le operazioni:
+\begin{enumerate}
+    \item $(x,y,p)\cdot (x',y',p')=(x+x',y+y',p+p')$
+    \item $[(\xi,\eta,\pi),(\xi',\eta',\pi')]=(0,\xi'\pi-\xi\pi',0)$
+\end{enumerate}
+Tramite questa metrica definiamo la distanza:
+\begin{align*}
+    d_{\mathcal{C}}({P'}_1,{P'}_2)=inf\left\{\int_I \norma{\dot{\Gamma}(s)}ds\right\}
+\end{align*}
+Estendiamo la nostra base ortonormale $\left\{\bm{t}_1,\bm{t}_2\right\}$ a una base $\left\{\bm{t}_1,\bm{t}_2,\bm{t}_3\right\}$ con un opportuno $\bm{t}_3$ tale che si mantenga l'ortonormalità della base.
+Inoltre $\left\{\bm{t}_1,\bm{t}_2\right\}$ è una metrica sub-Riemaniana.
+
+Ci poniamo l'obiettivo di minimizzare:
+\begin{align*}
+    \int_{{P'}_A}^{{P'}_{B}} ds \quad \quad ds^2=dx^2+dy^2+dp^2
+\end{align*}
+con norma del vettore tangente lungo $\Gamma$ che è:
+\begin{align*}
+    \sqrt{\xi^2+\eta^2+\pi^2}= \sqrt{1+\dot{y}^2(x)+\ddot{y}^2(x)}
+\end{align*}
+
+
+Definiamo:
+\begin{align*}
+    L(x,y,p,\dot{x},\dot{y},\dot{p})=\sqrt{\xi^2+\eta^2+\pi^2}=\sqrt{1+\dot{y}^2(x)+\ddot{y}^2(x)}
+\end{align*}
+e usiamo le equazioni di Eulero-Lagrange:
+\begin{align*}
+    \begin{cases*}
+        \cfrac{\partial}{\partial y}L-\cfrac{d}{dx}\left(\cfrac{\partial}{\partial \eta}\right)L=0 \quad \leadsto \cfrac{\partial}{\partial y}L=0\\
+        \cfrac{\partial}{\partial p}L-\cfrac{d}{dx}\left(\cfrac{\partial}{\partial \pi}\right)L=0 \quad \leadsto \cfrac{\partial}{\partial y}L=0
+    \end{cases*}
+\end{align*}
+I due annullamenti sono perchè $L$ non dipende da $y$ e da $p$.
+
+Poniamo $\Sigma=\xi p-\eta$, ma $\xi=1$ lungo $\Gamma$ quindi $\Sigma=p-\eta$.
+Questo nuovo oggetto ci serve per imporre il vincolo del piano di contatto:
+\begin{align*}
+    \begin{cases*}
+        \left(\cfrac{\partial}{\partial y}-\cfrac{d}{dx}\cfrac{\partial}{\partial \eta}\right)(L+\overbrace{\lambda(x)}^{\text{moltiplicatore di Lagrange}}\Sigma)=0 \\
+        \left(\cfrac{\partial}{\partial p}-\cfrac{d}{dx}\cfrac{\partial}{\partial \pi}\right)(L+\lambda(x)\Sigma)=0 
+    \end{cases*}\\
+    \begin{cases*}
+        \cfrac{d}{dx}\left(\cfrac{\partial L}{\partial \eta}-\lambda(x)\right)=0\longrightarrow \cfrac{\partial L}{\partial \eta}=\lambda(x)+A \quad A\in \R\\
+        \lambda(x)-\cfrac{d}{dx}\left(\cfrac{\partial L}{\partial \pi}\right)=0\longrightarrow\lambda(x)+A=\cfrac{d}{dx}\left(\cfrac{\partial L}{\partial \pi}\right)+A
+    \end{cases*}
+\end{align*}
+Ottenendo cosi:
+\begin{align*}
+    \frac{\partial L}{\partial \eta}=\lambda(x)+A=\frac{d}{dx}\left(\frac{\partial L}{\partial \pi}\right)
+\end{align*}
+Ovvero:
+\begin{align*}
+    \frac{\dot{y}(x)}{\sqrt{1+\dot{y}^2(x)+\ddot{y}^2(x)}}=A+\frac{d}{dx}\frac{\ddot{y}}{\sqrt{1+\dot{y}^2(x)+\ddot{y}^2(x)}}
+\end{align*}
+Svolgendo calcoli otteniamo:
+\begin{align*}
+    \ddot{y}^2=\frac{(1+\dot{y}^2)^2-(1+\dot{y}^2)(A\dot{y}+B)^2}{(A\dot{y}+B)^2} \quad A,B\in \R \quad *
+\end{align*}
+Le soluzioni di questa complessa espressione si ottengono da integrali ellittici.
+
+Se $y$ è pari, $\gamma$ è simmetrica ($\gamma(x)=\gamma(-x)$), avendo $A=0$ e $K=\cfrac{1}{B}$.
+
+Sostituendo otteniamo:
+\begin{align*}
+    \ddot{y}^2=(1+\dot{y}^2)^2[k^2(1+\dot{y}^2)-1]
+\end{align*}
+Concludendo:
+\begin{align*}
+    x(y)=c \int^{\dot{y}}_0 \frac{1}{\sqrt{(1+t^2)(1+\frac{k^2}{k^2-1}t^2)}}
+\end{align*}
