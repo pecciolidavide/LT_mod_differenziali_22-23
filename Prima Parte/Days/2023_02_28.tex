@@ -32,7 +32,7 @@
         Lo spazio delle fasi in cui vengono disegnate le orbite con il loro verso di percorrenza (indotto dalle soluzioni) si dice \emph{ritratto di fase}.
 }
 \definizione{%
-    I punti $ \bm{p} \in \Omega $ tali che $ \bm{f}(\bm{p})=\bm{0} $ si chiamano \emph{equilibri} o \emph{punti singolari}
+    I punti $ \bm{p} \in \Omega \colon \bm{f}(\bm{p})=\bm{0} $ si chiamano \emph{equilibri} o \emph{punti singolari}
 }
 \paragrafo{Esempio}{%
 \[
@@ -209,8 +209,9 @@ Dunque l'unico punto di equilibrio è l'origine.
             \bm{x}'=\bm{f}(\bm{x})\\ 
             \bm{x}(t_1)=\bm{p}
         \end{cases}
-    \]e per esistenza e unicità della soluzione si ha che \[
-        \bm{u}(t)=\bm{u}(t+T),\quad \forall t \in\R, T=t_2-t_1\qedd
+    \]
+    Definito $T\coloneq t_2-t_1$, per esistenza e unicità della soluzione allora: \[
+        \bm{u}(t)=\bm{u}(t+T),\quad \forall t \in\R \qedd
     \]
 }
 \definizione{
@@ -228,7 +229,7 @@ Sia $ \bm{u} $ soluzione di $ \bm{x}'=\bm{f}(\bm{x}) $ tale che $ \gamma= \gamma
 Poichè $ \gamma $ non è singolare $\leadsto \bm{f}(\bm{p}_0) \neq \bm{0}$ (altrimenti $ \gamma=\{\bm{p}_0\} $ per il teorema precedente.)
 
 La funzione $ t\mapsto \bm{u}(t) $ parametrizza $ \gamma $. Quindi il vettore: \[
-    \bm{v}\coloneqq \lim_{h\to 0} \frac{\bm{u}(t_0+h)-u(t_0)}{h}
+    \bm{v}\coloneqq \lim_{h\to 0} \frac{\bm{u}(t_0+h)-\bm{u}(t_0)}{h}
 \]è il vettore tangente a $\gamma$ nel punto $ \bm{p}_0 $, ammesso che esista. 
 
 La funzione $ \bm{u} $ è di classe $ C^{1} $, quindi il limite esiste ed è $ \bm{u}'(t_0) $. Essendo \[
