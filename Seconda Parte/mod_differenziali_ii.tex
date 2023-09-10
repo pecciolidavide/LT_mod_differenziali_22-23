@@ -101,7 +101,7 @@
     \end{align*}
     Tenuto conto delle relazioni tra le basi, si ha la relazione:
     \begin{align*}
-        X^\alpha=a^\alpha_{\alpha'}X^{\alpha'}
+        X^{\alpha'}=a^{\alpha'}_\alpha X^\alpha
     \end{align*}
     D'altra parte, interpretando la $f$ come funzione delle $(x^\alpha)$ per il tramite delle $(x^{\alpha'})$ dalle relazioni precedenti tra le basi si ha:
     \begin{align*}
@@ -138,8 +138,8 @@
 Andiamo ad analizzare l'espressione del commutatore con l'obiettivo di renderla più semplice e compatta:
 \begin{align*}
     [\bm{X},\bm{Y}]_f=X^\alpha\frac{\partial}{\partial x^\alpha}\left(Y^\beta \frac{\partial}{\partial x^\beta}(f)\right)-Y^\alpha \frac{\partial}{\partial x^\alpha}\left(X^\beta \frac{\partial}{\partial x^\beta}(f)\right)=\\
-    =\left(X^\alpha \frac{\partial}{\partial x^\alpha}Y^\beta\right)\frac{\partial}{\partial x^\beta}(f)+X^\alpha Y^\beta \frac{\partial}{\partial x^\alpha}\left(\frac{\partial }{\partial x^\beta}(f)\right)+\\
-    +\left(Y^\alpha \frac{\partial}{\partial x^\alpha}X^\beta\right)\frac{\partial}{\partial x^\beta}(f)+Y^\alpha X^\beta \frac{\partial}{\partial x^\alpha}\left(\frac{\partial }{\partial x^\beta}(f)\right)
+    =\left(X^\alpha \frac{\partial}{\partial x^\alpha}Y^\beta\right)\frac{\partial}{\partial x^\beta}(f)+\cancel{X^\alpha Y^\beta \frac{\partial}{\partial x^\alpha}\left(\frac{\partial }{\partial x^\beta}(f)\right)}+\\
+    -\left(Y^\alpha \frac{\partial}{\partial x^\alpha}X^\beta\right)\frac{\partial}{\partial x^\beta}(f)+\cancel{Y^\alpha X^\beta \frac{\partial}{\partial x^\alpha}\left(\frac{\partial }{\partial x^\beta}(f)\right)}
 \end{align*}
 Scambiando $\alpha\leftrightarrow\beta$ e semplificando i termini opposti si ottiene:
 \begin{align*}
@@ -157,15 +157,15 @@ dove:
 }{ldflds}{}
 \definizione{ Sia $\mathbf{X}\in \mathcal{X}(A)$. La \underline{divergenza} di $\mathbf{X}$ è una funzione:
 \begin{align*}div\colon\mathcal{X}(A)\to \mathcal{F}(A)\\
-     X\mapsto div(X)
+     \bm{X}\mapsto div(\bm{X})
     \end{align*}
-    Dove $div(X)=\cfrac{\partial X^1}{\partial x^1}+\dots +\cfrac{\partial X^n}{\partial x^n}=\cfrac{\partial X^\alpha}{\partial x^\alpha}$.}
+    Dove $div(\bm{X})=\cfrac{\partial X^1}{\partial x^1}+\dots +\cfrac{\partial X^n}{\partial x^n}=\cfrac{\partial X^\alpha}{\partial x^\alpha}$.}
 
 \proprieta{Siano $\mathbf{X},\mathbf{Y}\in \mathcal{X}(A)$. La divergenza gode delle seguenti proprietà:
 \begin{itemize}
-    \item \textit{Somma}: $div(X+Y)=div(X)+div(Y)$
-    \item \textit{Prodotto per campo scalare}: $div(fX)=fdiv(V)+ X(f),\: f\in \mathcal{F}(A)$
-    \item $X=$ costante\footnote{Considerato $X=$ costante nelle coordinate cartesiane affini $(x^\alpha)$} $\Rightarrow \: div(X)=0$
+    \item \textit{Somma}: $div(\bm{X}+\bm{Y})=div(\bm{X})+div(\bm{Y})$
+    \item \textit{Prodotto per campo scalare}: $div(f\bm{X})=fdiv(\bm{X})+ \bm{X}(f),\: f\in \mathcal{F}(A)$
+    \item $\bm{X}=$ costante\footnote{Considerato $\bm{X}=$ costante nelle coordinate cartesiane affini $(x^\alpha)$} $\Rightarrow \: div(\bm{X})=0$
 \end{itemize}}
 
 %%
