@@ -126,7 +126,7 @@ Per la dimostrazione del \hyperref[fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjf
         Per semplicità prendo $ t_0=a $ e ``lavoro a destra''. 
 
         Prendiamo $ \delta>0 $ sufficientemente piccolo e \[
-            k_{\delta} = \left\{(t,\bm{x}) \in \Omega: t \in [a,b], \norma{\bm{u}_{ \varepsilon}(t)-\bm{x}}<\delta\right\} 
+            k_{\delta} = \left\{(t,\bm{x}) \in \Omega: t \in [a,b], \norma{\bm{u}_0(t)-\bm{x}}<\delta\right\} 
         \]
 
         Sia $ [a,b_{ \varepsilon})  $ con $ b_{ \varepsilon}< b  $ l'intervallo massimale destro di $ \bm{u}_{ \varepsilon} $. 
@@ -147,11 +147,11 @@ Per la dimostrazione del \hyperref[fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjf
             &\le \norma{\bm{u}_{ \varepsilon}(a)-\bm{u}_0(a)} + \int_{a}^{t}\norma{\bm{f}\left(s, \bm{u}_{ \varepsilon}(s)\right) - \bm{f}\left(s, \bm{u}_0(s)\right)}\,ds \\ 
             &\underset{\footnotemark}{\le} \parentesi{A_{ \varepsilon} }{%
                 \norma{\bm{x}_{ \varepsilon} -\bm{x}_0} 
-            } + L\,\int_{0}^{t}\norma{\bm{u}_{ \varepsilon}(s) - \bm{u}_0(s)}\,ds .
+            } + \underbrace{L}_{>0}\,\int_{0}^{t}\norma{\bm{u}_{ \varepsilon}(s) - \bm{u}_0(s)}\,ds .
         \end{align*}\footnotetext{dove $ L $ è la costante di Lipschitz di $ \bm{f} $ su $ k_{\delta}  $} 
 
         Dunque, per il lemma di Gronwall, $ \displaystyle \phi(t)\le A_{ \varepsilon}\, e^{L(t-a)}  $. Inoltre, avendo $ \phi(t_{ \varepsilon} ) = \delta $, si ha che \[
-            0< \delta \le A_{ \varepsilon} \, e^{L(t_{ \varepsilon} -a)} \longrightarrow 0 
+            0< \delta \le\underbrace{A_{ \varepsilon}}_{\to 0 } \, \underbrace{e^{L(t_{ \varepsilon} -a)}}_{>0} \xlongrightarrow[]{\bm{x}_{\varepsilon}\to \bm{x}_0} 0 
         \]che è assurdo.
         \item Consideriamo $ \overline{\bm{x}}_0 \in N $ e $ \{\bm{x}_{k} \}_{k \in \N} \subseteq N$ tale che $ \bm{x}_k\longrightarrow \overline{\bm{x}}_0 $. Definiamo inoltre $ \overline{\bm{u}}(t)\coloneqq \bm{u}_{(t_0,\overline{\bm{x}}_0)}(t) $ e 
          $ \bm{u}_k (t)\coloneqq \bm{u}_{(t_0,\bm{x}_k)}(t)$.

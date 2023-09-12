@@ -10,7 +10,7 @@
             \bm{x}(t_0)=\bm{x}_0 \in \Omega
         \end{cases}
     \]
-    $ \bm{f}:\Omega \subseteq \R^{n}\to \R^{n} $,$n\ge 1$, localmente lipschitziana\footnote{Si ricordi che: $C^{1}\Rightarrow$ localmente lipschitziana}, vale il teorema di esistenza e unicità locale della soluzione, $ \forall\, t_0 \in\R  $.
+    $ \bm{f}:\Omega \subseteq \R^{n}\to \R^{n} $,$n\ge 1$, continua e localmente lipschitziana\footnote{Si ricordi che: $C^{1}\Rightarrow$ localmente lipschitziana}, vale il teorema di esistenza e unicità locale della soluzione, $ \forall\, t_0 \in\R  $.
 }{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}{}
 \definizione{
     $ \Omega $ si dice \emph{spazio delle fasi} o \emph{degli stati}.
@@ -160,11 +160,11 @@ Dunque l'unico punto di equilibrio è l'origine.
     \end{itemize}
 }
 \definizione{%
-    Una soluzione $ \bm{u} $ di $ \bm{x}'=\bm{f}(\bm{x}) $ si dice \emph{periodica} di periodo $ T>0 $ se \begin{itemize}
+    Una soluzione $ \bm{u} $ di $ \bm{x}'=\bm{f}(\bm{x}) $ si dice \emph{periodica} di periodo $ T>0 $ se \begin{enumerate}
         \item $ \bm{u} $ è definita su $ \R $;
         \item $ \bm{u}(t+T)=\bm{u}(t) $, $ \forall\, t \in \R $
         \item $ \displaystyle T=\inf\left\{\tau >0: u(t+\tau)=u(t)\vspace{1em},\forall\,t \in \R\right\} $
-    \end{itemize}
+    \end{enumerate}
 }
 \definizione{
     L'orbita corrispondente ad una soluzione periodica si chiama \emph{orbita periodica} e i suoi punti si chiamano \emph{punti periodici}.
@@ -211,7 +211,7 @@ Dunque l'unico punto di equilibrio è l'origine.
         \end{cases}
     \]
     Definito $T\coloneq t_2-t_1$, per esistenza e unicità della soluzione allora: \[
-        \bm{u}(t)=\bm{u}(t+T),\quad \forall t \in\R \qedd
+        \bm{u}(t)=\bm{u}(t+T),\quad \forall\, t \in\R \qedd
     \]
 }
 \definizione{
@@ -244,7 +244,7 @@ La funzione $ \bm{u} $ è di classe $ C^{1} $, quindi il limite esiste ed è $ \
     Vogliamo classificare i punti di equilibrio in base a come le altre soluzioni si comportano in loro prossimità.
 }{}{}
 \definizione{
-    Sotto le ipotesi \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} \colon \bm{f}(\bm{p})=\bm{0} $. $ \bm{p} $ si dice \emph{stabile} se $ \forall\,\varepsilon>0 $, $ \exists\, \delta>0 \colon \hat{\bm{x}} \in \Omega $, $ \norma{\hat{\bm{x}}-\bm{p}}<\delta $ 
+    Sotto le ipotesi \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} \colon \bm{f}(\bm{p})=\bm{0} $. $ \bm{p} $ si dice \emph{stabile} se $ \forall\,\varepsilon>0 $, $ \exists\, \delta>0 \colon$ se $ \hat{\bm{x}} \in \Omega $, $ \norma{\hat{\bm{x}}-\bm{p}}<\delta $ 
     
     $\implies$ la soluzione di \[
         \begin{cases}
@@ -271,7 +271,7 @@ Al contrario, invece, essere instabile significa che $ \exists\, \varepsilon $ e
     Sotto le ipotesi \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} \colon \bm{f}(\bm{p})=\bm{0} $.\\ $ \bm{p} $ si dice \emph{asintoticamente stabile} se:
     \begin{itemize}
         \item è stabile;
-        \item $ \exists\,\delta>0 $ tale che $ \forall\, \overline{\bm{x}} \in B_{\delta}(\bm{p}) $, $ \overline{\bm{x}} \in \Omega $ si ha che \[
+        \item $ \exists\,\delta>0 $ tale che $ \forall\, \overline{\bm{x}} \in B_{\delta}(\bm{p}) \subseteq \Omega $ si ha che \[
             \lim_{t\to \infty} \bm{u}_{(t_0,\overline{\bm{x}})} (t) = \bm{p}
         \]
     \end{itemize}
