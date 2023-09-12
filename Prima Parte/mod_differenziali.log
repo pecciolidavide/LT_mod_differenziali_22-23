@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.22)  10 SEP 2023 09:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.22)  11 SEP 2023 10:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2419,7 +2419,7 @@ Capitolo 5.
 [59]
 \c@thmdididicoijcoijdoijcoijcoijsoij=\count696
 
-Underfull \hbox (badness 1490) in paragraph at lines 62--62
+Underfull \hbox (badness 1490) in paragraph at lines 64--64
 []$\OML/lmm/b/it/10.95 p$ \T1/lmr/m/n/10.95 (+20) è asin-to-ti-ca-
  []
 
@@ -2757,7 +2757,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [94]
-Overfull \hbox (3.28764pt too wide) detected at line 765
+Overfull \hbox (3.28764pt too wide) detected at line 771
 []
  []
 
@@ -2836,18 +2836,18 @@ Package logreq Info: Writing requests to 'mod_differenziali.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72875 strings out of 476025
- 1742177 string characters out of 5790017
+ 72878 strings out of 476025
+ 1742198 string characters out of 5790017
  3508004 words of memory out of 5000000
  91313 multiletter control sequences out of 15000+600000
  675264 words of font info for 356 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,27n,111p,1722b,1697s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on mod_differenziali.pdf (109 pages, 828229 bytes).
+Output written on mod_differenziali.pdf (109 pages, 829868 bytes).
 PDF statistics:
- 1414 PDF objects out of 1440 (max. 8388607)
- 1175 compressed objects within 12 object streams
- 442 named destinations out of 1000 (max. 500000)
+ 1418 PDF objects out of 1440 (max. 8388607)
+ 1179 compressed objects within 12 object streams
+ 445 named destinations out of 1000 (max. 500000)
  86492 words of extra memory for PDF output out of 89155 (max. 10000000)
 

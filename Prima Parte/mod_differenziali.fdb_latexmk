@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber mod_differenziali"] 0 "mod_differenziali.bcf" "mod_differenziali.bbl" "mod_differenziali" 1694331747 -1
-  "mod_differenziali.bcf" 1694331747 107822 73da69729d18365e8ef25f262be69697 "pdflatex"
+["biber mod_differenziali"] 0 "mod_differenziali.bcf" "mod_differenziali.bbl" "mod_differenziali" 1694420868 -1
+  "mod_differenziali.bcf" 1694420868 107822 73da69729d18365e8ef25f262be69697 "pdflatex"
   (generated)
   "mod_differenziali.bbl"
   "mod_differenziali.blg"
   (rewritten before read)
-["pdflatex"] 1694331744 "/Users/nicolobrunacci/Downloads/mod_differenziali_22-23-main-4/Prima Parte/mod_differenziali.tex" "mod_differenziali.pdf" "mod_differenziali" 1694331747 0
-  "../Seconda Parte/mod_differenziali_ii.tex" 1694331744 53985 ed3bc8d1f64278d9009db09e494d5743 ""
+["pdflatex"] 1694420865 "/Users/nicolobrunacci/Downloads/mod_differenziali_22-23-main-4/Prima Parte/mod_differenziali.tex" "mod_differenziali.pdf" "mod_differenziali" 1694420868 0
+  "../Seconda Parte/mod_differenziali_ii.tex" 1694375147 54516 8aeb4551edd63b3ed41e49426409a133 ""
   "/Users/nicolobrunacci/Downloads/mod_differenziali_22-23-main-4/Prima Parte/mod_differenziali.tex" 1694274124 1970 079ab9d89559ed6d82e3c2ebf6a67f04 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -454,18 +454,18 @@
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "Days/2023_02_23.tex" 1693929797 6770 e25757bcd36a3a6397b9168d3c16cc56 ""
   "Days/2023_02_23_pt2.tex" 1693870734 5778 4c2112e43594339f181ede65f10df12b ""
-  "Days/2023_02_28.tex" 1694275948 13699 47c4a9d12b0000280606a028ecec61ed ""
+  "Days/2023_02_28.tex" 1694353857 13705 12a72d1a6a5dcfa7f41854d1e58ac633 ""
   "Days/2023_03_02.tex" 1693870734 9423 6491a6f16e0faa755bc8ba1e87233e67 ""
   "Days/2023_03_07.tex" 1693870734 9382 0a10f5a4050cfaf8adce3ea2fe1094e1 ""
-  "Days/2023_03_09.tex" 1694167030 10051 fd748b25294a918f45f2e3fc853d95cd ""
+  "Days/2023_03_09.tex" 1694351588 10132 4acef4f279a7fbb8ed60051f7dcd192a ""
   "Days/2023_03_14.tex" 1693992102 7382 d2561558b76d55e173da94932a9710a0 ""
   "Days/2023_03_14_pt2.tex" 1693870734 1055 b4185741d829e1a4d47894ee94fce7ea ""
   "Days/2023_03_16.tex" 1694244045 12512 98fcd13df2ce0fa6c5a18cb98c2d473c ""
-  "Days/2023_03_21.tex" 1693870734 10523 a3758cfdf5fd902e7d057d24157380f2 ""
+  "Days/2023_03_21.tex" 1694358513 10547 d63dfa2e379c9c126048a0dd1c930530 ""
   "Days/2023_03_23.tex" 1694291865 8895 2edd86b661415e82d2ad0c08467fdd40 ""
-  "Days/2023_03_28.tex" 1694275605 6959 4487f7b75762516ca3dab81db1ff4b5c ""
+  "Days/2023_03_28.tex" 1694374511 7011 3b53acf8c9da0c99159e296482c63a9c ""
   "Days/2023_03_30.tex" 1694330296 10357 7f868483df9c7830cc6927bdcb40dcdd ""
-  "Days/2023_04_04.tex" 1694246322 3021 7922a0626e9172232c9bb07ee1ff4c20 ""
+  "Days/2023_04_04.tex" 1694420865 3025 dfafedd88c1b942c1e9f416958cdf26e ""
   "figures/mod_differenziali-figure0.dpth" 1693870734 0 d41d8cd98f00b204e9800998ecf8427e ""
   "figures/mod_differenziali-figure0.md5" 1693870734 62 3cfe8783ff53f429a2df29927d339f3a ""
   "figures/mod_differenziali-figure0.pdf" 1693870734 15008 9dc66446f045c3d2387c0d80d2b20f76 ""
@@ -502,12 +502,12 @@
   "matlab_graph/grafico1.tex" 1693870734 158144 500eef515852c9af6e1b4c1ba72caab1 ""
   "matlab_graph/grafico2.tex" 1693870734 50262 dc8cc22a4a648a2f467a81a677137a43 ""
   "matlab_graph/grafico3.tex" 1693870734 89130 c357f4bff288073c3ebbcd297a17754a ""
-  "mod_differenziali.aux" 1694331747 46230 4c0e181005e60dfe4706664b9b33d73f "pdflatex"
+  "mod_differenziali.aux" 1694420868 46230 5df641359cb996b8a47242db17e13a9b "pdflatex"
   "mod_differenziali.bbl" 1694187118 2512 ba18c3710ed91b825f1c8b2889918122 "biber mod_differenziali"
-  "mod_differenziali.out" 1694331747 7203 8e555bcce7851d86113b2c4743476e1b "pdflatex"
-  "mod_differenziali.run.xml" 1694331747 2401 3420294c41d41a691822838b51a419ac "pdflatex"
+  "mod_differenziali.out" 1694420868 7203 8e555bcce7851d86113b2c4743476e1b "pdflatex"
+  "mod_differenziali.run.xml" 1694420868 2401 3420294c41d41a691822838b51a419ac "pdflatex"
   "mod_differenziali.tex" 1694274124 1970 079ab9d89559ed6d82e3c2ebf6a67f04 ""
-  "mod_differenziali.toc" 1694331747 18001 8ebe696932336f99c1cc83407be9608d "pdflatex"
+  "mod_differenziali.toc" 1694420868 18001 8ebe696932336f99c1cc83407be9608d "pdflatex"
   "unito_ii.tex" 1694182397 15953 685e46190b39fb97d91c47e3fab53fbc ""
   (generated)
   "mod_differenziali.aux"
