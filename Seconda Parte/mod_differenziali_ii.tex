@@ -139,7 +139,7 @@ Andiamo ad analizzare l'espressione del commutatore con l'obiettivo di renderla 
 \begin{align*}
     [\bm{X},\bm{Y}]_f=X^\alpha\frac{\partial}{\partial x^\alpha}\left(Y^\beta \frac{\partial}{\partial x^\beta}(f)\right)-Y^\alpha \frac{\partial}{\partial x^\alpha}\left(X^\beta \frac{\partial}{\partial x^\beta}(f)\right)=\\
     =\left(X^\alpha \frac{\partial}{\partial x^\alpha}Y^\beta\right)\frac{\partial}{\partial x^\beta}(f)+\cancel{X^\alpha Y^\beta \frac{\partial}{\partial x^\alpha}\left(\frac{\partial }{\partial x^\beta}(f)\right)}+\\
-    -\left(Y^\alpha \frac{\partial}{\partial x^\alpha}X^\beta\right)\frac{\partial}{\partial x^\beta}(f)+\cancel{Y^\alpha X^\beta \frac{\partial}{\partial x^\alpha}\left(\frac{\partial }{\partial x^\beta}(f)\right)}
+    -\left(Y^\alpha \frac{\partial}{\partial x^\alpha}X^\beta\right)\frac{\partial}{\partial x^\beta}(f)-\cancel{Y^\alpha X^\beta \frac{\partial}{\partial x^\alpha}\left(\frac{\partial }{\partial x^\beta}(f)\right)}
 \end{align*}
 Scambiando $\alpha\leftrightarrow\beta$ e semplificando i termini opposti si ottiene:
 \begin{align*}
@@ -706,7 +706,7 @@ Studiando adesso che la derivata della velocità areolare è:
     \frac{d}{dt}(\bm{v}_{ar})=\frac{1}{2}\frac{d}{dt}(\bm{r} \wedge \bm{v})=\frac{1}{2}(\overbrace{\bm{v}\wedge \bm{v}}^{0}+\bm{r}\wedge \bm{a})=\frac{1}{2}\bm{r}\wedge \bm{a}
 \end{align*}
 e che quindi è uguale a $0$, ovvero la velocità areolare è costante$\iff$ il moto è centrale.
-\paragrafo{Dalla traiettoria agli enti fondamentali della cinematica}{ Sia $\mathbf{r}=r(\theta)$ . Da esso si possono scrivere tutti gli enti fonamentali della cinematica.\\
+\paragrafo{Dalla traiettoria agli enti fondamentali della cinematica}{ Sia $\mathbf{r}=r(\theta)$ . Da esso si possono scrivere tutti gli enti fondamentali della cinematica.\\
 Sia $\mathbf{r}=\mathbf{r}(\theta(t))\mathbf{u}$ la nostra traiettoria del moto. Studiamo la velocità:
 \begin{align*}
     \mathbf{v}=\frac{d\mathbf{r}}{dt}=\frac{dr}{d\theta}\cdot \dot{\theta}\mathbf{u}+r\frac{d\mathbf{u}}{d\theta}\cdot\dot{\theta}=\dot{\theta}\left(\frac{dr}{d\theta}\mathbf{u}+r\frac{d\mathbf{u}}{d\theta}\right)
@@ -721,8 +721,14 @@ e riconoscendo in $\cfrac{d\mathbf{u}}{d\theta}=\tau$, abbiamo che:
 \end{align*}
 Prendiamo adesso in esame l'accelerazione, sfruttando l'espressione appena ottenuta per la velocità:
 \begin{align*}
-    \frac{d\mathbf{v}}{dt}=c\left(\frac{d}{d\theta}\left(\frac{d}{d\theta}\frac{1}{r}\right)\right)\mathbf{u}
-\end{align*}}{}{}
+    \frac{d\mathbf{v}}{dt}=c\left(-\frac{d}{d\theta}\frac{d}{d\theta}\left(\frac{1}{r}\right)\cdot \bm{u}-\cancel{\frac{d}{d\theta}\frac{1}{r}\frac{d\bm{u}}{dt}}+\cancel{\frac{d}{dt}\frac{1}{r}\cdot \bm{\tau}}+\frac{1}{r}\frac{d\bm{\tau}}{dt}\right)=\\
+    =c\dot{\theta}\left(-\frac{d^2}{d\theta^2}\left(\frac{1}{r}\right)\cdot \bm{u}+\frac{1}{r}\frac{d\bm{\tau}}{d\theta}\right)
+\end{align*}
+Ricordando che $\cfrac{d\bm{\tau}}{d\theta}=-\bm{u}$ da $\cfrac{d\bm{\tau}}{dt}=-\cfrac{d\theta}{dt}\bm{u}$, abbiamo:
+\begin{align*}
+    \bm{a}= -\frac{c^2}{r^2}\left(\frac{d^2}{d\theta^2}\left(\frac{1}{r}\right)+\frac{1}{r}\right)\bm{u}
+\end{align*} 
+}{}{}
 %%SPAZI AFFINI EUCLIDEI
 %%
 %
