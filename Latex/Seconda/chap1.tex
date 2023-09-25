@@ -1,0 +1,475 @@
+\chapter{Campi di vettori e forme differenziali su spazi affini}
+	\definizione{ Si chiama \underline{spazio affine} la terna $(A,E,\delta)$,dove:
+    \begin{itemize}
+        \item $A$ è un insieme di elementi che chiamiamo punti
+        \item $E$ è uno spazio vettoriale
+        \item $\delta \colon A \times A \to E$ è un'applicazione tale che:
+        \begin{enumerate}
+            \item $\forall\, (P,\bm{v}) \in A\times E, \exists! \, Q \in A \colon \delta(P,Q)=\mathbf{v}$
+            \item $\forall\, P,Q,R \in A, \delta(P,Q)+\delta(Q,R)=\delta(P,R)$
+        \end{enumerate}
+    \end{itemize}
+    La \underline{dimensione dello spazio affine} $A$ è la dimensione dello spazio vettoriale soggiaciente $E$.}
+    \notazione[]{Uno spazio affine $(A,E,\delta)$ è indicato più brevemente con $A$, mentre il vettore $\delta(P,Q)$ è indicato semplicemente con $PQ$.}
+    \definizione{Un vettore $\mathbf{v}\in E$ è chiamato \underline{vettore libero}, mentre con la coppia $(P,\mathbf{v})$ indicheremo il vettore $\mathbf{v}$ applicato nel punto $P$.}
+    \definizione{ Sia $A$ uno spazio affine. Un \underline{riferimento cartesiano} è una coppia $(O,\mathbf{c}_\alpha)$, dove:
+    \begin{itemize}
+        \item $O$ è l'origine
+        \item $(\mathbf{c}_\alpha)=(\mathbf{c}_1,\dots,\mathbf{c}_n)$ è una base di $E$
+    \end{itemize}}
+
+    Un riferimento cartesiano stabilisce una corrispondenza biunivoca
+        \begin{align*}
+            \Phi \colon A \leftrightarrow \mathbb{R}^n\\
+            P\leftrightarrow (x^\alpha)
+        \end{align*}
+    dove ad ogni punto $P\in A$ si fa corrispondere l'ennupla reale $(x^\alpha)$ costituita dalle componenti secondo la base $(\mathbf{c}_\alpha)$ del vettore $OP$:
+        \begin{align*}
+            OP=\mathbf{x}=x^\alpha\mathbf{c}_\alpha
+        \end{align*}
+    Risultano così definite anche delle mappe $x^\alpha\colon A \to \mathbb{R}$ dette \underline{coordinate cartesiane} o \underline{affini}, tali che $x^\alpha(P)\mathbf{c}_\alpha=OP$
+    \osservazione{Questa corrispondenza biunivoca istituisce anche una topologia di $A$ indotta dalla topologia di $\mathbb{R}^n$.}
+    \paragrafo{Trasformazioni affini}{ Se si considerano due riferimenti affini $(O,\mathbf{c}_\alpha)$ e $(O',\mathbf{c}_{\alpha'})$, 
+    allora vi è un legame tra i due sistemi di coordinate indotti $(x^\alpha)$ e $(x^{\alpha'})$, ovvero:
+        \begin{align*}
+            x^\alpha=a^\alpha_{\alpha'}x^{\alpha'}+b^\alpha && x^{\alpha'}=a^{\alpha'}_\alpha x^\alpha+b^{\alpha'}
+        \end{align*}
+    Dove $a^\alpha_{\alpha'}$ e $a^{\alpha'}_\alpha$ compongono le matrici dei cambiamenti di base:
+    \begin{align*}
+        \mathbf{c}_{\alpha'}=a^\alpha_{\alpha'}\mathbf{c}_\alpha && \mathbf{c}_\alpha=a^{\alpha'}_\alpha \mathbf{c}_{\alpha'}
+    \end{align*}
+    Mentre $(b^\alpha)$ $(b^{\alpha'})$ sono le componenti rispettivamente del vettore $OO'$ e $O'O$.}{}{}{}
+    \definizione{ Sia $A$ uno spazio affine. Una funzione $f$ del tipo:
+    \begin{align*}
+        f:A\to \mathbb{R}\\
+        P\mapsto f(P)
+    \end{align*}
+    è detta \underline{campo scalare}.}
+    \definizione{Possiamo vedere $f=g\circ \Phi$ con:
+    \begin{align*}
+    A\xrightarrow[]{\Phi} \mathbb{R}^n\xrightarrow[]{g} \mathbb{R}\\P\xmapsto[]{\Phi}(x^\alpha)\xmapsto[]{g} g(x^\alpha)
+    \end{align*}
+    Dove $g\colon\mathbb{R}^n\to \mathbb{R}$ è detta \underline{rappresentazione del campo $f$}.}
+    \proprieta{ L'insieme dei campi scalari su $A$ ha una struttura di anello commutativo ed algebra associativa e commutativa.\\
+     Siano $f,g$ due campi scalari e $P\in A$, allora vale:
+    \begin{enumerate}
+        \item \textit{Somma di campi}: $(f+g)(P)=f(P)+g(P)$
+        \item \textit{Prodotto numerico}: $(fg)(P)=f(P)g(P)$
+        \item \textit{Prodotto per uno scalare}: $(af)(P)=af(P), a \in \mathbb{R}$
+    \end{enumerate}
+    Denoteremo con $\mathcal{F}(A)$ l'anello dei campi scalari sullo spazio affine $A$.}
+    \definizione{ Un \underline{campo vettoriale} è una mappa:
+    \begin{align*}
+        \mathbf{X}\colon A \to A\times E\\
+        P\mapsto (P,\mathbf{X}(P))
+    \end{align*}
+    ovvero ad un punto $P$ associa un vettore $\mathbf{X(P)}$ applicato in $P$.}
+    \definizione{Fissato un riferimento cartesiano, ogni campo vettoriale $\mathbf{X}$ risulta rappresentato da un insieme di $n$ funzioni reali $X^\alpha\colon A \to \mathbb{R}$, dette \underline{componenti cartesiane}, tali che:
+    \begin{align*}
+        \mathbf{X}(P)=X^\alpha(P)\mathbf{c}_\alpha
+    \end{align*}
+    Queste componenti in quanto campi scalari hanno anche loro una funzione rappresentativa, tale per cui si possono anche denotare come $X^\alpha(x^{\beta})$.}
+    \proprieta[]{Siano $\mathbf{X}$ e $\mathbf{Y}$ due campi vettoriali. Sono definite le operazioni di:
+    \begin{enumerate}
+        \item \textit{Somma}: $(\mathbf{X}+\mathbf{Y})(P)=\mathbf{X}(P)+\mathbf{Y}(P)$
+        \item \textit{Prodotto per un numero reale}: $(a\mathbf{X})(P)=a(\mathbf{X}(P)), a \in \mathbb{R}$
+    \end{enumerate}
+    Con queste due operazioni l'insieme dei campi vettoriali su $A$, che denoteremo con $\mathcal{X}(A)$, ha una struttura di modulo.}
+    \definizione{ Sia $f\in \mathcal{F}(A)$ e $X\in \mathcal{X}(A)$. La \underline{derivata di un campo scalare $f$} \underline{rispetto ad un campo vettoriale $\textbf{X}$} è il campo scalare:
+    \begin{align*}
+        \bm{X} (f)=X^\alpha\cfrac{\partial f}{\partial x^\alpha}
+    \end{align*}
+    Dove con: 
+    \begin{align*}
+            \frac{\partial f}{\partial x^\alpha}
+    \end{align*}
+    s'intende la derivata parziale rispetto alla $x^\alpha$ della funzione rappresentativa $f(x^1,\dots,x^n)$ in un qualunque sistema di coordinate cartesiane.}
+   \osservazione{ Dunque è una mappa che, una volta fissato un $\mathbf{X}\in \mathcal{X}(A)$, lavora:
+    \begin{align*}
+        \bm{X} \colon \mathcal{F}(A)\to \mathcal{F}(A)\\
+        f\mapsto \bm{X} (f)=X^\alpha\cfrac{\partial f}{\partial x^\alpha}
+    \end{align*}}
+    \proprieta{ Siano $f,g\in \mathcal{F}(A)$. Si verifica facilmente che ${\bm{X}}$ soddisfa:
+    \begin{itemize}
+        \item \textit{$\mathbb{R}$-lineare}: $\bm{X}(af+bg)=a\bm{X}(f)+b\bm{X}(g)$$\quad a,b\in \mathbb{R}$
+        \item \textit{Regola di Leibnitz}: $\bm{X}(f\cdot g)=\bm{X}(f)\cdot g+f\cdot \textbf{X}(g)$
+    \end{itemize} Una funzione che soddisfa queste due proprietà è per l'appunto chiamata \underline{derivazione}.}
+    \paragrafo{Invarianza per cambiamenti di coordinate affini} {Un'altro fatto interessante in merito alla derivazione di un campo scalare $f$ rispetto ad un campo vettoriale $\mathbf{X}$ è la sua indipendenza dalle coordinate affini stabilite.\\
+    Sia $X\in \mathcal{X}(A)$ e siano $(\mathbf{c}_\alpha)$ e $(\mathbf{c}_{\alpha'})$ due basi. Si consideri la rappresentazione del campo secondo le due basi:
+    \begin{align*}
+        \mathbf{X}=X^\alpha\mathbf{c}_\alpha =X^{\alpha'}\mathbf{c}_{\alpha'}
+    \end{align*}
+    Tenuto conto delle relazioni tra le basi, si ha la relazione:
+    \begin{align*}
+        X^{\alpha'}=a^{\alpha'}_\alpha X^\alpha
+    \end{align*}
+    D'altra parte, interpretando la $f$ come funzione delle $(x^\alpha)$ per il tramite delle $(x^{\alpha'})$ dalle relazioni precedenti tra le basi si ha:
+    \begin{align*}
+        \frac{\partial f}{\partial x^\alpha}=\frac{\partial f}{\partial x^{\alpha'}}\frac{\partial x^{\alpha'} }{\partial x^\alpha}=\frac{\partial f}{\partial x^{\alpha'}}a^{\alpha'}_\alpha
+    \end{align*}
+    Si ha quindi:
+    \begin{align*}
+        X^\alpha\frac{\partial f}{\partial x^\alpha}=X^\alpha\frac{\partial f}{\partial x^{\alpha'}}a^{\alpha'}_\alpha= X^{\alpha'}\frac{\partial f}{\partial x^{\alpha'}}
+    \end{align*}
+    Ciò mostra l'indipendenza della definizione dalla scelta delle coordinate cartesiane.}{}{}
+    %%
+    %%
+    %%COMMUTATORE DI DUE CAMPI VETTORIALI
+    %%
+    %%
+    %%
+    \definizione{ Siano $\mathbf{X},\mathbf{Y}\in \mathcal{X}(A)$ .Definiamo il \underline{commutatore di $\mathbf{X}$ e $\mathbf{Y}$} come il campo vettoriale:
+    \begin{align*}
+    [\cdot,\cdot]\colon \mathcal{X}(A)\times \mathcal{X}(A)\to \mathcal{X}(A)\\
+        (\mathbf{X},\mathbf{Y})\mapsto[\mathbf{X},\mathbf{Y}]_f=\mathbf{X}(\mathbf{Y}(f))-\mathbf{Y}(\mathbf{X}(f)) && f\in \mathcal{F}(A)
+    \end{align*}}
+    \proprieta{ Siano $\mathbf{X},\mathbf{Y},\mathbf{Z}\in \mathcal{X}(A)$. Il commutatore è un'operazione binaria interna $[\cdot,\cdot]$:
+    \begin{itemize}
+        \item \textit{Anticommutativa}: $[\mathbf{X},\mathbf{Y}]=-[\mathbf{Y},\mathbf{X}]$
+        \item \textit{Bilineare}:
+    $[a\mathbf{X}+b\mathbf{Y},\mathbf{Z}]=a[\mathbf{X},\mathbf{Z}]+b[\mathbf{Y},\mathbf{Z}]$
+    \item Soddisfa l'\textit{Identità di Jacobi}:
+    \begin{align*}
+        [\mathbf{X},[\mathbf{Y},\mathbf{Z}]]+[\mathbf{Z},[\mathbf{X},\mathbf{Y}]]+[\mathbf{Y},[\mathbf{Z},\mathbf{X}]]=0
+    \end{align*}
+    \end{itemize}
+    Ovvero $(\mathcal{X}(A),[\cdot,\cdot])$ è un'\underline{algebra di Lie}.}
+\paragrafo{L'espressione del commutatore}{
+Andiamo ad analizzare l'espressione del commutatore con l'obiettivo di renderla più semplice e compatta:
+\begin{align*}
+    [\bm{X},\bm{Y}]_f=X^\alpha\frac{\partial}{\partial x^\alpha}\left(Y^\beta \frac{\partial}{\partial x^\beta}(f)\right)-Y^\alpha \frac{\partial}{\partial x^\alpha}\left(X^\beta \frac{\partial}{\partial x^\beta}(f)\right)=\\
+    =\left(X^\alpha \frac{\partial}{\partial x^\alpha}Y^\beta\right)\frac{\partial}{\partial x^\beta}(f)+\cancel{X^\alpha Y^\beta \frac{\partial}{\partial x^\alpha}\left(\frac{\partial }{\partial x^\beta}(f)\right)}+\\
+    -\left(Y^\alpha \frac{\partial}{\partial x^\alpha}X^\beta\right)\frac{\partial}{\partial x^\beta}(f)-\cancel{Y^\alpha X^\beta \frac{\partial}{\partial x^\alpha}\left(\frac{\partial }{\partial x^\beta}(f)\right)}
+\end{align*}
+Scambiando $\alpha\leftrightarrow\beta$ e semplificando i termini opposti si ottiene:
+\begin{align*}
+    \left(X^\alpha \frac{\partial}{\partial x^\alpha}Y^\beta-Y^\alpha \frac{\partial}{\partial x^\alpha}X^\beta\right)\frac{\partial}{\partial x^\beta}(f)=[\bm{X},\bm{Y}]^\beta \frac{\partial}{\partial x^\beta}(f) \quad \forall\, f \in \mathcal{F}(A)
+\end{align*}
+Ottenendo cosi:
+\begin{align*}
+    [\bm{X},\bm{Y}]=[\bm{X},\bm{Y}]^\beta\bm{c}_\beta
+\end{align*}
+dove:
+\begin{align*}
+    [\bm{X},\bm{Y}]^\beta=X^\alpha \frac{\partial}{\partial x^\alpha}Y^\beta-Y^\alpha\frac{\partial}{\partial x^\alpha}X^\beta
+\end{align*}
+è la componente rispetto alla base $\bm{c}_\beta$.
+}{ldflds}{}
+\definizione{ Sia $\mathbf{X}\in \mathcal{X}(A)$. La \underline{divergenza} di $\mathbf{X}$ è una funzione:
+\begin{align*}div\colon\mathcal{X}(A)\to \mathcal{F}(A)\\
+     \bm{X}\mapsto div(\bm{X})
+    \end{align*}
+    Dove $div(\bm{X})=\cfrac{\partial X^1}{\partial x^1}+\dots +\cfrac{\partial X^n}{\partial x^n}=\cfrac{\partial X^\alpha}{\partial x^\alpha}$.}
+
+\proprieta{Siano $\mathbf{X},\mathbf{Y}\in \mathcal{X}(A)$. La divergenza gode delle seguenti proprietà:
+\begin{itemize}
+    \item \textit{Somma}: $div(\bm{X}+\bm{Y})=div(\bm{X})+div(\bm{Y})$
+    \item \textit{Prodotto per campo scalare}: $div(f\bm{X})=fdiv(\bm{X})+ \bm{X}(f),\: f\in \mathcal{F}(A)$
+    \item $\bm{X}=$ costante\footnote{Considerato $\bm{X}=$ costante nelle coordinate cartesiane affini $(x^\alpha)$} $\Rightarrow \: div(\bm{X})=0$
+\end{itemize}}
+
+%%
+%%
+%%
+%%CARTA E COORDINATE NON AFFINI
+%%
+%%
+%%
+\definizione{ Una \underline{carta} di dimensione $n$ su un insieme $A$ è una coppia $(U,\varphi)$, dove 
+\begin{itemize}
+    \item $U\subseteq A$  
+    \item $\varphi$ è una mappa biettiva:
+    \begin{align*}
+        \varphi\colon U\to \varphi(U)\subseteq \mathbb{R}^n
+    \end{align*}
+    la cui immagine $\varphi(U)$ è un aperto di $\mathbb{R}^n$.
+\end{itemize}}
+\definizione{ Possiamo definire le \underline{coordinate associate} alla carta $(U,\varphi)$ come le $n$ funzioni:
+\begin{align*}
+    q^i\colon U\to \mathbb{R}&&
+    q^i=pr_i\circ \varphi
+\end{align*}
+dove:\begin{minipage}{4cm}
+\begin{align*}
+pr_i\colon\mathbb{R}^n\to \mathbb{R}\\
+    (r^1,...r^n)\mapsto r^i
+\end{align*}
+\end{minipage}
+\begin{minipage}{7cm}
+è la proiezione della i-esima coordinata.
+\end{minipage}}
+\osservazione[]{ Siano $A$ uno spazio affine, $(x^\alpha)$ delle coordinate affini su $A$ e $(U,\varphi)$ una carta di dimensione $n$.\\
+Le coordinate $q^i$ si possono rappresentare come funzioni delle $n$ $(x^\alpha)$:
+\begin{align*}
+    q^i=q^i(x^\alpha)
+\end{align*}
+Essendo tutte applicazioni biettive si può invertire su $\varphi (U)$, ovvero:
+\begin{align*}
+    x^\alpha=x^\alpha(q^i)
+\end{align*}
+Quindi ricapitolando}
+\definizione{ Si possono definire i \underline{cambiamenti} (o \underline{trasformazioni}) \underline{di coordinate}, come:
+\begin{align*}
+    q^i=q^i(x^\alpha) && x^\alpha=x^\alpha(q^i)
+\end{align*}
+Con le matrici Jacobiane delle trasformazioni, rispettivamente:
+\begin{align*}
+    E^i_\alpha= \frac{\partial q^i}{\partial x^\alpha} (x^\beta) && E^\alpha_i= \frac{\partial x^\alpha}{\partial q^i} (q^j)
+\end{align*}
+Queste sono regolari e una l'inversa dell'altra.}
+\paragrafo{Coordinate non affini - Cerchio}{
+Si considerino le coordinate del piano affine $(x,y)$ e le trasformazioni di queste in coordinate polari piane $(r,\theta)$:
+\begin{align*}
+x^\alpha=x^\alpha(q^i)\colon\begin{cases}
+    x=r\,cos\theta\\
+    y=r\,sen\theta
+    \end{cases} &&r>0,\: -\pi<\theta<\pi
+\end{align*}%% disegno disegno
+Queste hanno come trasformazione inversa di coordinate:
+\begin{align*}
+q^i=q^i(x^\alpha)\colon \begin{cases}
+r=\sqrt{x^2+y^2}\\
+\theta=\begin{cases}
+\arcsin\cfrac{y}{\sqrt{x^2+y^2}} \quad x\ge 0 \\
+\pi-\arcsin\cfrac{y}{\sqrt{x^2+y^2}}\quad x<0,\, y>0\\
+-\pi-\arcsin\cfrac{y}{\sqrt{x^2+y^2}}\quad x<0,\, y<0
+\end{cases}
+    \end{cases}
+\end{align*}}{}{}
+\paragrafo{ESEMPIO coordinate non affini - Sfera}{ Consideriamo le coordinate dello spazio affine $(O,(x,y,z))$ e la trasformazione in coordinate polari sferiche:
+\begin{align*}
+    x^\alpha=x^\alpha(q^i)\colon\begin{cases}
+x=r\:sen\varphi\:cos\theta\\
+y=r\:cos\varphi\:sin\theta\\
+ z=r\:cos\varphi
+    \end{cases}
+\end{align*}
+Dove $(q^1,q^2,q^3)=(r,\varphi,\theta)$ sono definite sul dominio aperto $U$ in $\mathbb{R}^3$, asportando il semiasse positivo delle $x$ e tutto l'asse $z$.\\
+ La carta è a valori nell'aperto $\varphi(V)=\left\{(r,\varphi,\theta)\in \mathbb{R}^3\colon r>0, 0<\varphi<\pi, 0<\theta<2\pi\right\}$, dove:
+\begin{align*}
+    \begin{cases}
+        r\equiv\text{raggio}\\
+        \varphi\equiv\text{colatitudine}\\
+        \theta\equiv \text{longitudine}
+    \end{cases}
+\end{align*}}{}{}
+\notazione[]{In generale $x^\alpha=x^\alpha(q^i)$ si può anche scrivere come $\textbf{x}=\mathbf{x}(q^i)$ con $\mathbf{x}$ un vettore in $\mathbb{R}^3$ che rappresenta il vettore posizione $OP=x^\alpha \mathbf{e}_\alpha$.}
+\definizione{ Si possono definire $n$ campi vettoriali su $\varphi(U)$, come segue:
+\begin{align*}
+    \mathbf{E}_i=\frac{\partial \mathbf{x}}{\partial q^i}
+\end{align*}
+Questi ovviamente hanno componenti rispetto alla base $(\mathbf{c}_\alpha)$:
+\begin{align*}
+    \mathbf{E}_i=E^\alpha_i\mathbf{c}_\alpha
+\end{align*}
+E vengono chiamati \underline{riferimento naturale associato alle coordinate non affini} $(q^i)$.}
+
+
+Le loro caratteristiche principali sono:
+\begin{enumerate}
+   \item Non essere, in generale,  costanti, a causa della loro dipendenza $\mathbf{E}_i=\mathbf{E}_i(q^j)$.
+   \item Essere tra loro indipendenti e costituire così una base dei campi di vettori su $U$.
+\end{enumerate}
+\paragrafo{Trasformazione di $\bm{X}$:coordinate affini$\leadsto$ coordinate non affini}{ Sia $\mathbf{X}\in \mathcal{X}(A)$. Sappiamo sia che:
+\begin{align*}
+    \mathbf{X}=X^i(q^j)\mathbf{E}_i=\boxed{X^i\mathbf{E}_i}=X^iE^\alpha_i\mathbf{c}_\alpha=\boxed{X^\alpha\mathbf{c}_\alpha}
+\end{align*}
+Uguagliando cosi i due termini evidenziati abbiamo le relazioni tra i coefficienti delle due rappresentazioni del campo vettoriale $\mathbf{X}$:
+\begin{align*}
+    X^i=E^i_\alpha X^\alpha\\
+    X^\alpha=E^\alpha_iX^i
+\end{align*}}{}{}
+\paragrafo{Interpretazione degli $\mathbf{E}_i$ come derivazioni}{ Consideriamo i campi vettoriale $\mathbf{E}_i$. Questi possiamo interpretarli come delle derivazioni del tipo:
+\begin{align*}
+    \mathbf{E}_i(f)=\frac{\partial f}{\partial q^i}
+\end{align*}
+Ovvero come la derivata della funzione rappresentativa $f$ rispetto alle coordinate non affini $(q^i)$. Per fare ciò, quello che sta accadendo è:
+\begin{align*}
+    \varphi (U)\xrightarrow[]{\varphi^{-1}} U\xrightarrow[]{f} \mathbb{R}\\
+    (q^i)\mapsto\varphi^{-1}(q^i)\mapsto f(\varphi^{-1}(q^i))\equiv f(q^i)
+\end{align*}
+Quindi procedendo con questa interpretazione:
+\begin{align*}
+    \bm{E}_i(f)=\frac{\partial}{\partial q^i}(f)=\frac{\partial x^\alpha}{\partial q^i}\frac{\partial}{\partial x^\alpha}(f)=E^\alpha_i\frac{\partial}{\partial x^\alpha}(f)
+\end{align*}
+Concludendo, dunque, per un generico campo vettoriale $\mathbf{X}$:
+\begin{align*}
+    \bm{X}(f)=X^i\frac{\partial}{\partial q^i}(f)=X^\alpha \frac{\partial}{\partial x^\alpha}(f)
+\end{align*}}{}{}
+%%
+%%
+%%SIMBOLI DI CHRISTOFFEL
+%%
+%%
+\section{Simboli di Christoffel} Consideriamo i campi vettoriali $\mathbf{E_i}$. Visto che questi possono essere espressi in funzione delle coordinate $q^i$, ha senso considerarne le derivate parziali:
+\begin{align*}
+    \frac{\partial \mathbf{E}_i}{\partial q^j}=\frac{\partial^2\mathbf{x}}{\partial q^j\partial q^i}
+\end{align*}
+Queste derivate parziali sono a loro volta dei campi vettoriali e quindi possiamo considerarne la rappresentazione secondo il riferimento $(\mathbf{E}_i)$:
+\begin{align*}
+    \partial_j\mathbf{E}_i=\partial_j\partial_i\mathbf{x}=\Gamma^h_{ji}\mathbf{E}_h
+\end{align*}
+\definizione{Le componenti $\Gamma^h_{ji}$, definite come precede, sono delle funzioni sopra il dominio $U$ della carta, denominate \underline{simboli di Christoffel}.}
+\proprieta{ I simboli di Christoffel hanno le seguenti proprietà:
+\begin{itemize}
+    \item $\boxed{\Gamma^h_{ji}=\Gamma^h_{ij}}$: Questo vale per definizione stessa dei simboli di Christoffel. Essendo definiti tramite le derivate seconde di funzioni regolari, sono simmetrici rispetto agli indici in basso.
+    \item $\boxed{\Gamma^h_{ji}=0\iff \text{le coordinate sono cartesiane}}$: Dalla definizione si vede che sono identicamente nulli se e solo se i campi $\mathbf{E}_i$ sono costanti e ciò accade se e solo se le coordinate sono cartesiane.
+\end{itemize}}
+\osservazione[]{ Le componenti del commutatore sono le stesse in ogni sistema di coordinate:
+\begin{align*}
+    [\mathbf{X},\mathbf{Y}]^i=X^j\frac{\partial Y^i}{\partial q^j}-Y^i\frac{\partial X^j}{\partial q^j}
+\end{align*}}
+\definizione{ La \underline{divergenza in coordinate non affini} è il campo scalare:
+\begin{align*}
+    div\mathbf{X}=\frac{\partial}{\partial q^i}X^i+\Gamma^j_{ji}X^i
+\end{align*}
+Si verifica facilmente che soddisfa le condizioni precedentemente enunciate per la divergenza.}
+\osservazione[]{ Questa, euristicamente, può essere vista come:
+\begin{itemize}
+    \item La traccia di un'opportuna matrice:
+    \begin{align*}
+        (a_{ij})=\left( \frac{\partial X^j}{\partial q^i}+\Gamma^j_{ik} X^k\right)
+    \end{align*}
+    \item Un prodotto che \textit{assomiglia} al prodotto scalare
+\end{itemize}}
+\newpage
+\section{Forme differenziali}
+\definizione{ Sia $A$ uno spazio affine. Una \underline{forma lineare} o \underline{1-forma} su $A$ è un'applicazione:
+\begin{align*}
+    \varphi \colon \mathcal{X}(A)\to \mathcal{F}(A)
+\end{align*}
+tale che $\varphi$ sia \textit{$\mathcal{F}(A)$-lineare}, ovvero:
+\begin{align*}
+    \varphi(f\mathbf{X}+g\mathbf{Y})=f\varphi(\mathbf{X})+g\varphi(\mathbf{Y})&& \forall\, f,g\in \mathcal{F}(A)\:\:\forall \, \mathbf{X},\mathbf{Y}\in \mathcal{X}(A)
+\end{align*}}
+\proprieta{L'insieme delle forme lineari su $A$, $\Phi^1(A)$, è un modulo sull'anello $\mathcal{F(A)}$. Le operazioni sono così definite:
+\begin{itemize}
+    \item \textit{Somma di 1-forme}: $(\varphi+ \psi)(\mathbf{X})=\varphi(\mathbf{X})+\psi(\mathbf{X})$, $\forall\, \varphi, \psi\in \Phi^1(A)$
+    \item \textit{Prodotto per un campo scalare}: $(f\varphi)(\mathbf{X})=f\cdot \varphi(\mathbf{X})$, $\forall\, f \in \mathcal{F}(A)$
+\end{itemize}}
+
+\notazione[]{ Denotiamo con $\langle \mathbf{X},\varphi\rangle $ il valore della forma lineare $\varphi$ sul campo vettoriale $\mathbf{X}$. In tal modo}
+\definizione{ Definiamo un'applicazione lineare:
+\begin{align*}
+    \langle \cdot,\cdot\rangle  \colon \mathcal{X}(A)\times \Phi^1(A)\to \mathcal{F}(A)
+\end{align*}
+che prende il nome di \underline{valutazione} tra una forma lineare e un campo vettoriale.}
+\osservazione[]{Una forma lineare può anche essere interpretata come \underline{campo di covettori}, cioè come un'applicazione:
+\begin{align*}
+    \varphi \colon A \to A \times E^*
+\end{align*}
+che associa ad ogni punto $P\in A$ un covettore applicato in $P$.\\
+Il collegamento tra questa e la definizione precedente è dato dalla formula:
+\begin{align*}
+    \langle \mathbf{X},\varphi(P)\rangle =\langle \mathbf{X}(P),\varphi(P)\rangle 
+\end{align*} 
+Assume cosi senso valutare una 1-forma $\varphi$ su di un vettore applicato $(P,\mathbf{v})$. Il risultato $\langle \mathbf{v},\varphi(P)\rangle $ è un numero reale.}
+\paragrafo{Il differenziale}{Un esempio fondamentale di 1-forma è il \ul{differenziale $df$ di un campo scalare $f$}.\\
+Questo è definito dall'uguaglianza:
+\begin{align*}
+    \langle \mathbf{X},df\rangle = \mathbf{X}(f)
+\end{align*}
+La linearità dell'applicazione:
+\begin{align*}
+    df\colon \mathcal{X}(A)\to \mathcal{F}(A)\\
+    \mathbf{X}\mapsto \langle \mathbf{X},df\rangle 
+\end{align*}
+segue dal fatto che $\mathbf{X}(f)$ è lineare rispetto al campo vettoriale $\mathbf{X}$, una volta fissato il campo scalare $f$. Inoltre dalla regola di Leibnitz per la derivata rispetto ad un campo vettoriale segue la regola di Leibnitz per il differenziale:
+\begin{align*}
+    d(fg)=gdf+fdg
+\end{align*}}{}{}
+\paragraph{Differenziale di $\mathbf{(q^i)}$} Il nostro obiettivo adesso è quello di studiare il differenziale delle $(q^i)$, generiche coordinate su un aperto $U$.\\
+Essendo delle funzioni reali su $U$ possiamo considerarne i differenziali $(dq^i)$. Queste, come già visto, fanno corrispondere ad un campo $\mathbf{X}$ le sue componenti $X^i$:
+\begin{align*}
+    \langle\mathbf{X},dq^i\rangle=X^i
+\end{align*}
+E quindi in particolare:
+\begin{align*}
+    \langle \mathbf{E}_k,dq^i\rangle=\delta_k^i
+\end{align*}
+D'altra parte, nel dominio $U$, ogni forma lineare è combinazione lineare dei differenziali delle coordinate, ovvero ammette una rappresentazione locale:
+\begin{equation}
+    \label{sus1}
+    \mathbf{\varphi}=\varphi_idq^i
+\end{equation}
+Dove le $(\varphi_i)$ sono funzioni reali su $U$ dette \underline{componenti} di $\mathbf{\varphi}$ nelle coordinate $(q^i)$, definite da:
+\begin{equation}
+    \label{sus2}
+    \varphi_i=\langle\mathbf{E}_i,\mathbf{\varphi}\rangle
+\end{equation}
+Si noti come \ref{sus1}$\leadsto$\ref{sus2}, infatti:
+\begin{align*}
+    \langle \mathbf{E}_k,\mathbf{\varphi}\rangle = \varphi_i\langle \mathbf{E}_k,dq^i\rangle = \varphi_i \delta_k^i=\varphi_k
+\end{align*}
+Viceversa, \ref{sus2}$\leadsto$\ref{sus1}:
+\begin{align*}
+    \langle \mathbf{X},\varphi_idq^i\rangle=\varphi_i \langle \mathbf{X},dq^i\rangle= \langle \mathbf{E}_i, \mathbf{\varphi}\rangle X^i=\langle X^i\mathbf{E}_i, \mathbf{\varphi}\rangle =\langle \mathbf{X}, \mathbf{\varphi}\rangle
+\end{align*}
+Dalle formule precedenti segue che la valutazione di una forma lineare sopra un campo vettoriale è data, \textit{qualunque siano le coordinate scelte}, dalla somma dei prodotti delle componenti omologhe:
+\begin{align*}
+    \boxed{\langle \mathbf{X},\mathbf{\varphi}\rangle = X^i\varphi_i}
+\end{align*}
+%%
+%%
+%%
+%%
+%% FORME DIFFERENZIALI
+%%
+%%
+%%
+%%
+\definizione{ Una \underline{forma differenziale} o \underline{p-forma} su uno spazio affine $A$ è un'applicazione \textit{p-lineare antisimmetrica} dello spazio $\mathcal{X}(A)^p$ nello spazio $\mathcal{F}(A)$:
+\begin{align*}
+    \phi \colon \underbrace{\mathcal{X}(A)\times \mathcal{X}(A)\times \dots \times \mathcal{X}(A)}_{p \text{ volte}}\to \mathcal{F}(A)
+\end{align*}}
+\notazione{Indicheremo con:
+\begin{align*}
+    \Phi^p(A)=\text{ spazio delle $p$ forme sopra } A
+\end{align*}
+definendo:
+\begin{align*}
+    \Phi^0(A)\colon =\mathcal{F}(A)
+\end{align*}}
+\paragrafo{Derivazione esterna}{ Sulle $p$-forme differenziali è definita l'operazione fondamentale chiamata \underline{derivazione esterna}.
+Questa è una generalizzazione dell'operatore di differenziale applicabile sulle $0$-forme alle $p$-forme e per questo è indicato con $d$.
+\begin{align*}
+    d\colon \Phi^p(A)\to \Phi ^{p+1}(A)
+\end{align*}
+La sua proprietà fondamentale è $d^2\equiv 0$.}{}{}
+\osservazione[]{ Per l'antisimmetria, se $p>n=dim(A)$, allora $\Phi^p(A)\equiv 0$.}
+\paragrafo{Invarianza della rappresentazione differenziale 1-forma}{
+Sia $\varphi$ una 1-forma su $A$ scritta in rappresentazione locale come:
+\begin{align*}
+    \varphi = \varphi_idq^i
+\end{align*}
+Il contenuto di questa paragrafo sarà quello di dimostrare la rappresentazione del suo differenziale in coordinate locali:
+\begin{align*}
+    d\varphi=d\varphi _i\wedge dq^i
+\end{align*}
+e il fatto che questa non dipenda dalle coordinate scelte. Ovvero presa:
+\begin{align*}
+    \varphi = \varphi_{i'}dq^{i'}\longrightarrow d\varphi = \varphi_{i'}\wedge dq^{i'}
+\end{align*}
+Mostriamo questo secondo fatto.\\
+Siano $(q^i)$ e $(q^{i'})$ due sistemi di coordinate generiche. Ricordando che la matrice Jacobiana della trasformazione di coordinate è:
+\begin{align*}
+    E^{i'}_i=\frac{\partial q^{i'}}{\partial q^i}
+\end{align*}
+Si noti come:
+\begin{align*}
+    dq^{i'}=\frac{\partial q^{i'}}{\partial q^i}dq^i
+\end{align*}
+E quindi:
+\begin{align*}
+    \varphi_{i'}=E^i_{i'}\varphi_i
+\end{align*}
+Iniziamo allora i calcoli. Tenendo a mente che:
+\begin{align*}
+    d\varphi_{i'}=d(E^i_{i'}\varphi_i)=dE^i_{i'}\varphi_i+E^i_{i'}d\varphi_i
+\end{align*}
+Studiamo il membro destro della tesi:
+\begin{align*}
+    d\varphi_{i'}\wedge dq^{i'}=\varphi_i\frac{\partial E^{i}_{i'}}{\partial q^k}dq^k\wedge dq^{i'}+E^i_{i'}d\varphi_i\wedge dq^{i'}=\\
+    =\underbrace{\varphi_i\underbrace{\frac{\partial q^i}{\partial q^{i'} \partial q^{k'}}}_{\text{simmetrico in $i',k'$}}\overbrace{dq^{k'}\wedge dq^{i'}}^{\text{antisimmetrico in $i',k'$}}}_{\equiv 0}+d\varphi_i\wedge E^i_{i'}dq^{i'}=\\
+    =d\varphi_i\wedge dq^i
+\end{align*}}{}{}
