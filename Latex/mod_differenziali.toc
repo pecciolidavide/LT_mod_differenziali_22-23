@@ -16,7 +16,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Osservazione. ({1.4})}{5}{section*.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{({1.5})}{6}{section*.10}% 
+\contentsline {paragraph}{Osservazione. ({1.5})}{6}{section*.10}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Corollario - Esplosione in tempo finito. ({1.6})}{6}{section*.11}% 
 \defcounter {refsection}{0}\relax 
@@ -54,9 +54,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Definizione del flusso. ({2.9})}{17}{section*.26}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Sistemi autonomi. ({2.10})}{17}{section*.27}% 
+\contentsline {subsection}{\numberline {2.3.1}Sistemi Autonomi}{17}{subsection.2.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({2.11})}{17}{section*.28}% 
+\contentsline {paragraph}{Definizione. ({2.10})}{17}{section*.27}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Sistemi autonomi. ({2.11})}{18}{section*.28}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Esempio. ({2.12})}{18}{section*.29}% 
 \defcounter {refsection}{0}\relax 
@@ -340,9 +342,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Definizione. ({6.25})}{81}{section*.175}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Coordinate non affini - Cerchio. ({6.26})}{81}{section*.176}% 
+\contentsline {paragraph}{Esempio - Coordinate non affini - Cerchio. ({6.26})}{81}{section*.176}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{ESEMPIO coordinate non affini - Sfera. ({6.27})}{82}{section*.177}% 
+\contentsline {paragraph}{Esempio - Coordinate non affini - Sfera. ({6.27})}{82}{section*.177}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Notazione. ({6.28})}{82}{section*.178}% 
 \defcounter {refsection}{0}\relax 

@@ -8,7 +8,7 @@
 }
 \section{Equazione alle variazioni}
 \paragrafo{Domanda}{%
-    Ci chiediamo ora se la funzione $ \bm{u}_{(t_0,\bm{x})}(t) $ ha regolarità maggiore rispetto a $ \bm{x} $? Se sì, come si comporta $ \partial_x\bm{u}_{(t_0,\bm{x})}(t) $?
+    Ci chiediamo ora se la funzione $ \bm{u}_{(t_0,\bm{x})}(t) $ ha regolarità maggiore rispetto a $ \bm{x} $?. Se sì, come si comporta $ \partial_x\bm{u}_{(t_0,\bm{x})}(t) $?
 }{}{}
 %% BEGIN Equazione alle variazioni
 \paragrafo{Equazione alle variazioni}{%
@@ -106,12 +106,15 @@ Notando che la soluzione è $ C^{2} $ possiamo permetterci di calcolare le deriv
     Se $ \bm{f} \in C^{1}(\Omega)$, allora la funzione $ \bm{\Psi} $ è di classe $ C^{1}(E) $.
 }
 %% END
-\paragrafo{Sistemi autonomi}{%
-Analizziamo ora il caso dei sistemi autonomi. Prima di tutto
+\subsection{Sistemi Autonomi}
+
+Analizziamo ora il caso dei sistemi autonomi.
+
 \definizione{Si dice \emph{sistema autonomo} un'equazione differenziale della forma \[
     \bm{x}'=\bm{f}(\bm{x}),\qquad \bm{f}:\Omega \subseteq \R^{n}\to \R^{n}
 \]}
 
+\paragrafo{Sistemi autonomi}{
     Cosa succede nei sistemi autonomi? Sia\[
         \begin{cases}
             \bm{u}'=\bm{f}(\bm{u})\\ 
@@ -125,7 +128,7 @@ Analizziamo ora il caso dei sistemi autonomi. Prima di tutto
     Poichè $ \Omega_0 $ non dipende da $ t_0 \leadsto$ fissiamo $ t_0=0 $.
 
     Preso $ I(\bm{x}) $ intervallo massimale per la soluzione con $ \bm{u}_{(0,\bm{x})} $ e definito l'insieme $ E $ come: \[
-        E\coloneq \{(t,\bm{x}): t \in I(\bm{x}), \bm{x} \in \Omega'\}=I(x)\times \Omega'
+        E\coloneqq \{(t,\bm{x}): t \in I(\bm{x}), \bm{x} \in \Omega'\}=I(x)\times \Omega'
     \]possiamo scrivere il flusso:
     \begin{align*}
     \bm{\Psi}\colon E &\longrightarrow \R^{n} \\

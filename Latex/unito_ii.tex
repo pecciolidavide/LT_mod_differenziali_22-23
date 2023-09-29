@@ -75,7 +75,8 @@
 \newcommand{\hdrnew}[1]{
 	\fancyhead{} % cancella tutti i campi
 	\fancyfoot{}
-	\fancyhead[RO,LE]{\datainizion}
+	\fancyhead[RO,LE]{%\datainizion %%Togliere il commento per visualizzare la data delle lezioni
+	}
 	\fancyhead[RE]{#1}
 	\fancyhead[LO]{\nouppercase{\leftmark}}
 	% \fancyfoot[LE,RO]{\thepage}
