@@ -137,13 +137,13 @@
 \paragrafo{L'espressione del commutatore}{
 Andiamo ad analizzare l'espressione del commutatore con l'obiettivo di renderla più semplice e compatta:
 \begin{align*}
-    [\bm{X},\bm{Y}]_f=X^\alpha\frac{\partial}{\partial x^\alpha}\left(Y^\beta \frac{\partial}{\partial x^\beta}(f)\right)-Y^\alpha \frac{\partial}{\partial x^\alpha}\left(X^\beta \frac{\partial}{\partial x^\beta}(f)\right)=\\
-    =\left(X^\alpha \frac{\partial}{\partial x^\alpha}Y^\beta\right)\frac{\partial}{\partial x^\beta}(f)+\cancel{X^\alpha Y^\beta \frac{\partial}{\partial x^\alpha}\left(\frac{\partial }{\partial x^\beta}(f)\right)}+\\
-    -\left(Y^\alpha \frac{\partial}{\partial x^\alpha}X^\beta\right)\frac{\partial}{\partial x^\beta}(f)-\cancel{Y^\alpha X^\beta \frac{\partial}{\partial x^\alpha}\left(\frac{\partial }{\partial x^\beta}(f)\right)}
+    [\bm{X},\bm{Y}]_f=X^\alpha\dpd{}{{x^\alpha}}\left(Y^\beta \dpd{}{{x^\beta}}(f)\right)-Y^\alpha \dpd{}{{x^\alpha}}\left(X^\beta \dpd{}{{x^\beta}}(f)\right)=\\
+    =\left(X^\alpha \dpd{}{{x^\alpha}}Y^\beta\right)\dpd{}{{x^\beta}}(f)+\cancel{X^\alpha Y^\beta \dpd{}{{x^\alpha}}\left(\frac{\partial }{\partial x^\beta}(f)\right)}+\\
+    -\left(Y^\alpha \dpd{}{{x^\alpha}}X^\beta\right)\dpd{}{{x^\beta}}(f)-\cancel{Y^\alpha X^\beta \dpd{}{{x^\alpha}}\left(\frac{\partial }{\partial x^\beta}(f)\right)}
 \end{align*}
 Scambiando $\alpha\leftrightarrow\beta$ e semplificando i termini opposti si ottiene:
 \begin{align*}
-    \left(X^\alpha \frac{\partial}{\partial x^\alpha}Y^\beta-Y^\alpha \frac{\partial}{\partial x^\alpha}X^\beta\right)\frac{\partial}{\partial x^\beta}(f)=[\bm{X},\bm{Y}]^\beta \frac{\partial}{\partial x^\beta}(f) \quad \forall\, f \in \mathcal{F}(A)
+    \left(X^\alpha \dpd{}{{x^\alpha}}Y^\beta-Y^\alpha \dpd{}{{x^\alpha}}X^\beta\right)\dpd{}{{x^\beta}}(f)=[\bm{X},\bm{Y}]^\beta \dpd{}{{x^\beta}}(f) \quad \forall\, f \in \mathcal{F}(A)
 \end{align*}
 Ottenendo cosi:
 \begin{align*}
@@ -151,7 +151,7 @@ Ottenendo cosi:
 \end{align*}
 dove:
 \begin{align*}
-    [\bm{X},\bm{Y}]^\beta=X^\alpha \frac{\partial}{\partial x^\alpha}Y^\beta-Y^\alpha\frac{\partial}{\partial x^\alpha}X^\beta
+    [\bm{X},\bm{Y}]^\beta=X^\alpha\dpd{}{{x^{\alpha}}}Y^\beta-Y^\alpha\dpd{}{{x^{\alpha}}}X^\beta
 \end{align*}
 è la componente rispetto alla base $\bm{c}_\beta$.
 }{ldflds}{}
@@ -291,11 +291,11 @@ Ovvero come la derivata della funzione rappresentativa $f$ rispetto alle coordin
 \end{align*}
 Quindi procedendo con questa interpretazione:
 \begin{align*}
-    \bm{E}_i(f)=\frac{\partial}{\partial q^i}(f)=\frac{\partial x^\alpha}{\partial q^i}\frac{\partial}{\partial x^\alpha}(f)=E^\alpha_i\frac{\partial}{\partial x^\alpha}(f)
+    \bm{E}_i(f)=\dpd{}{{q^i}}(f)=\frac{\partial x^\alpha}{\partial q^i}\dpd{}{{x^{\alpha}}}(f)=E^\alpha_i\dpd{}{{x^{\alpha}}}(f)
 \end{align*}
 Concludendo, dunque, per un generico campo vettoriale $\mathbf{X}$:
 \begin{align*}
-    \bm{X}(f)=X^i\frac{\partial}{\partial q^i}(f)=X^\alpha \frac{\partial}{\partial x^\alpha}(f)
+    \bm{X}(f)=X^i\dpd{}{{q^i}}(f)=X^\alpha \dpd{}{{x^{\alpha}}}(f)
 \end{align*}}{}{}
 %%
 %%
@@ -322,7 +322,7 @@ Queste derivate parziali sono a loro volta dei campi vettoriali e quindi possiam
 \end{align*}}
 \definizione{ La \underline{divergenza in coordinate non affini} è il campo scalare:
 \begin{align*}
-    div\mathbf{X}=\frac{\partial}{\partial q^i}X^i+\Gamma^j_{ji}X^i
+    div\mathbf{X}=\dpd{}{{q^i}}X^i+\Gamma^j_{ji}X^i
 \end{align*}
 Si verifica facilmente che soddisfa le condizioni precedentemente enunciate per la divergenza.}
 \osservazione[]{ Questa, euristicamente, può essere vista come:

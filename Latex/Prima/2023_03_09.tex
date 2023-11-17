@@ -89,20 +89,20 @@
 Per la dimostrazione del \hyperref[fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure]{Teorema V} ci serviremo del seguente lemma.
 \paragrafo{Lemma di Gronwall}{%
     Sia $ \phi:[a,b]\to \R $ continua, e supponiamo che $ \exists\,A \in \R $, $ \exists\, B\ge 0 $ tali che \[
-        \phi(t) \le A + B\,\int_{a}^{t}\phi(s)\,ds,\quad \forall\, t \in [a,b] 
+        \phi(t) \le A + B\,\int_{a}^{t}\phi(s)\dif s,\quad \forall\, t \in [a,b] 
     \]Allora \[
         \phi(t)\le A\,e^{B\,(t-a)},\quad \forall\, t \in [a,b]
     \]
 }{dafkjasdlkfjnadslkfjnalskfdjnjdjsidiujhfsiosdi}{}
 \dimframmento{dafkjasdlkfjnadslkfjnalskfdjnjdjsidiujhfsiosdi}{
-    Sia $ \displaystyle w(t)\coloneqq A + B\,\int_{a}^{t}\phi(s)\,ds $. Per ipotesi \begin{itemize}
+    Sia $ \displaystyle w(t)\coloneqq A + B\,\int_{a}^{t}\phi(s)\dif s $. Per ipotesi \begin{itemize}
         \item $ \phi(t)\le w(t) $ su $ [a,b] $;
         \item $ w $ è derivabile (perché $ \phi $ è continua) e $w'(t) = B\,\phi(t)$
         
     \end{itemize}
 
     Prendiamo \begin{align*}
-        \frac{d}{dt}\left[w(t)\,e^{-B\,(t-a)}\right] &= \left[w'(t)-B\,w(t)\right]\,e^{-B\,(t-a)}\\ 
+        \dod{}{t}\left[w(t)\,e^{-B\,(t-a)}\right] &= \left[w'(t)-B\,w(t)\right]\,e^{-B\,(t-a)}\\ 
         &= \underbrace{B}_{\ge 0}\,\underbrace{\left(\phi(t)-w(t)\right)}_{\leq 0}\,\underbrace{e^{-B\,(t-a)}}_{\ge 0}\leq  0
     \end{align*} 
     
@@ -139,15 +139,15 @@ Per la dimostrazione del \hyperref[fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjf
         \]
 
         Sfruttiamo il fatto che $ \bm{u}_0 $ e $ \bm{u}_{ \varepsilon} $ siano le soluzioni di problemi di Cauchy e usiamo le loro equazioni di Volterra. \[
-            \bm{u}_{ \varepsilon} (t) =\bm{u}_{ \varepsilon} (a) + \int_{a}^{t} \bm{f}\left(s, \bm{u}_{ \varepsilon}(s)\right) \,ds
+            \bm{u}_{ \varepsilon} (t) =\bm{u}_{ \varepsilon} (a) + \int_{a}^{t} \bm{f}\left(s, \bm{u}_{ \varepsilon}(s)\right) \dif s
         \]Definiamo ora, per ogni $ t \in [a,t_{ \varepsilon} ] $, la funzione \begin{align*}
             \phi(t) &\coloneq \norma{\bm{u}_{ \varepsilon}(t)-\bm{u}_{ 0}(t)}\\ &= \norma{%
-            \bm{u}_{ \varepsilon}(a) + \int_{a}^{t} \bm{f}\left(s,\bm{u}_{ \varepsilon}(s)\right) \,ds - \bm{u}_0(a) - \int_{a}^{t} \bm{f}\left(s, \bm{u}_0(s)\right)\,ds 
+            \bm{u}_{ \varepsilon}(a) + \int_{a}^{t} \bm{f}\left(s,\bm{u}_{ \varepsilon}(s)\right) \dif s - \bm{u}_0(a) - \int_{a}^{t} \bm{f}\left(s, \bm{u}_0(s)\right)\dif s 
             }\\ 
-            &\le \norma{\bm{u}_{ \varepsilon}(a)-\bm{u}_0(a)} + \int_{a}^{t}\norma{\bm{f}\left(s, \bm{u}_{ \varepsilon}(s)\right) - \bm{f}\left(s, \bm{u}_0(s)\right)}\,ds \\ 
+            &\le \norma{\bm{u}_{ \varepsilon}(a)-\bm{u}_0(a)} + \int_{a}^{t}\norma{\bm{f}\left(s, \bm{u}_{ \varepsilon}(s)\right) - \bm{f}\left(s, \bm{u}_0(s)\right)}\dif s \\ 
             &\underset{\footnotemark}{\le} \parentesi{A_{ \varepsilon} }{%
                 \norma{\bm{x}_{ \varepsilon} -\bm{x}_0} 
-            } + \underbrace{L}_{>0}\,\int_{0}^{t}\norma{\bm{u}_{ \varepsilon}(s) - \bm{u}_0(s)}\,ds .
+            } + \underbrace{L}_{>0}\,\int_{0}^{t}\norma{\bm{u}_{ \varepsilon}(s) - \bm{u}_0(s)}\dif s .
         \end{align*}\footnotetext{dove $ L $ è la costante di Lipschitz di $ \bm{f} $ su $ k_{\delta}  $} 
 
         Dunque, per il lemma di Gronwall, $ \displaystyle \phi(t)\le A_{ \varepsilon}\, e^{L(t-a)}  $. Inoltre, avendo $ \phi(t_{ \varepsilon} ) = \delta $, si ha che \[

@@ -178,7 +178,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Risoluzione generica. ({4.10})}{44}{section*.94}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Ritratto di fase per $\mathbf { n=2} $. ({4.11})}{45}{section*.95}% 
+\contentsline {paragraph}{Ritratto di fase per $\emph { n=2} $. ({4.11})}{45}{section*.95}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Matrice diagonalizzabile}{47}{section.4.2}% 
 \defcounter {refsection}{0}\relax 

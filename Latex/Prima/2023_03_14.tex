@@ -21,18 +21,18 @@ Sia
 \]
 Ora, interpretando $u_{(0,x)}(t)$ come funzione di due variabili $ t $ e $ x $, analizziamone le derivate parziali:
  \begin{align*}
-    \partial_t u_{(0,x)}(t)&=\frac{\partial}{\partial t} u_{(0,x)}(t) = \cdots = t\,u^{2}_{(0,x)}(t)\\[3ex]
-    \partial_x u_{(0,x)}(t)&=\frac{\partial}{\partial x} u_{(0,x)}(t) = \frac{\partial}{\partial x}\left(\frac{2x}{2-t^{2}x}\right)\\[2ex] 
+    \partial_t u_{(0,x)}(t)&=\dpd{}{t} u_{(0,x)}(t) = \cdots = t\,u^{2}_{(0,x)}(t)\\[3ex]
+    \partial_x u_{(0,x)}(t)&=\dpd{}{x} u_{(0,x)}(t) = \dpd{}{x}\left(\frac{2x}{2-t^{2}x}\right)\\[2ex] 
     &= \frac{4-\cancel{2t^{2}x}-\cancel{2x(-t^{2})}}{(2-t^{2}x)^{2}}= \frac{4}{(2-t^{2}x)^{2}}
 \end{align*}
 Notando che la soluzione è $ C^{2} $ possiamo permetterci di calcolare le derivate parziali seconde: \begin{align*}
     \partial_t\partial_x u_{(0,x)}(t) &= \partial_x\partial_t u_{(0,x)}(t) = t \cdot 2u_{(0,x)}(t) \cdot \partial_x u_{(0,x)}(t) 
 \end{align*}Valutiamo tutto in $ x = x_0 $, ponendo $ v(t)\coloneqq\partial_x u_{(0,x_0)}(t)$. Si ha che \[
-    \frac{d}{dt} v(t)= 2t\,u_{(0,x_0)}(t)\,v(t)
+    \dod{}{t} v(t)= 2t\,u_{(0,x_0)}(t)\,v(t)
 \]ovvero \[
     v'(t)=g(t)\,v(t),\qquad g(t) = 2t\,u_{(0,x_0)}(t)
 \]La funzione $ v(t) $ risolve un'equazione \emph{lineare} che si chiama \emph{equazione alle variazioni} dove \[
-    g(t)=\frac{\partial}{\partial u}\left[f(t,u)\right]_{u=u_{(0,x_0)}(t)}.
+    g(t)=\dpd{}{u}\left[f(t,u)\right]_{u=u_{(0,x_0)}(t)}.
 \]
 }{daoijfdaoijcdiiididiidiidii}{}
 \paragrafo{Generalizzazione}{%
@@ -65,7 +65,7 @@ Notando che la soluzione è $ C^{2} $ possiamo permetterci di calcolare le deriv
 
     Sia $ v(t)=\partial_x u_{(t_0,x)}(t)  $, allora da \eqref{eq:asterisco} 
     \begin{align*}
-        v'(t) =\frac{d}{dt} v(t) &= \partial_u f\left(t, u_{(t_0,x)}(t)\right) \cdot \partial_x u_{(t_0,x)}(t) 
+        v'(t) =\dod{}{t} v(t) &= \partial_u f\left(t, u_{(t_0,x)}(t)\right) \cdot \partial_x u_{(t_0,x)}(t) 
         &= \parentesi{g(t)\coloneqq}{\partial_u f\left(t,u_{(t_0,x)}(t)\right)} \cdot \,v(t),
     \end{align*}mentre da \eqref{eq:puntino} ottengo $ v(t_0)=1 $. 
 

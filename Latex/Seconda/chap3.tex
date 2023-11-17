@@ -2,7 +2,7 @@
 \section{Introduzione} Il modello della visione di Jean Petitot è un tentativo di rappresentare tramite la modellizzazione matematica come gli oggetti ed enti del mondo esterno vengano recepiti, codificati  e rappresentati dalla corteccia visuale del nostro cervello, in particolare si sofferma su una modellizzazione del primo stadio di rappresentazione degli oggetti esterni, il cosiddetto $V1$.
 Ci si chiede appunto come enti geometrici esterni semplici come punti o anche più complessi come linee e forme possano essere interpretate e codificate dal nostro apparato neuro-visivo.
 \section{Il modello}
-\paragraph*{Def}La struttura geometrica più importante definita sulla mappa delle fibre che modella il funzionamento ottico di $V1$ è chiamata \underline{struttura di contatto}, denotata con $\mathcal{C}$.\\
+\paragraph*{Def}La struttura geometrica più importante definita sulla mappa delle fibre che modella il funzionamento ottico di $V1$ è chiamata \emph{struttura di contatto}, denotata con $\mathcal{C}$.\\
 Il modello geometrico della visione di Petito rappresenta le connessioni neuronali retina-corteccia visiva nel seguente modo:
 \begin{align*}
     I\xrightarrow[]{\gamma}A \xrightarrow[]{\mathbf{X}}A\times E\xrightarrow[]{\dot{\gamma}}A'\xrightarrow[]{\mathbf{X}}A'\times E'
@@ -80,9 +80,9 @@ Lungo $\Gamma$ $\dot{y}=p\dot{x}$, ma $\dot{x}=1\leadsto x=s+c$.
 
 Possiamo così riparametrizzare $\Gamma$ per il parametro $x$ e vedere $\Gamma$ come l'indicatrice delle tangenti di una curva $\gamma$, dove quindi:
 \begin{align*}
-    \gamma=(x,y(x)) \\
-    \Gamma\colon A'\to A'\times E \\
-     (x,y,p)\longleftrightarrow (x,y,\dot{x},\dot{y})
+    \gamma&=(x,y(x)) \\
+    \Gamma\colon A'&\longrightarrow A'\times E \\
+     (x,y,p)&\longleftrightarrow (x,y,\dot{x},\dot{y})
 \end{align*}
 
 Esistono solo curve integrali di dimensione 1 dal teorema di Frobenius che dice che $dw \wedge w=0\Rightarrow$ $\nexists$ superfici integrali della distribuzione di contatto.
@@ -109,14 +109,14 @@ $A'$ è un gruppo di Lie con le operazioni:
 \end{enumerate}
 Tramite questa metrica definiamo la distanza:
 \begin{align*}
-    d_{\mathcal{C}}({P'}_1,{P'}_2)=inf\left\{\int_I \norma{\dot{\Gamma}(s)}ds\right\}
+    d_{\mathcal{C}}({P'}_1,{P'}_2)=inf\left\{\int_I \norma{\dot{\Gamma}(s)}\dif s\right\}
 \end{align*}
 Estendiamo la nostra base ortonormale $\left\{\bm{t}_1,\bm{t}_2\right\}$ a una base $\left\{\bm{t}_1,\bm{t}_2,\bm{t}_3\right\}$ con un opportuno $\bm{t}_3$ tale che si mantenga l'ortonormalità della base.
 Inoltre $\left\{\bm{t}_1,\bm{t}_2\right\}$ è una metrica sub-Riemaniana.
 
 Ci poniamo l'obiettivo di minimizzare:
 \begin{align*}
-    \int_{{P'}_A}^{{P'}_{B}} ds \quad \quad ds^2=dx^2+dy^2+dp^2
+    \int_{{P'}_A}^{{P'}_{B}} \dif s \quad \quad \dif s^2=\dif x^2+\dif y^2+\dif p^2
 \end{align*}
 con norma del vettore tangente lungo $\Gamma$ che è:
 \begin{align*}
@@ -151,11 +151,11 @@ Questo nuovo oggetto ci serve per imporre il vincolo del piano di contatto:
 \end{align*}
 Ottenendo cosi:
 \begin{align*}
-    \frac{\partial L}{\partial \eta}=\lambda(x)+A=\frac{d}{dx}\left(\frac{\partial L}{\partial \pi}\right)
+    \dpd{L}{\eta}=\lambda(x)+A=\dod{}{x}\left(\dpd{L}{\pi}\right)
 \end{align*}
 Ovvero:
 \begin{align*}
-    \frac{\dot{y}(x)}{\sqrt{1+\dot{y}^2(x)+\ddot{y}^2(x)}}=A+\frac{d}{dx}\frac{\ddot{y}}{\sqrt{1+\dot{y}^2(x)+\ddot{y}^2(x)}}
+    \frac{\dot{y}(x)}{\sqrt{1+\dot{y}^2(x)+\ddot{y}^2(x)}}=A+\dod{}{x}\frac{\ddot{y}}{\sqrt{1+\dot{y}^2(x)+\ddot{y}^2(x)}}
 \end{align*}
 Svolgendo calcoli otteniamo:
 \begin{align*}
@@ -171,5 +171,5 @@ Sostituendo otteniamo:
 \end{align*}
 Concludendo:
 \begin{align*}
-    x(y)=c \int^{\dot{y}}_0 \frac{1}{\sqrt{(1+t^2)(1+\frac{k^2}{k^2-1}t^2)}}
+    x(y)=c \int^{\dot{y}}_0 \frac{1}{\sqrt{(1+t^2)(1+\frac{k^2}{k^2-1}t^2)}} 
 \end{align*}

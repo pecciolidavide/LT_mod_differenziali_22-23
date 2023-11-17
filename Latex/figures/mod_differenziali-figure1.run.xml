@@ -78,5 +78,8 @@
     <requires type="dynamic">
       <file>figures/mod_differenziali-figure1.bcf</file>
     </requires>
+    <requires type="editable">
+      <file>mod_diff_biblio.bib</file>
+    </requires>
   </external>
 </requests>

@@ -14,10 +14,10 @@
 %%
 %%
 \definizione{%
-Chiamiamo \underline{curva parametrizzata} in uno spazio affine $A$ un'applicazione $\gamma \colon I \to A$ da un intervallo aperto $I\subseteq \mathbb{R}$ nello spazio affine.
+Chiamiamo \emph{curva parametrizzata} in uno spazio affine $A$ un'applicazione $\gamma \colon I \to A$ da un intervallo aperto $I\subseteq \mathbb{R}$ nello spazio affine.
 }
 \definizione{%
-Considerata un'origine $O\in A$, per la curva $\gamma$ vi è una \underline{rappresentazione vettoriale}:
+Considerata un'origine $O\in A$, per la curva $\gamma$ vi è una \emph{rappresentazione vettoriale}:
 \begin{align*}
     \mathbf{x}=\gamma(t)&& \text{con }\mathbf{x}=OP
 \end{align*}
@@ -29,41 +29,41 @@ Siano $(x^\alpha)$ delle coordinate cartesiane aventi origine in $O$. Si possono
     x^\alpha= \gamma^\alpha(t) && \alpha=1,\dots, n
 \end{align*}
 \paragrafo{Interpretazione cinematica}{Una curva può essere interpretata come moto di un punto $P$ nello spazio affine, se il parametro $t$ viene inteso come tempo.\\
-Nel caso in cui la curva rappresenti il moto di un punto nello spazio affine tridimensionale euclideo, il generico vettore $OP=\mathbf{x}$ è chiamato \underline{vettore posizione}.}{}{}
+Nel caso in cui la curva rappresenti il moto di un punto nello spazio affine tridimensionale euclideo, il generico vettore $OP=\mathbf{x}$ è chiamato \emph{vettore posizione}.}{}{}
 
 \definizione{%
 L'immagine della curva, cioè l'insieme 
 \begin{align*}
     \gamma(I)=\{P\in A | \exists\,t \in I: \gamma(t)=P\}
 \end{align*}
- è detta \underline{traiettoria} o \underline{orbita}\footnote{In geometria è questa in realtà la vera e propria curva, ovvero il luogo dei punti definito da $n-1$ equazioni.}.
+ è detta \emph{traiettoria} o \emph{orbita}\footnote{In geometria è questa in realtà la vera e propria curva, ovvero il luogo dei punti definito da $n-1$ equazioni.}.
  }
-\definizione{Il \underline{vettore tangente} alla curva $\gamma$ nel punto $\gamma(t)$ è il vettore denotato con $\dot{\gamma}(t)$ definito dal limite:
+\definizione{Il \emph{vettore tangente} alla curva $\gamma$ nel punto $\gamma(t)$ è il vettore denotato con $\dot{\gamma}(t)$ definito dal limite:
 \begin{align*}
     \dot{\gamma}(t)=\lim_{h\to 0}\frac{\gamma(t+h)-\gamma(t)}{h}
 \end{align*}
-Questo nel contesto cinematico prende il nome di \underline{velocità istantanea} e lo si denota con $\mathbf{v}(t)$.}
+Questo nel contesto cinematico prende il nome di \emph{velocità istantanea} e lo si denota con $\mathbf{v}(t)$.}
 \paragrafo{Campo tangente come curva}{ Conviene interpretare il vettore tangente $\dot{\gamma}(t)=\mathbf{v}(t)$ come vettore applicato nel punto $\gamma(t)$. Ovvero come un'applicazione:
 \begin{align*}
     \hat{\gamma}(t)\colon I \to A\times E\\
     t\mapsto (\gamma(t),\dot{\gamma}(t))
 \end{align*}
-che viene detta \underline{curva tangente} della curva $\gamma\colon I \to A$.}{}{}
+che viene detta \emph{curva tangente} della curva $\gamma\colon I \to A$.}{}{}
 \definizione{ Siano $\gamma \colon I \to \mathbb{R}$ una curva e $F\colon A \to \mathbb{R}$ un campo scalare, entrambi almeno di classe $C^1$.
 Definiamo la \ul{derivata del campo scalare $F$ lungo la curva $\gamma$} come:
 \begin{align*}
-    \frac{d}{dt}(F\circ \gamma)(t)=\langle \mathbf{v}(t),dF\rangle \quad \forall t \in I
+    \dod{}{t}(F\circ \gamma)(t)=\langle \mathbf{v}(t),dF\rangle \quad \forall t \in I
 \end{align*}
 Questa è la definizione naturale, infatti:
 \begin{align*}
-    \frac{d}{dt}(F\circ \gamma)(t)=\frac{\partial F}{\partial x^\alpha}\frac{d\gamma^\alpha}{dt}(t)=\frac{\partial F}{\partial x^\alpha}v^\alpha(t)=\langle\mathbf{v}(t),dF\rangle
+    \dod{}{t}(F\circ \gamma)(t)=\dpd{F}{{x^\alpha}}\dod{\gamma^\alpha}{t}(t)=\dpd{F}{{x^\alpha}}v^\alpha(t)=\langle\mathbf{v}(t),dF\rangle
 \end{align*}}
 % %%
 % %%
 % %%CURVA INTEGRALE
 % %%
 % %%
-\definizione{Una \underline{curva integrale di un campo vettoriale $\mathbf{X}$} è una curva:
+\definizione{Una \emph{curva integrale di un campo vettoriale $\mathbf{X}$} è una curva:
 \begin{align*}
     \gamma \colon I \to A
 \end{align*}
@@ -77,29 +77,29 @@ tale che:
         \dot{\gamma}(t)\colon I \to A\times E
     \end{align*}
 \end{itemize}}
-\definizione{Diciamo inoltre che la curva integrale è \underline{basata nel punto} $P_0$ se $\gamma(0)=P_0$.}
+\definizione{Diciamo inoltre che la curva integrale è \emph{basata nel punto} $P_0$ se $\gamma(0)=P_0$.}
 \notazione{In rappresentazione vettoriale sarebbe:
 \begin{align*}
-    \mathbf{x}=\gamma(t) \text{ curva integrale} \iff \frac{d\mathbf{x}}{dt}=\mathbf{X}(\mathbf{x})
+    \mathbf{x}=\gamma(t) \text{ curva integrale} \iff \dod{\mathbf{x}}{t}=\mathbf{X}(\mathbf{x})
 \end{align*}}
 
 
 Le curve integrali rappresentano i moti delle particelle del fluido secondo l'interpretazione del campo $\mathbf{X}$ come campo di velocità.
 
-\definizione{ Un campo vettoriale interpretato come campo di velocità viene detto \underline{sistema dinamico}.}
+\definizione{ Un campo vettoriale interpretato come campo di velocità viene detto \emph{sistema dinamico}.}
 \notazione[]{ Un sistema dinamico si può rappresentare dunque come un'equazione differenziale:
 \begin{itemize}
         \item vettoriale:
         \begin{align*}
-            \frac{d\mathbf{x}}{dt}=\mathbf{X}(\mathbf{x})
+            \dod{\mathbf{x}}{t}=\mathbf{X}(\mathbf{x})
         \end{align*}
         \item in coordinate affini:
         \begin{align*}
-            \frac{dx^\alpha}{dt}=X^\alpha (x^\beta)
+            \dod{x^\alpha}{t}=X^\alpha (x^\beta)
         \end{align*}
         \item in coordinate generiche:
         \begin{align*}
-            \frac{dq^i}{dt}=X^i (x^j)
+            \dod{q^i}{t}=X^i (x^j)
         \end{align*}
 \end{itemize}
 In particolare sono $n$ equazioni differenziali ordinarie in forma normale autonome.}
@@ -116,7 +116,7 @@ Fissato un punto $P_0\in M$ esiste una e una sola curva integrale massimale basa
     \gamma_{P_0}\colon I_{P_0}\to M
 \end{align*}
 Se $I_{P_0}=\mathbb{R}$, $\mathbf{X}$ si dice \ul{completo}.}
-\definizione{Il \underline{flusso del campo di vettori $\mathbf{X}$} descrive lo spazio delle soluzioni (o insieme di tutte le curve integrali del campo $\mathbf{X}$).
+\definizione{Il \emph{flusso del campo di vettori $\mathbf{X}$} descrive lo spazio delle soluzioni (o insieme di tutte le curve integrali del campo $\mathbf{X}$).
 Si definisce come la funzione:
 \begin{align*}
     \varphi\colon D\subseteq \mathbb{R}\times M \to M\\
@@ -142,7 +142,7 @@ Si definisce come la funzione:
     \item $D=\mathbb{R}\times M$
     \item $\varphi_t\colon M\to M,P\mapsto\varphi_t(P)=\gamma_P(t)$ è una trasformazione $C^k$ di M.
 \end{itemize}}
-\definizione{ Al variare del parametro $t\in \mathbb{R}$ i diversi flussi $\varphi_t$ costituiscono un \underline{gruppo ad un parametro}, ovvero un'insieme $\{\varphi_t|t\in \mathbb{R}\}$ tale che valgono:
+\definizione{ Al variare del parametro $t\in \mathbb{R}$ i diversi flussi $\varphi_t$ costituiscono un \emph{gruppo ad un parametro}, ovvero un'insieme $\{\varphi_t|t\in \mathbb{R}\}$ tale che valgono:
 \begin{itemize}
     \item $\varphi_t\circ \varphi_s=\varphi_{t+s}$
     \item $\varphi_t\circ\varphi_s=\varphi_s\circ \varphi_t$
@@ -150,7 +150,7 @@ Si definisce come la funzione:
     \item $(\varphi_t)^{-1}=\varphi_{-t}$
 \end{itemize}}
 \osservazione[]{ Ad ogni gruppo ad un parametro si può associare il campo vettoriale $\mathbf{X}$ corrispondente e viceversa. Ovvero questo sono condizioni necessarie e sufficienti affinché un insieme di curve $\varphi(t,P)$ sia lo spazio delle soluzioni di un certo campo vettoriale.}
-\definizione{ Sia $\mathbf{X}\in \mathcal{X}(A)$. Definiamo l'\underline{integrale primo di $\mathbf{X}$} come il campo scalare $F\colon A\to \mathbb{R}$ tale che $\forall\, \gamma \colon I \to A$ curva integrale, vale:
+\definizione{ Sia $\mathbf{X}\in \mathcal{X}(A)$. Definiamo l'\emph{integrale primo di $\mathbf{X}$} come il campo scalare $F\colon A\to \mathbb{R}$ tale che $\forall\, \gamma \colon I \to A$ curva integrale, vale:
 
 \parbox{10em}{\centering
    $F\circ \gamma (t_1)=F\circ \gamma (t_2)$
@@ -180,11 +180,11 @@ Si definisce come la funzione:
 \end{align*}
 Ricordando che $\mathbf{x}=x^i\mathbf{E}_i$, abbiamo che:
 \begin{align*}
-    \mathbf{v}=\frac{d\mathbf{x}(t)}{dt}=\underbrace{\frac{\partial \mathbf{x}}{\partial q^i}}_{\mathbf{E}_i}\cdot \frac{dq^i}{dt}=v^i\mathbf{E}_i
+    \mathbf{v}=\dod{\mathbf{x}(t)}{t}=\underbrace{\dpd{\mathbf{x}}{{q^i}}}_{\mathbf{E}_i}\cdot \dod{q^i}{t}=v^i\mathbf{E}_i
 \end{align*}
 Quindi la velocità in componenti rispetto alle cordinate $(q^i)$ è data da 
 \begin{align*}
-    v^i(t)=\frac{dq^i(t)}{dt}
+    v^i(t)=\dod{q^i(t)}{t}
 \end{align*}}{}{}
 \osservazione[]{ Come già visto l'espressione del campo di vettori $\mathbf{v}$ non cambia nei due sistemi $(\mathbf{c}_\alpha)$ e $(\mathbf{E}_i)$, ovvero:
 \begin{align*}
@@ -192,19 +192,19 @@ Quindi la velocità in componenti rispetto alle cordinate $(q^i)$ è data da
 \end{align*}}
 \paragrafo{Accelerazione in coordinate non affini}{ Nel riferimento affine $(\mathbf{c}_\alpha)$, l'accelerazione è definita come:
 \begin{align*}
-    \mathbf{a}=\frac{d\mathbf{v}}{dt}=\frac{dv^\alpha}{dt}(t)\mathbf{c}_\alpha=a^\alpha(t)\mathbf{c}_\alpha
+    \mathbf{a}=\dod{\mathbf{v}}{t}=\dod{v^\alpha}{t}(t)\mathbf{c}_\alpha=a^\alpha(t)\mathbf{c}_\alpha
 \end{align*}
-Ora allora analizziamo $\cfrac{d\mathbf{v}}{dt}$ passando per le coordinate non affini:
+Ora allora analizziamo $\cfrac{d\mathbf{v}}{t}$ passando per le coordinate non affini:
 \begin{align*}
-    \frac{d\mathbf{v}}{dt}=\frac{dv^i}{dt}\mathbf{E}_i+v^i\frac{d}{dt}\mathbf{E}_i=\frac{dv^i}{dt}\mathbf{E}_i+v^i\frac{\partial}{\partial q^j}(\mathbf{E}_i)\cdot\overbrace{\frac{dq^j}{dt}}^{v^j}=\frac{dv^i}{dt}\mathbf{E}_i+\boxed{v^iv^j\Gamma^k_{ji}\mathbf{E}_k}
+    \dod{\mathbf{v}}{t}=\dod{v^i}{t}\mathbf{E}_i+v^i\dod{}{t}\mathbf{E}_i=\dod{v^i}{t}\mathbf{E}_i+v^i\dpd{}{{q^j}}(\mathbf{E}_i)\cdot\overbrace{\dod{q^j}{t}}^{v^j}=\dod{v^i}{t}\mathbf{E}_i+\boxed{v^iv^j\Gamma^k_{ji}\mathbf{E}_k}
 \end{align*}
 Ora, scambiando $i\leftrightarrow k$ in $\square$ e raccogliendo, otteniamo:
 \begin{align*}
-    \left(\frac{dv^i}{dt}+v^kv^j\Gamma_{jk}^i\right)\mathbf{E}_i=a^i\mathbf{E}_i
+    \left(\dod{v^i}{t}+v^kv^j\Gamma_{jk}^i\right)\mathbf{E}_i=a^i\mathbf{E}_i
 \end{align*}
-Quindi si noti che \underline{a meno che} $\Gamma_{jk}^i=0$, abbiamo:
+Quindi si noti che \emph{a meno che} $\Gamma_{jk}^i=0$, abbiamo:
 \begin{align*}
-    a^i\ne \frac{dv^i}{dt}
+    a^i\ne \dod{v^i}{t}
 \end{align*}}{}{}
 \paragrafo{Coordinate polari}{%
 Consideriamo le coordinate polari. Per quanto riguarda la velocità abbiamo:
@@ -213,12 +213,12 @@ Consideriamo le coordinate polari. Per quanto riguarda la velocità abbiamo:
 \end{align*}
 Ora analizziamo l'accelerazione sfruttando l'espressione ottenuta precedentemente:
 \begin{align*}
-    \mathbf{a}=\left(\frac{dv^r}{dt}+\cancel{v^rv^\theta\Gamma^r_{r\theta}}+v^\theta v^\theta\Gamma^r_{\theta \theta}+\cancel{v^\theta v^r\Gamma^r_{\theta r}}+\cancel{v^rv^r\Gamma^r_{rr}}\right)\mathbf{E}_r+\\
-    +\left(\frac{dv^\theta}{dt}+v^rv^\theta\Gamma^\theta_{r\theta}+\cancel{v^r v^r\Gamma^\theta_{rr}}+v^\theta v^r\Gamma^\theta_{\theta r}+\cancel{v^\theta v^\theta \Gamma^\theta_{\theta \theta}}\right)\mathbf{E}_\theta
+    \mathbf{a}=\left(\dod{v^r}{t}+\cancel{v^rv^\theta\Gamma^r_{r\theta}}+v^\theta v^\theta\Gamma^r_{\theta \theta}+\cancel{v^\theta v^r\Gamma^r_{\theta r}}+\cancel{v^rv^r\Gamma^r_{rr}}\right)\mathbf{E}_r+\\
+    +\left(\dod{v^\theta}{t}+v^rv^\theta\Gamma^\theta_{r\theta}+\cancel{v^r v^r\Gamma^\theta_{rr}}+v^\theta v^r\Gamma^\theta_{\theta r}+\cancel{v^\theta v^\theta \Gamma^\theta_{\theta \theta}}\right)\mathbf{E}_\theta
 \end{align*}
 Ricordando inoltre che $\Gamma^r_{\theta \theta}=-r$ e $\Gamma^\theta_{r \theta}=\Gamma^\theta_{\theta r}=\cfrac{1}{r}$:
 \begin{align*}
-    \left(\frac{dv^r}{dt}-rv^\theta v^\theta\right)\mathbf{E}_r+\left(\frac{dv^\theta}{dt}+\frac{2}{r}v^\theta v^r\right)\mathbf{E}_\theta=\\
+    \left(\dod{v^r}{t}-rv^\theta v^\theta\right)\mathbf{E}_r+\left(\dod{v^\theta}{t}+\frac{2}{r}v^\theta v^r\right)\mathbf{E}_\theta=\\
     =(\ddot{r}-r\dot{\theta}^2)\mathbf{E}_r+(\ddot{\theta}+\frac{2}{r}\dot{r}\dot{\theta})\mathbf{E}_\theta=\\
     =a^r\mathbf{E}_r+a^\theta\mathbf{E}_\theta
 \end{align*}
@@ -228,7 +228,7 @@ Si osservi che ponendo $\mathbf{E}_r=\mathbf{u}$ e $\mathbf{E}_\theta=r\mathbf{\
 \end{align*}%
 }{}{}
 \definizione{
-Definiamo la \underline{velocità areolare} come:
+Definiamo la \emph{velocità areolare} come:
 \[
     \bm{v}_{ar}=\frac{1}{2}\bm{r}\wedge \bm{v}=\frac{1}{2}r^2\dot{\theta}\bm{k}
 \]
@@ -241,30 +241,31 @@ Definiamo \ul{moto centrale} un moto tale per cui:
 }
 Studiando adesso che la derivata della velocità areolare è:
 \begin{align*}
-    \frac{d}{dt}(\bm{v}_{ar})=\frac{1}{2}\frac{d}{dt}(\bm{r} \wedge \bm{v})=\frac{1}{2}(\overbrace{\bm{v}\wedge \bm{v}}^{0}+\bm{r}\wedge \bm{a})=\frac{1}{2}\bm{r}\wedge \bm{a}
+    \dod{}{t}(\bm{v}_{ar})=\frac{1}{2}\dod{}{t}(\bm{r} \wedge \bm{v})=\frac{1}{2}(\overbrace{\bm{v}\wedge \bm{v}}^{0}+\bm{r}\wedge \bm{a})=\frac{1}{2}\bm{r}\wedge \bm{a}
 \end{align*}
 e che quindi è uguale a $0$, ovvero la velocità areolare è costante$\iff$ il moto è centrale.
-\paragrafo{Dalla traiettoria agli enti fondamentali della cinematica}{ Sia $\mathbf{r}=r(\theta)$ . Da esso si possono scrivere tutti gli enti fondamentali della cinematica.\\
+\paragrafo{Dalla traiettoria agli enti fondamentali della cinematica}{ 
+Sia $\mathbf{r}=r(\theta)$ . Da esso si possono scrivere tutti gli enti fondamentali della cinematica.
+
 Sia $\mathbf{r}=\mathbf{r}(\theta(t))\mathbf{u}$ la nostra traiettoria del moto. Studiamo la velocità:
 \begin{align*}
-    \mathbf{v}=\frac{d\mathbf{r}}{dt}=\frac{dr}{d\theta}\cdot \dot{\theta}\mathbf{u}+r\frac{d\mathbf{u}}{d\theta}\cdot\dot{\theta}=\dot{\theta}\left(\frac{dr}{d\theta}\mathbf{u}+r\frac{d\mathbf{u}}{d\theta}\right)
+    \mathbf{v}=\dod{\mathbf{r}}{t}=\dod{r}{\theta}\cdot \dot{\theta}\mathbf{u}+r\dod{\mathbf{u}}{\theta}\cdot\dot{\theta}=\dot{\theta}\left(\dod{r}{\theta}\mathbf{u}+r\dod{\mathbf{u}}{\theta}\right)
 \end{align*}
 Ora utilizzando la costante delle aree $c=r^2\dot{\theta}$ otteniamo:
 \begin{align*}
-    \frac{c}{r^2}\left(\frac{dr}{d\theta}\mathbf{u}+r\frac{d\mathbf{u}}{d\theta}\right)=c\left(\frac{1}{r^2}\frac{dr}{d\theta}\mathbf{u}+\frac{1}{r}\frac{d\mathbf{u}}{d\theta}\right)
-\end{align*}
-e riconoscendo in $\cfrac{d\mathbf{u}}{d\theta}=\tau$, abbiamo che:
+    \frac{c}{r^2}\left(\dod{r}{\theta}\mathbf{u}+r\dod{\mathbf{u}}{\theta}\right)=c\left(\frac{1}{r^2}\dod{r}{\theta}\mathbf{u}+\frac{1}{r}\dod{\mathbf{u}}{\theta}\right)
+\end{align*}e riconoscendo in $\cfrac{d\mathbf{u}}{d\theta}=\tau$, abbiamo che:
 \begin{align*}
-    \mathbf{v}=c\left(-\frac{d}{d\theta}\left(\frac{1}{r}\right)\mathbf{u}+\frac{1}{r}\tau\right)
+    \mathbf{v}=c\left(-\dod{}{\theta}\left(\frac{1}{r}\right)\mathbf{u}+\frac{1}{r}\tau\right)
 \end{align*}
 Prendiamo adesso in esame l'accelerazione, sfruttando l'espressione appena ottenuta per la velocità:
 \begin{align*}
-    \frac{d\mathbf{v}}{dt}=c\left(-\frac{d}{d\theta}\frac{d}{d\theta}\left(\frac{1}{r}\right)\cdot \bm{u}-\cancel{\frac{d}{d\theta}\frac{1}{r}\frac{d\bm{u}}{dt}}+\cancel{\frac{d}{dt}\frac{1}{r}\cdot \bm{\tau}}+\frac{1}{r}\frac{d\bm{\tau}}{dt}\right)=\\
-    =c\dot{\theta}\left(-\frac{d^2}{d\theta^2}\left(\frac{1}{r}\right)\cdot \bm{u}+\frac{1}{r}\frac{d\bm{\tau}}{d\theta}\right)
+    \dod{\mathbf{v}}{t}=c\left(-\dod{}{\theta}\dod{}{\theta}\left(\frac{1}{r}\right)\cdot \bm{u}-\cancel{\dod{}{\theta}\frac{1}{r}\dod{\bm{u}}{t}}+\cancel{\dod{}{t}\frac{1}{r}\cdot \bm{\tau}}+\frac{1}{r}\dod{\bm{\tau}}{t}\right)=\\
+    =c\dot{\theta}\left(-\dod[2]{}{\theta}\left(\frac{1}{r}\right)\cdot \bm{u}+\frac{1}{r}\dod{\bm{\tau}}{\theta}\right)
 \end{align*}
 Ricordando che $\cfrac{d\bm{\tau}}{d\theta}=-\bm{u}$ da $\cfrac{d\bm{\tau}}{dt}=-\cfrac{d\theta}{dt}\bm{u}$, abbiamo:
 \begin{align*}
-    \bm{a}= -\frac{c^2}{r^2}\left(\frac{d^2}{d\theta^2}\left(\frac{1}{r}\right)+\frac{1}{r}\right)\bm{u}
+    \bm{a}= -\frac{c^2}{r^2}\left(\dod[2]{}{\theta}\left(\frac{1}{r}\right)+\frac{1}{r}\right)\bm{u}
 \end{align*} 
 }{}{}
 % %%SPAZI AFFINI EUCLIDEI
@@ -282,14 +283,14 @@ dove, considerata $g$ come il prodotto scalare su $E$, $\forall\, P \in A$ l'imm
 \begin{align*}
     (\mathbf{X}\cdot\mathbf{Y})(P)=g(\mathbf{X}(P),\mathbf{Y}(P))
 \end{align*}}
-\definizione{ Definiamo l'\underline{ascissa euclidea} (o \underline{ascissa curvilinea}) una funzione monotona crescente $g$ tale che presa:
+\definizione{ Definiamo l'\emph{ascissa euclidea} (o \emph{ascissa curvilinea}) una funzione monotona crescente $g$ tale che presa:
 \begin{align*}
     g\colon I \to \mathbb{R}\\
     t\mapsto s(t)
 \end{align*}
 allora 
 \begin{align*}
-    \frac{ds}{dt}=|\mathbf{v}|=\sqrt{g_{ij}\frac{dq^i}{dt}\cdot \frac{dq^j}{dt}}
+    \dod{s}{t}=|\mathbf{v}|=\sqrt{g_{ij}\dod{q^i}{t}\cdot \dod{q^j}{t}}
 \end{align*}}
 % %%
 % %%
@@ -301,19 +302,19 @@ Sia $Q$ una superficie regolare nello spazio tridimensionale con rappresentazion
 
 Il vettore $\mathbf{v}(t)$ tangente alla curva è banalmente tangente anche alla superficie. Se consideriamo invece il suo vettore derivata:
 \begin{align*}
-    \frac{d\mathbf{v}}{dt}
+    \dod{\mathbf{v}}{t}
 \end{align*}
 questo in generale non è tangente alla superficie. Infatti:
 \begin{align*}
-   \frac{d\mathbf{v}}{dt} =\frac{dv^i}{dt}\mathbf{E}_i+v^i\frac{d\mathbf{E}_i}{dt}=\frac{dv^i}{dt}\mathbf{E}_i+v^i\frac{\partial \mathbf{E}_i}{\partial q^j}\frac{dq^j}{dt}=\frac{dv^i}{dt}\mathbf{E}_i+v^i\frac{dq^j}{dt}(\Gamma_{ji}^k\mathbf{E}_k+B_{ji}\mathbf{N})
+   \dod{\mathbf{v}}{t} =\dod{v^i}{t}\mathbf{E}_i+v^i\dod{\mathbf{E}_i}{t}=\dod{v^i}{t}\mathbf{E}_i+v^i\dpd{\mathbf{E}_i}{{q^j}}\dod{q^j}{t}=\dod{v^i}{t}\mathbf{E}_i+v^i\dod{q^j}{t}(\Gamma_{ji}^k\mathbf{E}_k+B_{ji}\mathbf{N})
 \end{align*}
 con $\mathbf{N}$ il vettore normale alla superficie. Quindi:
 \begin{align*}
-    \frac{d\mathbf{v}}{dt}=\underbrace{\left(\frac{dv^i}{dt}+v^k\frac{dq^i}{dt}\Gamma^i_{jk}\right)\mathbf{E}_i}_{\text{tangente a }Q}+v^i\frac{dq^j}{dt}B_{ji}\mathbf{N}
+    \dod{\mathbf{v}}{t}=\underbrace{\left(\dod{v^i}{t}+v^k\dod{q^i}{t}\Gamma^i_{jk}\right)\mathbf{E}_i}_{\text{tangente a }Q}+v^i\dod{q^j}{t}B_{ji}\mathbf{N}
 \end{align*}
-La componente tangente della derivata della velocità è chiamata \underline{derivata intrinseca della velocità/accelerazione intrinseca}. Se volessimo scriverla però rispetto alle coordinate non affini $(q^i)$, essendo $v^i=\cfrac{dq^i}{dt}$: %TODO
+La componente tangente della derivata della velocità è chiamata \emph{derivata intrinseca della velocità/accelerazione intrinseca}. Se volessimo scriverla però rispetto alle coordinate non affini $(q^i)$, essendo $v^i=\cfrac{dq^i}{dt}$: %TODO
 \begin{align*}
-    \mathbf{a}^k_{\text{intrinseca}}=\frac{d^2q^k}{dt^2}+\Gamma^k_{ij}\frac{dq^i}{dt}\cdot \frac{dq^j}{dt}
+    \mathbf{a}^k_{\text{intrinseca}}=\dod[2]{q^k}{t}+\Gamma^k_{ij}\dod{q^i}{t}\cdot \dod{q^j}{t}
 \end{align*}
 Abbiamo cosi scomposto l'accelerazione come:
 \begin{align*}
@@ -328,7 +329,7 @@ Una volta scissa l'accelerazione possiamo finalmente definire cos'è
 Questa condizione può essere anche rappresentata sotto forma di sistema di equazioni differenziali infatti:\\
 \begin{minipage}{4cm}
     \begin{align*}
-        \frac{d^2q^k}{dt^2}+\Gamma^k_{ij}\frac{dq^i}{dt}\cdot \frac{dq^j}{dt}=0
+        \dod[2]{q^k}{t}+\Gamma^k_{ij}\dod{q^i}{t}\cdot \dod{q^j}{t}=0
     \end{align*}
 \end{minipage}$\longleftrightarrow$
 \begin{minipage}{4cm}
@@ -343,19 +344,19 @@ Questa condizione può essere anche rappresentata sotto forma di sistema di equa
 \\
 Cosi facendo i moti geodetici diventano le curve integrali di questo sistema dinamico associato al campo vettoriale $\mathbf{X}$ definito sui vettori dello spazio tangente alla superficie $Q$. Questo scritto come derivazione sarebbe:
 \begin{align*}
-    \mathbf{X}=v^i\frac{\partial}{\partial q^i}-\Gamma^k_{ij}v^iv^j\frac{\partial}{\partial v^k}
+    \mathbf{X}=v^i\dpd{}{{q^i}}-\Gamma^k_{ij}v^iv^j\dpd{}{{v^k}}
 \end{align*}
-$\mathbf{X}$ con un abuso di notazione prende il nome di \underline{flusso geodetico}.
+$\mathbf{X}$ con un abuso di notazione prende il nome di \emph{flusso geodetico}.
 Cosi facendo assegnato un $P_0\in Q$ e $\mathbf{v}_0$ tangente a $Q$ in $P_0$, $\exists!$ una curva geodetica massimale basata in $P_0$ e avente come vettore tangente in $t=0$ il vettore $\mathbf{v}_0$.
 \paragraph*{Energia cinetica come integrale primo delle geodetiche}
 \begin{align*}
     \mathbf{F}=\mathbf{F}(\mathbf{r},\mathbf{v}) && \mathbf{r}=\mathbf{r}(t)=\gamma(t)
 \end{align*}
 \begin{align*}
-    \frac{d}{dt}\mathbf{F}(\mathbf{r}(t),\mathbf{v}(t))=0
+    \dod{}{t}\mathbf{F}(\mathbf{r}(t),\mathbf{v}(t))=0
 \end{align*}
 \begin{align*}
-    \frac{d}{dv}(\mathbf{v}\cdot \mathbf{v})=2\mathbf{v}\cdot\mathbf{a}=0
+    \dod{}{v}(\mathbf{v}\cdot \mathbf{v})=2\mathbf{v}\cdot\mathbf{a}=0
 \end{align*}
 Poichè $\mathbf{a}=\mathbf{a}_{\mathbf{N}}\perp \mathbf{v}$\\
 Quindi l'energia cinetica è un integrale primo delle geodetiche. In particolare il moto è uniforme, ovvero il modulo della velocità è costante lungo le geodetiche.

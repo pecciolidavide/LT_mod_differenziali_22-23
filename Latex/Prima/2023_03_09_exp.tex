@@ -65,15 +65,15 @@
         \]
 
         Sfruttiamo il fatto che $ \bm{u}_0 $ e $ \bm{u}_{ \varepsilon} $ siano le soluzioni di problemi di Cauchy e usiamo le loro equazioni di Volterra. \[
-            \bm{u}_{ \varepsilon} (t) =\bm{u}_{ \varepsilon} (a) + \int_{a}^{t} \bm{f}\left(s, \bm{u}_{ \varepsilon}(s)\right) \,ds
+            \bm{u}_{ \varepsilon} (t) =\bm{u}_{ \varepsilon} (a) + \int_{a}^{t} \bm{f}\left(s, \bm{u}_{ \varepsilon}(s)\right) \dif s
         \]Definiamo ora, per ogni $ t \in [a,t_{ \varepsilon} ] $, la funzione \begin{align*}
             \phi(t) &= \norma{\bm{u}_{ \varepsilon}(t)-\bm{u}_{ 0}(t)}\\ &= \norma{%
-            \bm{u}_{ \varepsilon}(a) + \int_{a}^{t} \bm{f}\left(s,\bm{u}_{ \varepsilon}(s)\right) \,ds - \bm{u}_0 - \int_{a}^{t} \bm{f}\left(s, \bm{u}_0(s)\right)\,ds 
+            \bm{u}_{ \varepsilon}(a) + \int_{a}^{t} \bm{f}\left(s,\bm{u}_{ \varepsilon}(s)\right) \dif s - \bm{u}_0 - \int_{a}^{t} \bm{f}\left(s, \bm{u}_0(s)\right)\dif s 
             }\\ 
-            &\le \norma{\bm{u}_{ \varepsilon}(a)-\bm{u}_0(a)} + \int_{a}^{t}\norma{\bm{f}\left(s, \bm{u}_{ \varepsilon}(s)\right) - \bm{f}\left(s, \bm{u}_0(s)\right)}\,ds \\ 
+            &\le \norma{\bm{u}_{ \varepsilon}(a)-\bm{u}_0(a)} + \int_{a}^{t}\norma{\bm{f}\left(s, \bm{u}_{ \varepsilon}(s)\right) - \bm{f}\left(s, \bm{u}_0(s)\right)}\dif s \\ 
             &\underset{\footnotemark}{\le} \parentesi{A_{ \varepsilon} }{%
                 \norma{\bm{x}_{ \varepsilon} -\bm{x}_0} 
-            } + L\,\int_{0}^{t}\norma{\bm{u}_{ \varepsilon}(s) - \bm{u}_0(s)}\,ds .
+            } + L\,\int_{0}^{t}\norma{\bm{u}_{ \varepsilon}(s) - \bm{u}_0(s)}\dif s .
         \end{align*}\footnotetext{dove $ L $ è la costante di lipschitzianità di $ f $ su $ k_{\delta}  $} 
 
         Dunque, per il lemma di Gronwall, $ \displaystyle \phi(t)\le A_{ \varepsilon}\, e^{L(t-a)}  $. Inoltre, $ \phi(t_{ \varepsilon} ) = \delta $, e si ha che \[
