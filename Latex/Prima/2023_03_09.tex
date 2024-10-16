@@ -15,7 +15,7 @@
 \paragrafo{Domanda}{%
     \settingH
 
-    Se prendiamo il sistema di Cauchy sostituendo a $ \bm{x}_0 $ una $ \bm{x} $ vicina ad $ \bm{x}_0 $, cosa succede alla soluzione? 
+    Prendendo il sistema di Cauchy sostituendo a $ \bm{x}_0 $ una $ \bm{x} $ vicina ad $ \bm{x}_0 $, cosa succede alla soluzione? 
 }{}{}
 \esempio{
     Preso il problema di Cauchy \[
@@ -35,7 +35,7 @@
     \settingH 
 
     Sia $ I_{\max}  $ l'intervallo massimale di $ \bm{u}_{(t_0,\bm{x}_0)} $ e $ [a,b] \subset I_{\max}  $. Allora: \begin{enumerate}
-        \item esiste un intorno di $ \bm{x}_0 $, $ N $, tale che per ogni $ \bm{x} \in N $ il PdC \[
+        \item esiste un intorno di $ \bm{x}_0 $, $ N $, tale che per ogni $ \bm{x} \in N $ il problema di Cauchy \[
             \begin{cases}
                 \bm{u}'=\bm{f}\left(t,\bm{u}(t)\right)\\ 
                 \bm{u}(t_0)=\bm{x}
@@ -64,9 +64,9 @@
 \teorema[Teorema di Kamke]{dafasdfdasfadsfsadf}{
     \settingH 
 
-    Sia $ I_{\max}  $ l'intervallo massimale di $ \bm{u}_{(t_0,\bm{x}_0)}(t) $. Fissiamo $ [a,b] \subset I_{\max}  $.
+    Sia $ I_{\max}  $ l'intervallo massimale di $ \bm{u}_{(t_0,\bm{x}_0)}(t) $. Sia $ [a,b] \subset I_{\max}  $ fissato.
 
-    Prendiamo \begin{itemize}
+    Siano \begin{itemize}
         \item $ \{t_{k} \}_{k \in \N} \subseteq \R $, $ t_{k}\to t_0  $;
         \item $ \{\bm{x}_{k} \}_{k \in \N} $, $ \bm{x}_k \to \bm{x}_0$;
         \item $ \{\bm{f}_{k} \}_{k \in \N} $ funzioni di dominio $ \Omega $ che soddisfano il teorema di esistenza e unicità locale, \[
@@ -86,22 +86,24 @@
         \end{cases}
     \]
 }
-Per la dimostrazione del \hyperref[fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure]{Teorema V} ci serviremo del seguente lemma.
+Per la dimostrazione del \hyperref[fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure]{Teorema V} è necessario il seguente lemma.
 \paragrafo{Lemma di Gronwall}{%
-    Sia $ \phi:[a,b]\to \R $ continua, e supponiamo che $ \exists\,A \in \R $, $ \exists\, B\ge 0 $ tali che \[
+    Sia $ \phi:[a,b]\to \R $ continua, tale che $ \exists\,A \in \R $, $ \exists\, B\ge 0 $ tali che \[
         \phi(t) \le A + B\,\int_{a}^{t}\phi(s)\dif s,\quad \forall\, t \in [a,b] 
     \]Allora \[
         \phi(t)\le A\,e^{B\,(t-a)},\quad \forall\, t \in [a,b]
     \]
 }{dafkjasdlkfjnadslkfjnalskfdjnjdjsidiujhfsiosdi}{}
 \dimframmento{dafkjasdlkfjnadslkfjnalskfdjnjdjsidiujhfsiosdi}{
-    Sia $ \displaystyle w(t)\coloneqq A + B\,\int_{a}^{t}\phi(s)\dif s $. Per ipotesi \begin{itemize}
+    Sia $ \displaystyle w(t)\coloneqq A + B\,\int_{a}^{t}\phi(s)\dif s $. 
+    
+    Per ipotesi \begin{itemize}
         \item $ \phi(t)\le w(t) $ su $ [a,b] $;
         \item $ w $ è derivabile (perché $ \phi $ è continua) e $w'(t) = B\,\phi(t)$
         
     \end{itemize}
 
-    Prendiamo \begin{align*}
+    Derivando la quantità $ w(t)\,e^{-B\,(t-a)} $: \begin{align*}
         \dod{}{t}\left[w(t)\,e^{-B\,(t-a)}\right] &= \left[w'(t)-B\,w(t)\right]\,e^{-B\,(t-a)}\\ 
         &= \underbrace{B}_{\ge 0}\,\underbrace{\left(\phi(t)-w(t)\right)}_{\leq 0}\,\underbrace{e^{-B\,(t-a)}}_{\ge 0}\leq  0
     \end{align*} 
@@ -116,14 +118,16 @@ Per la dimostrazione del \hyperref[fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjf
 }
 \dimostrazione{fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure}{
     \begin{enumerate}
-        \item Dimostriamo per assurdo. Supponiamo che $\forall\: \varepsilon>0 $, $ \exists\,\bm{x}_{\epsilon} \in B_{ \varepsilon}(\bm{x}_0)  $ tale per cui la soluzione massimale $ \bm{u}_{ \varepsilon}(t)\coloneqq \bm{u}_{(t_0,\bm{x}_{ \varepsilon})}(t) $ di \[
+        \item Dimostrazione per assurdo. 
+        
+        Si supponga che $\forall\: \varepsilon>0 $, $ \exists\,\bm{x}_{\varepsilon} \in B_{ \varepsilon}(\bm{x}_0)  $ tale per cui la soluzione massimale $ \bm{u}_{ \varepsilon}(t)\coloneqq \bm{u}_{(t_0,\bm{x}_{ \varepsilon})}(t) $ di \[
             \begin{cases}
                 \bm{u}'=\bm{f}\left(t,\bm{u}(t)\right)\\ 
                 \bm{u}(t_0)=\bm{x}_{ \varepsilon}
             \end{cases}
         \]non sia definita su tutto $ [a,b] $. 
 
-        Per semplicità prendo $ t_0=a $ e ``lavoro a destra''. 
+        Per semplicità sia $ t_0=a $. 
 
         Prendiamo $ \delta>0 $ sufficientemente piccolo e \[
             k_{\delta} = \left\{(t,\bm{x}) \in \Omega: t \in [a,b], \norma{\bm{u}_0(t)-\bm{x}}<\delta\right\} 
@@ -138,7 +142,7 @@ Per la dimostrazione del \hyperref[fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjf
             \end{aligned}
         \]
 
-        Sfruttiamo il fatto che $ \bm{u}_0 $ e $ \bm{u}_{ \varepsilon} $ siano le soluzioni di problemi di Cauchy e usiamo le loro equazioni di Volterra. \[
+        Poiché $ \bm{u}_0 $ e $ \bm{u}_{ \varepsilon} $ sono le soluzioni di problemi di Cauchy e usiamo le loro equazioni di Volterra. \[
             \bm{u}_{ \varepsilon} (t) =\bm{u}_{ \varepsilon} (a) + \int_{a}^{t} \bm{f}\left(s, \bm{u}_{ \varepsilon}(s)\right) \dif s
         \]Definiamo ora, per ogni $ t \in [a,t_{ \varepsilon} ] $, la funzione \begin{align*}
             \phi(t) &\coloneq \norma{\bm{u}_{ \varepsilon}(t)-\bm{u}_{ 0}(t)}\\ &= \norma{%

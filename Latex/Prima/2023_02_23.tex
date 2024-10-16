@@ -2,7 +2,7 @@
 \days{23 febbraio}
 %% BEGIN Problema di Cauchy
 \paragrafo{Problema di Cauchy}{%
-    Data una funzione a valori in $ \R^{n} $, $ \bm{f}=\bm{f}(t,\bm{x}) $, con \begin{itemize}
+    Data una funzione a valori in $ \R^{n} $,  $\bm{f}=~\bm{f}(t,\bm{x}) $, con \begin{itemize}
         \item $ t \in \R  $, $ \bm{x} \in \R^{n} $ o, più precisamente
         \item $ (t,\bm{x}) \in \Omega \subseteq \R\times \R^{n}$, $ \Omega $ aperto
     \end{itemize}ci si chiede sotto quali condizioni su $ \bm{f} $ il Problema di Cauchy \[
@@ -27,7 +27,7 @@
 \paragrafo{Pennello di Peano}{%
     La sola ipotesi di continuità non basta ad affermare anche l'unicità della soluzione del PdC. 
     
-    Si scopre infatti che se si dimostra che il problema di Cauchy ammette due soluzioni distinte, allora in realtà ne ha infinite.
+    Infatti se si dimostra che il problema di Cauchy ammette due soluzioni distinte, allora in realtà ne ha infinite.
     Questo fenomeno, denominato \ul{pennello di Peano}, è reso evidente dal seguente esempio.
 }{}{}
 \esempio{
@@ -45,7 +45,7 @@
 }
 %% END
 %% BEGIN Teorema di Cauchy-Lipschitz
-Per garantire l'unicità della soluzione, risulta cosi necessario il cosiddetto 
+Per garantire l'unicità della soluzione è possibile utilizzare il seguente teorema.
 \teorema[Teorema di Cauchy-Lipschitz]{ldksnaflkjnadflkjadnsflajknkljndasf}{
     Se $ \bm{f} $ è \begin{itemize}
         \item continua,
@@ -67,7 +67,7 @@ Per garantire l'unicità della soluzione, risulta cosi necessario il cosiddetto
         \item esistenza e unicità dell’equazione di Volterra si dimostrano applicando il Teorema delle contrazioni di Banach-Caccioppoli;
         \item la seguente successione \[
             \bm{u}_0(t) \equiv \bm{x}_0,\qquad \bm{u}_n(t) = \bm{x}_0 + \int_{t_0}^{t} \bm{f}\left(s,\bm{u}_{n-1}(s)\right)\dif s,\qquad \forall\, n \in \N
-        \]risulta convergere uniformemente alla soluzione dell’equazione di Volterra e dunque all’unica soluzione del Problema di Cauchy.
+        \]risulta convergere uniformemente alla soluzione dell’equazione di Volterra e dunque all’unica soluzione del Problema di Cauchy.\qed
     \end{itemize}
 }
 \osservazione{
@@ -108,12 +108,10 @@ Per garantire l'unicità della soluzione, risulta cosi necessario il cosiddetto
     \]se tale limite esiste. Analogamente se $ T_{\min}> - \infty  $.
 }{}{}
 %% END
-\paragrafo{Attenzione}{%
-    Per i prossimi risultati si consideri $ \Omega=\R\times \R^{n} $
-}{}{}
+
 %% BEGIN Limitatezza a priori
 \paragrafo{Corollario - Limitatezza a priori}{%
-    Sia $ \bm{f} $ tale che le ipotesi del teorema di Cauchy-Lipschitz siano soddisfatte. Sia $ (T_{\min},T_{\max}) $ l'intervallo massimale di $ \bm{u}_{(t_0,\bm{x}_0)}(t)$.
+    Sia $ \bm{f}: \Omega = \R\times \R^{n} \longrightarrow \R^{n} $ tale che le ipotesi del teorema di Cauchy-Lipschitz siano soddisfatte. Sia $ (T_{\min},T_{\max}) $ l'intervallo massimale di $ \bm{u}_{(t_0,\bm{x}_0)}(t)$.
 
     Se esiste $ C>0 $ tale per cui \[
         \norma{\bm{u}_{(t_0,\bm{x}_0)}(t)}\le C,\qquad \forall\, t \in [t_0,T_{\max})

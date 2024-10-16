@@ -20,47 +20,45 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Corollario - Esplosione in tempo finito. ({1.6})}{6}{section*.11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Attenzione. ({1.7})}{7}{section*.12}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Corollario - Limitatezza a priori. ({1.8})}{7}{section*.13}% 
+\contentsline {paragraph}{Corollario - Limitatezza a priori. ({1.7})}{7}{section*.12}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Teorema di dipendenza continua dai dati iniziali}{9}{chapter.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Il teorema}{9}{section.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Domanda. ({2.1})}{9}{section*.14}% 
+\contentsline {paragraph}{Domanda. ({2.1})}{9}{section*.13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio. ({2.2})}{9}{section*.15}% 
+\contentsline {paragraph}{Esempio. ({2.2})}{9}{section*.14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({2.3})}{10}{section*.17}% 
+\contentsline {paragraph}{Osservazione. ({2.3})}{10}{section*.16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Lemma di Gronwall. ({2.4})}{12}{section*.19}% 
+\contentsline {paragraph}{Lemma di Gronwall. ({2.4})}{12}{section*.18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totaledafkjasdlkfjnadslkfjnalskfdjnjdjsidiujhfsiosdi]{\textit {Dimostrazione di (2.4)}}}{12}{section*.20}% 
+\contentsline {paragraph}{\hyperref [totaledafkjasdlkfjnadslkfjnalskfdjnjdjsidiujhfsiosdi]{\textit {Dimostrazione di (2.4)}}}{12}{section*.19}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\textit {\hyperref [thm:fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure]{Dimostrazione di V.}}}{12}{section*.21}% 
+\contentsline {paragraph}{\textit {\hyperref [thm:fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure]{Dimostrazione di V.}}}{12}{section*.20}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({2.5})}{14}{section*.22}% 
+\contentsline {paragraph}{Osservazione. ({2.5})}{14}{section*.21}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Equazione alle variazioni}{14}{section.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Domanda. ({2.6})}{14}{section*.23}% 
+\contentsline {paragraph}{Domanda. ({2.6})}{14}{section*.22}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Equazione alle variazioni. ({2.7})}{14}{section*.24}% 
+\contentsline {paragraph}{Equazione alle variazioni. ({2.7})}{14}{section*.23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Generalizzazione. ({2.8})}{15}{section*.25}% 
+\contentsline {paragraph}{Generalizzazione. ({2.8})}{15}{section*.24}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Flusso associato ad una equazione differenziale}{17}{section.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione del flusso. ({2.9})}{17}{section*.26}% 
+\contentsline {paragraph}{Definizione del flusso. ({2.9})}{17}{section*.25}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Sistemi Autonomi}{17}{subsection.2.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({2.10})}{17}{section*.27}% 
+\contentsline {paragraph}{Definizione. ({2.10})}{17}{section*.26}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Sistemi autonomi. ({2.11})}{18}{section*.28}% 
+\contentsline {paragraph}{Sistemi autonomi. ({2.11})}{18}{section*.27}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio. ({2.12})}{18}{section*.29}% 
+\contentsline {paragraph}{Esempio. ({2.12})}{18}{section*.28}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Equazioni autonome}{19}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
@@ -68,393 +66,393 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.1}Equazione logistica}{19}{subsection.3.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Studio delle soluzioni. ({3.1})}{19}{section*.30}% 
+\contentsline {paragraph}{Studio delle soluzioni. ({3.1})}{19}{section*.29}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Diagramma di fase. ({3.2})}{20}{section*.31}% 
+\contentsline {paragraph}{Diagramma di fase. ({3.2})}{20}{section*.30}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({3.3})}{20}{section*.33}% 
+\contentsline {paragraph}{Osservazione. ({3.3})}{20}{section*.32}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.2}Diagramma di fase}{20}{subsection.3.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({3.4})}{20}{section*.34}% 
+\contentsline {paragraph}{Definizione. ({3.4})}{20}{section*.33}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Nota. ({3.5})}{21}{section*.35}% 
+\contentsline {paragraph}{Nota. ({3.5})}{21}{section*.34}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({3.6})}{21}{section*.36}% 
+\contentsline {paragraph}{Definizione. ({3.6})}{21}{section*.35}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio. ({3.7})}{21}{section*.37}% 
+\contentsline {paragraph}{Esempio. ({3.7})}{21}{section*.36}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{({3.8})}{21}{section*.38}% 
+\contentsline {paragraph}{({3.8})}{21}{section*.37}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esercizio. ({3.9})}{21}{section*.39}% 
+\contentsline {paragraph}{Esercizio. ({3.9})}{21}{section*.38}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Risultati e definizioni sui sistemi autonomi}{21}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Ipotesi. ({3.10})}{21}{section*.40}% 
+\contentsline {paragraph}{Ipotesi. ({3.10})}{21}{section*.39}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({3.11})}{22}{section*.41}% 
+\contentsline {paragraph}{Definizione. ({3.11})}{22}{section*.40}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({3.12})}{22}{section*.42}% 
+\contentsline {paragraph}{Definizione. ({3.12})}{22}{section*.41}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({3.13})}{22}{section*.43}% 
+\contentsline {paragraph}{Osservazione. ({3.13})}{22}{section*.42}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({3.14})}{22}{section*.44}% 
+\contentsline {paragraph}{Definizione. ({3.14})}{22}{section*.43}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({3.15})}{22}{section*.45}% 
+\contentsline {paragraph}{Definizione. ({3.15})}{22}{section*.44}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio. ({3.16})}{22}{section*.46}% 
+\contentsline {paragraph}{Esempio. ({3.16})}{22}{section*.45}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio. ({3.17})}{23}{section*.48}% 
+\contentsline {paragraph}{Esempio. ({3.17})}{23}{section*.47}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\textit {\hyperref [thm:daflkjndasflkjndaslkjnfdalkjnaslkjfnlkjn]{Dimostrazione di VIII.}}}{23}{section*.50}% 
+\contentsline {paragraph}{\textit {\hyperref [thm:daflkjndasflkjndaslkjnfdalkjnaslkjfnlkjn]{Dimostrazione di VIII.}}}{23}{section*.49}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({3.18})}{25}{section*.52}% 
+\contentsline {paragraph}{Osservazione. ({3.18})}{25}{section*.51}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\textit {\hyperref [thm:lkjndalkjndfalkjndasklfjnasdkljfnasdkljfnasdjkndaslkjnfaldskjnaslfkjnsaldkjn]{Dimostrazione di IX.}}}{25}{section*.53}% 
+\contentsline {paragraph}{\textit {\hyperref [thm:lkjndalkjndfalkjndasklfjnasdkljfnasdkljfnasdjkndaslkjnfaldskjnaslfkjnsaldkjn]{Dimostrazione di IX.}}}{25}{section*.52}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({3.19})}{25}{section*.55}% 
+\contentsline {paragraph}{Definizione. ({3.19})}{25}{section*.54}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({3.20})}{26}{section*.56}% 
+\contentsline {paragraph}{Definizione. ({3.20})}{26}{section*.55}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({3.21})}{26}{section*.57}% 
+\contentsline {paragraph}{Osservazione. ({3.21})}{26}{section*.56}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Corollario. ({3.22})}{26}{section*.58}% 
+\contentsline {paragraph}{Corollario. ({3.22})}{26}{section*.57}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Caso particolare. ({3.23})}{26}{section*.59}% 
+\contentsline {paragraph}{Caso particolare. ({3.23})}{26}{section*.58}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\textit {\hyperref [thm:daflkjnadfkljansdfklasjdnfcaskdjncdas]{Dimostrazione di X.}}}{26}{section*.60}% 
+\contentsline {paragraph}{\textit {\hyperref [thm:daflkjnadfkljansdfklasjdnfcaskdjncdas]{Dimostrazione di X.}}}{26}{section*.59}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({3.24})}{27}{section*.62}% 
+\contentsline {paragraph}{Definizione. ({3.24})}{27}{section*.61}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\textit {\hyperref [thm:dakfjnasldkfjnlasdkjfnadslkfjnaslkj]{Dimostrazione di XI.}}}{27}{section*.63}% 
+\contentsline {paragraph}{\textit {\hyperref [thm:dakfjnasldkfjnlasdkjfnadslkfjnaslkj]{Dimostrazione di XI.}}}{27}{section*.62}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Stabilit\IeC {\`a} dei punti di equilibrio}{28}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Obiettivo. ({3.25})}{28}{section*.65}% 
+\contentsline {paragraph}{Obiettivo. ({3.25})}{28}{section*.64}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({3.26})}{28}{section*.66}% 
+\contentsline {paragraph}{Definizione. ({3.26})}{28}{section*.65}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({3.27})}{28}{section*.67}% 
+\contentsline {paragraph}{Definizione. ({3.27})}{28}{section*.66}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({3.28})}{28}{section*.68}% 
+\contentsline {paragraph}{Definizione. ({3.28})}{28}{section*.67}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Equazioni autonome in due dimensioni}{29}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Orbite non singolari. ({3.29})}{29}{section*.69}% 
+\contentsline {paragraph}{Orbite non singolari. ({3.29})}{29}{section*.68}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\textit {\hyperref [thm:dlkjanbflkasjdbfnlakjnflkasjdnlkasdjnflaksdfjnlkjnlkjn]{Dimostrazione di XII.}}}{30}{section*.72}% 
+\contentsline {paragraph}{\textit {\hyperref [thm:dlkjanbflkasjdbfnlakjnflkasjdnlkasdjnflaksdfjnlkjnlkjn]{Dimostrazione di XII.}}}{30}{section*.71}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio. ({3.30})}{31}{section*.73}% 
+\contentsline {paragraph}{Esempio. ({3.30})}{31}{section*.72}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio. ({3.31})}{33}{section*.76}% 
+\contentsline {paragraph}{Esempio. ({3.31})}{33}{section*.75}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio. ({3.32})}{34}{section*.78}% 
+\contentsline {paragraph}{Esempio. ({3.32})}{34}{section*.77}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Pendolo Piano Senza Attrito. ({3.33})}{37}{section*.81}% 
+\contentsline {paragraph}{Pendolo Piano Senza Attrito. ({3.33})}{37}{section*.80}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({3.34})}{39}{section*.84}% 
+\contentsline {paragraph}{Osservazione. ({3.34})}{39}{section*.83}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Sistemi di E.D.O. lineari}{41}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Perch\IeC {\'e} \IeC {\`e} utile studiarli. ({4.1})}{41}{section*.85}% 
+\contentsline {paragraph}{Perch\IeC {\'e} \IeC {\`e} utile studiarli. ({4.1})}{41}{section*.84}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Ripasso. ({4.2})}{41}{section*.86}% 
+\contentsline {paragraph}{Ripasso. ({4.2})}{41}{section*.85}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Caso monodimensionale. ({4.3})}{42}{section*.87}% 
+\contentsline {paragraph}{Caso monodimensionale. ({4.3})}{42}{section*.86}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Alcuni Risultati. ({4.4})}{42}{section*.88}% 
+\contentsline {paragraph}{Alcuni Risultati. ({4.4})}{42}{section*.87}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Matrice Wronskiana. ({4.5})}{43}{section*.89}% 
+\contentsline {paragraph}{Matrice Wronskiana. ({4.5})}{43}{section*.88}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Matrice risolvente. ({4.6})}{43}{section*.90}% 
+\contentsline {paragraph}{Matrice risolvente. ({4.6})}{43}{section*.89}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Equazioni differenziali lineari di grado $ n $. ({4.7})}{43}{section*.91}% 
+\contentsline {paragraph}{Equazioni differenziali lineari di grado $ n $. ({4.7})}{43}{section*.90}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Obiettivo. ({4.8})}{44}{section*.92}% 
+\contentsline {paragraph}{Obiettivo. ({4.8})}{44}{section*.91}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({4.9})}{44}{section*.93}% 
+\contentsline {paragraph}{Osservazione. ({4.9})}{44}{section*.92}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Matrice diagonale}{44}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Risoluzione generica. ({4.10})}{44}{section*.94}% 
+\contentsline {paragraph}{Risoluzione generica. ({4.10})}{44}{section*.93}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Ritratto di fase per $\emph { n=2} $. ({4.11})}{45}{section*.95}% 
+\contentsline {paragraph}{Ritratto di fase per $\emph { n=2} $. ({4.11})}{45}{section*.94}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Matrice diagonalizzabile}{47}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Conclusione. ({4.12})}{47}{section*.96}% 
+\contentsline {paragraph}{Conclusione. ({4.12})}{47}{section*.95}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Matrice esponenziale\FN@sf@gobble@opt {Dal \cite {paganisalsa}}}{48}{section.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({4.13})}{48}{section*.97}% 
+\contentsline {paragraph}{Definizione. ({4.13})}{48}{section*.96}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Ripasso. ({4.14})}{48}{section*.98}% 
+\contentsline {paragraph}{Ripasso. ({4.14})}{48}{section*.97}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Buona definizione. ({4.15})}{48}{section*.99}% 
+\contentsline {paragraph}{Buona definizione. ({4.15})}{48}{section*.98}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Propriet\IeC {\`a}. ({4.16})}{49}{section*.100}% 
+\contentsline {paragraph}{Propriet\IeC {\`a}. ({4.16})}{49}{section*.99}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({4.17})}{49}{section*.101}% 
+\contentsline {paragraph}{Osservazione. ({4.17})}{49}{section*.100}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\textit {\hyperref [thm:dkdkdkkkdkkkkdkkdkkteroremamiatricedimonodromia]{Dimostrazione di XIII.}}}{50}{section*.102}% 
+\contentsline {paragraph}{\textit {\hyperref [thm:dkdkdkkkdkkkkdkkdkkteroremamiatricedimonodromia]{Dimostrazione di XIII.}}}{50}{section*.101}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.4}Matrice con autovalori in $ \mathds {C}$}{51}{section.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Caso $2\times 2$ base. ({4.18})}{51}{section*.105}% 
+\contentsline {paragraph}{Caso $2\times 2$ base. ({4.18})}{51}{section*.104}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({4.19})}{52}{section*.107}% 
+\contentsline {paragraph}{Osservazione. ({4.19})}{52}{section*.106}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.5}Matrice con autovalori regolari in $ \mathds {R}$ o in $ \mathds {C}$}{52}{section.4.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Ipotesi. ({4.20})}{52}{section*.108}% 
+\contentsline {paragraph}{Ipotesi. ({4.20})}{52}{section*.107}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({4.21})}{54}{section*.109}% 
+\contentsline {paragraph}{Osservazione. ({4.21})}{54}{section*.108}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esercizio. ({4.22})}{54}{section*.110}% 
+\contentsline {paragraph}{Esercizio. ({4.22})}{54}{section*.109}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.6}Matrice generica}{54}{section.4.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Matrice $ 2\times 2 $ in forma canonica. ({4.23})}{54}{section*.111}% 
+\contentsline {paragraph}{Matrice $ 2\times 2 $ in forma canonica. ({4.23})}{54}{section*.110}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\textit {\hyperref [thm:dididififoisdisodpokspteoreminonoinoindkjnfjscdoij]{Dimostrazione di XVI.}}}{55}{section*.112}% 
+\contentsline {paragraph}{\textit {\hyperref [thm:dididififoisdisodpokspteoreminonoinoindkjnfjscdoij]{Dimostrazione di XVI.}}}{55}{section*.111}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Corollario sulla stabilit\IeC {\`a} dell'origine. ({4.24})}{57}{section*.114}% 
+\contentsline {paragraph}{Corollario sulla stabilit\IeC {\`a} dell'origine. ({4.24})}{57}{section*.113}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esercizio. ({4.25})}{57}{section*.115}% 
+\contentsline {paragraph}{Esercizio. ({4.25})}{57}{section*.114}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\textit {Soluzione ({4.25}).}}{57}{section*.116}% 
+\contentsline {paragraph}{\textit {Soluzione ({4.25}).}}{57}{section*.115}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.7}Metodo di linearizzazione}{58}{section.4.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Classificazione di un punto di equilibrio per un sistema lineare. ({4.26})}{58}{section*.117}% 
+\contentsline {paragraph}{Classificazione di un punto di equilibrio per un sistema lineare. ({4.26})}{58}{section*.116}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio. ({4.27})}{59}{section*.119}% 
+\contentsline {paragraph}{Esempio. ({4.27})}{59}{section*.118}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({4.28})}{59}{section*.120}% 
+\contentsline {paragraph}{Osservazione. ({4.28})}{59}{section*.119}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Metodo diretto di Lyapunov per lo studio della stabilit\IeC {\`a} degli equilibri}{61}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Ipotesi. ({5.1})}{61}{section*.121}% 
+\contentsline {paragraph}{Ipotesi. ({5.1})}{61}{section*.120}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Idea di base. ({5.2})}{61}{section*.122}% 
+\contentsline {paragraph}{Idea di base. ({5.2})}{61}{section*.121}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Monotonia di $ V $. ({5.3})}{61}{section*.123}% 
+\contentsline {paragraph}{Monotonia di $ V $. ({5.3})}{61}{section*.122}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({5.4})}{62}{section*.125}% 
+\contentsline {paragraph}{Osservazione. ({5.4})}{62}{section*.124}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({5.5})}{63}{section*.126}% 
+\contentsline {paragraph}{Definizione. ({5.5})}{63}{section*.125}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\textit {\hyperref [thm:dididicoijcoijdoijcoijcoijsoij]{Dimostrazione di XIX.}}}{63}{section*.127}% 
+\contentsline {paragraph}{\textit {\hyperref [thm:dididicoijcoijdoijcoijcoijsoij]{Dimostrazione di XIX.}}}{63}{section*.126}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Corollario - Applicazione ai sistemi $ \mathaccentV {ddot}07F{\bm {x}}=-\nabla U (\bm {x})$. ({5.6})}{64}{section*.128}% 
+\contentsline {paragraph}{Corollario - Applicazione ai sistemi $ \mathaccentV {ddot}07F{\bm {x}}=-\nabla U (\bm {x})$. ({5.6})}{64}{section*.127}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totaledkjnckjnskjnckjndjdjjjdjjdjdjcjdjcjsoijcoij]{\textit {Dimostrazione di (5.6)}}}{64}{section*.129}% 
+\contentsline {paragraph}{\hyperref [totaledkjnckjnskjnckjndjdjjjdjjdjdjcjdjcjsoijcoij]{\textit {Dimostrazione di (5.6)}}}{64}{section*.128}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.1}Applicazione del metodo di Lyapunov}{64}{section.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Come trovare $ V $. ({5.7})}{64}{section*.130}% 
+\contentsline {paragraph}{Come trovare $ V $. ({5.7})}{64}{section*.129}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio. ({5.8})}{65}{section*.131}% 
+\contentsline {paragraph}{Esempio. ({5.8})}{65}{section*.130}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio. ({5.9})}{66}{section*.132}% 
+\contentsline {paragraph}{Esempio. ({5.9})}{66}{section*.131}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esercizio. ({5.10})}{68}{section*.134}% 
+\contentsline {paragraph}{Esercizio. ({5.10})}{68}{section*.133}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\textit {Soluzione ({5.10}).}}{68}{section*.135}% 
+\contentsline {paragraph}{\textit {Soluzione ({5.10}).}}{68}{section*.134}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({5.11})}{68}{section*.136}% 
+\contentsline {paragraph}{Osservazione. ({5.11})}{68}{section*.135}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio. ({5.12})}{69}{section*.138}% 
+\contentsline {paragraph}{Esempio. ({5.12})}{69}{section*.137}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Modello preda-predatore Lodka-Volterra. ({5.13})}{69}{section*.139}% 
+\contentsline {paragraph}{Modello preda-predatore Lodka-Volterra. ({5.13})}{69}{section*.138}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Alcuni risultati teorici}{70}{section.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({5.14})}{70}{section*.140}% 
+\contentsline {paragraph}{Osservazione. ({5.14})}{70}{section*.139}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({5.15})}{71}{section*.141}% 
+\contentsline {paragraph}{Definizione. ({5.15})}{71}{section*.140}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({5.16})}{71}{section*.143}% 
+\contentsline {paragraph}{Osservazione. ({5.16})}{71}{section*.142}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio. ({5.17})}{71}{section*.144}% 
+\contentsline {paragraph}{Esempio. ({5.17})}{71}{section*.143}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({5.18})}{71}{section*.145}% 
+\contentsline {paragraph}{Definizione. ({5.18})}{71}{section*.144}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({5.19})}{71}{section*.146}% 
+\contentsline {paragraph}{Definizione. ({5.19})}{71}{section*.145}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({5.20})}{72}{section*.148}% 
+\contentsline {paragraph}{Definizione. ({5.20})}{72}{section*.147}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio. ({5.21})}{72}{section*.149}% 
+\contentsline {paragraph}{Esempio. ({5.21})}{72}{section*.148}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({5.22})}{72}{section*.150}% 
+\contentsline {paragraph}{Osservazione. ({5.22})}{72}{section*.149}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{II\hspace {1em}Introduzione alle tecniche geometriche per lo studio dei modelli differenziali in fisica matematica}{73}{part.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Campi di vettori e forme differenziali su spazi affini}{75}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.1})}{75}{section*.151}% 
+\contentsline {paragraph}{Definizione. ({6.1})}{75}{section*.150}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Notazione. ({6.2})}{75}{section*.152}% 
+\contentsline {paragraph}{Notazione. ({6.2})}{75}{section*.151}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.3})}{75}{section*.153}% 
+\contentsline {paragraph}{Definizione. ({6.3})}{75}{section*.152}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.4})}{75}{section*.154}% 
+\contentsline {paragraph}{Definizione. ({6.4})}{75}{section*.153}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({6.5})}{76}{section*.155}% 
+\contentsline {paragraph}{Osservazione. ({6.5})}{76}{section*.154}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Trasformazioni affini. ({6.6})}{76}{section*.156}% 
+\contentsline {paragraph}{Trasformazioni affini. ({6.6})}{76}{section*.155}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.7})}{76}{section*.157}% 
+\contentsline {paragraph}{Definizione. ({6.7})}{76}{section*.156}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.8})}{76}{section*.158}% 
+\contentsline {paragraph}{Definizione. ({6.8})}{76}{section*.157}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Propriet\IeC {\`a}. ({6.9})}{77}{section*.159}% 
+\contentsline {paragraph}{Propriet\IeC {\`a}. ({6.9})}{77}{section*.158}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.10})}{77}{section*.160}% 
+\contentsline {paragraph}{Definizione. ({6.10})}{77}{section*.159}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.11})}{77}{section*.161}% 
+\contentsline {paragraph}{Definizione. ({6.11})}{77}{section*.160}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Propriet\IeC {\`a}. ({6.12})}{77}{section*.162}% 
+\contentsline {paragraph}{Propriet\IeC {\`a}. ({6.12})}{77}{section*.161}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.13})}{77}{section*.163}% 
+\contentsline {paragraph}{Definizione. ({6.13})}{77}{section*.162}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({6.14})}{78}{section*.164}% 
+\contentsline {paragraph}{Osservazione. ({6.14})}{78}{section*.163}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Propriet\IeC {\`a}. ({6.15})}{78}{section*.165}% 
+\contentsline {paragraph}{Propriet\IeC {\`a}. ({6.15})}{78}{section*.164}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Invarianza per cambiamenti di coordinate affini. ({6.16})}{78}{section*.166}% 
+\contentsline {paragraph}{Invarianza per cambiamenti di coordinate affini. ({6.16})}{78}{section*.165}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.17})}{79}{section*.167}% 
+\contentsline {paragraph}{Definizione. ({6.17})}{79}{section*.166}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Propriet\IeC {\`a}. ({6.18})}{79}{section*.168}% 
+\contentsline {paragraph}{Propriet\IeC {\`a}. ({6.18})}{79}{section*.167}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{L'espressione del commutatore. ({6.19})}{79}{section*.169}% 
+\contentsline {paragraph}{L'espressione del commutatore. ({6.19})}{79}{section*.168}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.20})}{80}{section*.170}% 
+\contentsline {paragraph}{Definizione. ({6.20})}{80}{section*.169}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Propriet\IeC {\`a}. ({6.21})}{80}{section*.171}% 
+\contentsline {paragraph}{Propriet\IeC {\`a}. ({6.21})}{80}{section*.170}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.22})}{80}{section*.172}% 
+\contentsline {paragraph}{Definizione. ({6.22})}{80}{section*.171}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.23})}{81}{section*.173}% 
+\contentsline {paragraph}{Definizione. ({6.23})}{81}{section*.172}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({6.24})}{81}{section*.174}% 
+\contentsline {paragraph}{Osservazione. ({6.24})}{81}{section*.173}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.25})}{81}{section*.175}% 
+\contentsline {paragraph}{Definizione. ({6.25})}{81}{section*.174}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio - Coordinate non affini - Cerchio. ({6.26})}{81}{section*.176}% 
+\contentsline {paragraph}{Esempio - Coordinate non affini - Cerchio. ({6.26})}{81}{section*.175}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Esempio - Coordinate non affini - Sfera. ({6.27})}{82}{section*.177}% 
+\contentsline {paragraph}{Esempio - Coordinate non affini - Sfera. ({6.27})}{82}{section*.176}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Notazione. ({6.28})}{82}{section*.178}% 
+\contentsline {paragraph}{Notazione. ({6.28})}{82}{section*.177}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.29})}{82}{section*.179}% 
+\contentsline {paragraph}{Definizione. ({6.29})}{82}{section*.178}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Trasformazione di $\bm {X}$:coordinate affini$\leadsto $ coordinate non affini. ({6.30})}{83}{section*.180}% 
+\contentsline {paragraph}{Trasformazione di $\bm {X}$:coordinate affini$\leadsto $ coordinate non affini. ({6.30})}{83}{section*.179}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Interpretazione degli $\mathbf {E}_i$ come derivazioni. ({6.31})}{83}{section*.181}% 
+\contentsline {paragraph}{Interpretazione degli $\mathbf {E}_i$ come derivazioni. ({6.31})}{83}{section*.180}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Simboli di Christoffel}{84}{section.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.32})}{84}{section*.182}% 
+\contentsline {paragraph}{Definizione. ({6.32})}{84}{section*.181}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Propriet\IeC {\`a}. ({6.33})}{84}{section*.183}% 
+\contentsline {paragraph}{Propriet\IeC {\`a}. ({6.33})}{84}{section*.182}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({6.34})}{84}{section*.184}% 
+\contentsline {paragraph}{Osservazione. ({6.34})}{84}{section*.183}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.35})}{85}{section*.185}% 
+\contentsline {paragraph}{Definizione. ({6.35})}{85}{section*.184}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({6.36})}{85}{section*.186}% 
+\contentsline {paragraph}{Osservazione. ({6.36})}{85}{section*.185}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.2}Forme differenziali}{86}{section.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.37})}{86}{section*.187}% 
+\contentsline {paragraph}{Definizione. ({6.37})}{86}{section*.186}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Propriet\IeC {\`a}. ({6.38})}{86}{section*.188}% 
+\contentsline {paragraph}{Propriet\IeC {\`a}. ({6.38})}{86}{section*.187}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Notazione. ({6.39})}{86}{section*.189}% 
+\contentsline {paragraph}{Notazione. ({6.39})}{86}{section*.188}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.40})}{86}{section*.190}% 
+\contentsline {paragraph}{Definizione. ({6.40})}{86}{section*.189}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({6.41})}{86}{section*.191}% 
+\contentsline {paragraph}{Osservazione. ({6.41})}{86}{section*.190}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Il differenziale. ({6.42})}{87}{section*.192}% 
+\contentsline {paragraph}{Il differenziale. ({6.42})}{87}{section*.191}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Differenziale di $\mathbf {(q^i)}$}{87}{section*.193}% 
+\contentsline {paragraph}{Differenziale di $\mathbf {(q^i)}$}{87}{section*.192}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({6.43})}{88}{section*.194}% 
+\contentsline {paragraph}{Definizione. ({6.43})}{88}{section*.193}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Notazione. ({6.44})}{88}{section*.195}% 
+\contentsline {paragraph}{Notazione. ({6.44})}{88}{section*.194}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Derivazione esterna. ({6.45})}{88}{section*.196}% 
+\contentsline {paragraph}{Derivazione esterna. ({6.45})}{88}{section*.195}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({6.46})}{88}{section*.197}% 
+\contentsline {paragraph}{Osservazione. ({6.46})}{88}{section*.196}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Invarianza della rappresentazione differenziale 1-forma. ({6.47})}{89}{section*.198}% 
+\contentsline {paragraph}{Invarianza della rappresentazione differenziale 1-forma. ({6.47})}{89}{section*.197}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}Curve negli spazi affini, rappresentazione in coordinate non affini, e sistemi dinamici}{91}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.1})}{91}{section*.199}% 
+\contentsline {paragraph}{Definizione. ({7.1})}{91}{section*.198}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.2})}{91}{section*.200}% 
+\contentsline {paragraph}{Definizione. ({7.2})}{91}{section*.199}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Interpretazione cinematica. ({7.3})}{92}{section*.201}% 
+\contentsline {paragraph}{Interpretazione cinematica. ({7.3})}{92}{section*.200}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.4})}{92}{section*.202}% 
+\contentsline {paragraph}{Definizione. ({7.4})}{92}{section*.201}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.5})}{92}{section*.203}% 
+\contentsline {paragraph}{Definizione. ({7.5})}{92}{section*.202}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Campo tangente come curva. ({7.6})}{92}{section*.204}% 
+\contentsline {paragraph}{Campo tangente come curva. ({7.6})}{92}{section*.203}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.7})}{92}{section*.205}% 
+\contentsline {paragraph}{Definizione. ({7.7})}{92}{section*.204}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.8})}{93}{section*.206}% 
+\contentsline {paragraph}{Definizione. ({7.8})}{93}{section*.205}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.9})}{93}{section*.207}% 
+\contentsline {paragraph}{Definizione. ({7.9})}{93}{section*.206}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Notazione. ({7.10})}{93}{section*.208}% 
+\contentsline {paragraph}{Notazione. ({7.10})}{93}{section*.207}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.11})}{93}{section*.209}% 
+\contentsline {paragraph}{Definizione. ({7.11})}{93}{section*.208}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Notazione. ({7.12})}{94}{section*.210}% 
+\contentsline {paragraph}{Notazione. ({7.12})}{94}{section*.209}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.1}Risoluzione sistemi dinamici}{94}{section.7.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.13})}{94}{section*.211}% 
+\contentsline {paragraph}{Definizione. ({7.13})}{94}{section*.210}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.14})}{95}{section*.213}% 
+\contentsline {paragraph}{Definizione. ({7.14})}{95}{section*.212}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({7.15})}{96}{section*.214}% 
+\contentsline {paragraph}{Osservazione. ({7.15})}{96}{section*.213}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.16})}{96}{section*.215}% 
+\contentsline {paragraph}{Definizione. ({7.16})}{96}{section*.214}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({7.17})}{96}{section*.216}% 
+\contentsline {paragraph}{Osservazione. ({7.17})}{96}{section*.215}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.18})}{96}{section*.217}% 
+\contentsline {paragraph}{Definizione. ({7.18})}{96}{section*.216}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.2}Velocit\IeC {\`a} e accelerazione in coordinate non affini}{96}{section.7.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Velocit\IeC {\`a} in coordinate non affini. ({7.19})}{96}{section*.218}% 
+\contentsline {paragraph}{Velocit\IeC {\`a} in coordinate non affini. ({7.19})}{96}{section*.217}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione. ({7.20})}{97}{section*.219}% 
+\contentsline {paragraph}{Osservazione. ({7.20})}{97}{section*.218}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Accelerazione in coordinate non affini. ({7.21})}{97}{section*.220}% 
+\contentsline {paragraph}{Accelerazione in coordinate non affini. ({7.21})}{97}{section*.219}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Coordinate polari. ({7.22})}{98}{section*.221}% 
+\contentsline {paragraph}{Coordinate polari. ({7.22})}{98}{section*.220}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.23})}{98}{section*.222}% 
+\contentsline {paragraph}{Definizione. ({7.23})}{98}{section*.221}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.24})}{98}{section*.223}% 
+\contentsline {paragraph}{Definizione. ({7.24})}{98}{section*.222}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Dalla traiettoria agli enti fondamentali della cinematica. ({7.25})}{99}{section*.224}% 
+\contentsline {paragraph}{Dalla traiettoria agli enti fondamentali della cinematica. ({7.25})}{99}{section*.223}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.26})}{99}{section*.225}% 
+\contentsline {paragraph}{Definizione. ({7.26})}{99}{section*.224}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.27})}{100}{section*.226}% 
+\contentsline {paragraph}{Definizione. ({7.27})}{100}{section*.225}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.3}Moti geodetici su una superficie}{100}{section.7.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione. ({7.28})}{101}{section*.227}% 
+\contentsline {paragraph}{Definizione. ({7.28})}{101}{section*.226}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {8}Il modello della visione}{103}{chapter.8}% 
 \defcounter {refsection}{0}\relax 
@@ -462,4 +460,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.2}Il modello}{103}{section.8.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{andrea donati}{104}{section*.230}% 
+\contentsline {paragraph}{andrea donati}{104}{section*.229}% 
