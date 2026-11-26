@@ -49,7 +49,7 @@ Questo nel contesto cinematico prende il nome di \emph{velocità istantanea} e l
     t\mapsto (\gamma(t),\dot{\gamma}(t))
 \end{align*}
 che viene detta \emph{curva tangente} della curva $\gamma\colon I \to A$.}{}{}
-\definizione{ Siano $\gamma \colon I \to \mathbb{R}$ una curva e $F\colon A \to \mathbb{R}$ un campo scalare, entrambi almeno di classe $C^1$.
+\definizione{ Siano $\gamma \colon I \to A$ una curva e $F\colon A \to \mathbb{R}$ un campo scalare, entrambi almeno di classe $C^1$.
 Definiamo la \ul{derivata del campo scalare $F$ lungo la curva $\gamma$} come:
 \begin{align*}
     \dod{}{t}(F\circ \gamma)(t)=\langle \mathbf{v}(t),dF\rangle \quad \forall t \in I
@@ -99,7 +99,7 @@ Le curve integrali rappresentano i moti delle particelle del fluido secondo l'in
         \end{align*}
         \item in coordinate generiche:
         \begin{align*}
-            \dod{q^i}{t}=X^i (x^j)
+            \dod{q^i}{t}=X^i (q^j)
         \end{align*}
 \end{itemize}
 In particolare sono $n$ equazioni differenziali ordinarie in forma normale autonome.}
@@ -115,7 +115,7 @@ Fissato un punto $P_0\in M$ esiste una e una sola curva integrale massimale basa
 \begin{align*}
     \gamma_{P_0}\colon I_{P_0}\to M
 \end{align*}
-Se $I_{P_0}=\mathbb{R}$, $\mathbf{X}$ si dice \ul{completo}.}
+Se $I_{P}=\mathbb{R}$ per ogni $P\in M$, $\mathbf{X}$ si dice \ul{completo}.}
 \definizione{Il \emph{flusso del campo di vettori $\mathbf{X}$} descrive lo spazio delle soluzioni (o insieme di tutte le curve integrali del campo $\mathbf{X}$).
 Si definisce come la funzione:
 \begin{align*}
@@ -310,7 +310,7 @@ questo in generale non è tangente alla superficie. Infatti:
 \end{align*}
 con $\mathbf{N}$ il vettore normale alla superficie. Quindi:
 \begin{align*}
-    \dod{\mathbf{v}}{t}=\underbrace{\left(\dod{v^i}{t}+v^k\dod{q^i}{t}\Gamma^i_{jk}\right)\mathbf{E}_i}_{\text{tangente a }Q}+v^i\dod{q^j}{t}B_{ji}\mathbf{N}
+    \dod{\mathbf{v}}{t}=\underbrace{\left(\dod{v^i}{t}+v^k\dod{q^j}{t}\Gamma^i_{jk}\right)\mathbf{E}_i}_{\text{tangente a }Q}+v^i\dod{q^j}{t}B_{ji}\mathbf{N}
 \end{align*}
 La componente tangente della derivata della velocità è chiamata \emph{derivata intrinseca della velocità/accelerazione intrinseca}. Se volessimo scriverla però rispetto alle coordinate non affini $(q^i)$, essendo $v^i=\cfrac{dq^i}{dt}$: %TODO
 \begin{align*}
@@ -356,7 +356,7 @@ Cosi facendo assegnato un $P_0\in Q$ e $\mathbf{v}_0$ tangente a $Q$ in $P_0$, $
     \dod{}{t}\mathbf{F}(\mathbf{r}(t),\mathbf{v}(t))=0
 \end{align*}
 \begin{align*}
-    \dod{}{v}(\mathbf{v}\cdot \mathbf{v})=2\mathbf{v}\cdot\mathbf{a}=0
+    \dod{}{t}(\mathbf{v}\cdot \mathbf{v})=2\mathbf{v}\cdot\mathbf{a}=0
 \end{align*}
 Poichè $\mathbf{a}=\mathbf{a}_{\mathbf{N}}\perp \mathbf{v}$\\
 Quindi l'energia cinetica è un integrale primo delle geodetiche. In particolare il moto è uniforme, ovvero il modulo della velocità è costante lungo le geodetiche.

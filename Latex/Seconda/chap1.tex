@@ -241,12 +241,12 @@ r=\sqrt{x^2+y^2}\\
 \begin{align*}
     x^\alpha=x^\alpha(q^i)\colon\begin{cases}
 x=r\:sen\varphi\:cos\theta\\
-y=r\:cos\varphi\:sin\theta\\
+y=r\:sen\varphi\:sin\theta\\
  z=r\:cos\varphi
     \end{cases}
 \end{align*}
-Dove $(q^1,q^2,q^3)=(r,\varphi,\theta)$ sono definite sul dominio aperto $U$ in $\mathbb{R}^3$, asportando il semiasse positivo delle $x$ e tutto l'asse $z$.\\
- La carta è a valori nell'aperto $\varphi(V)=\left\{(r,\varphi,\theta)\in \mathbb{R}^3\colon r>0, 0<\varphi<\pi, 0<\theta<2\pi\right\}$, dove:
+Dove $(q^1,q^2,q^3)=(r,\varphi,\theta)$ sono definite sul dominio aperto $U$ in $\mathbb{R}^3$, asportando il semipiano chiuso $\{y=0,\ x\ge 0\}$ (che contiene tutto l'asse $z$).\\
+ La carta è a valori nell'aperto $\varphi(U)=\left\{(r,\varphi,\theta)\in \mathbb{R}^3\colon r>0, 0<\varphi<\pi, 0<\theta<2\pi\right\}$, dove:
 \begin{align*}
     \begin{cases}
         r\equiv\text{raggio}\\
@@ -318,7 +318,7 @@ Queste derivate parziali sono a loro volta dei campi vettoriali e quindi possiam
 \end{itemize}}
 \osservazione[]{ Le componenti del commutatore sono le stesse in ogni sistema di coordinate:
 \begin{align*}
-    [\mathbf{X},\mathbf{Y}]^i=X^j\frac{\partial Y^i}{\partial q^j}-Y^i\frac{\partial X^j}{\partial q^j}
+    [\mathbf{X},\mathbf{Y}]^i=X^j\frac{\partial Y^i}{\partial q^j}-Y^j\frac{\partial X^i}{\partial q^j}
 \end{align*}}
 \definizione{ La \underline{divergenza in coordinate non affini} è il campo scalare:
 \begin{align*}

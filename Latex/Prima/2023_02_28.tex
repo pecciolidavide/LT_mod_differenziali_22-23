@@ -250,15 +250,15 @@ La funzione $ \bm{u} $ è di classe $ C^{1} $, quindi il limite esiste ed è $ \
             \bm{x}'=\bm{f}(\bm{x})\\ 
             \bm{x}(t_0)=\hat{\bm{x}}
         \end{cases}
-    \]è definita su $ (t_0,+ \infty) $ e dista da $ \bm{p} $ al più $ \varepsilon $.
+    \]è definita su $ [t_0,+ \infty) $ e dista da $ \bm{p} $ meno di $ \varepsilon $ per ogni $ t\ge t_0 $.
 }\\
 \definizione{
     Sotto le ipotesi \framref{daflkjnasdlkfjnasdlkfjnasdkfjnaskdjnfkjnkj}, sia $ \bm{p} \colon \bm{f}(\bm{p})=\bm{0} $. $ \bm{p} $ si dice \emph{instabile} se non è stabile. 
 }
 
-Intuitivamente, se $p$ è un equilibrio, pur di partire sufficientemente vicino, riusciamo a far rimanere quanto vogliamo la soluzione \textit{vicina} a $p$.\\
+Intuitivamente, se $p$ è un equilibrio stabile, pur di partire sufficientemente vicino, riusciamo a far rimanere quanto vogliamo la soluzione \textit{vicina} a $p$.\\
 Al contrario, invece, essere instabile significa che $ \exists\, \varepsilon $ e una successione $ \{\bm{x}_{n} \}_{n \in \N} \subseteq \Omega $, $ \bm{x}_{n} \to \bm{p} $ tale che \[
-        \exists\, t_{n}\colon \bm{u}_{(t_0,\bm{x}_n)}(t_{n} )> \varepsilon \quad \quad \forall\, n
+        \exists\, t_{n}\ge t_0\colon \norma{\bm{u}_{(t_0,\bm{x}_n)}(t_{n} )-\bm{p}}\ge \varepsilon \quad \quad \forall\, n
     \]dove $ \bm{u}_{(t_0,\bm{x}_n)} $ è soluzione di \[
         \begin{cases}
             \bm{x}'=\bm{f}(\bm{x})\\ 

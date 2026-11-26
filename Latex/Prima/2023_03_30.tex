@@ -37,8 +37,8 @@
             \item $ V(x,y)= \alpha\, x^{2m}+\beta\, y^{2n} $ è definita positiva  $ \iff $ $ \alpha,\beta>0 $. 
             \item $ \displaystyle \dot{V}(x,y)=\pd{V}{x}\, x'(t)+\pd{V}{y}\, y'(t) $:\begin{align*}
                 \dot{V}(x,y )&=\alpha\, 2 m\, x^{2m-1}(-y-3x^{3})+\beta\, 2n\, y^{2n-1} (x^{5}-2y^{3})\\ 
-                &= -2\,\alpha\, m\, x^{2m-1}\,y \uline{- 6\,\alpha\, m\, x^{2n+2}}\\ 
-                &\quad +2\beta n\,x^{5}\,y^{2n-1}\uline{-4\,\beta\, xy^{2n+2}}
+                &= -2\,\alpha\, m\, x^{2m-1}\,y \uline{- 6\,\alpha\, m\, x^{2m+2}}\\ 
+                &\quad +2\beta n\,x^{5}\,y^{2n-1}\uline{-4\,\beta\, n\, y^{2n+2}}
             \end{align*} 
 
             La parte sottolineata, poiché $ m,n,\alpha,\beta>0 $, è già definita negativa in $ (0,0) $. Richiediamo ora, per esempio, che l'altro pezzo di $ \dot{V} $ sia nullo. In particolare, vorremmo che fossero monomi simili: \[
@@ -116,7 +116,7 @@
         
         $\implies$ $ \exists\, \{(x_{n},y_{n} ) \}_{n \in \N} $ tale che \begin{align*}
             (x_{n},y_{n}  ) \displaystyle &\xrightarrow{n\to + \infty} \bm{0} \\ 
-            (x_{n},y_{n}  )&\ge 0, \quad\forall\, n
+            V(x_{n},y_{n}  )&> 0, \quad\forall\, n
         \end{align*}
 
         Verifico ora il segno di $ \dot{V} $: \begin{align*}

@@ -34,7 +34,7 @@
 \teorema[Teorema di dipendenza continua dai dati iniziali]{fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjjjfjfjfjfjfifroiefdfdskjncdskujhsdfalkjandxvberure}{
     \settingH 
 
-    Sia $ I_{\max}  $ l'intervallo massimale di $ \bm{u}_{(t_0,\bm{x}_0)} $ e $ [a,b] \subset I_{\max}  $. Allora: \begin{enumerate}
+    Sia $ I_{\max}  $ l'intervallo massimale di $ \bm{u}_{(t_0,\bm{x}_0)} $ e $ [a,b] \subset I_{\max}  $, con $ t_0 \in [a,b] $. Allora: \begin{enumerate}
         \item esiste un intorno di $ \bm{x}_0 $, $ N $, tale che per ogni $ \bm{x} \in N $ il problema di Cauchy \[
             \begin{cases}
                 \bm{u}'=\bm{f}\left(t,\bm{u}(t)\right)\\ 
@@ -64,7 +64,7 @@
 \teorema[Teorema di Kamke]{dafasdfdasfadsfsadf}{
     \settingH 
 
-    Sia $ I_{\max}  $ l'intervallo massimale di $ \bm{u}_{(t_0,\bm{x}_0)}(t) $. Sia $ [a,b] \subset I_{\max}  $ fissato.
+    Sia $ I_{\max}  $ l'intervallo massimale di $ \bm{u}_{(t_0,\bm{x}_0)}(t) $. Sia $ [a,b] \subset I_{\max}  $ fissato, con $ t_0 \in [a,b] $.
 
     Siano \begin{itemize}
         \item $ \{t_{k} \}_{k \in \N} \subseteq \R $, $ t_{k}\to t_0  $;
@@ -129,9 +129,9 @@ Per la dimostrazione del Teorema \teoref{fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjj
 
         Per semplicità sia $ t_0=a $. 
 
-        Prendiamo $ \delta>0 $ sufficientemente piccolo e \[
-            k_{\delta} = \left\{(t,\bm{x}) \in \Omega: t \in [a,b], \norma{\bm{u}_0(t)-\bm{x}}<\delta\right\} 
-        \]
+        Sia $ \bm{u}_0\coloneqq \bm{u}_{(t_0,\bm{x}_0)} $. Prendiamo $ \delta>0 $ sufficientemente piccolo in modo che il compatto \[
+            k_{\delta} = \left\{(t,\bm{x}) \in \R\times\R^{n}: t \in [a,b], \norma{\bm{u}_0(t)-\bm{x}}\le\delta\right\} 
+        \]sia contenuto in $ \Omega $.
 
         Sia $ [a,b_{ \varepsilon})  $ con $ b_{ \varepsilon}< b  $ l'intervallo massimale destro di $ \bm{u}_{ \varepsilon} $. 
 
@@ -151,7 +151,7 @@ Per la dimostrazione del Teorema \teoref{fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjj
             &\le \norma{\bm{u}_{ \varepsilon}(a)-\bm{u}_0(a)} + \int_{a}^{t}\norma{\bm{f}\left(s, \bm{u}_{ \varepsilon}(s)\right) - \bm{f}\left(s, \bm{u}_0(s)\right)}\dif s \\ 
             &\underset{\footnotemark}{\le} \parentesi{A_{ \varepsilon} }{%
                 \norma{\bm{x}_{ \varepsilon} -\bm{x}_0} 
-            } + \underbrace{L}_{>0}\,\int_{0}^{t}\norma{\bm{u}_{ \varepsilon}(s) - \bm{u}_0(s)}\dif s .
+            } + \underbrace{L}_{>0}\,\int_{a}^{t}\norma{\bm{u}_{ \varepsilon}(s) - \bm{u}_0(s)}\dif s .
         \end{align*}\footnotetext{dove $ L $ è la costante di Lipschitz di $ \bm{f} $ su $ k_{\delta}  $} 
 
         Dunque, per il lemma di Gronwall, $ \displaystyle \phi(t)\le A_{ \varepsilon}\, e^{L(t-a)}  $. Inoltre, avendo $ \phi(t_{ \varepsilon} ) = \delta $, si ha che \[

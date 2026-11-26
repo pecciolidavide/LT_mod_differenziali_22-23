@@ -82,7 +82,7 @@
             \]e quindi $ y $ come funzione di $ x $ è monotona crescente.
             
             Notiamo inoltre che per $ x_0>1 $, $ x'=y^{2}(1-x)<0 $, dunque le frecce delle orbite sono rivolte verso $ x=1 $. 
-            \item $ x_0<1 $ $ \,\implies\, $ $ \displaystyle \frac{y_0}{x_0-1}>0 $, $ x-1<0 $: \[
+            \item $ x_0<1 $ $ \,\implies\, $ $ \displaystyle \frac{y_0}{x_0-1}<0 $, $ x-1<0 $: \[
                 \lim_{x\to 1^{-}} y(x) = 0^{+},\qquad \lim_{x\to - \infty} y(x) = 0^{+}
             \]e inoltre la funzione è sempre positiva. 
 
@@ -101,7 +101,7 @@
 \paragrafo{Pendolo Piano Senza Attrito}{% 
     Consideriamo un pendolo piano senza attrito, e sia $ \theta $ l'angolo rispetto alla verticale. La legge che regola il moto è \[
         \theta''(t)= -\frac{g}{l}\,\sin \theta(t)
-    \]Se $ \alpha= \sqrt{\cfrac{g}{l}} $, definendo $ x(t)= \theta(\alpha\,t) $, l'equazione del moto diventa: \[
+    \]Se $ \alpha= \sqrt{\cfrac{g}{l}} $, definendo $ x(t)= \theta(t/\alpha) $, l'equazione del moto diventa: \[
         x ''(t)= -\sin x(t)
     \]equazione non lineare del secondo ordine.\\
      La possiamo tramutare, tramite la trasformazione $ x'(t)=y(t) $, in un sistema di equazioni del primo ordine: \[
@@ -118,10 +118,10 @@
                 \sin x = 0
             \end{cases}
         \]ovvero tutti quelli nella forma $ (k\, \pi,0) $, per $ k \in \Z $.
-        \item \emph{Punti con tangente orizzontale:} $ x'=0 $ $ \leadsto $ $ y=0 $; 
+        \item \emph{Punti con tangente verticale:} $ x'=0 $ $ \leadsto $ $ y=0 $; 
         
         Noto inoltre che $ y'>0 $ quando $ x \in [\pi +2k\,\pi, 2(k+1)\,\pi] $. 
-        \item \emph{Punti con tangente verticale:} $ y'=0 $ $ \leadsto $ $ \sin x = 0 $ 
+        \item \emph{Punti con tangente orizzontale:} $ y'=0 $ $ \leadsto $ $ \sin x = 0 $ 
         
         $\implies$ $ x = k\, \pi $, $ k \in \Z $. 
         \begin{figure}[H]
@@ -162,7 +162,8 @@
             \item $ c \in (-1,1) $: ottengo soluzioni definite sull'intervallo $ [-x_{c}, x_{c}  ] $ modulo $ 2\pi $, dove \[
                 x_{c}=\arccos{(-c)};
             \]
-            \item $ c\ge1 $: si creano infinite eterocline. 
+            \item $ c=1 $: si ottengono le orbite eterocline (separatrici), che congiungono gli equilibri $ \left((2n-1)\,\pi,0\right) $ e $ \left((2n+1)\,\pi,0\right) $, $ n \in \Z $;
+            \item $ c>1 $: $ y $ non si annulla mai e si ottengono orbite di rotazione, illimitate in $ x $ (il pendolo compie giri completi). 
         \end{itemize}
         In definitiva, le orbite sono quelle illustrate nella figura \ref{fig:sodaufnaisdufjaiuhfaoisfjdaosi}
         \begin{figure}[H]
