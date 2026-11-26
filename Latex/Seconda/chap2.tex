@@ -6,6 +6,7 @@
 %%
 %%
 \chapter{Curve negli spazi affini, rappresentazione in coordinate non affini, e sistemi dinamici}
+\chaptermark{Curve, coordinate non affini e sistemi dinamici}
 %%
 %%
 %%
@@ -152,16 +153,11 @@ Si definisce come la funzione:
 \osservazione[]{ Ad ogni gruppo ad un parametro si può associare il campo vettoriale $\mathbf{X}$ corrispondente e viceversa. Ovvero questo sono condizioni necessarie e sufficienti affinché un insieme di curve $\varphi(t,P)$ sia lo spazio delle soluzioni di un certo campo vettoriale.}
 \definizione{ Sia $\mathbf{X}\in \mathcal{X}(A)$. Definiamo l'\emph{integrale primo di $\mathbf{X}$} come il campo scalare $F\colon A\to \mathbb{R}$ tale che $\forall\, \gamma \colon I \to A$ curva integrale, vale:
 
-\parbox{10em}{\centering
-   $F\circ \gamma (t_1)=F\circ \gamma (t_2)$
-   $\forall\, t_1,t_2\in I$
-    }$\iff$
-\parbox{10em}{
-    $\cfrac{d}{dt}(F\circ\gamma)(t)=0, \forall \, t\in I$
-  }
-    $\iff$
-\parbox{10em}{
-         $\langle \mathbf{X},dF\rangle =0$}
+\begin{align*}
+    & F\circ \gamma (t_1)=F\circ \gamma (t_2) && \forall\, t_1,t_2\in I\\
+    \iff\quad & \dod{}{t}(F\circ\gamma)(t)=0 && \forall \, t\in I\\
+    \iff\quad & \langle \mathbf{X},dF\rangle =0
+\end{align*}
 }
 % %%
 % %%
@@ -196,7 +192,8 @@ Quindi la velocità in componenti rispetto alle cordinate $(q^i)$ è data da
 \end{align*}
 Ora allora analizziamo $\cfrac{d\mathbf{v}}{t}$ passando per le coordinate non affini:
 \begin{align*}
-    \dod{\mathbf{v}}{t}=\dod{v^i}{t}\mathbf{E}_i+v^i\dod{}{t}\mathbf{E}_i=\dod{v^i}{t}\mathbf{E}_i+v^i\dpd{}{{q^j}}(\mathbf{E}_i)\cdot\overbrace{\dod{q^j}{t}}^{v^j}=\dod{v^i}{t}\mathbf{E}_i+\boxed{v^iv^j\Gamma^k_{ji}\mathbf{E}_k}
+    \dod{\mathbf{v}}{t}&=\dod{v^i}{t}\mathbf{E}_i+v^i\dod{}{t}\mathbf{E}_i=\dod{v^i}{t}\mathbf{E}_i+v^i\dpd{}{{q^j}}(\mathbf{E}_i)\cdot\overbrace{\dod{q^j}{t}}^{v^j}\\
+    &=\dod{v^i}{t}\mathbf{E}_i+\boxed{v^iv^j\Gamma^k_{ji}\mathbf{E}_k}
 \end{align*}
 Ora, scambiando $i\leftrightarrow k$ in $\square$ e raccogliendo, otteniamo:
 \begin{align*}
@@ -306,7 +303,8 @@ Il vettore $\mathbf{v}(t)$ tangente alla curva è banalmente tangente anche alla
 \end{align*}
 questo in generale non è tangente alla superficie. Infatti:
 \begin{align*}
-   \dod{\mathbf{v}}{t} =\dod{v^i}{t}\mathbf{E}_i+v^i\dod{\mathbf{E}_i}{t}=\dod{v^i}{t}\mathbf{E}_i+v^i\dpd{\mathbf{E}_i}{{q^j}}\dod{q^j}{t}=\dod{v^i}{t}\mathbf{E}_i+v^i\dod{q^j}{t}(\Gamma_{ji}^k\mathbf{E}_k+B_{ji}\mathbf{N})
+   \dod{\mathbf{v}}{t} &=\dod{v^i}{t}\mathbf{E}_i+v^i\dod{\mathbf{E}_i}{t}=\dod{v^i}{t}\mathbf{E}_i+v^i\dpd{\mathbf{E}_i}{{q^j}}\dod{q^j}{t}\\
+   &=\dod{v^i}{t}\mathbf{E}_i+v^i\dod{q^j}{t}(\Gamma_{ji}^k\mathbf{E}_k+B_{ji}\mathbf{N})
 \end{align*}
 con $\mathbf{N}$ il vettore normale alla superficie. Quindi:
 \begin{align*}
@@ -326,22 +324,15 @@ Una volta scissa l'accelerazione possiamo finalmente definire cos'è
     \mathbf{a}_{\text{intrinseca}}=0, \quad\forall \, t && [\mathbf{a} = \mathbf{a}_{\mathbf{N}}]
 \end{align*}}
 
-Questa condizione può essere anche rappresentata sotto forma di sistema di equazioni differenziali infatti:\\
-\begin{minipage}{4cm}
-    \begin{align*}
-        \dod[2]{q^k}{t}+\Gamma^k_{ij}\dod{q^i}{t}\cdot \dod{q^j}{t}=0
-    \end{align*}
-\end{minipage}$\longleftrightarrow$
-\begin{minipage}{4cm}
-    \begin{align*}
-        \begin{cases}
-            \cfrac{dq^i}{dt}=v^i\\
-            \cfrac{dv^k}{dt}=-\Gamma^k_{ij}v^iv^j
-        \end{cases}
-    \end{align*}
-\end{minipage}
-%da aggiustare freccia ahha
-\\
+Questa condizione può essere anche rappresentata sotto forma di sistema di equazioni differenziali infatti:
+\[
+    \dod[2]{q^k}{t}+\Gamma^k_{ij}\dod{q^i}{t}\cdot \dod{q^j}{t}=0
+    \quad\longleftrightarrow\quad
+    \begin{cases}
+        \cfrac{dq^i}{dt}=v^i\\
+        \cfrac{dv^k}{dt}=-\Gamma^k_{ij}v^iv^j
+    \end{cases}
+\]
 Cosi facendo i moti geodetici diventano le curve integrali di questo sistema dinamico associato al campo vettoriale $\mathbf{X}$ definito sui vettori dello spazio tangente alla superficie $Q$. Questo scritto come derivazione sarebbe:
 \begin{align*}
     \mathbf{X}=v^i\dpd{}{{q^i}}-\Gamma^k_{ij}v^iv^j\dpd{}{{v^k}}

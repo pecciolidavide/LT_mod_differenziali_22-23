@@ -111,7 +111,7 @@ Per la dimostrazione del Teorema \teoref{fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjj
     $\implies$ la funzione $ \displaystyle w(t)\,e^{-B\,(t-a)} $ è decrescente su $ [a,b] $ 
     
     $\implies$ è massima in $ t=a $, ovvero \[
-       A \coloneq w(a)\,e^{0}\ge w(t)\,e^{-B\,(t-a)}\ge \phi(t)\,e^{-B\,(t-a)}
+       A \coloneqq w(a)\,e^{0}\ge w(t)\,e^{-B\,(t-a)}\ge \phi(t)\,e^{-B\,(t-a)}
     \] 
     
     $\implies$ $ \displaystyle \phi(t)\le A\,e^{B\,(t-a)} $\qed
@@ -145,7 +145,7 @@ Per la dimostrazione del Teorema \teoref{fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjj
         Poiché $ \bm{u}_0 $ e $ \bm{u}_{ \varepsilon} $ sono le soluzioni di problemi di Cauchy e usiamo le loro equazioni di Volterra. \[
             \bm{u}_{ \varepsilon} (t) =\bm{u}_{ \varepsilon} (a) + \int_{a}^{t} \bm{f}\left(s, \bm{u}_{ \varepsilon}(s)\right) \dif s
         \]Definiamo ora, per ogni $ t \in [a,t_{ \varepsilon} ] $, la funzione \begin{align*}
-            \phi(t) &\coloneq \norma{\bm{u}_{ \varepsilon}(t)-\bm{u}_{ 0}(t)}\\ &= \norma{%
+            \phi(t) &\coloneqq \norma{\bm{u}_{ \varepsilon}(t)-\bm{u}_{ 0}(t)}\\ &= \norma{%
             \bm{u}_{ \varepsilon}(a) + \int_{a}^{t} \bm{f}\left(s,\bm{u}_{ \varepsilon}(s)\right) \dif s - \bm{u}_0(a) - \int_{a}^{t} \bm{f}\left(s, \bm{u}_0(s)\right)\dif s 
             }\\ 
             &\le \norma{\bm{u}_{ \varepsilon}(a)-\bm{u}_0(a)} + \int_{a}^{t}\norma{\bm{f}\left(s, \bm{u}_{ \varepsilon}(s)\right) - \bm{f}\left(s, \bm{u}_0(s)\right)}\dif s \\ 
@@ -168,8 +168,8 @@ Per la dimostrazione del Teorema \teoref{fsglkjnsdfglkjnsdflgkjnsdflkgjnsdflkgjj
                 \norma{\bm{u}_k(t)-\overline{\bm{u}}(t)} \le \parentesi{\to 0}{\norma{\bm{x}_k-\overline{\bm{x}}_0}}\,e^{L(b-a)}
             \]dove $ L $ è la costante di Lipschitz di $ \bm{f} $ su $ \overline{K}_{\delta}$. Così facendo: 
             \begin{align*}
-                \displaystyle \norma{\bm{u}_k-\overline{\bm{u}}}_{\infty} = \max_{t \in [a,b]} \norma{\bm{u}_k(t)-\overline{\bm{u}}(t)}\le \norma{\bm{x}_k-\overline{\bm{x}}_0}\,e^{L(b-a)}\to 0  \\
-                &&\qed
+                \norma{\bm{u}_k-\overline{\bm{u}}}_{\infty} &= \max_{t \in [a,b]} \norma{\bm{u}_k(t)-\overline{\bm{u}}(t)}\\
+                &\le \norma{\bm{x}_k-\overline{\bm{x}}_0}\,e^{L(b-a)}\to 0 \qedd
             \end{align*}
         \end{itemize}
     \end{enumerate}

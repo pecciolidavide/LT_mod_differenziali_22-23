@@ -440,7 +440,7 @@
 %TOdOS e Excursus
 %%
 \newcommand{\todo}[1]{%
-\begin{tcolorbox}[parbox=false, colframe=red, colback=white]
+\leavevmode\par\begin{tcolorbox}[parbox=false, colframe=red, colback=white]
 	#1
 \end{tcolorbox}
 }
@@ -460,5 +460,5 @@
 
 \usepackage[% 
 textwidth=360pt]{geometry}
-\geometry{papersize={16.99cm,24.4cm}, bottom=3cm,%
+\geometry{papersize={16.99cm,24.4cm}, bottom=3cm, headheight=14pt,%
 heightrounded}
