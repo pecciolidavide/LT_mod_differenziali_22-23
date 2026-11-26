@@ -1,0 +1,66 @@
+## File temporanei LaTeX
+
+# Compilazione
+*.aux
+*.auxlock
+*.lof
+*.lot
+*.fls
+*.log
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.lb
+*.xdv
+*.dvi
+
+# latexmk / synctex
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex(busy)
+*.synctex.gz(busy)
+*.pdfsync
+
+# Bibliografia (biblatex / biber / bibtex)
+*.bbl
+*.bbl-SAVE-ERROR
+*.bcf
+*.bcf-SAVE-ERROR
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+# Indici e glossari
+*.idx
+*.ilg
+*.ind
+*.glo
+*.gls
+*.glg
+*.acn
+*.acr
+*.alg
+*.ist
+
+# TikZ externalize
+*.dpth
+*.md5
+*.figlist
+*.makefile
+
+# hyperref / beamer / varie
+*.nav
+*.snm
+*.vrb
+*.thm
+*.loa
+*.lol
+*.xref
+*.4ct
+*.4tc
+*.tmp
