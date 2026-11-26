@@ -9,37 +9,25 @@
 \usepackage{graphicx} % inserire immagini
 \usepackage{subfig} % sottofigure
 \usepackage{float}
-\usepackage{multicol} % due colonne
 \usepackage{ulem} % sottolineare
 \usepackage{soul}
-\usepackage{lipsum} % lorem ipsum
 \usepackage{xcolor} % colori in latex
-\usepackage{parskip} % rimuove l'indentazione dei nuovi paragrafi 
-\usepackage{centernot}
-\usepackage[outline]{contour}\contourlength{3pt}
+\usepackage{parskip} % rimuove l'indentazione dei nuovi paragrafi
 \usepackage{fancyhdr}
-\usepackage{imakeidx}%creare indice in fondo
-\usepackage{layout}
-\usepackage[intlimits]{empheq} % Riquadri colorati attorno alle equazioni
+\usepackage[intlimits]{amsmath} % prima di tcolorbox, che altrimenti lo carica senza opzioni
 \usepackage[most]{tcolorbox} % Riquadri colorati
 \usepackage{ifthen} % IFTHEN
-\usepackage{rotating} %figure ruotate
 
 % pacchetti matematica
-\usepackage[intlimits]{amsmath} 
 \usepackage{nicematrix}
 \usepackage{amssymb}
 \usepackage{amsthm}
-\usepackage{yhmath}
+\usepackage{yhmath} % nessun comando usato, ma cambia il font delle parentesi grandi
 \usepackage{dsfont}
 \usepackage{mathrsfs}
 \usepackage{cancel} % semplificare
-\usepackage{polynom} %divisione tra polinomi
-\usepackage{forest} % grafi ad albero
-\usepackage{booktabs} % tabelle
 \usepackage{commath} %simboli e differenziali
 \usepackage{bm} %bold
-\usepackage[fulladjust]{marginnote} %to use marginnote for date notes
 \usepackage{arrayjobx}%array
 \usepackage{mathtools}
 %%%%%%%%%%%%%
@@ -49,25 +37,6 @@
 \newcounter{numerodidimostrazioni}
 \newcommand{\mostranumerodimostrazioni}{\cleardoublepage\thispagestyle{empty}\begin{center}\null\vfill \textit{Questo corso comprende {\thenumerodidimostrazioni} dimostrazioni}\vfill\null\end{center}}
 %%%%
-
-%%%% QUIVER
-\newcommand{\duepunti}{\,\mathchar\numexpr"6000+`:\relax\,}
-% A TikZ style for curved arrows of a fixed height, due to AndréC.
-\tikzset{curve/.style={settings={#1},to path={(\tikztostart)
-    .. controls ($(\tikztostart)!\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
-    and ($(\tikztostart)!1-\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
-    .. (\tikztotarget)\tikztonodes}},
-    settings/.code={\tikzset{quiver/.cd,#1}
-        \def\pv##1{\pgfkeysvalueof{/tikz/quiver/##1}}},
-    quiver/.cd,pos/.initial=0.35,height/.initial=0}
-
-% TikZ arrowhead/tail styles.
-\tikzset{tail reversed/.code={\pgfsetarrowsstart{tikzcd to}}}
-\tikzset{2tail/.code={\pgfsetarrowsstart{Implies[reversed]}}}
-\tikzset{2tail reversed/.code={\pgfsetarrowsstart{Implies}}}
-% TikZ arrow styles.
-\tikzset{no body/.style={/tikz/dash pattern=on 0 off 1mm}}
-%%%%%%%%%%
 
 %%% HEADER e FOOTER
 %% HEAD and FOOT
@@ -207,10 +176,7 @@
 
 %% SEZIONE GRAFICA
 \usepackage{tikz}
-\usetikzlibrary{matrix, patterns, calc, decorations.pathreplacing, hobby, decorations.markings, decorations.pathmorphing, babel}
-\usepackage{tikz-3dplot}
-\usepackage{mathrsfs} %per geogebra
-\usepackage{tikz-cd}
+\usetikzlibrary{arrows.meta, patterns, decorations.markings, babel}
 \tikzset
 {
   %surface/.style={fill=black!10, shading=ball,fill opacity=0.4},
@@ -222,7 +188,6 @@
 \usepackage{pgfplots} % stampare le funzioni
 	\pgfplotsset{/pgf/number format/use comma,compat=1.15}
 	%\pgfplotsset{compat=1.15} %per geogebra
-	\usepgfplotslibrary{fillbetween, polar}
 %%%%%%
 
 %% NOTE A PIÉ PAGINA
@@ -260,25 +225,8 @@
 	% \todo{Manca matrice}
 %%%%%%
 
-%% CITAZIONI
-\usepackage{lineno}
-
-\newcommand{\citazione}[1]{%
-  \begin{quotation}
-  \begin{linenumbers}
-  \modulolinenumbers[5]
-  \begingroup
-  \setlength{\parindent}{0cm}
-  \noindent #1
-  \endgroup
-  \end{linenumbers}
-  \end{quotation}\setcounter{linenumber}{1}
-  }
-%%%%%%
-
 %% HEADER E FOOTER
 % rimuovere header e footer dalle pagine vuote
-\usepackage{ifthen}
 \makeatletter
 \def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
     \hbox{}
@@ -491,8 +439,6 @@
 
 %TOdOS e Excursus
 %%
-\usepackage{tcolorbox}
-\tcbuselibrary{breakable}
 \newcommand{\todo}[1]{%
 \begin{tcolorbox}[parbox=false, colframe=red, colback=white]
 	#1
