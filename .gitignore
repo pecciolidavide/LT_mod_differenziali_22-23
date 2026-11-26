@@ -64,3 +64,6 @@
 *.4ct
 *.4tc
 *.tmp
+
+## macOS
+.DS_Store
